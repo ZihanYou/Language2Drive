@@ -1,0 +1,53 @@
+{
+  "schema_version": "language2drive.model_adapter.v1",
+  "model_name": "Qwen-Drive-1.0-4B",
+  "source_dir": "code/src",
+  "required_files": [
+    "code/.source_revision",
+    "code/src/qwen_drive/modeling_qwen_drive.py",
+    "checkpoints/Qwen-Drive-1.0-4B/config.json",
+    "checkpoints/Qwen-Drive-1.0-4B/model.safetensors",
+    "checkpoints/Qwen-Drive-1.0-4B/tokenizer.json",
+    "checkpoints/Qwen-Drive-1.0-4B/planner-rl/config.json",
+    "checkpoints/Qwen-Drive-1.0-4B/planner-rl/model.safetensors"
+  ],
+  "required_dirs": [
+    "vendor/torch",
+    "vendor/transformers",
+    "vendor/torchvision",
+    "vendor/torchaudio"
+  ],
+  "backend": {
+    "type": "qwen_drive",
+    "model_path": "checkpoints/Qwen-Drive-1.0-4B",
+    "planner_path": "checkpoints/Qwen-Drive-1.0-4B/planner-rl",
+    "attn_implementation": "sdpa"
+  },
+  "runtime": {
+    "inference_interval_frames": 20,
+    "plan_hold_frames": 80,
+    "planning_steps": 10,
+    "max_reasoning_tokens": 64,
+    "waypoint_dt_s": 0.5,
+    "max_waypoints": 8,
+    "max_waypoint_range_m": 100.0,
+    "max_consecutive_errors": 2,
+    "sampling_seed": 42
+  },
+  "camera": {
+    "views": ["front", "left", "right"],
+    "width": 896,
+    "height": 512,
+    "fov": 100
+  },
+  "control": {
+    "wheelbase_m": 2.8,
+    "max_steer_angle_rad": 0.7,
+    "lookahead_m": 3.5,
+    "lookahead_speed_gain": 0.35,
+    "max_target_speed_mps": 8.0,
+    "throttle_kp": 0.3,
+    "brake_kp": 0.35,
+    "max_throttle": 0.7
+  }
+}

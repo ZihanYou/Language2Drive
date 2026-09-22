@@ -1,0 +1,11 @@
+{
+  "schema_version": "language2drive.model_adapter.v1",
+  "model_name": "Impromptu-VLA-3B-AD",
+  "source_dir": "code",
+  "required_files": ["checkpoints/3B_AD_finetune/config.json", "checkpoints/3B_AD_finetune/model.safetensors.index.json"],
+  "required_dirs": ["checkpoints/3B_AD_finetune"],
+  "backend": {"type": "transformers_trajectory", "model_path": "checkpoints/3B_AD_finetune"},
+  "runtime": {"inference_interval_frames": 20, "plan_hold_frames": 60, "max_new_tokens": 192, "waypoint_dt_s": 0.5, "max_waypoints": 10, "max_waypoint_range_m": 80.0, "sampling_seed": 0},
+  "camera": {"views": ["front", "right", "left"], "width": 896, "height": 512, "fov": 100},
+  "control": {"wheelbase_m": 2.8, "max_steer_angle_rad": 0.7, "lookahead_m": 3.5, "lookahead_speed_gain": 0.35, "max_target_speed_mps": 8.0, "throttle_kp": 0.3, "brake_kp": 0.35, "max_throttle": 0.7}
+}

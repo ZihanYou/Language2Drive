@@ -1,0 +1,75 @@
+{
+  "xodr_root": "road_mesh/OpenDrive",
+  "maps": [
+    {
+      "town": "Town01",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town02",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town03",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town04",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town05",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town06",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town07",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "Town10HD",
+      "family": "M-U",
+      "role": "urban"
+    },
+    {
+      "town": "yangluogang1",
+      "family": "M-P",
+      "role": "port"
+    },
+    {
+      "town": "parkinglotfish-new3",
+      "family": "M-G",
+      "role": "parking"
+    },
+    {
+      "town": "American-city0428",
+      "family": "M-X",
+      "role": "semantic_junction"
+    },
+    {
+      "town": "hanghailou3",
+      "family": "M-H",
+      "role": "highway"
+    },
+    {
+      "town": "hubeiwenli4",
+      "family": "M-C",
+      "role": "campus"
+    },
+    {
+      "town": "road1",
+      "family": "CONTROL",
+      "role": "straight_control"
+    }
+  ]
+}

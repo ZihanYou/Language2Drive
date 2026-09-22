@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language2drive-carla"
+version = "0.1.0"
+description = "Language2Drive CARLA benchmark"
+requires-python = ">=3.11,<3.12"
+dependencies = ["matplotlib>=3.7", "PyYAML>=6", "numpy<2", "shapely>=2", "huggingface-hub>=0.36,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+l2d = "language2drive.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

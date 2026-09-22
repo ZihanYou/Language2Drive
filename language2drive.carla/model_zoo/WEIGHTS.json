@@ -1,0 +1,167 @@
+{
+  "alpamayo1.5": [
+    {
+      "repo_id": "nvidia/Alpamayo-1.5-10B",
+      "revision": "7aba8293c09993f2e125c6819df05d7fa3e873ea",
+      "directory": "checkpoints",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "*.safetensors"
+      ]
+    },
+    {
+      "repo_id": "nvidia/Cosmos-Reason2-8B",
+      "revision": "a9fae2cf89dc64db96b12860417f0eb403013bb9",
+      "directory": "cosmos_processor",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py"
+      ]
+    }
+  ],
+  "simlingo": [
+    {
+      "repo_id": "RenzKa/simlingo",
+      "revision": "26c7c89e797d4e25bbf640013317af8da26a5454",
+      "directory": "checkpoints",
+      "allow": [
+        "simlingo/.hydra/config.yaml",
+        "simlingo/checkpoints/epoch=013.ckpt/pytorch_model.pt"
+      ]
+    },
+    {
+      "repo_id": "OpenGVLab/InternVL2-1B",
+      "revision": "0d75ccd166b1d0b79446ae6c5d1a4a667f1e6187",
+      "directory": "checkpoints/InternVL2-1B",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "*.safetensors"
+      ]
+    }
+  ],
+  "lmdrive": [
+    {
+      "repo_id": "OpenDILabCommunity/LMDrive-llava-v1.5-7b-v1.0",
+      "revision": "081ca1b028c73ceb83918a0b45a5e7c5322b26a8",
+      "directory": "checkpoints/lmdrive_adapter",
+      "allow": [
+        "*.pth"
+      ]
+    },
+    {
+      "repo_id": "OpenDILabCommunity/LMDrive-vision-encoder-r50-v1.0",
+      "revision": "ce055800ef3a458bad5b7fff18ed52034edcea45",
+      "directory": "checkpoints/vision_encoder",
+      "allow": [
+        "*.pth.tar"
+      ]
+    },
+    {
+      "repo_id": "liuhaotian/llava-v1.5-7b",
+      "revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+      "directory": "checkpoints/llava-v1.5-7b",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "*.bin",
+        "*.safetensors"
+      ]
+    },
+    {
+      "repo_id": "google-bert/bert-base-uncased",
+      "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+      "directory": "checkpoints/bert-base-uncased",
+      "allow": [
+        "*.json",
+        "vocab.txt",
+        "model.safetensors"
+      ]
+    }
+  ],
+  "onevl": [
+    {
+      "repo_id": "xiaomi-research/OneVL_NAVSIM",
+      "revision": "c1e893e9a03b8312f9328d2b51267836a9f7bf8a",
+      "directory": "checkpoints/OneVL_NAVSIM",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "model-00001-of-00007.safetensors",
+        "model-00002-of-00007.safetensors"
+      ]
+    }
+  ],
+  "impromptu-vla": [
+    {
+      "repo_id": "aaaaaap/ImpromptuVLAModel",
+      "revision": "33aa6f34af6eb2ed81d8148c7dfc32c81471caa4",
+      "directory": "checkpoints",
+      "allow": [
+        "3B_AD_finetune/*.json",
+        "3B_AD_finetune/*.safetensors",
+        "3B_AD_finetune/*.txt",
+        "3B_AD_finetune/*.model"
+      ]
+    }
+  ],
+  "qwen-drive-1.0-4b": [
+    {
+      "repo_id": "Qwen/Qwen-Drive-1.0-4B",
+      "revision": "28484089a7cc8c335cf5089fb0745cf7c49b6eaa",
+      "directory": "checkpoints/Qwen-Drive-1.0-4B",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "model.safetensors",
+        "planner-rl/config.json",
+        "planner-rl/model.safetensors"
+      ]
+    }
+  ],
+  "senna": [
+    {
+      "repo_id": "rb93dett/Senna",
+      "revision": "48aa4218b586ce89c1778a5dedecbbe0e2887fcf",
+      "directory": "checkpoints/Senna",
+      "allow": [
+        "*.json",
+        "*.txt",
+        "*.jinja",
+        "*.model",
+        "*.py",
+        "*.bin",
+        "*.safetensors"
+      ]
+    },
+    {
+      "repo_id": "openai/clip-vit-large-patch14-336",
+      "revision": "ce19dc912ca5cd21c8a653c79e251e808ccabcd1",
+      "directory": "checkpoints/clip-vit-large-patch14-336",
+      "allow": [
+        "config.json",
+        "preprocessor_config.json",
+        "pytorch_model.bin"
+      ]
+    }
+  ]
+}

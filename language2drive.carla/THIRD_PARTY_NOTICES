@@ -1,0 +1,35 @@
+Language2Drive CARLA — third-party notices
+
+The repository-level MIT license covers original Language2Drive code. It does
+not replace the licenses, copyright notices or attribution of the components
+listed below. Adapted files retain their original notices. Model checkpoints
+are not redistributed; their original publishers set their terms.
+
+Component                         Source / license location
+Alpamayo 1.5                      NVlabs/alpamayo1.5; model_zoo/alpamayo1.5/code/LICENSE (Apache-2.0)
+SimLingo                          RenzKa/simlingo; model_zoo/simlingo/code/LICENSE (Apache-2.0)
+LMDrive                           opendilab/LMDrive; model_zoo/lmdrive/code/LICENSE (Apache-2.0)
+LAVIS                             Salesforce/LAVIS; model_zoo/lmdrive/code/LAVIS/LICENSE.txt (BSD-3-Clause)
+OneVL                             xiaomi-research/onevl; model_zoo/onevl/code/LICENSE and NOTICE (Apache-2.0)
+Impromptu-VLA                      ahydchh/Impromptu-VLA; model_zoo/impromptu-vla/code/LICENSE (CC-BY-SA-4.0)
+Qwen-Drive-1.0                     QwenLM/Qwen-Drive-1.0; model_zoo/qwen-drive-1.0-4b/code/LICENSE (Apache-2.0)
+Senna                             hustvl/Senna; model_zoo/senna/code/LICENSE (Apache-2.0)
+SimLingo-derived agent utilities   team_code/LICENSE (Apache-2.0)
+Bench2Drive                       Thinklab-SJTU/Bench2Drive; language2drive/LICENSE (CC-BY-NC-ND-4.0)
+CARLA Leaderboard                 language2drive/leaderboard/LICENSE (MIT)
+CARLA ScenarioRunner              language2drive/scenario_runner/LICENSE (MIT)
+
+Exact model source revisions and the hashes of the distributed snapshots are
+recorded in model_zoo/SOURCES.json. Benchmark adapters, packaging and portability
+changes are local integrations with those snapshots.
+
+Resource bundles at Mike087/Language2Drive contain CARLA binaries, custom maps,
+benchmark assets and Python dependency overlays. CARLA's license is included at
+carla_runtime/LICENSE after extraction; Engine and other bundled components
+retain their accompanying licenses and notices. Python software dependencies
+retain their package licenses and *.dist-info metadata. FlashAttention is
+provided as its original wheel, which includes its distribution metadata.
+The benchmark resource bundle contains no model checkpoints.
+
+Nested copies of CARLA, Bench2Drive, LAVIS and other libraries retain their
+individual license files. Consult those files for component-specific terms.

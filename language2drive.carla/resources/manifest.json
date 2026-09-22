@@ -1,0 +1,82 @@
+{
+  "schema_version": "language2drive.resources.v1",
+  "repo_id": "Mike087/Language2Drive",
+  "repo_type": "dataset",
+  "revision": "e34b5b511ec0cbc120ddc03f7d60af01fb94289f",
+  "prefix": "language2drive.carla",
+  "model_weights_included": false,
+  "archives": [
+    {
+      "group": "benchmark",
+      "file": "archives/benchmark.tar.gz",
+      "size": 181328403,
+      "sha256": "d1cbade98a132f8bb8c13acd2a65ef647851e24aa5e0087255b253f1af12a8e3",
+      "extract_to": ".",
+      "unpacked_size": 856129410
+    },
+    {
+      "group": "carla",
+      "file": "archives/carla-runtime-linux-x86_64.tar.zst",
+      "size": 10579381309,
+      "sha256": "cc4927489cabb7f36c6d77af94047945025c689d6a75b8a90701e9a1e3ad5a53",
+      "extract_to": "carla_runtime",
+      "unpacked_size": 24053195235
+    },
+    {
+      "group": "flash-attention",
+      "file": "archives/flash-attention.tar.zst",
+      "size": 182413455,
+      "sha256": "b6dff7261b1ea46c39c808d1f6b6610e498462bb08a914117cf657a3a083c8e4",
+      "extract_to": ".",
+      "unpacked_size": 183208388
+    },
+    {
+      "group": "vendor-alpamayo1.5",
+      "file": "archives/vendor-alpamayo1.5.tar.gz",
+      "size": 17150326,
+      "sha256": "4acff3b04e051371b58f1964adb96f1076b40e2880c01d84edfa53e67e5cf071",
+      "extract_to": ".",
+      "unpacked_size": 65668770
+    },
+    {
+      "group": "vendor-language2drive_adapters",
+      "file": "archives/vendor-language2drive_adapters.tar.gz",
+      "size": 6874625,
+      "sha256": "4867e8d0ee0d752d90ed27798fa33c748f10b8aa3891a075f5a11e3f8f5b7920",
+      "extract_to": ".",
+      "unpacked_size": 21944057
+    },
+    {
+      "group": "vendor-lmdrive",
+      "file": "archives/vendor-lmdrive.tar.gz",
+      "size": 33635728,
+      "sha256": "b274614ddafe2addc636f0abce17f3e4cd0a79be49b553b79d5d91a7e5aa1e3c",
+      "extract_to": ".",
+      "unpacked_size": 129270839
+    },
+    {
+      "group": "vendor-onevl",
+      "file": "archives/vendor-onevl.tar.gz",
+      "size": 16500299,
+      "sha256": "f5e1b79bd3928e398a8f41162bb6958e0657b4181d73900d53572b6cbb71ad34",
+      "extract_to": ".",
+      "unpacked_size": 63172187
+    },
+    {
+      "group": "vendor-qwen-drive-1.0-4b",
+      "file": "archives/vendor-qwen-drive-1.0-4b.tar.zst",
+      "size": 3793334475,
+      "sha256": "f8a3731febd8cb7809b9cb12a97d9f16a51cf48c5bde93a400eea5927cb0bbab",
+      "extract_to": ".",
+      "unpacked_size": 6755960326
+    },
+    {
+      "group": "vendor-senna",
+      "file": "archives/vendor-senna.tar.gz",
+      "size": 1818093,
+      "sha256": "29eaec92061b1b5d3fef151a1e4687e7cad3533d0750a9dd4d4d610741358b40",
+      "extract_to": ".",
+      "unpacked_size": 4577201
+    }
+  ]
+}

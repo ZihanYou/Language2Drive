@@ -1,0 +1,5 @@
+{
+  "strategy": "always-right",
+  "steer": 0.28,
+  "target_speed_mps": 3.0
+}

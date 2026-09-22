@@ -1,0 +1,20 @@
+<routes>
+   <route id="1" town="parkinglotfish-new3">
+      <instruction>navigate to the D506 slot</instruction>
+      <simlingo_metadata benchmark_type="parking_vln_test" map_type="parking" path_id="614" start_vertex="159" start_name="END_2" end_vertex="136" end_name="D506_A807" end_vertex_type="slot" slot_label="D506" instruction="navigate to the D506 slot" start_speed_kmh="10" end_speed_kmh="0" weather_name="sunny" weather_code="30" source_file="parking_traj_graph_sequence_starts_150_151_158_159.json" sequence_vertex_edge="v_159 E163 v_149 E148 v_148 E147 v_147 E146 v_146 E145 v_145 E144 v_144 E143 v_143 E142 v_142 E141 v_141 E140 v_140 E139 v_139 E138 v_138 E137 v_137 E136 v_136"/>
+      <waypoints>
+         <position x="-157.7814" y="-41.5078" z="-0.0014"/>
+         <position x="-92.8077" y="-49.2536" z="-0.0014"/>
+      </waypoints>
+      <scenarios>
+         <scenario name="" type="">
+            <direction value="" />
+            <trigger_point x="0.0" y="0.0" yaw="0.0" z="0.0"/>
+         </scenario>
+      </scenarios>
+      <weathers>
+         <weather route_percentage="0" cloudiness="5" precipitation="0" precipitation_deposits="0" wetness="0" wind_intensity="8" sun_azimuth_angle="90" sun_altitude_angle="65" fog_density="0"/>
+         <weather route_percentage="100" cloudiness="10" precipitation="0" precipitation_deposits="0" wetness="0" wind_intensity="12" sun_azimuth_angle="135" sun_altitude_angle="55" fog_density="0"/>
+      </weathers>
+   </route>
+</routes>

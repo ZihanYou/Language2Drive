@@ -1,0 +1,18 @@
+{
+  "schema_version": "language2drive.benchmark_map_policy.v1",
+  "loadable_pcu_maps": [
+    "American-city0428",
+    "Town01",
+    "Town02",
+    "Town03",
+    "Town04",
+    "Town05",
+    "hanghailou3",
+    "hubeiwenli4",
+    "parkinglotfish-new3",
+    "yangluogang1"
+  ],
+  "excluded_pcu_maps": {
+    "Town06": "not installed in the current CARLA runtime; do not substitute PCUs"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "strategy": "fixed-branch",
+  "steer": 0.0,
+  "target_speed_mps": 3.0
+}

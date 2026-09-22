@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "layout": "fixed",
+  "seeds": [1, 2, 3],
+  "stability_seconds": 2.0,
+  "speed": {
+    "carla_runtime_conservative_cap_mps": 8.333333,
+    "control_margin_mps": 0.35,
+    "counterfactual_gap_mps": 2.0,
+    "cap_method": "carla_default_limit_conservative_cap_v1"
+  },
+  "parking": {"max_speed_mps": 0.2, "dwell_seconds": 3.0, "boundary_tolerance_m": 0.2, "heading_tolerance_deg": 15.0},
+  "route_length_ratio": [0.8, 1.25],
+  "deadline": {"oracle_multiplier": 1.5, "padding_seconds": 5.0, "round_up": true},
+  "quota": {"A": 32, "B": 32, "C": 32, "D": 32},
+  "dev_per_layer": 6,
+  "paraphrases_per_arm": 3,
+  "track": "standardized"
+}

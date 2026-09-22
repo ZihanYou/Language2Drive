@@ -1,0 +1,21 @@
+{
+  "schema_version": "language2drive.simlingo_adapter.v1",
+  "checkpoint": "checkpoints/simlingo/checkpoints/epoch=013.ckpt/pytorch_model.pt",
+  "internvl_backbone": "checkpoints/InternVL2-1B",
+  "parallel_port_gpu_map": {
+    "2000": 0,
+    "2010": 1,
+    "2070": 2,
+    "2030": 3,
+    "2040": 4,
+    "2050": 5,
+    "2060": 6,
+    "3000": 0,
+    "3010": 1,
+    "3020": 2,
+    "3030": 3,
+    "3040": 4,
+    "3050": 5,
+    "3060": 6
+  }
+}

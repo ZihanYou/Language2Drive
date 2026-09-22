@@ -1,0 +1,21 @@
+{
+  "schema_version": "language2drive.model_adapter.v1",
+  "model_name": "Senna-VLM-7B",
+  "source_dir": "code",
+  "required_files": [
+    "checkpoints/Senna/config.json",
+    "checkpoints/Senna/pytorch_model.bin.index.json",
+    "checkpoints/clip-vit-large-patch14-336/config.json",
+    "checkpoints/clip-vit-large-patch14-336/preprocessor_config.json",
+    "checkpoints/clip-vit-large-patch14-336/pytorch_model.bin"
+  ],
+  "required_dirs": ["checkpoints/Senna", "checkpoints/clip-vit-large-patch14-336"],
+  "backend": {
+    "type": "senna_high_level",
+    "model_path": "checkpoints/Senna",
+    "vision_tower_path": "checkpoints/clip-vit-large-patch14-336"
+  },
+  "runtime": {"inference_interval_frames": 20, "plan_hold_frames": 60, "max_waypoints": 8, "max_waypoint_range_m": 80.0, "sampling_seed": 0},
+  "camera": {"views": ["front", "left", "right", "rear", "back_left", "back_right"], "width": 896, "height": 512, "fov": 100},
+  "control": {"wheelbase_m": 2.8, "max_steer_angle_rad": 0.7, "lookahead_m": 3.5, "lookahead_speed_gain": 0.35, "max_target_speed_mps": 8.0, "throttle_kp": 0.3, "brake_kp": 0.35, "max_throttle": 0.7}
+}

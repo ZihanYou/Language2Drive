@@ -1,0 +1,11 @@
+{
+  "schema_version": "language2drive.model_adapter.v1",
+  "model_name": "OneVL-NAVSIM",
+  "source_dir": "code",
+  "required_files": ["checkpoints/OneVL_NAVSIM/config.json", "checkpoints/OneVL_NAVSIM/model.safetensors.index.json", "checkpoints/OneVL_NAVSIM/preprocessor_config.json", "checkpoints/OneVL_NAVSIM/video_preprocessor_config.json", "checkpoints/OneVL_NAVSIM/tokenizer.json", "checkpoints/OneVL_NAVSIM/tokenizer_config.json", "checkpoints/OneVL_NAVSIM/special_tokens_map.json", "checkpoints/OneVL_NAVSIM/added_tokens.json", "checkpoints/OneVL_NAVSIM/chat_template.jinja", "checkpoints/OneVL_NAVSIM/merges.txt", "checkpoints/OneVL_NAVSIM/vocab.json"],
+  "required_dirs": ["checkpoints/OneVL_NAVSIM", "vendor/transformers"],
+  "backend": {"type": "transformers_trajectory", "model_path": "checkpoints/OneVL_NAVSIM", "onevl_latent_prefix": true, "num_latent": 2, "num_latent_vis": 4, "answer_prefix": "[", "device_map_auto": true, "max_gpu_memory_gib": 19, "max_cpu_memory_gib": 96},
+  "runtime": {"inference_interval_frames": 20, "plan_hold_frames": 60, "max_new_tokens": 256, "waypoint_dt_s": 0.5, "max_waypoints": 8, "max_waypoint_range_m": 80.0, "sampling_seed": 0},
+  "camera": {"views": ["front"], "width": 896, "height": 512, "fov": 100},
+  "control": {"wheelbase_m": 2.8, "max_steer_angle_rad": 0.7, "lookahead_m": 3.5, "lookahead_speed_gain": 0.35, "max_target_speed_mps": 8.0, "throttle_kp": 0.3, "brake_kp": 0.35, "max_throttle": 0.7}
+}
