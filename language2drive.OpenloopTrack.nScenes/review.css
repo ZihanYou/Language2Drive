@@ -1,0 +1,16 @@
+html{scroll-behavior:smooth}body{margin:20px auto;max-width:1200px;padding:0 18px}
+.review-toolbar{position:sticky;top:0;z-index:10;background:#1d3048;border:1px solid #55708a;padding:12px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.review-toolbar input{width:180px}.review-toolbar a{color:#9de3ff}
+.review-form{background:#1a2a40;border:1px solid #55708a;padding:14px;margin:14px 0 18px;display:grid;gap:12px}
+.review-form label{display:block}.review-form select,.review-form textarea,.review-toolbar input{background:#fff;color:#102034;border:0;border-radius:3px;padding:7px;font:inherit}
+.review-form select{max-width:330px}.review-form textarea{width:calc(100% - 16px);min-height:90px;resize:vertical}
+.review-criteria{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px}
+.review-criteria label{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.review-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.review-form button{background:#54cfff;color:#102034;border:0;border-radius:3px;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+.review-form button:disabled{opacity:.5;cursor:wait}.review-status{font-weight:600}.review-error{color:#ffb1b1}
+article[data-decision="approve"]{border-left:5px solid #4fcf91;padding-left:10px}
+article[data-decision="reject"]{border-left:5px solid #ff697d;padding-left:10px}
+article[data-decision="needs_more_evidence"]{border-left:5px solid #ffd071;padding-left:10px}
+.review-history{white-space:pre-wrap;background:#101a2b;padding:8px;max-height:220px;overflow:auto}
+@media(max-width:700px){.cameras{grid-template-columns:1fr!important}.review-toolbar{position:static}}

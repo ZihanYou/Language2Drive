@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+data/
+artifacts/
+outputs/
+*.sqlite3
+review_access_token
+private_sidecars.jsonl
+review_sheet*.csv
+
+.conda/
+.cache/
+assets/
+*.zip
+*.tar.gz

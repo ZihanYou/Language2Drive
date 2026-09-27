@@ -1,0 +1,350 @@
+{
+  "status": "paper_aligned_release",
+  "release_version": "nuscenes-test-v1.0.0",
+  "trajectory": {
+    "horizon_s": 3.0,
+    "dt_s": 0.25,
+    "timestamps_s": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "future_points": 12,
+    "timestamp_tolerance_s": 1e-05,
+    "coordinate_frame": "ego_at_anchor",
+    "reference_point": "ego_pose_origin",
+    "axes": [
+      "x_forward",
+      "y_left"
+    ],
+    "position_unit": "m",
+    "origin_included_in_output": false,
+    "origin_inserted_for_differences": [
+      0.0,
+      0.0
+    ],
+    "progress_definition": "Euclidean start-to-end displacement, unsigned",
+    "minimum_progress_m": 8.0
+  },
+  "input": {
+    "history_max_keyframes": 4,
+    "history_gap_for_candidate_s": [
+      0.4,
+      0.6
+    ],
+    "channels": [
+      "CAM_FRONT",
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT",
+      "LIDAR_TOP"
+    ],
+    "anchor_pose_source": "LIDAR_TOP keyframe ego_pose",
+    "quaternion_order": "wxyz"
+  },
+  "construction": {
+    "one_pcu_per_scene": true,
+    "lane_first_then_speed_excludes_lane_scenes": true,
+    "lane_initial_speed_mps": [
+      4.5,
+      9.0
+    ],
+    "speed_initial_speed_mps": [
+      5.5,
+      6.5
+    ],
+    "current_lane": {
+      "spatial_query_radius_m": 2.0,
+      "heading_diff_max_deg": 30.0,
+      "polygon_distance_strict_max_m": 1.0,
+      "tangent_probe_m": 0.5
+    },
+    "adjacent_lane": {
+      "query_radius_m": 7.0,
+      "lane_polygon_gap_max_m": 0.8,
+      "heading_diff_max_deg": 20.0,
+      "target_side_lateral_m": [
+        2.4,
+        5.0
+      ],
+      "abs_forward_max_m": 5.0,
+      "divider_segments_must_contain": "DASHED",
+      "ranking": "abs(lateral-3.5)+0.1*abs(forward)",
+      "side_search_order": [
+        "left",
+        "right"
+      ]
+    },
+    "path_extension": {
+      "desired_length_m": 80,
+      "endpoint_gap_max_m": 3.0,
+      "turn_strict_max_deg": 35.0,
+      "ranking": "turn_rad+0.02*gap_m",
+      "deduplicate_endpoint_distance_strict_m": 0.1,
+      "representation": "Polyline of arcline segment start/end poses, not dense exact arcline"
+    },
+    "witness": {
+      "path_end_reserve_m": 0.5,
+      "initial_lateral_offset_fade_s": 1.0,
+      "lane_change_blend_start_s": 0.4,
+      "lane_change_blend_duration_s": 2.0,
+      "lane_change_blend": "u^2*(3-2u)",
+      "speed_transition_duration_s": 1.0,
+      "speed_targets_mps": [
+        4.0,
+        8.0
+      ],
+      "lane_builder_progress_window_s": [
+        0.25,
+        3.0
+      ],
+      "final_scorer_progress_window_s": [
+        0.0,
+        3.0
+      ]
+    }
+  },
+  "eligibility": {
+    "footprint_length_m": 5.0,
+    "footprint_width_m": 2.0,
+    "origin_rectangles_xy_m": {
+      "rearward": [
+        -1.5,
+        3.5,
+        -1.0,
+        1.0
+      ],
+      "center": [
+        -2.5,
+        2.5,
+        -1.0,
+        1.0
+      ]
+    },
+    "sweep_method": "Convex hull of adjacent endpoint body polygons, 12 segments",
+    "local_drivable_query_buffer_m": 8.0,
+    "drivable_union_buffer_m": 0.2,
+    "pass_rule": "Each arm passes at least one origin assumption, not necessarily the same assumption",
+    "lidar_aid": {
+      "z_m": [
+        0.6,
+        2.5
+      ],
+      "x_m": [
+        -5,
+        40
+      ],
+      "abs_y_max_m": 12,
+      "corridor_radius_strict_m": 1.7,
+      "witness_time_scope_s": [
+        1.0,
+        3.0
+      ],
+      "degenerate_segment_squared_length_skip_below": 1e-06,
+      "high_review_priority_if_points_gt": 20,
+      "automatic_rejection": false
+    },
+    "human_criteria": [
+      "observable",
+      "arm_0_feasible",
+      "arm_1_feasible",
+      "mutually_exclusive",
+      "traffic_clearance",
+      "map_binding"
+    ],
+    "approve_requires_all_yes": true,
+    "notes_length_chars": [
+      10,
+      2000
+    ],
+    "reviewer_length_chars": [
+      1,
+      80
+    ],
+    "freeze_min_pcus_default": 40,
+    "split_method": "Per location sort log tokens by SHA256; first max(1,round(0.25*n_logs)) logs -> dev; intersect approvals"
+  },
+  "binary": {
+    "lane_polygon_buffer_m": 0.15,
+    "lane_polygon_type": "CAR",
+    "missing_lane_polygon_tokens": "skip (including connectors)",
+    "lane_change_hold_times_s": [
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "lane_keep_times_s": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "speed_band_mps": {
+      "high": [
+        7.2,
+        8.8
+      ],
+      "low": [
+        3.2,
+        4.8
+      ]
+    },
+    "speed_window_interval_end_times_s": [
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "speed_window_first_interval_s": [
+      1.0,
+      1.25
+    ],
+    "inclusive_speed_boundaries": true,
+    "success": "valid AND own_contract AND NOT opposite_contract; both contracts include progress>=8m",
+    "semantics_excludes_motion_and_drivable_checks": true,
+    "motion": {
+      "max_speed_mps": 17.0,
+      "max_initial_speed_difference_mps": 3.0,
+      "max_abs_acceleration_mps2": 5.0,
+      "max_abs_yaw_rate_radps": 1.0
+    },
+    "drivable_center_tolerance_m": 0.2,
+    "dynamic_safety": "unknown_no_test_instance_annotations",
+    "bootstrap": {
+      "iterations": 1000,
+      "seed": 2026,
+      "unit": "scene",
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "implementation": "random.Random; sorted-sample floor index"
+    }
+  },
+  "continuous": {
+    "status": "paper_appendix_E3",
+    "raw_scale": "SCS PCS NBD [0,1]; SRG [-1,1]",
+    "report_multiplier": 100,
+    "SCS": "mean_PCU((g0*coverage_own0+g1*coverage_own1)/2)",
+    "PCS": "mean_PCU(min(g0*coverage_own0,g1*coverage_own1))",
+    "progress_gate": "g=min(1,Euclidean_endpoint_displacement/8m)",
+    "SRG": "mean_valid_PCU((mean_t(p0(tau0))-mean_t(p0(tau1)))/2)",
+    "distance_preference": "p0=(d1-d0)/(d0+d1); if d0+d1==0 then 0; no epsilon or progress gate",
+    "SRG_common_times_lane_s": [
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "SRG_common_times_speed_s": [
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0
+    ],
+    "NBD": "mean_valid_PCU(sum_t(norm(tau0-tau1))/sum_t(norm(tau0)+norm(tau1))); denominator==0 -> 0",
+    "SCS_PCS_invalid_policy": "invalid arm C=0; all PCUs retained",
+    "SRG_NBD_invalid_policy": "valid pair only; retain valid-pair counts",
+    "main_aggregation": "equal PCU",
+    "supplement_aggregation": "equal family (1/2 each)",
+    "bootstrap": {
+      "iterations": 2000,
+      "seed": 2026,
+      "unit": "scene",
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "implementation": "numpy.default_rng; numpy.quantile linear interpolation"
+    },
+    "diagnostics": {
+      "speed_mae_targets_kmh": [
+        15,
+        30
+      ],
+      "speed_response_deadzone_kmh": 1.0,
+      "lane_preference_response_deadzone_m": 0.2,
+      "positive_response_threshold": 1e-06,
+      "scope_coverage_invalid": 0,
+      "distance_error_invalid": "excluded, valid counts retained",
+      "paraphrase_comparisons_heldout": 360,
+      "SRG_coverage": "legacy supplemental, not main SRG"
+    }
+  },
+  "inference": {
+    "conditions": [
+      "canonical",
+      "masked",
+      "shuffled",
+      "paraphrase_1",
+      "paraphrase_2",
+      "paraphrase_3"
+    ],
+    "reported_seeds": [
+      0
+    ],
+    "native_future_grid_current_four_models_s": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "resampling": "prepend origin and linear interpolation to 0.25s; no future extrapolation",
+    "masked_runner_input": "empty string (adapter may render neutral text)",
+    "shuffled": "next sorted PCU in same family supplies opposite-arm instruction; fallback own opposite arm",
+    "shuffle_donor_pool_current_experiments": "all 75 PCUs before heldout filtering",
+    "score_completed_missing_policy": "reject incomplete requested subset"
+  },
+  "profile": "nuscenes-paper-1.0",
+  "reporting": {
+    "main_names": [
+      "SemSISR",
+      "SemCFPS",
+      "SCS",
+      "PCS"
+    ],
+    "scale": "0-100",
+    "default_wordings": [
+      "canonical"
+    ],
+    "controls_excluded_from_wording_average": true,
+    "source_equations": [
+      34,
+      35,
+      37,
+      38,
+      39,
+      40
+    ]
+  }
+}

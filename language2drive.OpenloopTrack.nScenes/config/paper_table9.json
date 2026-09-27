@@ -1,0 +1,14 @@
+{
+  "profile": "nuscenes-paper-1.0",
+  "paper_table": 9,
+  "split": "heldout",
+  "headline_wordings": ["canonical"],
+  "seed": 0,
+  "scale": "0-100",
+  "models": [
+    {"id":"Impromptu-VLA-3B-3view","label":"Impromptu-VLA","filename":"Impromptu-VLA-3B-3view.jsonl","paper":{"SemSISR":15.83,"SemCFPS":0.00,"SCS":20.21,"PCS":0.00}},
+    {"id":"UniDriveVLA-Base-Stage3","label":"UniDriveVLA","filename":"UniDriveVLA-Base-Stage3.jsonl","paper":{"SemSISR":16.67,"SemCFPS":0.00,"SCS":25.00,"PCS":0.00}},
+    {"id":"OpenDriveVLA-0.5B","label":"OpenDriveVLA-0.5B","filename":"OpenDriveVLA-0.5B.jsonl","paper":{"SemSISR":13.33,"SemCFPS":3.33,"SCS":19.06,"PCS":4.30}},
+    {"id":"OmniDrive","label":"OmniDrive","filename":"OmniDrive.jsonl","paper":{"SemSISR":7.50,"SemCFPS":0.00,"SCS":29.24,"PCS":8.61}}
+  ]
+}

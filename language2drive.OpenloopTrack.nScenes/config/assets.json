@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "profile": "nuscenes-paper-1.0",
+  "repo_id": "Mike087/Language2Drive",
+  "repo_type": "dataset",
+  "revision": "f04770cfb8d5cb412c0fc4e7508ac75c42e4ce2e",
+  "archive": "language2drive.OpenloopTrack.nScenes/nuscenes-paper-1.0-replay.zip",
+  "sha256": "014a284f96201f0d012410507f513c3e808132ab7ba57c01983bbc16e3dd4513",
+  "size_bytes": 14346383,
+  "files": [
+    {
+      "path": "assets/DATA_LICENSE.md",
+      "size_bytes": 839,
+      "sha256": "db92d9417abf4da379dd734443f535d008afc8a957d45d0f6ec2d3e57b45d013"
+    },
+    {
+      "path": "assets/predictions/Impromptu-VLA-3B-3view.jsonl",
+      "size_bytes": 437468,
+      "sha256": "7f85cead1c00cfd886271fdf7be48c09288fc8ac2745e870cc04b822ff69e222"
+    },
+    {
+      "path": "assets/predictions/OmniDrive.jsonl",
+      "size_bytes": 429446,
+      "sha256": "f49460e25530613367f0b9a5cbdfeee6507f5c8f297d3ae9b869b754567c1bec"
+    },
+    {
+      "path": "assets/predictions/OpenDriveVLA-0.5B.jsonl",
+      "size_bytes": 429839,
+      "sha256": "8b1f701403b93119fc9a8f3d424dca53c63c9482f917b166792c4d73969a0924"
+    },
+    {
+      "path": "assets/predictions/UniDriveVLA-Base-Stage3.jsonl",
+      "size_bytes": 656490,
+      "sha256": "e4ade1cb862db7353f2ac6711371182986f27db27ec7fd5b81ab419e2cdce647"
+    },
+    {
+      "path": "data/nuscenes/maps/expansion/boston-seaport.json",
+      "size_bytes": 16244922,
+      "sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59"
+    },
+    {
+      "path": "data/nuscenes/maps/expansion/singapore-onenorth.json",
+      "size_bytes": 13809722,
+      "sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02"
+    },
+    {
+      "path": "data/nuscenes/maps/expansion/singapore-queenstown.json",
+      "size_bytes": 11011530,
+      "sha256": "c7e75f5a5643c4831aae1c99a0fdcc61e9ba3c01f98d922f0fafa34ea1062927"
+    },
+    {
+      "path": "releases/nuscenes-test-v1.0.0/private_sidecars.jsonl",
+      "size_bytes": 213555,
+      "sha256": "f2506b158aa34440999ef6215fe21dc08fccd5138d6db5a0ac4fdc5e8d9ea7ce"
+    },
+    {
+      "path": "releases/nuscenes-test-v1.0.0/public_inputs.jsonl",
+      "size_bytes": 958981,
+      "sha256": "b2d3a6e2deccb91e1e7d1694ff9589d5577eb89e834c674dc36768bd213962d5"
+    },
+    {
+      "path": "releases/nuscenes-test-v1.0.0/release_manifest.json",
+      "size_bytes": 5246,
+      "sha256": "11ddaffc73a963211d0abcc28e6b1abd1c2eb8ddd5d9bbdb8606105c219e3c7f"
+    }
+  ],
+  "public_pcus": 75,
+  "heldout_pcus": 60,
+  "prediction_files": 4,
+  "predictions_per_model": 720,
+  "data_license": "CC-BY-NC-SA-4.0",
+  "source": "https://www.nuscenes.org/",
+  "download_endpoint": "https://hf-mirror.com",
+  "private": true
+}

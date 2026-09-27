@@ -1,0 +1,28 @@
+{
+  "profile": "nuscenes-paper-1.0",
+  "paper_sha256": "2dc25f30d9dfdb597fa7465b075919896804eb62d50fd50df8e0198608934150",
+  "equations": [
+    34,
+    35,
+    37,
+    38,
+    39,
+    40
+  ],
+  "tables": [
+    9,
+    14,
+    15
+  ],
+  "appendices": [
+    "E.2",
+    "E.3",
+    "E.6"
+  ],
+  "headline_wordings": [
+    "canonical"
+  ],
+  "scoring_rule": "nuScenes-specific E.3",
+  "report_scale": "0-100",
+  "frozen_binary_scorer_sha256": "436bf1fcb8393b2b2da27974c363eef813dc73849a7063b1aeb947c29fef1eeb"
+}

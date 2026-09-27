@@ -1,0 +1,156 @@
+{
+  "release_version": "nuscenes-test-v1.0.0",
+  "source_catalog": {
+    "dataset_version": "v1.0-test",
+    "counts": {
+      "anchors": 6008,
+      "boston-seaport": 3318,
+      "scenes": 150,
+      "singapore-onenorth": 796,
+      "singapore-queenstown": 1894
+    },
+    "missing": {},
+    "annotation_records": 0,
+    "instance_records": 0,
+    "hash_algorithm": "sha256/canonical-json"
+  },
+  "splits": {
+    "all": {
+      "pcus": 75,
+      "scenes": 75,
+      "logs": 15,
+      "canonical_arms": 150,
+      "paraphrase_arms": 450,
+      "six_condition_outputs_per_seed": 900,
+      "families": {
+        "scoped_speed": 53,
+        "lane_change_keep": 22
+      },
+      "lane_change_directions": {
+        "left": 12,
+        "right": 10
+      },
+      "locations": {
+        "boston-seaport": 41,
+        "singapore-onenorth": 12,
+        "singapore-queenstown": 22
+      },
+      "history_frame_counts": {
+        "4": 67,
+        "1": 4,
+        "3": 3,
+        "2": 1
+      },
+      "history_lag_s_min_max": [
+        0.400365,
+        2.100166
+      ],
+      "initial_speed_mps_by_family": {
+        "lane_change_keep": [
+          4.745680312958465,
+          8.878579980875495
+        ],
+        "scoped_speed": [
+          5.521364533168441,
+          6.491924478079748
+        ]
+      }
+    },
+    "dev": {
+      "pcus": 15,
+      "scenes": 15,
+      "logs": 4,
+      "canonical_arms": 30,
+      "paraphrase_arms": 90,
+      "six_condition_outputs_per_seed": 180,
+      "families": {
+        "lane_change_keep": 5,
+        "scoped_speed": 10
+      },
+      "lane_change_directions": {
+        "right": 2,
+        "left": 3
+      },
+      "locations": {
+        "singapore-onenorth": 4,
+        "boston-seaport": 7,
+        "singapore-queenstown": 4
+      },
+      "history_frame_counts": {
+        "4": 15
+      },
+      "history_lag_s_min_max": [
+        0.499324,
+        2.100144
+      ],
+      "initial_speed_mps_by_family": {
+        "lane_change_keep": [
+          6.348376533895618,
+          8.878579980875495
+        ],
+        "scoped_speed": [
+          5.5882073177167095,
+          6.471661313321356
+        ]
+      }
+    },
+    "heldout": {
+      "pcus": 60,
+      "scenes": 60,
+      "logs": 11,
+      "canonical_arms": 120,
+      "paraphrase_arms": 360,
+      "six_condition_outputs_per_seed": 720,
+      "families": {
+        "scoped_speed": 43,
+        "lane_change_keep": 17
+      },
+      "lane_change_directions": {
+        "left": 9,
+        "right": 8
+      },
+      "locations": {
+        "boston-seaport": 34,
+        "singapore-onenorth": 8,
+        "singapore-queenstown": 18
+      },
+      "history_frame_counts": {
+        "4": 52,
+        "1": 4,
+        "3": 3,
+        "2": 1
+      },
+      "history_lag_s_min_max": [
+        0.400365,
+        2.100166
+      ],
+      "initial_speed_mps_by_family": {
+        "lane_change_keep": [
+          4.745680312958465,
+          8.848169506335916
+        ],
+        "scoped_speed": [
+          5.521364533168441,
+          6.491924478079748
+        ]
+      }
+    }
+  },
+  "construction_stages": {
+    "raw": {
+      "pcus": 83,
+      "families": {
+        "scoped_speed": 61,
+        "lane_change_keep": 22
+      }
+    },
+    "eligible": {
+      "pcus": 82,
+      "families": {
+        "scoped_speed": 60,
+        "lane_change_keep": 22
+      }
+    }
+  },
+  "split_log_overlap": 0
+}
