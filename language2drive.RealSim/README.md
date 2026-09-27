@@ -23,6 +23,23 @@ For air-gapped installation, use `sh scripts/setup.sh --offline --wheelhouse /pa
 Use `--index-url https://pypi.org/simple` to select another index, or explicitly
 opt into the configured proxy with `--keep-proxy`. See [deployment guide](docs/DEPLOYMENT.md).
 
+## Create the GPU-runtime Python environment
+
+```sh
+sh scripts/setup_runtime.sh --install-rust
+```
+
+On Linux x86_64 this creates an isolated Python 3.12 environment from the pinned
+AlpaSim checkout and frozen dependency lock, compiles protobufs, installs the
+RealSim compatibility overlay, and checks imports and CPU regressions. It does
+not upload a virtual environment, install system GPU drivers, download model
+weights, or start a closed-loop experiment. Use `--plan` to inspect without changes.
+See the [one-command environment and troubleshooting guide](docs/ENVIRONMENT_SETUP_ZH.md).
+
+The 30-PCU core data, annotations and runtime configurations are hosted in the
+private dataset repository [Mike087/Language2Drive](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main/langauge2drive.RealSim).
+Access permission is required. See [asset download/upload instructions](docs/ASSETS_AND_PRIVATE_UPLOAD_ZH.md).
+
 ## Manual quick start (CPU, no model downloads)
 
 Use Python 3.10 or newer; Python 3.12 is the recommended review environment.

@@ -7,6 +7,8 @@ build/
 dist/
 artifacts/
 .runtime/
+.runtime-env/
+assets/
 *.private.json
 *.private.jsonl
 model_zoo/

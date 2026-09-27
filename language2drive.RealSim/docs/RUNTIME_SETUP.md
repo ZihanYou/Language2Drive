@@ -1,5 +1,9 @@
 # Runtime integration
 
+Use `sh scripts/setup_runtime.sh --install-rust` for an isolated installation from
+the fixed upstream revision and lock. See [environment creation and troubleshooting](ENVIRONMENT_SETUP_ZH.md).
+No pre-existing Python environment archive is required or distributed.
+
 ## Two environments
 
 1. **Offline evaluator environment:** Python 3.10+, this package and pytest.

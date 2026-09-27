@@ -4,7 +4,7 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 133
+      "bytes": 155
     },
     {
       "path": "LICENSE",
@@ -16,7 +16,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 4424
+      "bytes": 5349
+    },
+    {
+      "path": "config/alpasim-runtime.uv.lock",
+      "bytes": 517915
     },
     {
       "path": "config/alpasim_realsim.json",
@@ -31,12 +35,20 @@
       "bytes": 234
     },
     {
+      "path": "docs/ASSETS_AND_PRIVATE_UPLOAD_ZH.md",
+      "bytes": 4810
+    },
+    {
       "path": "docs/DATA_FORMAT.md",
       "bytes": 2879
     },
     {
       "path": "docs/DEPLOYMENT.md",
       "bytes": 3468
+    },
+    {
+      "path": "docs/ENVIRONMENT_SETUP_ZH.md",
+      "bytes": 10873
     },
     {
       "path": "docs/METRICS.md",
@@ -52,11 +64,11 @@
     },
     {
       "path": "docs/RUNTIME_SETUP.md",
-      "bytes": 3811
+      "bytes": 4077
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 1901
+      "bytes": 3545
     },
     {
       "path": "pyproject.toml",
@@ -64,7 +76,7 @@
     },
     {
       "path": "scripts/check_anonymity.py",
-      "bytes": 2739
+      "bytes": 3377
     },
     {
       "path": "scripts/deploy.py",
@@ -75,12 +87,32 @@
       "bytes": 1790
     },
     {
+      "path": "scripts/doctor_runtime.py",
+      "bytes": 3172
+    },
+    {
+      "path": "scripts/hub_assets.py",
+      "bytes": 7418
+    },
+    {
+      "path": "scripts/package_benchmark.py",
+      "bytes": 7559
+    },
+    {
       "path": "scripts/score.sh",
       "bytes": 393
     },
     {
       "path": "scripts/setup.sh",
       "bytes": 211
+    },
+    {
+      "path": "scripts/setup_runtime.py",
+      "bytes": 11421
+    },
+    {
+      "path": "scripts/setup_runtime.sh",
+      "bytes": 224
     },
     {
       "path": "src/language2drive_realsim/__init__.py",
@@ -663,6 +695,10 @@
       "bytes": 1204
     },
     {
+      "path": "tests/test_hub_assets.py",
+      "bytes": 2971
+    },
+    {
       "path": "tests/test_io.py",
       "bytes": 584
     },
@@ -683,6 +719,10 @@
       "bytes": 3801
     },
     {
+      "path": "tests/test_package_benchmark.py",
+      "bytes": 1758
+    },
+    {
       "path": "tests/test_paired_semantic_metrics_all30_20260923.py",
       "bytes": 3746
     },
@@ -701,6 +741,10 @@
     {
       "path": "tests/test_review_entrypoint.py",
       "bytes": 6456
+    },
+    {
+      "path": "tests/test_runtime_setup.py",
+      "bytes": 2993
     },
     {
       "path": "tests/test_schema_compiler.py",
