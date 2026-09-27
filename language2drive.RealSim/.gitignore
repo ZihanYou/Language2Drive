@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+artifacts/
+.runtime/
+*.private.json
+*.private.jsonl
+model_zoo/

@@ -1,0 +1,4 @@
+# RealSim host-runtime overlay, applied AFTER the untouched upstream frozen lock.
+# do-mpc 5.1.1 imports casadi.tools.SX/MX; CasADi 3.8 removed these exports.
+# Validated with the official nonlinear controller's real gRPC propagation step.
+casadi==3.7.2

@@ -1,0 +1,723 @@
+{
+  "format": "realsim-source-manifest-v2",
+  "contents": "source_code_and_synthetic_tests_not_experiment_data",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 133
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 923
+    },
+    {
+      "path": "README.md",
+      "bytes": 4424
+    },
+    {
+      "path": "config/alpasim_realsim.json",
+      "bytes": 794
+    },
+    {
+      "path": "config/runtime-compatibility.txt",
+      "bytes": 254
+    },
+    {
+      "path": "config/threshold_profile.json",
+      "bytes": 234
+    },
+    {
+      "path": "docs/DATA_FORMAT.md",
+      "bytes": 2879
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "bytes": 3468
+    },
+    {
+      "path": "docs/METRICS.md",
+      "bytes": 6770
+    },
+    {
+      "path": "docs/PAPER_ALIGNMENT.md",
+      "bytes": 2615
+    },
+    {
+      "path": "docs/REVIEW_GUIDE_ZH.md",
+      "bytes": 3242
+    },
+    {
+      "path": "docs/RUNTIME_SETUP.md",
+      "bytes": 3811
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 1901
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1435
+    },
+    {
+      "path": "scripts/check_anonymity.py",
+      "bytes": 2739
+    },
+    {
+      "path": "scripts/deploy.py",
+      "bytes": 3500
+    },
+    {
+      "path": "scripts/doctor.py",
+      "bytes": 1790
+    },
+    {
+      "path": "scripts/score.sh",
+      "bytes": 393
+    },
+    {
+      "path": "scripts/setup.sh",
+      "bytes": 211
+    },
+    {
+      "path": "src/language2drive_realsim/__init__.py",
+      "bytes": 69
+    },
+    {
+      "path": "src/language2drive_realsim/__main__.py",
+      "bytes": 80
+    },
+    {
+      "path": "src/language2drive_realsim/acquisition.py",
+      "bytes": 9261
+    },
+    {
+      "path": "src/language2drive_realsim/agent_curation.py",
+      "bytes": 2353
+    },
+    {
+      "path": "src/language2drive_realsim/agent_drafts.py",
+      "bytes": 23482
+    },
+    {
+      "path": "src/language2drive_realsim/alpasim_bridge.py",
+      "bytes": 23028
+    },
+    {
+      "path": "src/language2drive_realsim/alpasim_driver_service.py",
+      "bytes": 5621
+    },
+    {
+      "path": "src/language2drive_realsim/alpasim_model.py",
+      "bytes": 5461
+    },
+    {
+      "path": "src/language2drive_realsim/alpasim_oracle_driver_service.py",
+      "bytes": 4138
+    },
+    {
+      "path": "src/language2drive_realsim/asl.py",
+      "bytes": 990
+    },
+    {
+      "path": "src/language2drive_realsim/asl_diagnostics.py",
+      "bytes": 5920
+    },
+    {
+      "path": "src/language2drive_realsim/audit.py",
+      "bytes": 16260
+    },
+    {
+      "path": "src/language2drive_realsim/bilateral_lane.py",
+      "bytes": 11704
+    },
+    {
+      "path": "src/language2drive_realsim/bilateral_lane_use.py",
+      "bytes": 3092
+    },
+    {
+      "path": "src/language2drive_realsim/bilateral_pair_smoke.py",
+      "bytes": 11457
+    },
+    {
+      "path": "src/language2drive_realsim/bilateral_protocol.py",
+      "bytes": 3890
+    },
+    {
+      "path": "src/language2drive_realsim/branch_authoring.py",
+      "bytes": 15418
+    },
+    {
+      "path": "src/language2drive_realsim/branch_diagnostics.py",
+      "bytes": 7725
+    },
+    {
+      "path": "src/language2drive_realsim/branch_gate_prefilter.py",
+      "bytes": 3976
+    },
+    {
+      "path": "src/language2drive_realsim/branch_pair_smoke.py",
+      "bytes": 17546
+    },
+    {
+      "path": "src/language2drive_realsim/branch_path_search.py",
+      "bytes": 5142
+    },
+    {
+      "path": "src/language2drive_realsim/branch_shared_surface.py",
+      "bytes": 5792
+    },
+    {
+      "path": "src/language2drive_realsim/camera_timing.py",
+      "bytes": 3745
+    },
+    {
+      "path": "src/language2drive_realsim/cli.py",
+      "bytes": 31288
+    },
+    {
+      "path": "src/language2drive_realsim/cohort_integrity.py",
+      "bytes": 13930
+    },
+    {
+      "path": "src/language2drive_realsim/compat.py",
+      "bytes": 623
+    },
+    {
+      "path": "src/language2drive_realsim/compiler.py",
+      "bytes": 5732
+    },
+    {
+      "path": "src/language2drive_realsim/component_scoring.py",
+      "bytes": 10735
+    },
+    {
+      "path": "src/language2drive_realsim/configs/__init__.py",
+      "bytes": 74
+    },
+    {
+      "path": "src/language2drive_realsim/configs/driver/l2d_alpamayo1_5.yaml",
+      "bytes": 1229
+    },
+    {
+      "path": "src/language2drive_realsim/configs/driver/l2d_alpamayo2_super.yaml",
+      "bytes": 1392
+    },
+    {
+      "path": "src/language2drive_realsim/configs/driver/l2d_lmdrive_null_lidar.yaml",
+      "bytes": 4582
+    },
+    {
+      "path": "src/language2drive_realsim/configs/driver/l2d_privileged_oracle.yaml",
+      "bytes": 721
+    },
+    {
+      "path": "src/language2drive_realsim/configs/driver/l2d_simlingo.yaml",
+      "bytes": 1478
+    },
+    {
+      "path": "src/language2drive_realsim/constants.py",
+      "bytes": 1462
+    },
+    {
+      "path": "src/language2drive_realsim/corridor_sections.py",
+      "bytes": 4648
+    },
+    {
+      "path": "src/language2drive_realsim/crosswalk_authoring.py",
+      "bytes": 5412
+    },
+    {
+      "path": "src/language2drive_realsim/crosswalk_speed_scope.py",
+      "bytes": 8241
+    },
+    {
+      "path": "src/language2drive_realsim/curation_review.py",
+      "bytes": 38775
+    },
+    {
+      "path": "src/language2drive_realsim/curation_review_server.py",
+      "bytes": 27900
+    },
+    {
+      "path": "src/language2drive_realsim/curvature_path.py",
+      "bytes": 12691
+    },
+    {
+      "path": "src/language2drive_realsim/diagnostic_prompt_variants.py",
+      "bytes": 1285
+    },
+    {
+      "path": "src/language2drive_realsim/discovery.py",
+      "bytes": 11106
+    },
+    {
+      "path": "src/language2drive_realsim/draft_coverage.py",
+      "bytes": 9951
+    },
+    {
+      "path": "src/language2drive_realsim/eval_polygon_cache.py",
+      "bytes": 2204
+    },
+    {
+      "path": "src/language2drive_realsim/evaluation.py",
+      "bytes": 3895
+    },
+    {
+      "path": "src/language2drive_realsim/events.py",
+      "bytes": 12755
+    },
+    {
+      "path": "src/language2drive_realsim/family_allocation.py",
+      "bytes": 3869
+    },
+    {
+      "path": "src/language2drive_realsim/feasibility.py",
+      "bytes": 10775
+    },
+    {
+      "path": "src/language2drive_realsim/feasibility_review.py",
+      "bytes": 9638
+    },
+    {
+      "path": "src/language2drive_realsim/feasibility_review_ui.py",
+      "bytes": 5557
+    },
+    {
+      "path": "src/language2drive_realsim/feasibility_summary.py",
+      "bytes": 13571
+    },
+    {
+      "path": "src/language2drive_realsim/finalize.py",
+      "bytes": 11272
+    },
+    {
+      "path": "src/language2drive_realsim/forward_choices.py",
+      "bytes": 1168
+    },
+    {
+      "path": "src/language2drive_realsim/handoff_observed_velocity.py",
+      "bytes": 8537
+    },
+    {
+      "path": "src/language2drive_realsim/host_runtime.py",
+      "bytes": 690
+    },
+    {
+      "path": "src/language2drive_realsim/host_runtime_handoff.py",
+      "bytes": 372
+    },
+    {
+      "path": "src/language2drive_realsim/io.py",
+      "bytes": 3114
+    },
+    {
+      "path": "src/language2drive_realsim/keep_change_pair_smoke.py",
+      "bytes": 15281
+    },
+    {
+      "path": "src/language2drive_realsim/keep_change_planning.py",
+      "bytes": 2477
+    },
+    {
+      "path": "src/language2drive_realsim/keep_change_regions.py",
+      "bytes": 2095
+    },
+    {
+      "path": "src/language2drive_realsim/lane_path_search.py",
+      "bytes": 23414
+    },
+    {
+      "path": "src/language2drive_realsim/language.py",
+      "bytes": 2239
+    },
+    {
+      "path": "src/language2drive_realsim/lmdrive_null_lidar_diagnostic.py",
+      "bytes": 11624
+    },
+    {
+      "path": "src/language2drive_realsim/local_runtime.py",
+      "bytes": 9852
+    },
+    {
+      "path": "src/language2drive_realsim/metrics.py",
+      "bytes": 1901
+    },
+    {
+      "path": "src/language2drive_realsim/model_evaluation.py",
+      "bytes": 10055
+    },
+    {
+      "path": "src/language2drive_realsim/model_identity.py",
+      "bytes": 22335
+    },
+    {
+      "path": "src/language2drive_realsim/novel_rear_diagnostic.py",
+      "bytes": 5986
+    },
+    {
+      "path": "src/language2drive_realsim/observed_motion_diagnostic.py",
+      "bytes": 2751
+    },
+    {
+      "path": "src/language2drive_realsim/oracle_model.py",
+      "bytes": 4771
+    },
+    {
+      "path": "src/language2drive_realsim/pair_review_labels.py",
+      "bytes": 9073
+    },
+    {
+      "path": "src/language2drive_realsim/paired_semantic_metrics.py",
+      "bytes": 16001
+    },
+    {
+      "path": "src/language2drive_realsim/paired_semantic_metrics_all30.py",
+      "bytes": 22645
+    },
+    {
+      "path": "src/language2drive_realsim/pairing.py",
+      "bytes": 3239
+    },
+    {
+      "path": "src/language2drive_realsim/paper_metrics.py",
+      "bytes": 9745
+    },
+    {
+      "path": "src/language2drive_realsim/path_turning.py",
+      "bytes": 2189
+    },
+    {
+      "path": "src/language2drive_realsim/pcu_authoring.py",
+      "bytes": 13072
+    },
+    {
+      "path": "src/language2drive_realsim/physical_only_metrics.py",
+      "bytes": 11639
+    },
+    {
+      "path": "src/language2drive_realsim/planned_approach.py",
+      "bytes": 4110
+    },
+    {
+      "path": "src/language2drive_realsim/planned_lane_contract.py",
+      "bytes": 7550
+    },
+    {
+      "path": "src/language2drive_realsim/planned_lane_motion.py",
+      "bytes": 4811
+    },
+    {
+      "path": "src/language2drive_realsim/planned_road_prefilter.py",
+      "bytes": 4793
+    },
+    {
+      "path": "src/language2drive_realsim/planned_speed_scope.py",
+      "bytes": 3204
+    },
+    {
+      "path": "src/language2drive_realsim/preview_mining.py",
+      "bytes": 4933
+    },
+    {
+      "path": "src/language2drive_realsim/prospective_authority.py",
+      "bytes": 9365
+    },
+    {
+      "path": "src/language2drive_realsim/provenance.py",
+      "bytes": 5999
+    },
+    {
+      "path": "src/language2drive_realsim/qualification.py",
+      "bytes": 12815
+    },
+    {
+      "path": "src/language2drive_realsim/raw_lane_metadata.py",
+      "bytes": 12385
+    },
+    {
+      "path": "src/language2drive_realsim/raw_static_topology.py",
+      "bytes": 16326
+    },
+    {
+      "path": "src/language2drive_realsim/raw_xodr_speed.py",
+      "bytes": 7171
+    },
+    {
+      "path": "src/language2drive_realsim/recogdrive_navigation_diagnostic.py",
+      "bytes": 4933
+    },
+    {
+      "path": "src/language2drive_realsim/recorded_path_proximity.py",
+      "bytes": 2354
+    },
+    {
+      "path": "src/language2drive_realsim/release_evidence.py",
+      "bytes": 16222
+    },
+    {
+      "path": "src/language2drive_realsim/release_profile.py",
+      "bytes": 3424
+    },
+    {
+      "path": "src/language2drive_realsim/render_neighborhood.py",
+      "bytes": 800
+    },
+    {
+      "path": "src/language2drive_realsim/render_validity.py",
+      "bytes": 1640
+    },
+    {
+      "path": "src/language2drive_realsim/review_cli.py",
+      "bytes": 5546
+    },
+    {
+      "path": "src/language2drive_realsim/review_video.py",
+      "bytes": 1615
+    },
+    {
+      "path": "src/language2drive_realsim/route_topology_mining.py",
+      "bytes": 13482
+    },
+    {
+      "path": "src/language2drive_realsim/runtime_client.py",
+      "bytes": 13024
+    },
+    {
+      "path": "src/language2drive_realsim/runtime_map_evidence.py",
+      "bytes": 6338
+    },
+    {
+      "path": "src/language2drive_realsim/schema.py",
+      "bytes": 42274
+    },
+    {
+      "path": "src/language2drive_realsim/scoped_lane_authoring.py",
+      "bytes": 16860
+    },
+    {
+      "path": "src/language2drive_realsim/scoped_lane_marker.py",
+      "bytes": 7365
+    },
+    {
+      "path": "src/language2drive_realsim/scoped_lane_planning.py",
+      "bytes": 5974
+    },
+    {
+      "path": "src/language2drive_realsim/scoped_lane_scope.py",
+      "bytes": 10081
+    },
+    {
+      "path": "src/language2drive_realsim/scoped_lane_use.py",
+      "bytes": 2813
+    },
+    {
+      "path": "src/language2drive_realsim/search_input.py",
+      "bytes": 1363
+    },
+    {
+      "path": "src/language2drive_realsim/semantic_runtime_capture.py",
+      "bytes": 27551
+    },
+    {
+      "path": "src/language2drive_realsim/sign_authoring.py",
+      "bytes": 2757
+    },
+    {
+      "path": "src/language2drive_realsim/sign_speed_scope.py",
+      "bytes": 6967
+    },
+    {
+      "path": "src/language2drive_realsim/simlingo_model.py",
+      "bytes": 18624
+    },
+    {
+      "path": "src/language2drive_realsim/simlingo_posttrained_identity.py",
+      "bytes": 1687
+    },
+    {
+      "path": "src/language2drive_realsim/simlingo_worker.py",
+      "bytes": 11814
+    },
+    {
+      "path": "src/language2drive_realsim/single_seed_execution.py",
+      "bytes": 19719
+    },
+    {
+      "path": "src/language2drive_realsim/single_seed_metrics.py",
+      "bytes": 9853
+    },
+    {
+      "path": "src/language2drive_realsim/single_seed_reuse.py",
+      "bytes": 13155
+    },
+    {
+      "path": "src/language2drive_realsim/single_seed_runtime.py",
+      "bytes": 13614
+    },
+    {
+      "path": "src/language2drive_realsim/source_review.py",
+      "bytes": 29149
+    },
+    {
+      "path": "src/language2drive_realsim/source_review_server.py",
+      "bytes": 5255
+    },
+    {
+      "path": "src/language2drive_realsim/source_review_ui.py",
+      "bytes": 7172
+    },
+    {
+      "path": "src/language2drive_realsim/sparse_branch_render.py",
+      "bytes": 13130
+    },
+    {
+      "path": "src/language2drive_realsim/spatial_draft.py",
+      "bytes": 3834
+    },
+    {
+      "path": "src/language2drive_realsim/speed_authoring.py",
+      "bytes": 34255
+    },
+    {
+      "path": "src/language2drive_realsim/speed_diagnostics.py",
+      "bytes": 3961
+    },
+    {
+      "path": "src/language2drive_realsim/speed_pair_smoke.py",
+      "bytes": 10705
+    },
+    {
+      "path": "src/language2drive_realsim/speed_path_search.py",
+      "bytes": 7178
+    },
+    {
+      "path": "src/language2drive_realsim/speed_preview_binding.py",
+      "bytes": 2700
+    },
+    {
+      "path": "src/language2drive_realsim/speed_scope_binding.py",
+      "bytes": 5136
+    },
+    {
+      "path": "src/language2drive_realsim/speed_spatial_draft.py",
+      "bytes": 8768
+    },
+    {
+      "path": "src/language2drive_realsim/speed_timing.py",
+      "bytes": 4125
+    },
+    {
+      "path": "src/language2drive_realsim/supplemental_diagnostics.py",
+      "bytes": 8264
+    },
+    {
+      "path": "src/language2drive_realsim/topology_mining.py",
+      "bytes": 8148
+    },
+    {
+      "path": "src/language2drive_realsim/traffic_planning.py",
+      "bytes": 9390
+    },
+    {
+      "path": "src/language2drive_realsim/trajectory.py",
+      "bytes": 735
+    },
+    {
+      "path": "src/language2drive_realsim/verifier.py",
+      "bytes": 22365
+    },
+    {
+      "path": "src/language2drive_realsim/verifier_selftest.py",
+      "bytes": 18873
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 1
+    },
+    {
+      "path": "tests/factories.py",
+      "bytes": 10393
+    },
+    {
+      "path": "tests/test_alpasim_bridge.py",
+      "bytes": 10196
+    },
+    {
+      "path": "tests/test_camera_timing.py",
+      "bytes": 3646
+    },
+    {
+      "path": "tests/test_compat.py",
+      "bytes": 683
+    },
+    {
+      "path": "tests/test_component_scoring.py",
+      "bytes": 8089
+    },
+    {
+      "path": "tests/test_deployment.py",
+      "bytes": 1204
+    },
+    {
+      "path": "tests/test_io.py",
+      "bytes": 584
+    },
+    {
+      "path": "tests/test_io_exclusive_json.py",
+      "bytes": 1517
+    },
+    {
+      "path": "tests/test_language_verifier.py",
+      "bytes": 6047
+    },
+    {
+      "path": "tests/test_multipart_geometry.py",
+      "bytes": 5650
+    },
+    {
+      "path": "tests/test_native_render_validity.py",
+      "bytes": 3801
+    },
+    {
+      "path": "tests/test_paired_semantic_metrics_all30_20260923.py",
+      "bytes": 3746
+    },
+    {
+      "path": "tests/test_paper_metrics.py",
+      "bytes": 6970
+    },
+    {
+      "path": "tests/test_polygon_exact_ring_topology.py",
+      "bytes": 1778
+    },
+    {
+      "path": "tests/test_render_neighborhood.py",
+      "bytes": 2078
+    },
+    {
+      "path": "tests/test_review_entrypoint.py",
+      "bytes": 6456
+    },
+    {
+      "path": "tests/test_schema_compiler.py",
+      "bytes": 5338
+    },
+    {
+      "path": "tests/test_scoped_lane_verifier.py",
+      "bytes": 4860
+    },
+    {
+      "path": "tests/test_single_seed_metrics.py",
+      "bytes": 12270
+    },
+    {
+      "path": "tests/test_speed_scope_verifier.py",
+      "bytes": 6803
+    }
+  ],
+  "self_entry": "MANIFEST.json"
+}

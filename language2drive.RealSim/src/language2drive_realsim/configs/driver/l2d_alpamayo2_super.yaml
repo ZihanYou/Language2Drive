@@ -1,0 +1,50 @@
+# Language-conditioned Alpamayo 2 Super driver for paired RealSim evaluation.
+
+defaults:
+  - alpamayo_configs
+  - _self_
+
+log_level: ${wizard.log_level}
+
+model:
+  model_type: l2d_alpamayo2_super
+  # Prefer the separately downloaded RealSim-local checkpoint. Falling back to
+  # the model ID still requires an authorized Hugging Face identity.
+  checkpoint_path: "${oc.env:L2D_ALPAMAYO2_CHECKPOINT,nvidia/Alpamayo2-Super}"
+  device: "cuda"
+  force_determinism: true
+  image_decode_device: cuda
+  num_trajectory_samples: 1
+  trajectory_candidate_microbatch_size: null
+  # Navigation CFG is intentionally absent. Upstream's public A2 CFG example
+  # requires explicit two-GPU VLM/expert placement not exposed by this driver.
+  cfg_guidance_weight: null
+  trajectory_selection:
+    strategy: ALWAYS_FIRST
+    max_num_distance_points: 64
+    skip_first_n_distance_points: 0
+
+host: "0.0.0.0"
+port: ???
+
+inference:
+  use_cameras:
+    - camera_cross_left_120fov
+    - camera_front_wide_120fov
+    - camera_cross_right_120fov
+    - camera_front_tele_30fov
+  max_batch_size: 1
+  subsample_factor: 1
+  context_length: 4
+
+# The evaluator injects only the private sidecar string; neither a canonical
+# command nor a route object crosses the benchmark-model boundary.
+route:
+  use_waypoint_commands: false
+
+output_dir: "/mnt/output/driver"
+
+trajectory_optimizer:
+  enabled: false
+
+plot_debug_images: false

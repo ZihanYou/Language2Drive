@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language2drive-realsim"
+version = "0.2.0"
+description = "Language2Drive RealSim backend for paired AlpaSim evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7", "shapely>=2"]
+adapter = ["numpy>=1.24", "Pillow>=9", "PyYAML>=6"]
+
+[project.scripts]
+l2d-score = "language2drive_realsim.paper_metrics:main"
+l2d-review = "language2drive_realsim.review_cli:main"
+l2d-realsim = "language2drive_realsim.cli:main"
+l2d-alpasim-driver = "language2drive_realsim.alpasim_driver_service:main"
+l2d-alpasim-oracle-driver = "language2drive_realsim.alpasim_oracle_driver_service:main"
+
+[project.entry-points."alpasim.models"]
+l2d_alpamayo1_5 = "language2drive_realsim.alpasim_model:LanguageConditionedAlpamayo15Model"
+l2d_alpamayo2_super = "language2drive_realsim.alpasim_model:LanguageConditionedAlpamayo2Model"
+l2d_simlingo = "language2drive_realsim.simlingo_model:LanguageConditionedSimLingoModel"
+l2d_privileged_oracle = "language2drive_realsim.oracle_model:PrivilegedOraclePathModel"
+
+[project.entry-points."alpasim.configs"]
+l2d_realsim = "language2drive_realsim.configs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"language2drive_realsim.configs" = ["**/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

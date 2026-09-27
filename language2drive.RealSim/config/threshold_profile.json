@@ -1,0 +1,9 @@
+{
+  "profile": "realsim-v0.1-frozen",
+  "speed_epsilon_mps": 0.000001,
+  "maximum_sample_gap_s": 0.25,
+  "black_pixel_threshold": 10,
+  "maximum_invalid_frames": 0,
+  "minimum_coupled_seeds": 3,
+  "post_hoc_changes_forbidden": true
+}

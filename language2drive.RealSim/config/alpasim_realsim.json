@@ -1,0 +1,28 @@
+{
+  "alpasim_commit": "affc2eab209fa43bdfa2f26c0f8d437922d78a68",
+  "dataset_suite": "public_2601",
+  "dataset_revision": "26.01",
+  "nre_version_string": "26.1.112-59673f88",
+  "scene_binding": {
+    "mode": "local_verified_usdz",
+    "relative_directory": "vendor/alpasim/data/nre-artifacts/all-usdzs",
+    "submitted_selection": "frozen_sidecar_scene_ids"
+  },
+  "renderer": {
+    "kind": "sensorsim",
+    "implementation": "NuRec"
+  },
+  "driver": {
+    "model_type": "l2d_alpamayo1_5",
+    "route": {
+      "use_waypoint_commands": false
+    },
+    "command": "UNKNOWN",
+    "sidecar_environment_variable": "L2D_REALSIM_SIDECAR"
+  },
+  "simulation": {
+    "n_rollouts_per_compiled_session": 1,
+    "coupled_seeds": [1701, 1702, 1703],
+    "invalid_sim_retry": "complete_paired_seed"
+  }
+}

@@ -1,0 +1,54 @@
+# Official SimLingo driver for paired Language2Drive RealSim evaluation.
+
+defaults:
+  - alpamayo_configs
+  - _self_
+
+log_level: ${wizard.log_level}
+
+model:
+  model_type: l2d_simlingo
+  checkpoint_path: "${oc.env:L2D_SIMLINGO_CHECKPOINT,model_zoo/simlingo-official-hf-26c7c89/simlingo/checkpoints/epoch=013.ckpt/pytorch_model.pt}"
+  # ModelConfig's generic tokenizer field carries the offline official
+  # InternVL2-1B dependency path for this plugin.
+  tokenizer_path: "${oc.env:L2D_SIMLINGO_BASE_MODEL,OpenGVLab/InternVL2-1B}"
+  device: "cuda"
+  force_determinism: true
+  image_decode_device: cpu
+  num_trajectory_samples: 1
+  trajectory_candidate_microbatch_size: null
+  cfg_guidance_weight: null
+  trajectory_selection:
+    strategy: ALWAYS_FIRST
+    max_num_distance_points: 64
+    skip_first_n_distance_points: 0
+
+host: "0.0.0.0"
+port: ???
+
+inference:
+  use_cameras:
+    - camera_front_wide_120fov
+  max_batch_size: 1
+  subsample_factor: 1
+  context_length: 1
+  # Official labels are recorded every 5 frames at CARLA 20 FPS.
+  output_frequency_hz: 4
+
+route:
+  use_waypoint_commands: false
+
+# Convert the NRE recorded f-theta camera to SimLingo's official 1024x512,
+# horizontal-FOV-110 pinhole view before the model boundary.
+rectification:
+  camera_front_wide_120fov:
+    focal_length: [358.506, 358.506]
+    principal_point: [512.0, 256.0]
+    resolution_hw: [512, 1024]
+
+output_dir: "/mnt/output/driver"
+
+trajectory_optimizer:
+  enabled: false
+
+plot_debug_images: false
