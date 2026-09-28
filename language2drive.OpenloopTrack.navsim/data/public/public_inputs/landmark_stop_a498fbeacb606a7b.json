@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_a498fbeacb606a7b",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -8.16747,
+      "y": -0.06852,
+      "velocity_xy": [
+        4.92094,
+        0.0025
+      ]
+    },
+    {
+      "x": -5.66402,
+      "y": -0.04267,
+      "velocity_xy": [
+        5.28998,
+        0.01194
+      ]
+    },
+    {
+      "x": -2.96683,
+      "y": -0.01661,
+      "velocity_xy": [
+        5.78757,
+        -0.01046
+      ]
+    },
+    {
+      "x": -0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        6.41489,
+        -0.05693
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_F0/537edd2aeb655a2f.jpg",
+      "CAM_L0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L0/49d4a0afd3955d1d.jpg",
+      "CAM_R0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R0/7343d8931ca95baf.jpg",
+      "CAM_L1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L1/980b2c45ed355302.jpg",
+      "CAM_R1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R1/da9cbbcd8bc153d3.jpg",
+      "CAM_L2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L2/0aac3fb045cd5a8e.jpg",
+      "CAM_R2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R2/ae60f2176d875a8e.jpg",
+      "CAM_B0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_B0/387bd40622f45b4c.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_F0/f02f0d6e682659fd.jpg",
+      "CAM_L0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L0/b6196ff3224853da.jpg",
+      "CAM_R0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R0/6ba9df7cf15c51ca.jpg",
+      "CAM_L1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L1/c3579fa938a75e92.jpg",
+      "CAM_R1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R1/47b0965d3026525c.jpg",
+      "CAM_L2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L2/250ee83190f757d3.jpg",
+      "CAM_R2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R2/4fce9de72d295a37.jpg",
+      "CAM_B0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_B0/0ee95e7d47a852bb.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_F0/f47d70991f1e575d.jpg",
+      "CAM_L0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L0/24d4c4e5c4375dc1.jpg",
+      "CAM_R0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R0/35306d4e103e5805.jpg",
+      "CAM_L1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L1/021e293ff64b515d.jpg",
+      "CAM_R1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R1/cce16fabff8c5cc6.jpg",
+      "CAM_L2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L2/d7a5a50fe6335023.jpg",
+      "CAM_R2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R2/2c6bc1f534105846.jpg",
+      "CAM_B0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_B0/e18d5edb9e775a35.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_F0/a73a25bba5bc5496.jpg",
+      "CAM_L0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L0/181ef8966800526a.jpg",
+      "CAM_R0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R0/1b1d5dcb0ec65b77.jpg",
+      "CAM_L1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L1/65179995919c5fd5.jpg",
+      "CAM_R1": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R1/fa5ab3d6066759c5.jpg",
+      "CAM_L2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_L2/02696afd0008587f.jpg",
+      "CAM_R2": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_R2/42344a4e734f5ef1.jpg",
+      "CAM_B0": "2021.09.16.19.12.04_veh-42_01438_01677/CAM_B0/bd1149c63a865358.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.09.16.19.12.04_veh-42_01438_01677/MergedPointCloud/ad2db495fadb5448.pcd",
+    "2021.09.16.19.12.04_veh-42_01438_01677/MergedPointCloud/327a02c494925fbc.pcd",
+    "2021.09.16.19.12.04_veh-42_01438_01677/MergedPointCloud/370a8a759a865f7d.pcd",
+    "2021.09.16.19.12.04_veh-42_01438_01677/MergedPointCloud/2babfe0af6a7505e.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the gray garage with colored chevrons beyond the lawn; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the gray garage with colored chevrons beyond the lawn; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the geometric parking garage frontage on the right.",
+      "Pull over by the near edge of the gray garage with colored chevrons beyond the lawn.",
+      "Use the closer end of the geometric parking garage as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the geometric parking garage frontage on the right.",
+      "Pull over by the far edge of the gray garage with colored chevrons beyond the lawn.",
+      "Use the farther end of the geometric parking garage as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "ad5ff370e2cdb15b124e1d7bb82c1396e175f0964fc6d9a6a45ea667f04c19db"
+}

@@ -7,3 +7,4 @@ Benchmark code and resources for language-conditioned driving.
 - [RealSim track: one-command deployment and paper-aligned evaluation](language2drive.RealSim/README.md)
 - [nuScenes open-loop track: paper-aligned scoring and one-command replay](language2drive.OpenloopTrack.nScenes/README.md)
 - [WOD-E2E open-loop track: paired instruction construction and paper-aligned scoring](language2drive.OpenloopTrack.WOD-E2E/README.md)
+- [NAVSIM open-loop track: test set, asset downloader, evaluator, and model adapters](language2drive.OpenloopTrack.navsim/README.md)

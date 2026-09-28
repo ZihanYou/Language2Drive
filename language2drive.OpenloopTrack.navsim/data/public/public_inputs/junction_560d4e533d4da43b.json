@@ -1,0 +1,117 @@
+{
+  "pcu_id": "junction_560d4e533d4da43b",
+  "family": "branch_choice",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -4.08214,
+      "y": 1.07126,
+      "velocity_xy": [
+        2.07714,
+        -0.02098
+      ]
+    },
+    {
+      "x": -2.98556,
+      "y": 0.63476,
+      "velocity_xy": [
+        2.61043,
+        -0.08069
+      ]
+    },
+    {
+      "x": -1.62446,
+      "y": 0.2151,
+      "velocity_xy": [
+        3.08477,
+        -0.12889
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        3.5952,
+        -0.14075
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_F0/107db448a05457e7.jpg",
+      "CAM_L0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L0/6ef919e7e3845855.jpg",
+      "CAM_R0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R0/37246a02c60f5060.jpg",
+      "CAM_L1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L1/d4716a95412e5a07.jpg",
+      "CAM_R1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R1/1d71627789e55660.jpg",
+      "CAM_L2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L2/7265448b21845c10.jpg",
+      "CAM_R2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R2/71cc3363d3e45662.jpg",
+      "CAM_B0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_B0/978b6788a76853ce.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_F0/e7c427fffbff5928.jpg",
+      "CAM_L0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L0/ff8a1b1ec2d55ff7.jpg",
+      "CAM_R0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R0/4f62374c6f2450d7.jpg",
+      "CAM_L1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L1/b6024dddf4af55f4.jpg",
+      "CAM_R1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R1/b1ffbc59b04e5712.jpg",
+      "CAM_L2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L2/351ca354e06a51a3.jpg",
+      "CAM_R2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R2/f7d47d5d20895f56.jpg",
+      "CAM_B0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_B0/854c46f09c1f5c77.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_F0/7f3d0da6f268520a.jpg",
+      "CAM_L0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L0/1012806c74e45cd9.jpg",
+      "CAM_R0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R0/60249e7b2d1b53f9.jpg",
+      "CAM_L1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L1/12814ad33f9e5464.jpg",
+      "CAM_R1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R1/dd3183c6a38a5f7f.jpg",
+      "CAM_L2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L2/49a5783892b75fa0.jpg",
+      "CAM_R2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R2/f90e5f081f77532e.jpg",
+      "CAM_B0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_B0/64f85a0535d554d2.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_F0/4ac39c9db77a5435.jpg",
+      "CAM_L0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L0/261b5bd154b551d7.jpg",
+      "CAM_R0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R0/1e944366a6365266.jpg",
+      "CAM_L1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L1/87e67432d6be5120.jpg",
+      "CAM_R1": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R1/9443f10ebe61540d.jpg",
+      "CAM_L2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_L2/e1e55109e7645571.jpg",
+      "CAM_R2": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_R2/f6f345d31dd054b1.jpg",
+      "CAM_B0": "2021.09.16.13.53.10_veh-42_00860_01069/CAM_B0/df09253488c45d55.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.09.16.13.53.10_veh-42_00860_01069/MergedPointCloud/622867ce25805447.pcd",
+    "2021.09.16.13.53.10_veh-42_00860_01069/MergedPointCloud/cf696c3ba1995fd8.pcd",
+    "2021.09.16.13.53.10_veh-42_00860_01069/MergedPointCloud/fb5f932e8b8d52cc.pcd",
+    "2021.09.16.13.53.10_veh-42_00860_01069/MergedPointCloud/940fac986dbb5fd0.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "At the upcoming junction, turn left.",
+    "At the upcoming junction, go straight."
+  ],
+  "paraphrases": [
+    [
+      "Turn left through the junction ahead.",
+      "Use the upcoming junction to turn left.",
+      "Proceed to the junction and turn left."
+    ],
+    [
+      "Go straight through the junction ahead.",
+      "Use the upcoming junction to go straight.",
+      "Proceed to the junction and go straight."
+    ]
+  ],
+  "shared_input_hash": "cfdc6cb11eedf0d9d78dea64551ee345a6197c544a669f4a7848544010f97116"
+}

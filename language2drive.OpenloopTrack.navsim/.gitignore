@@ -1,0 +1,15 @@
+assets/
+model_eval/envs/
+model_eval/repos/
+model_eval/weights/
+model_eval/runs/
+model_eval/data/
+!data/
+__pycache__/
+*.pyc
+*.log
+*.exit
+.cache/
+.venv/
+*.token
+.env

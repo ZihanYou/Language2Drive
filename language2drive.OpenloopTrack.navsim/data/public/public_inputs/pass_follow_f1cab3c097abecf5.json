@@ -1,0 +1,117 @@
+{
+  "pcu_id": "pass_follow_f1cab3c097abecf5",
+  "family": "pass_follow",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -11.78415,
+      "y": -0.04403,
+      "velocity_xy": [
+        8.7065,
+        -0.0969
+      ]
+    },
+    {
+      "x": -7.59809,
+      "y": -0.00932,
+      "velocity_xy": [
+        8.28314,
+        -0.09217
+      ]
+    },
+    {
+      "x": -3.65206,
+      "y": 0.01119,
+      "velocity_xy": [
+        7.7523,
+        -0.1071
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "velocity_xy": [
+        7.12625,
+        -0.14868
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_F0/1493a57e2fcf5a97.jpg",
+      "CAM_L0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L0/6d4095b854f75473.jpg",
+      "CAM_R0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R0/db72197ea8805717.jpg",
+      "CAM_L1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L1/9115feafc8245723.jpg",
+      "CAM_R1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R1/152c840e4a7d510e.jpg",
+      "CAM_L2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L2/89a3ab5e701757ea.jpg",
+      "CAM_R2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R2/1f539f773ccf5014.jpg",
+      "CAM_B0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_B0/327a5599898d5d3a.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_F0/2a1f57de1e98563d.jpg",
+      "CAM_L0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L0/4c24bdfb0f3c5e6e.jpg",
+      "CAM_R0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R0/ecc12a99a846568b.jpg",
+      "CAM_L1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L1/d46edd9b051c5d09.jpg",
+      "CAM_R1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R1/d3a4e61d3c635e9c.jpg",
+      "CAM_L2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L2/d444d3f1521f5839.jpg",
+      "CAM_R2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R2/d11ab18364b15285.jpg",
+      "CAM_B0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_B0/f0f1af25fcc85475.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_F0/16b05c3122615717.jpg",
+      "CAM_L0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L0/b6c559a0a19550ba.jpg",
+      "CAM_R0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R0/8bc3865b5c785974.jpg",
+      "CAM_L1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L1/4073a4347bb85a7b.jpg",
+      "CAM_R1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R1/98558ac27df85f62.jpg",
+      "CAM_L2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L2/cf021d83049f5708.jpg",
+      "CAM_R2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R2/e9cc70c7cf3950e3.jpg",
+      "CAM_B0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_B0/f66ba2c45c615b8f.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_F0/7e7bf769256653af.jpg",
+      "CAM_L0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L0/9afba67c5e8f5ecf.jpg",
+      "CAM_R0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R0/69d684a0d8bd5cbc.jpg",
+      "CAM_L1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L1/d37748b4143b50e6.jpg",
+      "CAM_R1": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R1/df0ffcc7dc465f2a.jpg",
+      "CAM_L2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_L2/25f72c05cd165381.jpg",
+      "CAM_R2": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_R2/7f24755772465a45.jpg",
+      "CAM_B0": "2021.05.25.14.26.37_veh-27_04122_04279/CAM_B0/7052f728e6675327.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.05.25.14.26.37_veh-27_04122_04279/MergedPointCloud/48ef77409741520d.pcd",
+    "2021.05.25.14.26.37_veh-27_04122_04279/MergedPointCloud/edd24f4c0a295030.pcd",
+    "2021.05.25.14.26.37_veh-27_04122_04279/MergedPointCloud/1542482ff0ad537e.pcd",
+    "2021.05.25.14.26.37_veh-27_04122_04279/MergedPointCloud/32837dd54e375ca0.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stay in the current lane and follow the vehicle ahead at a safe distance.",
+    "Pass the vehicle ahead using the adjacent right lane."
+  ],
+  "paraphrases": [
+    [
+      "Continue behind the lead vehicle while keeping a safe gap.",
+      "Hold this lane and safely follow the vehicle in front.",
+      "Remain in lane behind the vehicle ahead without closing the safe gap."
+    ],
+    [
+      "Move to the right lane and overtake the lead vehicle.",
+      "Complete an overtake on the vehicle's right side.",
+      "Use the neighboring right lane to pass the vehicle ahead."
+    ]
+  ],
+  "shared_input_hash": "cf6bed07dd89fcb54598b3b41c556f96c16913d15495b5e4b68d4a3844ec71c1"
+}

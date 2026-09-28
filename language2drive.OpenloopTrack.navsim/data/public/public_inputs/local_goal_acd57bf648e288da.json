@@ -1,0 +1,117 @@
+{
+  "pcu_id": "local_goal_acd57bf648e288da",
+  "family": "local_goal",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -8.61249,
+      "y": 0.01187,
+      "velocity_xy": [
+        6.42724,
+        -0.12593
+      ]
+    },
+    {
+      "x": -5.57714,
+      "y": 0.02377,
+      "velocity_xy": [
+        6.03905,
+        -0.10796
+      ]
+    },
+    {
+      "x": -2.72267,
+      "y": 0.0144,
+      "velocity_xy": [
+        5.71877,
+        -0.12063
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "velocity_xy": [
+        5.47837,
+        -0.12682
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_F0/4c22ac3b761755e5.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L0/232d8c03f4095e82.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R0/4d63e38826df59fc.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L1/df74ddc107db5bb6.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R1/469d5963f17e54e9.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L2/da9d628fa8b65033.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R2/fe8ba4deac0d50eb.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_B0/096879f306c35986.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_F0/47be7a45be3e587d.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L0/2e6e16443ff15b85.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R0/2000d6f80ab05c4f.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L1/08de1aaeaa6d596c.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R1/7bed5476f43c525a.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L2/769da746ad9e555c.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R2/e34a04bd3de256de.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_B0/8bfb8081c77e5496.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_F0/cb39921003795f5b.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L0/1e90b751b40e522c.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R0/2d407ad50f375b89.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L1/d4104a81c9025e7e.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R1/95dfbd93e5ae51eb.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L2/7664c861397f5b3f.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R2/13ff5bfae9625e8e.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_B0/ecc589cb6c69509d.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_F0/9e546b4c28a6543b.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L0/eb1f42cc47c2503b.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R0/24e1ae2be8c65050.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L1/5fef7731b0085600.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R1/349fbfa1962a54cf.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_L2/3c71f17dbfad556b.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_R2/bd830aeaa1a752d1.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_00712_00855/CAM_B0/b291c58f8cc55c5e.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.06.03.17.06.58_veh-35_00712_00855/MergedPointCloud/31d94267385d508a.pcd",
+    "2021.06.03.17.06.58_veh-35_00712_00855/MergedPointCloud/aaacb146ab9350b7.pcd",
+    "2021.06.03.17.06.58_veh-35_00712_00855/MergedPointCloud/57af1ebcd29d5d32.pcd",
+    "2021.06.03.17.06.58_veh-35_00712_00855/MergedPointCloud/a42a65f5794351d2.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Move into the adjacent left lane and remain there through four seconds.",
+    "Move into the adjacent right lane and remain there through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Enter the lane immediately to the left and stay in it.",
+      "Make one lane change to the left, then hold that lane.",
+      "Within four seconds, settle in the adjacent left lane."
+    ],
+    [
+      "Enter the lane immediately to the right and stay in it.",
+      "Make one lane change to the right, then hold that lane.",
+      "Within four seconds, settle in the adjacent right lane."
+    ]
+  ],
+  "shared_input_hash": "043269887e7edd87528dab56a16388326b02d6491f7deec958ada3bfac7a44bc"
+}

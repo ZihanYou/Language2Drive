@@ -1,0 +1,23 @@
+{
+  "pcu_id": "toy_speed",
+  "recording_id": "toy_recording",
+  "annotation_tier": "B",
+  "family": "speed_band",
+  "common_horizon_eligible": true,
+  "contracts": [
+    {
+      "type": "speed_band",
+      "min_mps": 3.5,
+      "max_mps": 5.5,
+      "start_s": 1.5,
+      "end_s": 4.0
+    },
+    {
+      "type": "speed_band",
+      "min_mps": 6.5,
+      "max_mps": 8.5,
+      "start_s": 1.5,
+      "end_s": 4.0
+    }
+  ]
+}

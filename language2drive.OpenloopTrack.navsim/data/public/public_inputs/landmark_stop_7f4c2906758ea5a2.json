@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_7f4c2906758ea5a2",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -7.52384,
+      "y": -0.0079,
+      "velocity_xy": [
+        4.49448,
+        -0.04659
+      ]
+    },
+    {
+      "x": -5.18261,
+      "y": 0.01907,
+      "velocity_xy": [
+        4.84506,
+        -0.04894
+      ]
+    },
+    {
+      "x": -2.67227,
+      "y": 0.01461,
+      "velocity_xy": [
+        5.17879,
+        -0.09464
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        5.49068,
+        -0.11856
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_F0/c92f3334300054f8.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L0/2ea4f97ad5255bc7.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R0/a77b67d1f45859c1.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L1/094b069a158c544a.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R1/39d6882c52155300.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L2/bce9444e901d5c04.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R2/e643688df5c45cac.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_B0/cd7c6fbd8ba65404.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_F0/66cb4684345358c7.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L0/dc8ca5afd8895640.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R0/eb2deb014f6d538e.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L1/28b15da00aea500f.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R1/7520eea7cb9751af.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L2/bdbc54b5083f5475.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R2/daada546a21c5303.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_B0/b8913927780151d4.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_F0/3462482be33d5110.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L0/502dfef53cd95974.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R0/d58aa448c2335756.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L1/fc9c226761a75858.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R1/bf9aae5076ab5c6d.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L2/767a9e900a155209.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R2/26ae395302575812.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_B0/549c035fe33a5527.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_F0/8fd78339d5aa5c8e.jpg",
+      "CAM_L0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L0/83d0c4b7846e5ac8.jpg",
+      "CAM_R0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R0/fa246e43b3705ded.jpg",
+      "CAM_L1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L1/1727e383238d5317.jpg",
+      "CAM_R1": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R1/d5325bfc530f5bd5.jpg",
+      "CAM_L2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_L2/0b109a1d7f0d5b5e.jpg",
+      "CAM_R2": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_R2/1bbfc85c664f5a54.jpg",
+      "CAM_B0": "2021.06.03.17.06.58_veh-35_03860_03992/CAM_B0/ec2923136ebc533a.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.06.03.17.06.58_veh-35_03860_03992/MergedPointCloud/b1abefc32ff055ba.pcd",
+    "2021.06.03.17.06.58_veh-35_03860_03992/MergedPointCloud/6257b9afceea572f.pcd",
+    "2021.06.03.17.06.58_veh-35_03860_03992/MergedPointCloud/7d71974142815ad7.pcd",
+    "2021.06.03.17.06.58_veh-35_03860_03992/MergedPointCloud/9bff2c24c6fd5780.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the stone balustrade and turquoise Bellagio fountain pool below the cream Bellagio tower; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the stone balustrade and turquoise Bellagio fountain pool below the cream Bellagio tower; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Bellagio fountains frontage on the right.",
+      "Pull over by the near edge of the stone balustrade and turquoise Bellagio fountain pool below the cream Bellagio tower.",
+      "Use the closer end of the Bellagio fountains as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Bellagio fountains frontage on the right.",
+      "Pull over by the far edge of the stone balustrade and turquoise Bellagio fountain pool below the cream Bellagio tower.",
+      "Use the farther end of the Bellagio fountains as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "1bb7da0862b38aa6d1afed901d8180722d91a103812ccac2a94026451e105e69"
+}

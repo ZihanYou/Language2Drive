@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_d938ce51d376d45f",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -9.39379,
+      "y": -0.04184,
+      "velocity_xy": [
+        6.63309,
+        -0.1298
+      ]
+    },
+    {
+      "x": -6.19664,
+      "y": -0.0132,
+      "velocity_xy": [
+        6.44663,
+        -0.10683
+      ]
+    },
+    {
+      "x": -3.07922,
+      "y": 0.00352,
+      "velocity_xy": [
+        6.2838,
+        -0.11266
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        6.27044,
+        -0.13135
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/307e05a1bf8f5982.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/ee676add75f95a68.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/3553c003a18651bb.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/a34f07e98747554d.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/06d980abfd4b5916.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/1e1c2c6801dd507e.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/5affc4760eae579b.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/a0a5d80894bd5385.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/90f232add72d5cf6.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/7e96b8dd20415cb5.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/bccce681190f518e.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/05df680490725e72.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/f45e2002b80355e0.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/97e2cb0f85eb50bb.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/c6e343ac9f1357a0.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/1637fe69d1355c40.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/e164fb16cd8954ff.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/5ef2a13c8d9f5e40.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/24261ae9a58a5dcd.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/71a5c68c1ae654ce.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/f9b016b6200e5fc5.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/bdefbba2db49545f.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/7acdec4bba605c2b.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/0339b1e831ce55f4.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/2412ea099626535a.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/dc2143757f41578b.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/80a6686e08dd5517.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/a6c94cdcc18953a9.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/46acb305e1955904.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/fd4f63e45c3b50a1.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/07b13300c01e5457.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/2bc10d0d8b705b49.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/03183231d33e5c1a.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/c3a658f4565b537c.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/169e439ff42e5ff7.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/c8dc844eb35d55d1.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the large dark stepped building marked HYPERX ESPORTS ARENA; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the large dark stepped building marked HYPERX ESPORTS ARENA; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the HyperX Esports Arena frontage on the right.",
+      "Pull over by the near edge of the large dark stepped building marked HYPERX ESPORTS ARENA.",
+      "Use the closer end of the HyperX Esports Arena as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the HyperX Esports Arena frontage on the right.",
+      "Pull over by the far edge of the large dark stepped building marked HYPERX ESPORTS ARENA.",
+      "Use the farther end of the HyperX Esports Arena as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "71387d83c0ccd503195c97dbb59d3f96bc0945ccee4ca6358caaa9e47bf62824"
+}

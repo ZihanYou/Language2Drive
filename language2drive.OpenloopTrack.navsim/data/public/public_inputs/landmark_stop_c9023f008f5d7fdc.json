@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_c9023f008f5d7fdc",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -6.71748,
+      "y": -1.96689,
+      "velocity_xy": [
+        4.31381,
+        -0.0269
+      ]
+    },
+    {
+      "x": -4.84073,
+      "y": -0.87006,
+      "velocity_xy": [
+        4.64286,
+        -0.09512
+      ]
+    },
+    {
+      "x": -2.57745,
+      "y": -0.21831,
+      "velocity_xy": [
+        5.07518,
+        -0.11047
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "velocity_xy": [
+        5.60943,
+        -0.0984
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_F0/87d9ee0bc8255d41.jpg",
+      "CAM_L0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L0/8b27db2bc25b539c.jpg",
+      "CAM_R0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R0/00cdff1183ab5c8e.jpg",
+      "CAM_L1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L1/ee493ef6605a594f.jpg",
+      "CAM_R1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R1/2759967194315852.jpg",
+      "CAM_L2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L2/ce79479b87455c7f.jpg",
+      "CAM_R2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R2/fc4e76d0d46e585e.jpg",
+      "CAM_B0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_B0/80a4db2e154356bd.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_F0/84946c6c610256c7.jpg",
+      "CAM_L0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L0/1b5715c740125114.jpg",
+      "CAM_R0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R0/3e51d396ec625b26.jpg",
+      "CAM_L1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L1/c425f62b21f0541f.jpg",
+      "CAM_R1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R1/0db82215f41758a6.jpg",
+      "CAM_L2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L2/0a18aecaae79586e.jpg",
+      "CAM_R2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R2/3a9c3673e75550e7.jpg",
+      "CAM_B0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_B0/565d8d6d777b56b3.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_F0/0c6d952c4c515e55.jpg",
+      "CAM_L0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L0/9868229b5ce9587e.jpg",
+      "CAM_R0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R0/5fce6575e3795f9e.jpg",
+      "CAM_L1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L1/4a1fa8dde61855c4.jpg",
+      "CAM_R1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R1/1891965f47bd5495.jpg",
+      "CAM_L2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L2/91779f1d870752f8.jpg",
+      "CAM_R2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R2/738eb12129905f5a.jpg",
+      "CAM_B0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_B0/bf03050b2f215b1b.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_F0/aa4517fe4cf65a6a.jpg",
+      "CAM_L0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L0/f51d8cae2e995069.jpg",
+      "CAM_R0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R0/9ad0cd3d36f958a0.jpg",
+      "CAM_L1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L1/d9dd4be3e7155fa4.jpg",
+      "CAM_R1": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R1/9846157496ee556b.jpg",
+      "CAM_L2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_L2/bc0731ed492f576d.jpg",
+      "CAM_R2": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_R2/435f755362a85b1d.jpg",
+      "CAM_B0": "2021.06.28.13.53.26_veh-26_00492_00696/CAM_B0/b4fe188d2e7e515e.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.06.28.13.53.26_veh-26_00492_00696/MergedPointCloud/a7aa5c954a3d5af5.pcd",
+    "2021.06.28.13.53.26_veh-26_00492_00696/MergedPointCloud/87764463695c5275.pcd",
+    "2021.06.28.13.53.26_veh-26_00492_00696/MergedPointCloud/8a87a311c49c524e.pcd",
+    "2021.06.28.13.53.26_veh-26_00492_00696/MergedPointCloud/dea9f98c062e54e9.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the black faceted DOLCE & GABBANA frontage with palm trees; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the black faceted DOLCE & GABBANA frontage with palm trees; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Crystals shopping center frontage on the right.",
+      "Pull over by the near edge of the black faceted DOLCE & GABBANA frontage with palm trees.",
+      "Use the closer end of the Crystals shopping center as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Crystals shopping center frontage on the right.",
+      "Pull over by the far edge of the black faceted DOLCE & GABBANA frontage with palm trees.",
+      "Use the farther end of the Crystals shopping center as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "10ed19c8301dd1a30016a50ff0f5973d95d06c84f441927536184050309985a1"
+}

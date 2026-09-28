@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_5a4111a4c68dc904",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -6.77986,
+      "y": -0.77233,
+      "velocity_xy": [
+        4.27812,
+        -0.02787
+      ]
+    },
+    {
+      "x": -4.71368,
+      "y": -0.34888,
+      "velocity_xy": [
+        4.53189,
+        -0.09221
+      ]
+    },
+    {
+      "x": -2.46277,
+      "y": -0.11227,
+      "velocity_xy": [
+        4.84018,
+        -0.08824
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        5.2113,
+        -0.06364
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_F0/26836c33af635d21.jpg",
+      "CAM_L0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L0/2a5d0874632e53f3.jpg",
+      "CAM_R0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R0/78df56788d4e5181.jpg",
+      "CAM_L1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L1/af64a98b897557a9.jpg",
+      "CAM_R1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R1/5eea115eb02456b3.jpg",
+      "CAM_L2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L2/ec22f5c3c8db5ad3.jpg",
+      "CAM_R2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R2/4bce53752d23565f.jpg",
+      "CAM_B0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_B0/47c5913f21d357cc.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_F0/515c24e3d4ea503a.jpg",
+      "CAM_L0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L0/1d7c3761664155e6.jpg",
+      "CAM_R0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R0/67e7025b02c85ba2.jpg",
+      "CAM_L1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L1/4fc0808c1de25a4f.jpg",
+      "CAM_R1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R1/4163e7b9673e5523.jpg",
+      "CAM_L2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L2/a04e438e93e55165.jpg",
+      "CAM_R2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R2/03a4f84105a35c30.jpg",
+      "CAM_B0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_B0/159e3821a86f56cc.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_F0/921780f10a1f5695.jpg",
+      "CAM_L0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L0/dc953ec12e4a5dee.jpg",
+      "CAM_R0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R0/bd40095f33825d4a.jpg",
+      "CAM_L1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L1/4bea3962f2f151e0.jpg",
+      "CAM_R1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R1/baacc59c94c65ccc.jpg",
+      "CAM_L2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L2/8b901a9b15705f82.jpg",
+      "CAM_R2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R2/cf1a8a67c3095bfe.jpg",
+      "CAM_B0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_B0/f193b0681e925274.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_F0/66a4b3d59cb75522.jpg",
+      "CAM_L0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L0/92b2923271b9565e.jpg",
+      "CAM_R0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R0/1c89bb93ab0258be.jpg",
+      "CAM_L1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L1/85bcec9a70f655fa.jpg",
+      "CAM_R1": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R1/28a08b81c8a45213.jpg",
+      "CAM_L2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_L2/ff980163b8d15a0d.jpg",
+      "CAM_R2": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_R2/610070271fa3551a.jpg",
+      "CAM_B0": "2021.06.28.18.03.27_veh-14_00620_01581/CAM_B0/b9ce7882e47c5a43.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.06.28.18.03.27_veh-14_00620_01581/MergedPointCloud/2a7bd7f047a95151.pcd",
+    "2021.06.28.18.03.27_veh-14_00620_01581/MergedPointCloud/cda8903b9d485d66.pcd",
+    "2021.06.28.18.03.27_veh-14_00620_01581/MergedPointCloud/91edd31017635ad4.pcd",
+    "2021.06.28.18.03.27_veh-14_00620_01581/MergedPointCloud/c0d749fc4dfb5c28.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the tall beige wall covered with ivy and bordered by trimmed hedges; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the tall beige wall covered with ivy and bordered by trimmed hedges; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Mirage garden wall frontage on the right.",
+      "Pull over by the near edge of the tall beige wall covered with ivy and bordered by trimmed hedges.",
+      "Use the closer end of the Mirage garden wall as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Mirage garden wall frontage on the right.",
+      "Pull over by the far edge of the tall beige wall covered with ivy and bordered by trimmed hedges.",
+      "Use the farther end of the Mirage garden wall as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "2e717e415e1a18e0c68cc7f31ac2057c38b9d6708bb223e6d632c188463e4f40"
+}

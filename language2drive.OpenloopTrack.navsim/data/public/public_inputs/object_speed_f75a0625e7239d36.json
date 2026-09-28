@@ -1,0 +1,117 @@
+{
+  "pcu_id": "object_speed_f75a0625e7239d36",
+  "family": "object_speed",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -6.80209,
+      "y": -0.00585,
+      "velocity_xy": [
+        3.83183,
+        -0.05557
+      ]
+    },
+    {
+      "x": -4.75453,
+      "y": 0.00177,
+      "velocity_xy": [
+        4.2972,
+        -0.07717
+      ]
+    },
+    {
+      "x": -2.49166,
+      "y": -0.00579,
+      "velocity_xy": [
+        4.73821,
+        -0.10945
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "velocity_xy": [
+        5.17907,
+        -0.10879
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_F0/7acce09dc18e5889.jpg",
+      "CAM_L0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L0/2f6013e891dc5d37.jpg",
+      "CAM_R0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R0/b874562c50955d29.jpg",
+      "CAM_L1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L1/4a1ce09de298585d.jpg",
+      "CAM_R1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R1/642671cb07f0568b.jpg",
+      "CAM_L2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L2/0a9b62c0c0315c96.jpg",
+      "CAM_R2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R2/dcfb348d21bd503e.jpg",
+      "CAM_B0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_B0/9eab0397893558d1.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_F0/4a0c9dfbeddb5002.jpg",
+      "CAM_L0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L0/3d951cc2cde15e83.jpg",
+      "CAM_R0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R0/c26e9d19d90f58db.jpg",
+      "CAM_L1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L1/52807541d1515b4c.jpg",
+      "CAM_R1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R1/43b545e2ce7756bd.jpg",
+      "CAM_L2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L2/9537bfd7ccad5f69.jpg",
+      "CAM_R2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R2/214b05eae03a5537.jpg",
+      "CAM_B0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_B0/f96947c3c6ca5f41.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_F0/de5d91005cb25fe1.jpg",
+      "CAM_L0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L0/83f6f9ff77625abe.jpg",
+      "CAM_R0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R0/c3205e94f3f45a10.jpg",
+      "CAM_L1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L1/3df07efdfe1b536d.jpg",
+      "CAM_R1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R1/838e9f9e4a975675.jpg",
+      "CAM_L2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L2/945d600c86f15311.jpg",
+      "CAM_R2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R2/ce2fb05335145b33.jpg",
+      "CAM_B0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_B0/d8505ff65e5e52b8.jpg"
+    },
+    {
+      "CAM_F0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_F0/b6eccb2dd5f253e0.jpg",
+      "CAM_L0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L0/97557979648654bf.jpg",
+      "CAM_R0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R0/40aad6142b5f50e3.jpg",
+      "CAM_L1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L1/60fc2e5e0d8b570d.jpg",
+      "CAM_R1": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R1/ad533d51902a54c7.jpg",
+      "CAM_L2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_L2/aed6933ff9575d09.jpg",
+      "CAM_R2": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_R2/06e1fb144cbe533f.jpg",
+      "CAM_B0": "2021.06.03.18.47.39_veh-35_00123_00246/CAM_B0/28578af8d35f54e0.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.06.03.18.47.39_veh-35_00123_00246/MergedPointCloud/953a8a51260b5f70.pcd",
+    "2021.06.03.18.47.39_veh-35_00123_00246/MergedPointCloud/bdac840de07458cb.pcd",
+    "2021.06.03.18.47.39_veh-35_00123_00246/MergedPointCloud/601750cbeb795af1.pcd",
+    "2021.06.03.18.47.39_veh-35_00123_00246/MergedPointCloud/8a1588d687bc5679.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Follow the vehicle ahead at a safe gap while maintaining 2.8-4.2 m/s from 1.5 to 4 seconds.",
+    "Follow the vehicle ahead at a safe gap while maintaining 4.8-6.2 m/s from 1.5 to 4 seconds."
+  ],
+  "paraphrases": [
+    [
+      "Keep following the lead vehicle safely at 2.8 to 4.2 m/s.",
+      "Maintain a safe following distance and hold 2.8-4.2 m/s through four seconds.",
+      "Track the vehicle ahead without closing the gap, using the 2.8-4.2 m/s speed band."
+    ],
+    [
+      "Keep following the lead vehicle safely at 4.8 to 6.2 m/s.",
+      "Maintain a safe following distance and hold 4.8-6.2 m/s through four seconds.",
+      "Track the vehicle ahead without closing the gap, using the 4.8-6.2 m/s speed band."
+    ]
+  ],
+  "shared_input_hash": "b2627b0555042aa13756bcfa06415e41eebd54d84e09b79359d2e5b3f55f6f1c"
+}

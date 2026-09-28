@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_522cb8c12a1aee77",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -7.0241,
+      "y": 0.01809,
+      "velocity_xy": [
+        3.33464,
+        -0.08404
+      ]
+    },
+    {
+      "x": -5.12508,
+      "y": 0.00775,
+      "velocity_xy": [
+        4.22091,
+        -0.09462
+      ]
+    },
+    {
+      "x": -2.78191,
+      "y": 0.00219,
+      "velocity_xy": [
+        5.09897,
+        -0.11323
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        5.95121,
+        -0.11732
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_F0/a9b544385f6b597b.jpg",
+      "CAM_L0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L0/6ba904ec99525e1a.jpg",
+      "CAM_R0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R0/904a9384f31d5789.jpg",
+      "CAM_L1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L1/77566377540b56b9.jpg",
+      "CAM_R1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R1/45f0e012ea8c585e.jpg",
+      "CAM_L2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L2/c68c91a2915f57df.jpg",
+      "CAM_R2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R2/b68f344d0c4354f4.jpg",
+      "CAM_B0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_B0/ea15d002f79756e9.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_F0/b7bc2637aa345131.jpg",
+      "CAM_L0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L0/b4e6236a163852ec.jpg",
+      "CAM_R0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R0/7235f741fd0d5fb9.jpg",
+      "CAM_L1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L1/7f9eb6c075ec5e8f.jpg",
+      "CAM_R1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R1/16c568eb3e6a5786.jpg",
+      "CAM_L2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L2/23bdd926c7cb541d.jpg",
+      "CAM_R2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R2/6845939d5e135be9.jpg",
+      "CAM_B0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_B0/3f6386e876cf5d2d.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_F0/f457eadd33385ed2.jpg",
+      "CAM_L0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L0/53d30fad47e054f4.jpg",
+      "CAM_R0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R0/dac8c5962f7458b2.jpg",
+      "CAM_L1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L1/11a3061076bd5403.jpg",
+      "CAM_R1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R1/f5beeac5fcc4539c.jpg",
+      "CAM_L2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L2/186b85454e0d557e.jpg",
+      "CAM_R2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R2/62fbe1b4c44d5f4e.jpg",
+      "CAM_B0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_B0/246b85633d085da6.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_F0/9d643a29d351517f.jpg",
+      "CAM_L0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L0/6278bfa69cd05544.jpg",
+      "CAM_R0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R0/7ce288ead4ed527a.jpg",
+      "CAM_L1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L1/f3f7eb1a07225973.jpg",
+      "CAM_R1": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R1/f569d3df828d5736.jpg",
+      "CAM_L2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_L2/89dc83bc90405b41.jpg",
+      "CAM_R2": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_R2/1c66f075d6265f17.jpg",
+      "CAM_B0": "2021.05.25.17.54.41_veh-35_01654_01850/CAM_B0/ab12e956943a59e3.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.05.25.17.54.41_veh-35_01654_01850/MergedPointCloud/3ffae7b70b65509d.pcd",
+    "2021.05.25.17.54.41_veh-35_01654_01850/MergedPointCloud/90c60b77c1725674.pcd",
+    "2021.05.25.17.54.41_veh-35_01654_01850/MergedPointCloud/8ef1f1038b755e09.pcd",
+    "2021.05.25.17.54.41_veh-35_01654_01850/MergedPointCloud/d996813147be5f13.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the landscaped beige wall and palm-lined entrance beneath the Wynn and Encore towers; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the landscaped beige wall and palm-lined entrance beneath the Wynn and Encore towers; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Wynn and Encore resort frontage frontage on the right.",
+      "Pull over by the near edge of the landscaped beige wall and palm-lined entrance beneath the Wynn and Encore towers.",
+      "Use the closer end of the Wynn and Encore resort frontage as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Wynn and Encore resort frontage frontage on the right.",
+      "Pull over by the far edge of the landscaped beige wall and palm-lined entrance beneath the Wynn and Encore towers.",
+      "Use the farther end of the Wynn and Encore resort frontage as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "499aba3c6c32ce3e5a10b654438fa2495c9bcae092890ae789c93cf3bf847e01"
+}

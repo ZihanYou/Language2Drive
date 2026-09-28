@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_4b9d7b4a05ce32c5",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -6.73466,
+      "y": 0.0285,
+      "velocity_xy": [
+        3.49685,
+        -0.06954
+      ]
+    },
+    {
+      "x": -4.80776,
+      "y": 0.01942,
+      "velocity_xy": [
+        4.13661,
+        -0.07579
+      ]
+    },
+    {
+      "x": -2.56773,
+      "y": 0.01323,
+      "velocity_xy": [
+        4.79575,
+        -0.09752
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        5.48193,
+        -0.11115
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_F0/8cb2fe4b700e5da1.jpg",
+      "CAM_L0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L0/4433cfa4af265d85.jpg",
+      "CAM_R0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R0/4bfaab863e6253fd.jpg",
+      "CAM_L1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L1/9d09457667c751a8.jpg",
+      "CAM_R1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R1/fdf53830c65154b0.jpg",
+      "CAM_L2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L2/e9fde308d0ab52f6.jpg",
+      "CAM_R2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R2/aa03e6d8cfda5ed1.jpg",
+      "CAM_B0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_B0/6c154d79f6025186.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_F0/e978e02cb6e95093.jpg",
+      "CAM_L0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L0/f99e2dac588d560c.jpg",
+      "CAM_R0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R0/bca3b06826c65195.jpg",
+      "CAM_L1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L1/19e427dd78ef5ab8.jpg",
+      "CAM_R1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R1/d39e74682d1d5e4a.jpg",
+      "CAM_L2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L2/351a41190b1f5239.jpg",
+      "CAM_R2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R2/ba0a39ecaf8b5098.jpg",
+      "CAM_B0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_B0/4dc2141e20ad5120.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_F0/f59c434a69105c38.jpg",
+      "CAM_L0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L0/bef3545afb155190.jpg",
+      "CAM_R0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R0/c5f07e671f6e56d4.jpg",
+      "CAM_L1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L1/325677152ceb5733.jpg",
+      "CAM_R1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R1/52f852f064af551a.jpg",
+      "CAM_L2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L2/bb7c4e57658b5844.jpg",
+      "CAM_R2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R2/74bedcf5f5a450c5.jpg",
+      "CAM_B0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_B0/e8e448a98bf154d1.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_F0/ace105c260b75c59.jpg",
+      "CAM_L0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L0/d6bebbd8b0345e50.jpg",
+      "CAM_R0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R0/019d622a26b25dae.jpg",
+      "CAM_L1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L1/3524201391365bca.jpg",
+      "CAM_R1": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R1/1dd902cd377d5ebd.jpg",
+      "CAM_L2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_L2/60ffb57cc3e95e5d.jpg",
+      "CAM_R2": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_R2/999e7174f3ed5245.jpg",
+      "CAM_B0": "2021.05.25.14.24.08_veh-25_00934_01067/CAM_B0/a16786d86e0953dd.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.05.25.14.24.08_veh-25_00934_01067/MergedPointCloud/c37bb4627ecc5ab0.pcd",
+    "2021.05.25.14.24.08_veh-25_00934_01067/MergedPointCloud/1f16799a65a554d9.pcd",
+    "2021.05.25.14.24.08_veh-25_00934_01067/MergedPointCloud/6a8b55f773225a7d.pcd",
+    "2021.05.25.14.24.08_veh-25_00934_01067/MergedPointCloud/5cb135d806dd58a9.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the beige colonnaded facade carrying Cirque du Soleil and PRIME posters; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the beige colonnaded facade carrying Cirque du Soleil and PRIME posters; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Bellagio frontage frontage on the right.",
+      "Pull over by the near edge of the beige colonnaded facade carrying Cirque du Soleil and PRIME posters.",
+      "Use the closer end of the Bellagio frontage as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Bellagio frontage frontage on the right.",
+      "Pull over by the far edge of the beige colonnaded facade carrying Cirque du Soleil and PRIME posters.",
+      "Use the farther end of the Bellagio frontage as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "90d2bec46821b381d280b6d730f9856a466fd4feac39ed4610d27bee7eac8748"
+}

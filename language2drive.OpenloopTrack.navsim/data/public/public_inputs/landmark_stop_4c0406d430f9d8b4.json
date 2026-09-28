@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_4c0406d430f9d8b4",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -7.07697,
+      "y": -1.604,
+      "velocity_xy": [
+        3.69538,
+        0.07529
+      ]
+    },
+    {
+      "x": -5.23456,
+      "y": -0.74125,
+      "velocity_xy": [
+        4.56744,
+        0.13949
+      ]
+    },
+    {
+      "x": -2.86282,
+      "y": -0.17482,
+      "velocity_xy": [
+        5.42853,
+        0.18695
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "velocity_xy": [
+        6.28147,
+        0.14384
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_F0/6996d57a03e35ece.jpg",
+      "CAM_L0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L0/8d8d419df9df5646.jpg",
+      "CAM_R0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R0/c522cc1cf7db5ea8.jpg",
+      "CAM_L1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L1/41b7ba9bd8ee5718.jpg",
+      "CAM_R1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R1/46aeca3d80ca5a28.jpg",
+      "CAM_L2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L2/9b73cfb516fc5a15.jpg",
+      "CAM_R2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R2/3a09d62412ab575a.jpg",
+      "CAM_B0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_B0/637276057a8e53d0.jpg"
+    },
+    {
+      "CAM_F0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_F0/49f8db8b5bd65e10.jpg",
+      "CAM_L0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L0/b23b89bc4262594c.jpg",
+      "CAM_R0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R0/d324ed9e1d7356e2.jpg",
+      "CAM_L1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L1/d89421b1cb865958.jpg",
+      "CAM_R1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R1/196b6c5f89035202.jpg",
+      "CAM_L2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L2/f66383a0260354e1.jpg",
+      "CAM_R2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R2/00a278dac06b5a40.jpg",
+      "CAM_B0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_B0/1c49cd38929958b2.jpg"
+    },
+    {
+      "CAM_F0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_F0/53c405e97a555799.jpg",
+      "CAM_L0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L0/33a3ef4a25045ee1.jpg",
+      "CAM_R0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R0/9fe84d59e5ce5bd8.jpg",
+      "CAM_L1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L1/667990fc1d8b5b1c.jpg",
+      "CAM_R1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R1/0d3c7c249ae15d35.jpg",
+      "CAM_L2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L2/c8111de9d56f5805.jpg",
+      "CAM_R2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R2/56de6916231656a5.jpg",
+      "CAM_B0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_B0/21c9e184faf559ef.jpg"
+    },
+    {
+      "CAM_F0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_F0/bfe5f195e4b85383.jpg",
+      "CAM_L0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L0/a2464346c9195969.jpg",
+      "CAM_R0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R0/c4583c9008a65a90.jpg",
+      "CAM_L1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L1/21787ab5d3c857ce.jpg",
+      "CAM_R1": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R1/46765b7c5bec5a17.jpg",
+      "CAM_L2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_L2/7f790cc0f39858a3.jpg",
+      "CAM_R2": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_R2/77e1716d9d2b5302.jpg",
+      "CAM_B0": "2021.08.30.13.45.25_veh-40_00784_00867/CAM_B0/9a48ca52bedc51aa.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.08.30.13.45.25_veh-40_00784_00867/MergedPointCloud/4ef98557b276587e.pcd",
+    "2021.08.30.13.45.25_veh-40_00784_00867/MergedPointCloud/c3b7571c38995e67.pcd",
+    "2021.08.30.13.45.25_veh-40_00784_00867/MergedPointCloud/a80b0645bd775266.pcd",
+    "2021.08.30.13.45.25_veh-40_00784_00867/MergedPointCloud/56b0012a91ec5f66.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the white storefront with the large YANKEE LOBSTER sign; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the white storefront with the large YANKEE LOBSTER sign; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Yankee Lobster restaurant frontage on the right.",
+      "Pull over by the near edge of the white storefront with the large YANKEE LOBSTER sign.",
+      "Use the closer end of the Yankee Lobster restaurant as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Yankee Lobster restaurant frontage on the right.",
+      "Pull over by the far edge of the white storefront with the large YANKEE LOBSTER sign.",
+      "Use the farther end of the Yankee Lobster restaurant as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "00013b9dbe9609b2ba26266944228df9fa19b02b6241a11d0857f3c203f32f1f"
+}

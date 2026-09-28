@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_8c15a07fdd221b3f",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -6.66248,
+      "y": 0.03285,
+      "velocity_xy": [
+        4.21277,
+        0.10617
+      ]
+    },
+    {
+      "x": -4.61921,
+      "y": 0.03154,
+      "velocity_xy": [
+        4.36409,
+        0.10284
+      ]
+    },
+    {
+      "x": -2.42685,
+      "y": 0.02082,
+      "velocity_xy": [
+        4.76419,
+        0.0972
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        5.21074,
+        0.10579
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_F0/5fc46ddfa716540d.jpg",
+      "CAM_L0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L0/89a215fdbd6453d2.jpg",
+      "CAM_R0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R0/952c4c4c912c5598.jpg",
+      "CAM_L1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L1/8d62d2fc94d754ce.jpg",
+      "CAM_R1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R1/d49a962bd78c5b06.jpg",
+      "CAM_L2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L2/35f7712f9f3851b6.jpg",
+      "CAM_R2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R2/76161a60d42e576b.jpg",
+      "CAM_B0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_B0/1db2a46a0af35663.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_F0/9c49402c556f5ad9.jpg",
+      "CAM_L0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L0/8f82fa81a99957e2.jpg",
+      "CAM_R0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R0/8bb17205bc525205.jpg",
+      "CAM_L1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L1/fad5ff395d6655f6.jpg",
+      "CAM_R1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R1/e011551ba7975c20.jpg",
+      "CAM_L2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L2/d24c3f6fd7ef5f11.jpg",
+      "CAM_R2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R2/bc28167676165c9a.jpg",
+      "CAM_B0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_B0/c323c62c988e5a3a.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_F0/0f5cea2aecfc5218.jpg",
+      "CAM_L0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L0/f8d5212580925161.jpg",
+      "CAM_R0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R0/9a5c6db4546b5edd.jpg",
+      "CAM_L1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L1/9d2e68eb0f9459a8.jpg",
+      "CAM_R1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R1/aa8b7d5d5b5a52e1.jpg",
+      "CAM_L2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L2/760823afee3d5f13.jpg",
+      "CAM_R2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R2/5b51aecdb9f056f3.jpg",
+      "CAM_B0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_B0/5c36188770755796.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_F0/8c0511841e065906.jpg",
+      "CAM_L0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L0/b71acdcacf2a52c8.jpg",
+      "CAM_R0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R0/82a17a68a9165036.jpg",
+      "CAM_L1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L1/f1021bd9a31d541b.jpg",
+      "CAM_R1": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R1/b11fe13dbb225609.jpg",
+      "CAM_L2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_L2/721a1f8965fd5a90.jpg",
+      "CAM_R2": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_R2/ce7c7a8c3ae757b7.jpg",
+      "CAM_B0": "2021.09.29.19.02.14_veh-28_00964_01689/CAM_B0/aea6fe6c97005411.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.09.29.19.02.14_veh-28_00964_01689/MergedPointCloud/1258d115cd135f43.pcd",
+    "2021.09.29.19.02.14_veh-28_00964_01689/MergedPointCloud/ae618f4a5eb75383.pcd",
+    "2021.09.29.19.02.14_veh-28_00964_01689/MergedPointCloud/5611b70d9ffa5e5e.pcd",
+    "2021.09.29.19.02.14_veh-28_00964_01689/MergedPointCloud/5965519aef785f88.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the dark glass corner storefront carrying the green Citizens Bank signs; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the dark glass corner storefront carrying the green Citizens Bank signs; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Citizens Bank corner frontage on the right.",
+      "Pull over by the near edge of the dark glass corner storefront carrying the green Citizens Bank signs.",
+      "Use the closer end of the Citizens Bank corner as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Citizens Bank corner frontage on the right.",
+      "Pull over by the far edge of the dark glass corner storefront carrying the green Citizens Bank signs.",
+      "Use the farther end of the Citizens Bank corner as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "86e373843abe1cf24cfb0caadbebb59ec5cd6c873cbfc3922c548b7a941557a8"
+}

@@ -1,0 +1,117 @@
+{
+  "pcu_id": "speed_high_d8040e7cc97fcd54",
+  "family": "speed_band",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -7.6858,
+      "y": -0.43182,
+      "velocity_xy": [
+        4.1433,
+        -0.0626
+      ]
+    },
+    {
+      "x": -5.53318,
+      "y": -0.10671,
+      "velocity_xy": [
+        4.83702,
+        -0.11753
+      ]
+    },
+    {
+      "x": -2.96615,
+      "y": -0.01123,
+      "velocity_xy": [
+        5.63238,
+        -0.13712
+      ]
+    },
+    {
+      "x": -0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        6.43041,
+        -0.11024
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_F0/7dd3c81ae904568f.jpg",
+      "CAM_L0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L0/3132a6467cdb50ad.jpg",
+      "CAM_R0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R0/f407b411065e55bb.jpg",
+      "CAM_L1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L1/d77343d845525a41.jpg",
+      "CAM_R1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R1/34a67657a7fd51f8.jpg",
+      "CAM_L2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L2/3a5c50f0853f5918.jpg",
+      "CAM_R2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R2/68c17cbd69475ac7.jpg",
+      "CAM_B0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_B0/4a33f398816959ef.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_F0/05b5f16db82b523c.jpg",
+      "CAM_L0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L0/1592ae2bb3a751e9.jpg",
+      "CAM_R0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R0/8031f9cbd3c858af.jpg",
+      "CAM_L1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L1/fc87815074fc51ff.jpg",
+      "CAM_R1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R1/6bd8136cb405537c.jpg",
+      "CAM_L2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L2/ca888c1c90875fbb.jpg",
+      "CAM_R2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R2/e18fadb468615a4f.jpg",
+      "CAM_B0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_B0/8045ebfb6f54595d.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_F0/d37247c7b2a355a4.jpg",
+      "CAM_L0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L0/b6a63da18ecc540f.jpg",
+      "CAM_R0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R0/b09de7f969325652.jpg",
+      "CAM_L1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L1/ec4953e01e4f548c.jpg",
+      "CAM_R1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R1/40e35ca430b75bd9.jpg",
+      "CAM_L2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L2/04a18ed8d0135d25.jpg",
+      "CAM_R2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R2/6aaef46711e859cd.jpg",
+      "CAM_B0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_B0/6d537f30a1cf5ea2.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_F0/52f1f856d5885a11.jpg",
+      "CAM_L0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L0/f98ef67f3d5459cc.jpg",
+      "CAM_R0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R0/5cdf6058eca25ae2.jpg",
+      "CAM_L1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L1/27f25306709053bc.jpg",
+      "CAM_R1": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R1/fcf9bb480b8152fc.jpg",
+      "CAM_L2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_L2/84aa12966b6b58f3.jpg",
+      "CAM_R2": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_R2/41fda156d1f65e1f.jpg",
+      "CAM_B0": "2021.09.16.14.39.34_veh-42_00032_00186/CAM_B0/648778f5e65d547f.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.09.16.14.39.34_veh-42_00032_00186/MergedPointCloud/385388ad686453d7.pcd",
+    "2021.09.16.14.39.34_veh-42_00032_00186/MergedPointCloud/6fdde744b66451da.pcd",
+    "2021.09.16.14.39.34_veh-42_00032_00186/MergedPointCloud/aca10e01b6255c96.pcd",
+    "2021.09.16.14.39.34_veh-42_00032_00186/MergedPointCloud/91cdeb1821f45dd9.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Adjust your speed to 3.5-5.5 m/s by 1.5 seconds and hold it through four seconds.",
+    "Adjust your speed to 6.5-8.5 m/s by 1.5 seconds and hold it through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Maintain between 3.5 and 5.5 m/s from 1.5 to 4 seconds.",
+      "Settle into the 3.5-5.5 m/s speed range and keep it until four seconds.",
+      "Reach 3.5 to 5.5 m/s by 1.5 seconds, then maintain that range."
+    ],
+    [
+      "Maintain between 6.5 and 8.5 m/s from 1.5 to 4 seconds.",
+      "Settle into the 6.5-8.5 m/s speed range and keep it until four seconds.",
+      "Reach 6.5 to 8.5 m/s by 1.5 seconds, then maintain that range."
+    ]
+  ],
+  "shared_input_hash": "d2617999a6a7442651a0d80111c7df1d83ca5c94cc23cc225a6221c492114aad"
+}

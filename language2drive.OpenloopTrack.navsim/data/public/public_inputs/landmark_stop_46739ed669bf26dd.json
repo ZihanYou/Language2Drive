@@ -1,0 +1,117 @@
+{
+  "pcu_id": "landmark_stop_46739ed669bf26dd",
+  "family": "landmark_stop",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -5.56289,
+      "y": -0.05357,
+      "velocity_xy": [
+        2.9192,
+        0.10145
+      ]
+    },
+    {
+      "x": -3.95626,
+      "y": -0.02922,
+      "velocity_xy": [
+        3.47124,
+        0.10813
+      ]
+    },
+    {
+      "x": -2.10437,
+      "y": -0.01422,
+      "velocity_xy": [
+        3.99402,
+        0.11891
+      ]
+    },
+    {
+      "x": -0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        4.49966,
+        0.14523
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_F0/173b93e13245503b.jpg",
+      "CAM_L0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L0/fe07b171e8195c61.jpg",
+      "CAM_R0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R0/9fc2009615bd533c.jpg",
+      "CAM_L1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L1/79a44d106b3055ad.jpg",
+      "CAM_R1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R1/b9d0eb48b5665999.jpg",
+      "CAM_L2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L2/e0d582f040895228.jpg",
+      "CAM_R2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R2/e69fdad4ed1159ce.jpg",
+      "CAM_B0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_B0/d24d6a66d5c7505a.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_F0/83c5e2d2bb685acb.jpg",
+      "CAM_L0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L0/fba4fd19ca2d5876.jpg",
+      "CAM_R0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R0/bc18cb9d6367576d.jpg",
+      "CAM_L1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L1/2965d1e32d7554f9.jpg",
+      "CAM_R1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R1/b88c563e322f5be5.jpg",
+      "CAM_L2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L2/6bf729c2b5ae5f46.jpg",
+      "CAM_R2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R2/dcc59d8076be50ea.jpg",
+      "CAM_B0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_B0/d9e117686c8e54c9.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_F0/4deec79ad7e25975.jpg",
+      "CAM_L0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L0/543b4d9643775ed3.jpg",
+      "CAM_R0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R0/7a76b0e90aef5663.jpg",
+      "CAM_L1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L1/2ca4d746764656cd.jpg",
+      "CAM_R1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R1/f485571b479f5f43.jpg",
+      "CAM_L2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L2/b6d8970885e4501e.jpg",
+      "CAM_R2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R2/40b0f78aa8ef57d8.jpg",
+      "CAM_B0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_B0/bf1f2941712c5e01.jpg"
+    },
+    {
+      "CAM_F0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_F0/54a8bc9d9e2d53d1.jpg",
+      "CAM_L0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L0/2afcda5e1de15abc.jpg",
+      "CAM_R0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R0/2efd83384d895672.jpg",
+      "CAM_L1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L1/0914aebd9eef506c.jpg",
+      "CAM_R1": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R1/8defb2c115cd513e.jpg",
+      "CAM_L2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_L2/7f7e55a2ac635969.jpg",
+      "CAM_R2": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_R2/96137bb2d6f15c14.jpg",
+      "CAM_B0": "2021.09.09.17.18.51_veh-48_01248_01450/CAM_B0/224d8750d2f75cd9.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.09.09.17.18.51_veh-48_01248_01450/MergedPointCloud/3dfb34bb334a557e.pcd",
+    "2021.09.09.17.18.51_veh-48_01248_01450/MergedPointCloud/b53bfb5b5996586c.pcd",
+    "2021.09.09.17.18.51_veh-48_01248_01450/MergedPointCloud/b33abe020a0c5e7b.pcd",
+    "2021.09.09.17.18.51_veh-48_01248_01450/MergedPointCloud/d35efbe679f55cc7.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "Stop along the right side beside the near end of the giant white milk bottle with the red Hood logo beside the brick building; remain stopped through four seconds.",
+    "Stop along the right side beside the far end of the giant white milk bottle with the red Hood logo beside the brick building; remain stopped through four seconds."
+  ],
+  "paraphrases": [
+    [
+      "Stop at the first end of the Hood Milk Bottle frontage on the right.",
+      "Pull over by the near edge of the giant white milk bottle with the red Hood logo beside the brick building.",
+      "Use the closer end of the Hood Milk Bottle as the curbside stopping target."
+    ],
+    [
+      "Stop at the second end of the Hood Milk Bottle frontage on the right.",
+      "Pull over by the far edge of the giant white milk bottle with the red Hood logo beside the brick building.",
+      "Use the farther end of the Hood Milk Bottle as the curbside stopping target."
+    ]
+  ],
+  "shared_input_hash": "05ec9b9f41c20cd062415c81206316c271344f6c14c3a4e8d3fec52c4947efb8"
+}

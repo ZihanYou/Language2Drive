@@ -1,0 +1,117 @@
+{
+  "pcu_id": "order_c9756a12b7f61725",
+  "family": "order",
+  "status": "balanced_pre_review",
+  "timestamps": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "coordinate_frame": "ego_at_anchor",
+  "reference_point": "rear_axle",
+  "ego_history": [
+    {
+      "x": -10.81836,
+      "y": 0.00491,
+      "velocity_xy": [
+        7.51126,
+        -0.17251
+      ]
+    },
+    {
+      "x": -7.15039,
+      "y": 0.00676,
+      "velocity_xy": [
+        7.37889,
+        -0.14726
+      ]
+    },
+    {
+      "x": -3.54081,
+      "y": -0.00098,
+      "velocity_xy": [
+        7.246,
+        -0.1534
+      ]
+    },
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "velocity_xy": [
+        7.09395,
+        -0.15167
+      ]
+    }
+  ],
+  "camera_paths_history": [
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/f939bf7937765970.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/c13bb83728025c33.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/a048598bba0352a0.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/e6949b22ea335461.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/6b9f740045d854ed.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/958f808b3e6655d2.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/6383e0ecc3d75cc1.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/c13f7dbaba005ffb.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/ae396451c3fe56f7.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/8036ee904f345a8b.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/ac4201ea186b5030.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/4d4b4a30d7415250.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/48abd97f25735235.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/affd00e6e85f52c9.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/df8a74480b385a73.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/b53ffa74d96651a5.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/e5b56582edf5569f.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/d1065d852327501e.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/9d796b86cb5f5646.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/66d5d378135d5b99.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/b3721b4998b35e80.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/066bdb6251025646.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/9494a677c0325fe4.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/c6be927a5bd95b9f.jpg"
+    },
+    {
+      "CAM_F0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_F0/806118491c7f5033.jpg",
+      "CAM_L0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L0/b6a2a1078ea15ca7.jpg",
+      "CAM_R0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R0/0c4e7f3f1637573a.jpg",
+      "CAM_L1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L1/0baf7a73da83513f.jpg",
+      "CAM_R1": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R1/ba10a85f34a45356.jpg",
+      "CAM_L2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_L2/d4094e18c0875156.jpg",
+      "CAM_R2": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_R2/01a0bb10fefa503b.jpg",
+      "CAM_B0": "2021.05.25.15.59.03_veh-30_00625_00855/CAM_B0/5cb670ac3c5a5a45.jpg"
+    }
+  ],
+  "lidar_paths_history": [
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/3a2c60054c4b5e00.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/2a07a75bded058fa.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/fd7094a5e2175db1.pcd",
+    "2021.05.25.15.59.03_veh-30_00625_00855/MergedPointCloud/c34635be795a5bee.pcd"
+  ],
+  "sensors_verified": true,
+  "instructions": [
+    "First slow below 5.757 m/s, then change one lane to the left and remain there.",
+    "First change one lane to the left, then slow below 5.757 m/s."
+  ],
+  "paraphrases": [
+    [
+      "Reduce speed below 5.757 m/s before moving into the adjacent left lane.",
+      "Slow down first; afterward, take and hold the lane to the left.",
+      "Complete the slowdown before the left lane change."
+    ],
+    [
+      "Enter the adjacent left lane before reducing speed below 5.757 m/s.",
+      "Make the left lane change first; slow down afterward.",
+      "Complete the lane change to the left before the slowdown."
+    ]
+  ],
+  "shared_input_hash": "cbcf43945a53a0aa8724a76c47a11f71d20e7ee3786385e4e68f816d2e233cbc"
+}
