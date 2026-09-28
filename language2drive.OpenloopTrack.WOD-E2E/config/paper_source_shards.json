@@ -1,0 +1,165 @@
+{
+  "profile": "paper_wod_e2e_local_validation_subset_v1",
+  "source": "Waymo Open Dataset End-to-End Driving validation",
+  "shards": [
+    {
+      "name": "val_202504211843.tfrecord-00000-of-00093",
+      "size_bytes": 2615071793
+    },
+    {
+      "name": "val_202504211843.tfrecord-00001-of-00093",
+      "size_bytes": 2580683807
+    },
+    {
+      "name": "val_202504211843.tfrecord-00002-of-00093",
+      "size_bytes": 2624073072
+    },
+    {
+      "name": "val_202504211843.tfrecord-00003-of-00093",
+      "size_bytes": 2635200440
+    },
+    {
+      "name": "val_202504211843.tfrecord-00004-of-00093",
+      "size_bytes": 2654352366
+    },
+    {
+      "name": "val_202504211843.tfrecord-00005-of-00093",
+      "size_bytes": 2632668825
+    },
+    {
+      "name": "val_202504211843.tfrecord-00006-of-00093",
+      "size_bytes": 2650974593
+    },
+    {
+      "name": "val_202504211843.tfrecord-00007-of-00093",
+      "size_bytes": 2448248949
+    },
+    {
+      "name": "val_202504211843.tfrecord-00008-of-00093",
+      "size_bytes": 2590440190
+    },
+    {
+      "name": "val_202504211843.tfrecord-00009-of-00093",
+      "size_bytes": 2636210054
+    },
+    {
+      "name": "val_202504211843.tfrecord-00010-of-00093",
+      "size_bytes": 2590696005
+    },
+    {
+      "name": "val_202504211843.tfrecord-00011-of-00093",
+      "size_bytes": 2646924168
+    },
+    {
+      "name": "val_202504211843.tfrecord-00012-of-00093",
+      "size_bytes": 2662175035
+    },
+    {
+      "name": "val_202504211843.tfrecord-00013-of-00093",
+      "size_bytes": 2711540242
+    },
+    {
+      "name": "val_202504211843.tfrecord-00014-of-00093",
+      "size_bytes": 2592368086
+    },
+    {
+      "name": "val_202504211843.tfrecord-00015-of-00093",
+      "size_bytes": 2529617205
+    },
+    {
+      "name": "val_202504211843.tfrecord-00016-of-00093",
+      "size_bytes": 2640378898
+    },
+    {
+      "name": "val_202504211843.tfrecord-00017-of-00093",
+      "size_bytes": 2531502163
+    },
+    {
+      "name": "val_202504211843.tfrecord-00018-of-00093",
+      "size_bytes": 2534656679
+    },
+    {
+      "name": "val_202504211843.tfrecord-00019-of-00093",
+      "size_bytes": 2658265933
+    },
+    {
+      "name": "val_202504211843.tfrecord-00020-of-00093",
+      "size_bytes": 2662432237
+    },
+    {
+      "name": "val_202504211843.tfrecord-00021-of-00093",
+      "size_bytes": 2737821992
+    },
+    {
+      "name": "val_202504211843.tfrecord-00022-of-00093",
+      "size_bytes": 2555705451
+    },
+    {
+      "name": "val_202504211843.tfrecord-00023-of-00093",
+      "size_bytes": 2578802793
+    },
+    {
+      "name": "val_202504211843.tfrecord-00024-of-00093",
+      "size_bytes": 2441932463
+    },
+    {
+      "name": "val_202504211843.tfrecord-00025-of-00093",
+      "size_bytes": 2618450376
+    },
+    {
+      "name": "val_202504211843.tfrecord-00026-of-00093",
+      "size_bytes": 2647504218
+    },
+    {
+      "name": "val_202504211843.tfrecord-00027-of-00093",
+      "size_bytes": 2384996075
+    },
+    {
+      "name": "val_202504211843.tfrecord-00028-of-00093",
+      "size_bytes": 2646274697
+    },
+    {
+      "name": "val_202504211843.tfrecord-00029-of-00093",
+      "size_bytes": 2582920352
+    },
+    {
+      "name": "val_202504211843.tfrecord-00030-of-00093",
+      "size_bytes": 2481578367
+    },
+    {
+      "name": "val_202504211843.tfrecord-00031-of-00093",
+      "size_bytes": 2566587271
+    },
+    {
+      "name": "val_202504211843.tfrecord-00032-of-00093",
+      "size_bytes": 2578306615
+    },
+    {
+      "name": "val_202504211843.tfrecord-00033-of-00093",
+      "size_bytes": 2668370540
+    },
+    {
+      "name": "val_202504211843.tfrecord-00034-of-00093",
+      "size_bytes": 2526146759
+    },
+    {
+      "name": "val_202504211843.tfrecord-00035-of-00093",
+      "size_bytes": 2507662670
+    },
+    {
+      "name": "val_202504211843.tfrecord-00036-of-00093",
+      "size_bytes": 2643235048
+    },
+    {
+      "name": "val_202504211843.tfrecord-00037-of-00093",
+      "size_bytes": 2619291753
+    }
+  ],
+  "scenario_clusters_file": {
+    "name": "val_sequence_name_to_scenario_cluster.json",
+    "size_bytes": 36235
+  },
+  "expected_anchors": 203,
+  "expected_candidate_pairs": 563,
+  "expected_qualified_pcus": 241
+}

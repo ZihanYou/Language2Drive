@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.env
+.cache/
+artifacts/
+review/
+prerelease/
+experiments/
+models/
+assets/
+contracts/
+.conda/
+outputs/
+third_party/
+*.zip
+*.tar.gz
