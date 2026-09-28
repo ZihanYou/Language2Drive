@@ -1,5 +1,6 @@
 assets/
 model_eval/envs/
+navsim_offline/envs/
 model_eval/repos/
 model_eval/weights/
 model_eval/runs/

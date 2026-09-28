@@ -2,6 +2,12 @@
 
 Status: frozen before the first complete model run. Benchmark: `l2d-offline-navsim` 1.0.0.
 
+The manuscript's original NAVSIM table is reproducible with the isolated
+`paper-legacy` scorer (`scripts/run_paper_legacy_scoring.sh`), which has no
+Shapely installation. Geometry-aware evaluation uses
+`navsim_offline/score_corrected.py` and `requirements-scorer.txt`. The two
+profiles share predictions and aggregation formulas but give different values.
+
 ## Evaluation unit and aggregation
 
 - 38 PCUs, two candidate instructions per PCU.

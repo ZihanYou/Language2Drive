@@ -34,13 +34,16 @@ Minimal file structure:
 }
 ```
 
-Score a submission from the track directory with evaluator-held sidecars:
+Reproduce the manuscript's historical scores from the track directory with
+evaluator-held sidecars:
 
 ```sh
-python3 navsim_offline/score.py \
+sh scripts/run_paper_legacy_scoring.sh \
   --sidecars /private/path/private_sidecars \
   --predictions predictions.json \
   --output scores.json
 ```
 
-Python and Shapely are required for semantic scoring.
+The legacy runner uses an isolated Python environment without Shapely. For
+geometry-aware scoring, install `navsim_offline/requirements-scorer.txt` and
+call `python3 navsim_offline/score_corrected.py` with the same arguments.

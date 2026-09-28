@@ -69,16 +69,24 @@ language insertion points, and output conversions are in the protocol document.
 Submissions contain eight rear-axle poses in the anchor ego frame, at 0.5 s
 intervals to 4 s. The schema and example are in
 [`data/public/SUBMISSION_FORMAT.md`](data/public/SUBMISSION_FORMAT.md).
-Install scorer requirements with
-`python3 -m pip install -r navsim_offline/requirements-scorer.txt` and run:
+For exact reproduction of the NAVSIM numbers printed in the manuscript, use
+the original scoring environment. The runner creates an isolated virtual
+environment without Shapely and keeps the original behavior in which geometry
+contract import errors are absorbed during scoring:
 
 ```sh
-python3 navsim_offline/score.py \
+sh scripts/run_paper_legacy_scoring.sh \
   --sidecars /path/to/private_sidecars \
   --predictions /path/to/canonical.json \
   --rewrite-predictions /path/to/rewrites.json \
-  --output /path/to/scores.json
+  --output /path/to/paper-legacy-scores.json
 ```
+
+This is a historical reproduction profile, not a valid assessment of lane
+geometry. For geometry-aware scoring, install
+`python3 -m pip install -r navsim_offline/requirements-scorer.txt` and run
+`python3 navsim_offline/score_corrected.py` with the same arguments. Keep the
+two profiles and their results distinct.
 
 Contract sidecars are held by the benchmark evaluator to preserve the test set.
 The scorer source is public so its contract logic and aggregation can be audited;
@@ -93,7 +101,7 @@ To exercise the complete scorer without official labels, run the synthetic
 speed-band example:
 
 ```sh
-python3 navsim_offline/score.py \
+python3 navsim_offline/score_corrected.py \
   --sidecars examples/toy_sidecars \
   --predictions examples/toy_predictions.json \
   --rewrite-predictions examples/toy_rewrites.json \

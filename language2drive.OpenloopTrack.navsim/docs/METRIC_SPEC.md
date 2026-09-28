@@ -41,3 +41,9 @@ For every report, the evaluator checks
 
 The right side is reported as `paired_imbalance`, together with an
 `identity_residual` that must be numerically zero.
+
+The manuscript's original NAVSIM values use the `paper-legacy` scoring
+environment, where Shapely is absent and geometry import errors are absorbed
+by the original verifier. The same metric formulas apply to the corrected
+geometry-aware profile, but the numeric results differ. Report the profile
+with each score.
