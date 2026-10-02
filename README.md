@@ -37,18 +37,6 @@ Measure whether language changes what a driving VLA actually does.
 
 </div>
 
-<a id="release-roadmap--todo"></a>
-
-## 🗓️ Release Roadmap / TODO
-
-| Status | Deliverable |
-|:---:|---|
-| ✅ | Benchmark source, five native evaluators and unified model-adapter SDK |
-| ✅ | Wheel build, selectable environment setup and manuscript result tables |
-| ✅ | evaluation resources on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive)|
-| ✅ | Official benchmark release, supporting the use of any datasets |
-| ⏳ | Official versioned dataset, model and checkpoints release|
-| ⏳ | Further support |
 
 
 <a id="benchmark-overview"></a>
@@ -395,6 +383,18 @@ python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 ```
 
 These checks validate SDK behavior, page assets and a clean wheel installation. Use the native reproduction commands above for GPU simulator evaluations. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
+<a id="release-roadmap--todo"></a>
+
+## 🗓️ Release Roadmap / TODO
+
+| Status | Deliverable |
+|:---:|---|
+| ✅ | Benchmark source, five native evaluators and unified model-adapter SDK |
+| ✅ | Wheel build, selectable environment setup and manuscript result tables |
+| ✅ | evaluation resources on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive)|
+| ✅ | Official benchmark release, supporting the use of any datasets |
+| ⏳ | Official versioned dataset, model and checkpoints release|
+| ⏳ | Further support |
 
 
 <a id="citation"></a>
