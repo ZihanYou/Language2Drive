@@ -62,7 +62,19 @@ def plan(args, work, uv):
         install += ['--offline']
     else:
         install += ['--index-url', args.index_url]
-    return [
+    steps = []
+    if not args.offline and args.index_url.rstrip('/') != 'https://pypi.org/simple':
+        exported = work / 'frozen-requirements.txt'
+        registry = work / 'frozen-registry-requirements.txt'
+        steps += [
+            ('create-runtime-venv', [str(uv), 'venv', '--allow-existing', '--python', args.python, str(work / 'venv')], checkout),
+            ('export-frozen-pins', [str(uv), 'export', '--frozen', '--all-extras', '--no-emit-workspace', '--no-header', '--no-annotate',
+                                    '--format', 'requirements-txt', '--output-file', str(exported)], checkout),
+            ('select-registry-pins', [sys.executable, str(ROOT / 'scripts/prepare_runtime_mirror.py'),
+                                      '--source', str(exported), '--output', str(registry)], checkout),
+            ('download-hash-bound-mirror', [str(uv), '--no-config', *install[1:], '--require-hashes', '--no-deps', '-r', str(registry)], checkout),
+        ]
+    return steps + [
         ('sync-frozen-upstream', sync, checkout),
         ('compile-protobuf', [str(python), '-c',
           'from scripts.compile_protos import compile_protos; compile_protos()'], checkout / 'src/grpc'),

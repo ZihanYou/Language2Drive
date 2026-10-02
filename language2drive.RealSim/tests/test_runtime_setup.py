@@ -20,8 +20,10 @@ def test_plan_is_non_mutating(tmp_path):
     assert output.returncode == 0, output.stderr
     assert not target.exists()
     result = json.loads(output.stdout)
-    sync = result['steps'][0]['command']
+    sync = next(row['command'] for row in result['steps'] if row['name'] == 'sync-frozen-upstream')
     assert '--frozen' in sync and '--extra' in sync and 'all' in sync
+    mirror = next(row['command'] for row in result['steps'] if row['name'] == 'download-hash-bound-mirror')
+    assert '--require-hashes' in mirror and '--no-deps' in mirror
     assert result['proxy_enabled'] is False
     assert result['environment_archive_uploaded'] is False
     assert result['alpasim_commit'] == setup.PIN

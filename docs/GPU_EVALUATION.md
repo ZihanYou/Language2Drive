@@ -20,6 +20,11 @@ RealSim bundle/scenes, and pulls the pinned NRE image. `--network auto` selects
 official or mirror sources. Restricted HF resources require authorized access on
 the official endpoint; anonymous mirrors cannot substitute for that access.
 
+RealSim mirror provisioning exports the frozen lock and downloads registry
+packages with their exact versions, environment markers and SHA256 hashes.
+The original lock is preserved; native frozen synchronization still owns Git,
+direct-URL and workspace dependencies. No dependency versions are re-resolved.
+
 CARLA needs Conda on PATH. RealSim uses its native pinned Python 3.12 / AlpaSim
 bootstrap, NVIDIA Container Toolkit and Docker. Host drivers are installed by the
 host administrator. Supply Waymo source data with `setup --source-root ...`.
