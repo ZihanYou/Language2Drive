@@ -4,9 +4,18 @@
 
 ### Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?
 
-Zihan You<sup>1,2*†</sup>, Zehua Fan<sup>3*</sup>, Wenqi Lyu<sup>4*</sup>, Aoqi Wang<sup>5*</sup>, Ni Wang<sup>6</sup>, Yifei Yang<sup>7</sup>, Linge Zhao<sup>8</sup>, Huan Li<sup>9</sup>, Sining Ang<sup>10</sup>, Yuguang Yang<sup>1</sup>, Jueyu Chen<sup>10,11</sup>, Xiangyu Li<sup>12</sup>, Qianshan Wei<sup>13,14</sup>, Jieyuan Pei<sup>1,15,16</sup>, Yuxin Wang<sup>17</sup>, Zhiwen Chen<sup>16</sup>, Jiaqi Li<sup>18</sup>, Wenxuan Song<sup>16</sup>, Yanyuan Qiao<sup>19</sup>, Benjin Zhu<sup>20</sup>, Haoang Li<sup>16</sup>, Yan Wang<sup>1‡</sup>
+**👥 Authors**
 
-<sub><sup>1</sup>THU · <sup>2</sup>SEU · <sup>3</sup>SJTU · <sup>4</sup>Adelaide · <sup>5</sup>BISTU · <sup>6</sup>Amazon · <sup>7</sup>BJTU · <sup>8</sup>WHU · <sup>9</sup>HUST · <sup>10</sup>USTC · <sup>11</sup>NIO · <sup>12</sup>UT Austin · <sup>13</sup>ByteDance · <sup>14</sup>CAS · <sup>15</sup>HiThink · <sup>16</sup>HKUST(GZ) · <sup>17</sup>AMD · <sup>18</sup>HKU · <sup>19</sup>EPFL · <sup>20</sup>Li Auto</sub>
+Zihan You<sup>1,2,*,†</sup>, Zehua Fan<sup>3,*</sup>, Wenqi Lyu<sup>4,*</sup>, Aoqi Wang<sup>5,*</sup>,<br>
+Ni Wang<sup>6</sup>, Yifei Yang<sup>7</sup>, Linge Zhao<sup>8</sup>, Huan Li<sup>9</sup>, Sining Ang<sup>10</sup>, Yuguang Yang<sup>1</sup>,<br>
+Jueyu Chen<sup>10,11</sup>, Xiangyu Li<sup>12</sup>, Qianshan Wei<sup>13,14</sup>, Jieyuan Pei<sup>1,15,16</sup>, Yuxin Wang<sup>17</sup>, Zhiwen Chen<sup>16</sup>,<br>
+Jiaqi Li<sup>18</sup>, Wenxuan Song<sup>16</sup>, Yanyuan Qiao<sup>19</sup>, Benjin Zhu<sup>20</sup>, Haoang Li<sup>16</sup>, Yan Wang<sup>1,‡</sup>
+
+**🏛️ Affiliations**
+
+<sup>1</sup> THU · <sup>2</sup> SEU · <sup>3</sup> SJTU · <sup>4</sup> Adelaide · <sup>5</sup> BISTU · <sup>6</sup> Amazon · <sup>7</sup> BJTU<br>
+<sup>8</sup> WHU · <sup>9</sup> HUST · <sup>10</sup> USTC · <sup>11</sup> NIO · <sup>12</sup> UT Austin · <sup>13</sup> ByteDance · <sup>14</sup> CAS<br>
+<sup>15</sup> HiThink · <sup>16</sup> HKUST(GZ) · <sup>17</sup> AMD · <sup>18</sup> HKU · <sup>19</sup> EPFL · <sup>20</sup> Li Auto
 
 <sub>* Co-first contributors &nbsp; † Project leader &nbsp; ‡ Corresponding author</sub>
 
@@ -28,7 +37,9 @@ Measure whether language changes what a driving VLA actually does.
 
 </div>
 
-## TL;DR
+<a id="tldr"></a>
+
+## ⚡ TL;DR
 
 - **Language control is measurable.** A Paired Counterfactual Unit (PCU) holds the scene and seed fixed and tests two mutually exclusive, feasible instructions.
 - **Both arms must succeed.** In CARLA, **110 of 118 successful rollouts (93.2%) are one-sided** across the six principal evaluated systems.
@@ -38,7 +49,9 @@ Measure whether language changes what a driving VLA actually does.
 
 > **Training-free evaluation.** Every model currently reported is evaluated using an existing checkpoint without training or fine-tuning on Language2Drive.
 
-## Release Roadmap / TODO
+<a id="release-roadmap--todo"></a>
+
+## 🗓️ Release Roadmap / TODO
 
 | Status | Deliverable |
 |:---:|---|
@@ -52,27 +65,39 @@ Measure whether language changes what a driving VLA actually does.
 
 Follow the [Hugging Face repository](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main) for the official dataset release and upcoming model resources.
 
-## Benchmark Overview
+<a id="benchmark-overview"></a>
+
+## 🧭 Benchmark Overview
 
 Language2Drive asks whether changing a natural-language request reliably changes **which feasible behavior a driving VLA selects and completes**. Each PCU has a shared initial driving context and two alternative instructions. Contracts verify the actual trajectory, including requested behavior, alternative rejection and the track's execution requirements.
 
-### Scope A: Atomic Action
+<a id="scope-a-atomic-action"></a>
+
+### 🎯 Scope A: Atomic Action
 
 Choose a local maneuver: turn left, proceed straight, stop or select another feasible action.
 
-### Scope B: Persistent Behavior
+<a id="scope-b-persistent-behavior"></a>
+
+### ⏱️ Scope B: Persistent Behavior
 
 Maintain a constraint over time: speed, following distance or another scoped behavior. The evaluator measures compliance throughout the interval.
 
-### Scope C: Scene-Grounded Navigation
+<a id="scope-c-scene-grounded-navigation"></a>
+
+### 📍 Scope C: Scene-Grounded Navigation
 
 Resolve a destination or reference in the physical scene, rather than following a privileged target point supplied by the evaluator.
 
-### Scope D: Long-Horizon Instruction Program
+<a id="scope-d-long-horizon-instruction-program"></a>
+
+### 🧩 Scope D: Long-Horizon Instruction Program
 
 Execute an ordered program of stages while tracking references, transitions and completion conditions.
 
-## PCU: Paired Counterfactual Unit
+<a id="pcu-paired-counterfactual-unit"></a>
+
+## 🔀 PCU: Paired Counterfactual Unit
 
 **Same scene / same seed / different mutually exclusive instructions.**
 
@@ -83,7 +108,9 @@ Execute an ordered program of stages while tracking references, transitions and 
 
 For example, the same junction can ask **“Turn left”** or **“Go straight.”** Evaluate each from the matched initial state with independent model memory. Paired success requires completing both requests.
 
-### Benchmark construction
+<a id="benchmark-construction"></a>
+
+### 🏗️ Benchmark construction
 
 <img src="docs/assets/process_png.png" alt="Five-stage benchmark construction: source curation, geometric grounding, paired specification, compilation and validation; 64 CARLA and 30 RealSim PCUs" width="100%">
 
@@ -93,7 +120,9 @@ Strict **SISR / CFPS** distinguish individual from paired completion. **SCS / PC
 
 The model receives public observations and the active instruction. Geometric targets, evaluator contracts and opposite-arm instructions remain outside the SDK request.
 
-## Benchmark Tracks
+<a id="benchmark-tracks"></a>
+
+## 🛣️ Benchmark Tracks
 
 | Track | Evaluation | Manuscript / frozen scope | Model output | Native guide |
 |---|---|---|---|---|
@@ -105,7 +134,9 @@ The model receives public observations and the active instruction. Geometric tar
 
 **Scopes are instruction categories; tracks are evaluation environments.** Counts are not interchangeable. CARLA's source inventory is broader than the 64-PCU paper cohort; record tier, split and seed. The SDK defaults to `base` and evaluates dev/test separately. CARLA PSM uses 24 additional routes and requires the native diagnostic evaluation. WOD's public workload can include construction candidates beyond the frozen 241-PCU scored subset.
 
-## Main Results / Leaderboard
+<a id="main-results--leaderboard"></a>
+
+## 🏆 Main Results / Leaderboard
 
 **All reported systems use the training-free protocol.** Values below are transcribed from the supplied manuscript; all scores are **0–100, higher is better**. Systems are compared **within each track and profile**. [Project-page leaderboard source](docs/index.html) · [Machine-readable results](docs/data/results.json) · [Submission guide](docs/LEADERBOARD.md).
 
@@ -188,7 +219,9 @@ P0 · 241 PCUs · canonical.
 
 The CARLA table includes the six principal systems; the paper's Senna high-level bridge is a separate diagnostic configuration. **NAVSIM numbers use the historical manuscript scorer.** New SDK runs use `score_corrected.py`; keep corrected evaluations in a separate leaderboard profile. Full protocol, coverage and failure denominators must accompany submissions. Rankings follow each track’s native metrics and evaluation profile.
 
-## Visualization / Example Cases
+<a id="visualization--example-cases"></a>
+
+## 🎬 Visualization / Example Cases
 
 🎬 **[Watch the 2-minute project film](docs/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](docs/index.html#examples)** · **[Prepare a model submission](docs/submit.html)**
 
@@ -210,7 +243,9 @@ The local project preview includes **73 clips across all five backends**, model 
 
 Explore manuscript visualizations, the benchmark construction pipeline and an animated explanation of the paired mechanism.
 
-## Installation
+<a id="installation"></a>
+
+## 📦 Installation
 
 The SDK coordinator supports **Python 3.10+**. Model dependencies stay in your model's own environment. CARLA's evaluator uses **Python 3.11**; the pinned AlpaSim runtime uses **Python 3.12**. Linux / compatible NVIDIA runtime is required for live simulator evaluation.
 
@@ -253,7 +288,9 @@ pip install 'language2drive[realsim]'      # optional RealSim evaluator dependen
 
 Extras install Python dependencies. `setup --runtime` provisions separate simulator environments; host GPU drivers, external runtime services and gated dataset permissions remain deployment prerequisites. [Release instructions](docs/RELEASE.md) explain GitHub Pages and PyPI activation.
 
-## Quick Start
+<a id="quick-start"></a>
+
+## 🚀 Quick Start
 
 ### 1. Check the interface without datasets
 
@@ -325,7 +362,9 @@ The example configuration contains explicit `PATH/TO/...` placeholders. Resolve 
 
 Each track saves native predictions, score files, coverage and logs. `summary.json` links each track's artifacts; a failed track makes the command return nonzero while other selected tracks continue. Open-loop inference resumes from a configuration- and service-bound ledger. Failed requests remain in the scheduled inventory; rerun a new output directory when intentionally changing model or configuration.
 
-## Dataset / Evaluation Format
+<a id="dataset--evaluation-format"></a>
+
+## 🗂️ Dataset / Evaluation Format
 
 **Official versioned dataset release: coming soon.** [Dataset repository on Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main). Public workload definitions and native evaluator code are in the track directories. Frozen private contracts and some replay bundles are separate resources; upstream datasets retain their own access terms.
 
@@ -348,7 +387,9 @@ Each track saves native predictions, score files, coverage and logs. `summary.js
 
 This is the **NAVSIM** output grid. nuScenes uses `ego_pose_origin`; RealSim uses `rig_origin`. All SDK XY outputs use **+x forward, +y left, metres**. Wrong reference points, nonfinite coordinates and incompatible time grids are rejected. Full [adapter schema](docs/ADAPTER.md) and [protocol / native export formats](docs/PROTOCOL.md) are documented separately.
 
-## Reproduce Evaluation
+<a id="reproduce-evaluation"></a>
+
+## 🔬 Reproduce Evaluation
 
 Use the original model integration, controller, frozen release and scorer version to reproduce each manuscript baseline. For custom adapters, report the evaluated model and controller configuration.
 
@@ -369,7 +410,9 @@ python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 
 These checks validate SDK behavior, page assets and a clean wheel installation. Use the native reproduction commands above for GPU simulator evaluations. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
 
-## Project Page Preview
+<a id="project-page-preview"></a>
+
+## 🌐 Project Page Preview
 
 The project page is available through the local SSH preview. GitHub Pages deployment is controlled by the manual release workflow.
 
@@ -383,7 +426,9 @@ ssh -N -L 18765:127.0.0.1:18765 youzh2507@server41
 
 Open **http://localhost:18765** in your browser. The page includes the project film, interactive framework, searchable case library, all five manuscript result tables, and a browser-based result submission builder. The preview server supports video seeking through the SSH tunnel. The complete static site is ready for the [manual GitHub Pages deployment](docs/RELEASE.md#github-pages).
 
-## Citation
+<a id="citation"></a>
+
+## 📚 Citation
 
 If Language2Drive supports your research, please cite our paper.
 
@@ -417,6 +462,8 @@ If Language2Drive supports your research, please cite our paper.
 }
 ```
 
-## License
+<a id="license"></a>
+
+## 📄 License
 
 Original Language2Drive code is under the [MIT License](LICENSE). Third-party code, simulators, datasets and checkpoints retain their original licenses and notices; the SDK wheel preserves backend notices. See [CARLA third-party notices](language2drive.carla/THIRD_PARTY_NOTICES), [RealSim notices](language2drive.RealSim/NOTICE.md) and each upstream dataset's terms. The manuscript and its figures are research materials, separate from the code license.
