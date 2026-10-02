@@ -146,6 +146,12 @@ class SDKTests(unittest.TestCase):
         self.assertIn('create', plan['commands'][0]['argv'])
         self.assertIn('python=3.11', plan['commands'][0]['argv'])
         self.assertTrue(any('setup_runtime.py' in ' '.join(s['argv']) for s in plan['commands']))
+        native_sdk = next(s['argv'] for s in plan['commands']
+                          if s['track'] == 'realsim' and '--no-deps' in s['argv']
+                          and '--python' in s['argv'])
+        self.assertTrue(native_sdk[0].endswith('/.runtime-env/bootstrap/bin/uv'))
+        self.assertIn('--no-config', native_sdk)
+        self.assertTrue(native_sdk[native_sdk.index('--python') + 1].endswith('/.runtime-env/venv/bin/python'))
         mirrored = bootstrap(ROOT, ['nuscenes'], mode='mirror', download=True, dry_run=True)
         self.assertEqual(len(mirrored['resources_pending']), 1)
 

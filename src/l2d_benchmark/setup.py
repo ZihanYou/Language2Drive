@@ -99,7 +99,10 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
                 plan.append({'track': track, 'cwd': str(backend), 'argv': [python, str(backend / 'scripts/setup_runtime.py'), '--index-url', network['PIP_INDEX_URL'], '--install-rust']})
         if runtime and track == 'realsim':
             runtime_python = str(backend / '.runtime-env/venv/bin/python')
-            plan.append({'track': track, 'cwd': str(root), 'argv': [runtime_python, '-m', 'pip', 'install', '--no-deps', package]})
+            runtime_uv = str(backend / '.runtime-env/bootstrap/bin/uv')
+            # Native uv environments intentionally omit pip. Reuse their pinned
+            # installer without resolving or changing frozen runtime dependencies.
+            plan.append({'track': track, 'cwd': str(root), 'argv': [runtime_uv, '--no-config', 'pip', 'install', '--python', runtime_python, '--no-deps', package]})
         if download:
             hf = network['HF_ENDPOINT']
             # Never forward cached or environment credentials to an alternative host.
