@@ -14,6 +14,10 @@ python scripts/check_browser.py
 
 The latest site and its media are checked into the repository, ready for deployment. Pushing `main` runs validation; the Pages workflow remains manual-only.
 
+The leaderboard includes an interactive metric explorer (`metrics.js` / `metrics.css`) for all five tracks. Its examples explain strict and relaxed success, exclusive open-loop semantics, graded compliance, driving metrics and the L2D formula. Editing an example never changes the published result data. `scripts/check_browser.py` verifies the paired rules, aggregation formula, all reported closed-loop L2D rows, keyboard controls and mobile layout.
+
+Official model papers are maintained in `docs/data/models.json`, shared by the leaderboard and case library through `models.js`. Aliases map displayed checkpoint names to their papers. Alpamayo entries distinguish the family paper from version-specific official model cards. When adding a model, update the registry and README table links; `scripts/check_site.py` checks coverage across every reported model and case.
+
 1. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
 2. Open [Actions → Project page](https://github.com/ZihanYou/Language2Drive/actions/workflows/pages.yml), select **Run workflow**, and choose `main`.
 3. Wait for the `github-pages` deployment to finish. Its environment URL is the published project page: `https://ZihanYou.github.io/Language2Drive/`.

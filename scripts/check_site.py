@@ -75,4 +75,21 @@ for track, count in {'carla': 6, 'realsim': 8, 'nuscenes': 4, 'navsim': 5, 'wod'
         assert not row['model'].startswith('%')
 assert results['tracks']['carla']['rows'][0]['L2D'] == 12.20
 assert results['tracks']['realsim']['rows'][1]['DrivingScore'] == 97.17
-print('PASS: all HTML/CSS references; 73 evidence clips; film provenance; 27 manuscript baseline rows')
+models = json.loads((DOCS / 'data/models.json').read_text())['models']
+references = {name: model for name, model in models.items()}
+for model in models.values():
+    assert re.fullmatch(r'https://arxiv.org/abs/\d{4}\.\d{4,5}', model['paper'])
+    assert model['title']
+    for alias in model.get('aliases', []):
+        assert alias not in references, f'Duplicate model alias: {alias}'
+        references[alias] = model
+for table in results['tracks'].values():
+    for row in table['rows']:
+        assert row['model'] in references, f'Missing paper for {row["model"]}'
+        assert references[row['model']]['paper'] in (ROOT / 'README.md').read_text()
+for case in cases:
+    names = [*case.get('models', []), *case.get('comparison', {}).get('models', {})]
+    if case['evidence_role'] == 'model-result' and case['model'] != 'Four-model comparison':
+        names.append(case['model'])
+    assert all(name in references for name in names), f'Missing case paper: {case["id"]}'
+print('PASS: all HTML/CSS references; 73 evidence clips; film provenance; 27 manuscript rows; all model papers')

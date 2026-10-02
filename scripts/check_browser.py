@@ -5,7 +5,9 @@ from functools import partial
 from threading import Thread
 from playwright.sync_api import sync_playwright
 from pathlib import Path
+from check_metrics_browser import check_metrics
 root=Path(__file__).resolve().parents[1]
+Path('/tmp/l2d-showcase').mkdir(exist_ok=True)
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(PreviewHandler,directory=str(root/'docs')))
 Thread(target=server.serve_forever,daemon=True).start()
 with sync_playwright() as p:
@@ -24,6 +26,7 @@ with sync_playwright() as p:
   for track,count in [('carla',6),('realsim',8),('nuscenes',4),('navsim',5),('wod',4)]:
    page.locator(f'[data-track="{track}"]').click()
    assert page.locator('#results-table tbody tr').count()==count
+  check_metrics(page, width)
   page.locator('[data-code="adapter"]').click()
   assert 'def create_adapter' in page.locator('#quick-code').inner_text()
   if width==1440:
@@ -37,6 +40,7 @@ with sync_playwright() as p:
   for name in ['CARLA-L2D','RealSim','nuScenes','NAVSIM','WOD-E2E']:
    assert any(name in text for text in first_cards), name
   page.locator('#case-track').select_option('nuscenes')
+  assert page.locator('#case-paper-links .model-paper').count() == 1
   assert page.locator('#case-variant-wrap').is_visible()
   page.locator('#case-variant').select_option(index=1)
   assert 'nuscenes-' in page.url
@@ -48,8 +52,11 @@ with sync_playwright() as p:
   page.locator('#case-track').select_option('navsim')
   assert page.locator('#trajectory-inspector').is_visible()
   assert page.locator('#trajectory-model option').count()==5
+  assert page.locator('#case-paper-links .model-paper').count()==5
+  assert page.locator('#trajectory-paper .model-paper').count()==1
   old=page.locator('#trajectory-plot polyline').nth(1).get_attribute('points')
   page.locator('#trajectory-model').select_option(index=1)
+  assert page.locator('#trajectory-paper .model-paper').inner_text().startswith(page.locator('#trajectory-model').input_value())
   assert page.locator('#trajectory-plot polyline').nth(1).get_attribute('points')!=old
   page.locator('#trajectory-time').fill('4');page.locator('#trajectory-time').dispatch_event('input')
   assert page.locator('#trajectory-time-label').inner_text()=='2.0 s'
@@ -158,6 +165,8 @@ with sync_playwright() as p:
  page.wait_for_function('Number(document.querySelector("#framework-dot-b").getAttribute("cy")) === 14')
  page.locator('#scope-play').click()
  assert page.locator('#scope-progress').input_value()=='100'
+ page.locator('[data-explain="SCS"]').click()
+ assert page.locator('.mx-credit').first.evaluate('(n)=>getComputedStyle(n).transitionDuration')=='0s'
  print('PASS range requests and reduced-motion trajectory rendering')
  browser.close()
 server.shutdown()

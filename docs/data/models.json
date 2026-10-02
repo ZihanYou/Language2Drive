@@ -1,0 +1,97 @@
+{
+  "verified_on": "2026-10-03",
+  "models": {
+    "Alpamayo1.5": {
+      "paper": "https://arxiv.org/abs/2511.00088",
+      "title": "Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail",
+      "aliases": [
+        "Alpamayo 1.5"
+      ],
+      "paper_label": "Family paper",
+      "release": "https://huggingface.co/nvidia/Alpamayo-1.5-10B",
+      "source": "https://github.com/NVlabs/alpamayo1.5#citation"
+    },
+    "Alpamayo2-Super": {
+      "paper": "https://arxiv.org/abs/2511.00088",
+      "title": "Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail",
+      "aliases": [],
+      "paper_label": "Family paper",
+      "release": "https://huggingface.co/nvidia/Alpamayo2-Super",
+      "source": "https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/llm-info/"
+    },
+    "SimLingo": {
+      "paper": "https://arxiv.org/abs/2503.09594",
+      "title": "SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language-Action Alignment",
+      "aliases": []
+    },
+    "LMDrive": {
+      "paper": "https://arxiv.org/abs/2312.07488",
+      "title": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+      "aliases": []
+    },
+    "OneVL": {
+      "paper": "https://arxiv.org/abs/2604.18486",
+      "title": "Xiaomi OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation",
+      "aliases": []
+    },
+    "Qwen-Drive-1.0-4B": {
+      "paper": "https://arxiv.org/abs/2609.00111",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "aliases": []
+    },
+    "Impromptu-VLA": {
+      "paper": "https://arxiv.org/abs/2505.23757",
+      "title": "Impromptu VLA: Open Weights and Open Data for Driving Vision-Language-Action Models",
+      "aliases": [
+        "Impromptu-VLA-3B-3view"
+      ]
+    },
+    "AutoVLA": {
+      "paper": "https://arxiv.org/abs/2506.13757",
+      "title": "AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning",
+      "aliases": []
+    },
+    "ReCogDrive": {
+      "paper": "https://arxiv.org/abs/2506.08052",
+      "title": "ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving",
+      "aliases": []
+    },
+    "UniDriveVLA": {
+      "paper": "https://arxiv.org/abs/2604.02190",
+      "title": "UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",
+      "aliases": [
+        "UniDriveVLA-Base-Stage3"
+      ]
+    },
+    "OpenDriveVLA-0.5B": {
+      "paper": "https://arxiv.org/abs/2503.23463",
+      "title": "OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model",
+      "aliases": []
+    },
+    "OmniDrive": {
+      "paper": "https://arxiv.org/abs/2405.01533",
+      "title": "OmniDrive: A Holistic Vision-Language Dataset for Autonomous Driving with Counterfactual Reasoning",
+      "aliases": []
+    },
+    "DriveMA-2B": {
+      "paper": "https://arxiv.org/abs/2605.31271",
+      "title": "DriveMA: Driving Vision-Language-Action Models with verifiable Meta-Actions",
+      "aliases": []
+    },
+    "Fast-dDrive": {
+      "paper": "https://arxiv.org/abs/2605.23163",
+      "title": "Fast-dDrive: Efficient Block-Diffusion VLM for Autonomous Driving",
+      "aliases": []
+    },
+    "Qwen-Drive-SFT": {
+      "paper": "https://arxiv.org/abs/2609.00111",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "aliases": []
+    },
+    "Qwen-Drive-RL": {
+      "paper": "https://arxiv.org/abs/2609.00111",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "aliases": []
+    }
+  }
+}

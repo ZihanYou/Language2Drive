@@ -89,6 +89,8 @@ The model receives public observations and the active instruction. Geometric tar
 
 **All reported systems use the training-free protocol.** Values below are transcribed from the supplied manuscript; all scores are **0–100, higher is better**. Systems are compared **within each track and profile**. [Project-page leaderboard source](docs/index.html) · [Machine-readable results](docs/data/results.json) · [Submission guide](docs/LEADERBOARD.md).
 
+Click a model name to read its paper. Explore the [interactive metric guide](https://ZihanYou.github.io/Language2Drive/#metric-explorer) for paired success, graded compliance and the L2D score.
+
 <details open>
 <summary><b>📊 CARLA-L2D</b></summary>
 
@@ -96,12 +98,12 @@ paper: 64 PCUs · 3 expressions · seed 1.
 
 | System | SISR | CFPS | SemISR | Sem-CFPS | SCS | PCS | PSM | DrivingScore | L2D |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Alpamayo 1.5 | 8.07 | 1.04 | 42.19 | 30.73 | 26.18 | 12.50 | 70.10 | 62.69 | 12.20 |
-| SimLingo | 7.81 | 1.04 | 48.70 | 35.94 | 23.51 | 11.94 | 62.30 | 65.04 | 12.15 |
-| LMDrive | 12.24 | 0.00 | 29.17 | 18.23 | 21.45 | 9.26 | 88.84 | 50.12 | 10.39 |
-| OneVL | 0.52 | 0.00 | 25.00 | 3.65 | 16.69 | 7.05 | 77.72 | 50.69 | 4.87 |
-| Qwen-Drive-1.0-4B | 1.82 | 0.00 | 15.62 | 3.12 | 17.05 | 7.09 | 76.68 | 43.67 | 4.31 |
-| Impromptu-VLA | 0.26 | 0.00 | 19.79 | 6.25 | 14.48 | 4.61 | 77.43 | 42.02 | 3.87 |
+| [Alpamayo 1.5](https://arxiv.org/abs/2511.00088 "Alpamayo family paper") · [model card](https://huggingface.co/nvidia/Alpamayo-1.5-10B) | 8.07 | 1.04 | 42.19 | 30.73 | 26.18 | 12.50 | 70.10 | 62.69 | 12.20 |
+| [SimLingo](https://arxiv.org/abs/2503.09594) | 7.81 | 1.04 | 48.70 | 35.94 | 23.51 | 11.94 | 62.30 | 65.04 | 12.15 |
+| [LMDrive](https://arxiv.org/abs/2312.07488) | 12.24 | 0.00 | 29.17 | 18.23 | 21.45 | 9.26 | 88.84 | 50.12 | 10.39 |
+| [OneVL](https://arxiv.org/abs/2604.18486) | 0.52 | 0.00 | 25.00 | 3.65 | 16.69 | 7.05 | 77.72 | 50.69 | 4.87 |
+| [Qwen-Drive-1.0-4B](https://arxiv.org/abs/2609.00111) | 1.82 | 0.00 | 15.62 | 3.12 | 17.05 | 7.09 | 76.68 | 43.67 | 4.31 |
+| [Impromptu-VLA](https://arxiv.org/abs/2505.23757) | 0.26 | 0.00 | 19.79 | 6.25 | 14.48 | 4.61 | 77.43 | 42.02 | 3.87 |
 
 </details>
 
@@ -112,14 +114,14 @@ realsim-paper-1.0: 30 PCUs · seed 1701.
 
 | System | SISR | CFPS | SemISR | Sem-CFPS | SCS | PCS | Safety | DrivingScore | L2D |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Alpamayo2-Super | 13.33 | 0.00 | 18.33 | 0.00 | 21.43 | 0.00 | 93.33 | 97.10 | 9.22 |
-| Alpamayo 1.5 | 11.67 | 0.00 | 15.00 | 0.00 | 18.12 | 1.11 | 100.00 | 97.17 | 8.38 |
-| SimLingo | 6.67 | 3.33 | 13.33 | 6.67 | 16.67 | 10.00 | 68.33 | 83.09 | 7.58 |
-| AutoVLA | 1.67 | 0.00 | 8.33 | 6.67 | 9.73 | 6.67 | 41.67 | 76.94 | 3.36 |
-| Qwen-Drive-1.0-4B | 0.00 | 0.00 | 1.67 | 0.00 | 4.44 | 0.00 | 43.33 | 69.16 | 0.92 |
-| Impromptu-VLA | 0.00 | 0.00 | 1.67 | 0.00 | 3.71 | 0.00 | 30.00 | 68.85 | 0.78 |
-| OneVL | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 43.33 | 43.82 | 0.44 |
-| ReCogDrive | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 33.33 | 43.57 | 0.38 |
+| [Alpamayo2-Super](https://arxiv.org/abs/2511.00088 "Alpamayo family paper") · [model card](https://huggingface.co/nvidia/Alpamayo2-Super) | 13.33 | 0.00 | 18.33 | 0.00 | 21.43 | 0.00 | 93.33 | 97.10 | 9.22 |
+| [Alpamayo 1.5](https://arxiv.org/abs/2511.00088 "Alpamayo family paper") · [model card](https://huggingface.co/nvidia/Alpamayo-1.5-10B) | 11.67 | 0.00 | 15.00 | 0.00 | 18.12 | 1.11 | 100.00 | 97.17 | 8.38 |
+| [SimLingo](https://arxiv.org/abs/2503.09594) | 6.67 | 3.33 | 13.33 | 6.67 | 16.67 | 10.00 | 68.33 | 83.09 | 7.58 |
+| [AutoVLA](https://arxiv.org/abs/2506.13757) | 1.67 | 0.00 | 8.33 | 6.67 | 9.73 | 6.67 | 41.67 | 76.94 | 3.36 |
+| [Qwen-Drive-1.0-4B](https://arxiv.org/abs/2609.00111) | 0.00 | 0.00 | 1.67 | 0.00 | 4.44 | 0.00 | 43.33 | 69.16 | 0.92 |
+| [Impromptu-VLA](https://arxiv.org/abs/2505.23757) | 0.00 | 0.00 | 1.67 | 0.00 | 3.71 | 0.00 | 30.00 | 68.85 | 0.78 |
+| [OneVL](https://arxiv.org/abs/2604.18486) | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 43.33 | 43.82 | 0.44 |
+| [ReCogDrive](https://arxiv.org/abs/2506.08052) | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 33.33 | 43.57 | 0.38 |
 
 </details>
 
@@ -130,10 +132,10 @@ v1.0-test · 60 held-out PCUs · canonical.
 
 | System | SemSISR | SemCFPS | SCS | PCS |
 |---|---:|---:|---:|---:|
-| Impromptu-VLA | 15.83 | 0.00 | 20.21 | 0.00 |
-| UniDriveVLA | 16.67 | 0.00 | 25.00 | 0.00 |
-| OpenDriveVLA-0.5B | 13.33 | 3.33 | 19.06 | 4.30 |
-| OmniDrive | 7.50 | 0.00 | 29.24 | 8.61 |
+| [Impromptu-VLA](https://arxiv.org/abs/2505.23757) | 15.83 | 0.00 | 20.21 | 0.00 |
+| [UniDriveVLA](https://arxiv.org/abs/2604.02190) | 16.67 | 0.00 | 25.00 | 0.00 |
+| [OpenDriveVLA-0.5B](https://arxiv.org/abs/2503.23463) | 13.33 | 3.33 | 19.06 | 4.30 |
+| [OmniDrive](https://arxiv.org/abs/2405.01533) | 7.50 | 0.00 | 29.24 | 8.61 |
 
 </details>
 
@@ -144,11 +146,11 @@ paper historical scorer · 38 PCUs · 4 wordings.
 
 | System | SemSISR | SemCFPS | SCS | PCS |
 |---|---:|---:|---:|---:|
-| Qwen-Drive-1.0-4B | 0.000 | 0.000 | 5.472 | 0.000 |
-| AutoVLA | 3.947 | 0.000 | 8.172 | 0.000 |
-| DriveMA-2B | 8.553 | 0.000 | 11.244 | 2.242 |
-| ReCogDrive | 0.000 | 0.000 | 4.400 | 0.000 |
-| OneVL | 3.618 | 0.000 | 8.428 | 0.000 |
+| [Qwen-Drive-1.0-4B](https://arxiv.org/abs/2609.00111) | 0.000 | 0.000 | 5.472 | 0.000 |
+| [AutoVLA](https://arxiv.org/abs/2506.13757) | 3.947 | 0.000 | 8.172 | 0.000 |
+| [DriveMA-2B](https://arxiv.org/abs/2605.31271) | 8.553 | 0.000 | 11.244 | 2.242 |
+| [ReCogDrive](https://arxiv.org/abs/2506.08052) | 0.000 | 0.000 | 4.400 | 0.000 |
+| [OneVL](https://arxiv.org/abs/2604.18486) | 3.618 | 0.000 | 8.428 | 0.000 |
 
 </details>
 
@@ -159,10 +161,10 @@ P0 · 241 PCUs · canonical.
 
 | System | SemSISR | SemCFPS | SCS | PCS |
 |---|---:|---:|---:|---:|
-| DriveMA-2B | 38.38 | 1.24 | 49.33 | 7.88 |
-| Fast-dDrive | 34.85 | 0.00 | 46.42 | 5.27 |
-| Qwen-Drive-SFT | 34.44 | 0.00 | 50.58 | 9.37 |
-| Qwen-Drive-RL | 35.06 | 0.00 | 49.58 | 7.58 |
+| [DriveMA-2B](https://arxiv.org/abs/2605.31271) | 38.38 | 1.24 | 49.33 | 7.88 |
+| [Fast-dDrive](https://arxiv.org/abs/2605.23163) | 34.85 | 0.00 | 46.42 | 5.27 |
+| [Qwen-Drive-SFT](https://arxiv.org/abs/2609.00111) | 34.44 | 0.00 | 50.58 | 9.37 |
+| [Qwen-Drive-RL](https://arxiv.org/abs/2609.00111) | 35.06 | 0.00 | 49.58 | 7.58 |
 
 </details>
 

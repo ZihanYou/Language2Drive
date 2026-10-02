@@ -13,6 +13,7 @@
   const scrollTo = node => node.scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});
   let cases=[], filtered=[], current=null, shown=9;
   const modelNames = c => [...new Set([c.model,...(c.models||[]),...Object.keys(c.comparison?.models||{})])];
+  window.L2DModels.ready.then(() => { if(current) { $('#case-model-label').replaceChildren(window.L2DModels.link(current.model)); window.L2DModels.references($('#case-paper-links'), modelNames(current)); if(current.comparison) drawTrajectories(); } });
   function modelOptions(){
     const value=$('#case-model').value, track=$('#case-track').value;
     $('#case-model').replaceChildren(new Option('All models & references','all'));
@@ -53,7 +54,8 @@
     $('#case-role').textContent=roleLabel(c);$('#case-role').dataset.role=role(c);
     $('#case-badge').textContent=`${tracks[c.track]} · ${c.visualization?'Execution replay':kinds[c.kind]}`;
     const index=filtered.indexOf(c);$('#case-counter').textContent=index>=0?`${index+1} / ${filtered.length}`:'Same-PCU comparison';
-    $('#case-title').textContent=c.title;$('#case-model-label').textContent=c.model;
+    $('#case-title').textContent=c.title;$('#case-model-label').replaceChildren(window.L2DModels.link(c.model));
+    window.L2DModels.references($('#case-paper-links'), modelNames(c));
     $('#case-location').textContent=[c.pcu,c.scene,c.scope?'Scope '+c.scope:null].filter(Boolean).join(' / ');
     $('#case-instruction-a').textContent=c.instructions[0];$('#case-instruction-b').textContent=c.instructions[1];
     $('#case-note').textContent=c.visualization?'Model result: saved closed-loop trajectories with camera views rendered from the recorded poses. Dashed gray paths show benchmark targets.':({'closed-loop':'Model result: Alpamayo 1.5 driving in a NuRec reconstruction.', 'open-loop':'Model result: saved instruction-conditioned predictions. Dashed gray paths show benchmark targets.',reference:c.comparison?'Benchmark target: the video shows reference trajectories. The interactive panel below shows actual model predictions.':'Benchmark target: reference trajectories for the two requested behaviors.',oracle:'Benchmark target: execution by the reference controller.',candidate:'Model result: saved forecasts from four driving models under the paired instructions.'}[c.kind]);
@@ -75,6 +77,7 @@
   }
   function drawTrajectories(){
     const data=current?.comparison;if(!data)return;
+    window.L2DModels.references($('#trajectory-paper'), [$('#trajectory-model').value]);
     const svg=$('#trajectory-plot');svg.replaceChildren();
     const add=(tag,attrs,text)=>{const n=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text)n.textContent=text;svg.append(n);return n;};
     const paths=data.models[$('#trajectory-model').value], refs=data.reference;
