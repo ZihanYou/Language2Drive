@@ -1,0 +1,12 @@
+{
+  "workspace": "..",
+  "endpoint": "http://127.0.0.1:8090",
+  "model": {"name": "my-model", "checkpoint_revision": "REPLACE_WITH_IMMUTABLE_REVISION", "adapter_revision": "REPLACE_WITH_GIT_COMMIT", "seed": 0},
+  "tracks": {
+    "carla": {"tier": "base", "splits": ["dev", "test"], "seeds": "1", "host": "127.0.0.1", "port": 2000},
+    "realsim": {"python": "language2drive.RealSim/.runtime-env/venv/bin/python", "public_workload": "PATH/TO/public_workload.json", "sidecar": "PATH/TO/sidecar.private.json", "pcus": "PATH/TO/frozen_pcus.json", "runtime_address": "127.0.0.1:50051", "driver_address": "127.0.0.1:50052", "asl_root": "PATH/TO/asl", "eval_config": "PATH/TO/eval.yaml", "usdz_glob": "PATH/TO/scenes/**/*.usdz", "concurrency": 1},
+    "nuscenes": {"split": "heldout", "sensor_root": "PATH/TO/nuscenes", "conditions": ["canonical"], "seed": 0},
+    "navsim": {"sensor_root": "PATH/TO/navsim/sensor_blobs", "sidecars": "PATH/TO/private_sidecars", "scorer": "corrected", "conditions": ["canonical", "paraphrase_1", "paraphrase_2", "paraphrase_3"]},
+    "wod": {"release_dir": "PATH/TO/wod-release", "contracts_dir": "language2drive.OpenloopTrack.WOD-E2E/contracts/wod-e2e-p0-v0.1.0"}
+  }
+}

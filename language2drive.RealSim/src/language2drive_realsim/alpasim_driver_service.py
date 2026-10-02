@@ -30,6 +30,7 @@ def service_class() -> Any:
                 "l2d_alpamayo1_5",
                 "l2d_alpamayo2_super",
                 "l2d_simlingo",
+                "l2d_unified",
             }
             if cfg.model.model_type not in supported_models:
                 raise ValueError(
@@ -97,6 +98,11 @@ def service_class() -> Any:
                 # PredictionInput is a non-slotted dataclass at the pinned
                 # AlpaSim commit. Only this string crosses into the model.
                 prediction_input.language_instruction = snapshot.text
+                if type(self._model).__name__ == "UnifiedTrajectoryModel":
+                    prediction_input.l2d_session_uuid = job.session.uuid
+                    prediction_input.l2d_timestamp_us = job.timestamp_us
+                    from omegaconf import OmegaConf
+                    prediction_input.l2d_camera_calibration = OmegaConf.to_container(self._cfg.rectification, resolve=True)
                 inputs.append(prediction_input)
 
             predictions = self._model.predict_batch(inputs)

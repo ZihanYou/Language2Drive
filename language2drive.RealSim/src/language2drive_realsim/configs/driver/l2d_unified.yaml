@@ -1,0 +1,50 @@
+# Unified Language2Drive SDK model service; no checkpoint is loaded in this runtime.
+
+defaults:
+  - _self_
+
+log_level: INFO
+
+model:
+  model_type: l2d_unified
+  checkpoint_path: "unused-model-service"
+  tokenizer_path: null
+  device: "cpu"
+  force_determinism: true
+  image_decode_device: cpu
+  num_trajectory_samples: 1
+  trajectory_candidate_microbatch_size: null
+  cfg_guidance_weight: null
+  trajectory_selection:
+    strategy: ALWAYS_FIRST
+    max_num_distance_points: 64
+    skip_first_n_distance_points: 0
+
+host: "127.0.0.1"
+port: 50052
+
+inference:
+  use_cameras:
+    - camera_front_wide_120fov
+  max_batch_size: 1
+  subsample_factor: 1
+  context_length: 1
+  # 6 seconds, 60 XY waypoints; rig origin, forward/left axes.
+  output_frequency_hz: 10
+
+route:
+  use_waypoint_commands: false
+
+# Declare the rectified input calibration to your model; customize with a recorded config.
+rectification:
+  camera_front_wide_120fov:
+    focal_length: [358.506, 358.506]
+    principal_point: [512.0, 256.0]
+    resolution_hw: [512, 1024]
+
+output_dir: "/mnt/output/driver"
+
+trajectory_optimizer:
+  enabled: false
+
+plot_debug_images: false

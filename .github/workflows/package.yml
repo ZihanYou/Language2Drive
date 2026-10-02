@@ -1,0 +1,45 @@
+name: SDK and wheel
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install '.[openloop]' build
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/check_site.py
+      - run: python scripts/build_release.py
+      - run: python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.11'
+        with:
+          name: language2drive-wheel
+          path: dist/*
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: language2drive-wheel
+          path: dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language2drive"
+version = "0.1.0"
+description = "Five-track paired counterfactual benchmark for language-conditioned driving"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Artificial Intelligence"]
+
+[project.urls]
+Homepage = "https://ZihanYou.github.io/Language2Drive/"
+Repository = "https://github.com/ZihanYou/Language2Drive"
+
+[project.optional-dependencies]
+openloop = ["numpy>=1.24", "shapely>=2,<3", "Pillow>=10", "huggingface-hub>=0.36,<1"]
+carla = ["numpy>=1.24,<2", "shapely>=2,<3", "PyYAML>=6", "matplotlib>=3.7", "Pillow>=10", "huggingface-hub>=0.36,<1", "zstandard>=0.23,<1"]
+realsim = ["numpy>=1.24", "shapely>=2,<3", "Pillow>=10", "PyYAML>=6", "huggingface-hub>=0.36,<1"]
+test = ["pytest>=8"]
+
+[project.scripts]
+language2drive = "l2d_benchmark.cli:main"
+
+[project.entry-points."alpasim.models"]
+l2d_unified = "l2d_benchmark.bridges.realsim:UnifiedTrajectoryModel"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+l2d_benchmark = ["resources/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

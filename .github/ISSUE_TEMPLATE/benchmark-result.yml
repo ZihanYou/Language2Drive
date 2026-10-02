@@ -1,0 +1,25 @@
+name: Benchmark result
+description: Submit a model result with native protocol and evidence
+title: '[Result] model / track / profile'
+body:
+  - type: textarea
+    id: identity
+    attributes:
+      label: Model and protocol
+      description: Immutable checkpoint/adapter revisions; track, release, split, wording set, seeds, cameras and controller.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Scores and coverage
+      description: Link native score JSON, summary, scheduled inventory, failures and trace/prediction hashes. Follow docs/LEADERBOARD.md.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction commands
+      description: Environment and exact commands; no credentials or licensed raw assets.
+    validations:
+      required: true
