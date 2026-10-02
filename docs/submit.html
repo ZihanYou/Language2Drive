@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Prepare a reproducible Language2Drive model-result submission for community review."><title>Submit a model · Language2Drive</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="showcase.css"><script src="submit.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to submission form</a><header class="header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L<span>2</span>D</span>Language2Drive</a><a class="text-link" href="index.html#leaderboard">← Back to results</a></header>
+<main id="main" class="wrap"><div class="submission-intro"><span class="eyebrow">COMMUNITY / MODEL RESULTS</span><h1>Make your result<br><em>reproducible.</em></h1><p>Prepare one submission per backend and protocol. Include the checkpoint, native evidence and execution coverage so others can understand and reproduce the result. Community entries appear after maintainer review.</p><p>This form builds a packet in your browser. Download it, then open a prefilled GitHub issue and submit it there. Your entries stay on this page until you choose to share them.</p><a class="text-link" href="https://github.com/ZihanYou/Language2Drive/blob/main/docs/LEADERBOARD.md">Read the evidence requirements ↗</a></div>
+<div class="submission-layout"><form id="submission-form" class="submission-form">
+<label class="import-label">Continue from a saved submission JSON<input id="submission-import" type="file" accept="application/json,.json"></label>
+<fieldset><legend>01 / Identify the model</legend><div class="form-fields">
+<label class="wide">Model name<input name="model" required maxlength="120" placeholder="Your driving model"></label>
+<label class="wide">Checkpoint URL or immutable identifier<input name="checkpoint" required maxlength="500" placeholder="Repository / checkpoint identifier"></label>
+<label>Checkpoint revision / SHA<input name="checkpoint_revision" required maxlength="200" placeholder="Exact commit or digest"></label>
+<label>Adapter revision / SHA<input name="adapter_revision" required maxlength="200" placeholder="Exact commit or digest"></label>
+<label class="wide">Language2Drive training regime<select name="training_regime"><option value="training-free">Training-free checkpoint</option><option value="finetuned">Trained / fine-tuned on Language2Drive</option><option value="other">Other (describe in notes)</option></select></label>
+</div></fieldset>
+<fieldset><legend>02 / Specify the protocol</legend><div class="form-fields">
+<label>Backend<select name="track"><option value="carla">CARLA-L2D</option><option value="realsim">RealSim</option><option value="nuscenes">nuScenes</option><option value="navsim">NAVSIM</option><option value="wod">WOD-E2E</option></select></label>
+<label>Native profile / scorer revision<input name="profile" required maxlength="200" placeholder="Exact profile and scorer commit"></label>
+<label>Dataset release + split<input name="release_split" required maxlength="300" placeholder="Version / held-out split"></label>
+<label>Seed(s)<input name="seeds" required maxlength="200" placeholder="e.g. 1, 2, 3"></label>
+<label class="wide">Instruction wordings / paraphrase coverage<input name="wordings" required maxlength="300" placeholder="Exact variants evaluated"></label>
+<label class="wide">Cameras, history, controller and runtime versions<textarea name="runtime" rows="3" required maxlength="3000" placeholder="Input views and history; simulator version; controller; model decoding settings"></textarea></label>
+</div></fieldset>
+<fieldset><legend>03 / Attach the evidence</legend><div class="form-fields">
+<label class="wide">Native metrics (JSON object)<textarea name="metrics" rows="5" required maxlength="12000" spellcheck="false" placeholder='{"metric_name": 0.0}'></textarea><small>Use exact native metric names and values. Keep the full scorer output at the evidence link below.</small></label>
+<label>Scheduled rollouts<input name="scheduled" type="number" min="1" step="1" required></label><label>Completed rollouts<input name="completed" type="number" min="0" step="1" required></label>
+<label>Failed rollouts<input name="failed" type="number" min="0" step="1" required></label><label>Missing rollouts<input name="missing" type="number" min="0" step="1" required></label>
+<label class="wide">Evidence bundle URL<input name="evidence_url" type="url" required maxlength="2000" placeholder="https://…"><small>Include native summaries, per-case verdicts, coverage, failure logs and artifact hashes. Provide a link maintainers can access.</small></label>
+<label class="wide">Reproduction commands<textarea name="commands" rows="5" required maxlength="10000" spellcheck="false" placeholder="Exact commands and configuration references"></textarea></label>
+<label class="wide">Additional context<textarea name="notes" rows="3" maxlength="4000" placeholder="Model details, evaluation settings, or links to your paper"></textarea></label>
+</div></fieldset>
+<button class="button primary" type="submit">Validate &amp; prepare packet <span>→</span></button><p class="submission-error" id="submission-error" role="alert" hidden></p>
+</form>
+<aside class="submission-preview"><div><span class="eyebrow light">REVIEW YOUR SUBMISSION</span><h2>Your model.<br>A reproducible result.</h2><p id="submission-status">Complete the form to generate a downloadable packet and a GitHub issue draft.</p><pre id="submission-preview">Model + immutable revisions
+Backend + exact protocol
+Native metrics + execution coverage
+Evidence bundle + reproduction commands</pre><div class="submission-actions" id="submission-actions" hidden><button id="download-json" type="button">Download JSON ↓</button><button id="download-markdown" type="button">Download Markdown ↓</button><a id="github-submission" target="_blank" rel="noopener noreferrer">Open GitHub issue ↗</a></div></div><p class="footnote">Prepare your packet, review it, and share it through GitHub.</p></aside></div></main>
+<footer class="wrap footer"><a class="brand" href="index.html">Language2Drive ↗</a><p>Same scene. Same seed. Different instructions.</p><div><a href="https://github.com/ZihanYou/Language2Drive">Code ↗</a></div></footer></body></html>

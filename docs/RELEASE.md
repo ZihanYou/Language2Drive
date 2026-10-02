@@ -2,17 +2,24 @@
 
 ## GitHub Pages
 
-The site is a dependency-free static page in `docs/`. It uses local assets, accessible result tabs, sortable manuscript tables, an explicitly conceptual PCU illustration and clipboard buttons. Local preview:
+The site is a dependency-free static page in `docs/`. It includes 73 case videos across five backends, a 120-second English-captioned film, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
 
 ```sh
-python -m http.server 8000 --directory docs
-# Open http://localhost:8000
+python scripts/serve_preview.py --port 18765
+# Open http://localhost:18765
 python scripts/check_site.py
 # Optional real-browser verification (requires Playwright + Chromium)
 python scripts/check_browser.py
 ```
 
-Remote deployment is deferred. Pushing the default branch does **not** deploy the page: the Pages workflow is manual-only. When publication is authorized, choose **GitHub Actions** in repository **Settings → Pages**, then manually run **Project page**. The workflow validates local assets, uploads `docs/` and deploys it to `https://ZihanYou.github.io/Language2Drive/`. Relative asset paths work under the repository subpath. If the repository owner/name changes, update project URLs and social metadata.
+The latest site and its media are checked into the repository, ready for deployment. Pushing `main` runs validation; the Pages workflow remains manual-only.
+
+1. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
+2. Open [Actions → Project page](https://github.com/ZihanYou/Language2Drive/actions/workflows/pages.yml), select **Run workflow**, and choose `main`.
+3. Wait for the `github-pages` deployment to finish. Its environment URL is the published project page: `https://ZihanYou.github.io/Language2Drive/`.
+4. Check the film, all five backend filters, Scope A–D animations and `submit.html` at the published address.
+
+The workflow checks page assets before uploading `docs/`; no media rendering or simulator installation is needed during deployment. Assets use relative paths for the repository subpath. The result submission builder prepares a local packet and a GitHub issue draft. If the repository owner/name changes, update project URLs and social metadata. See [SHOWCASE.md](SHOWCASE.md) for media provenance, reproduction and local browser checks.
 
 ## Build the wheel
 
@@ -34,7 +41,7 @@ Once successfully published, `pip install language2drive` and optional extras wo
 
 ## Paper and data metadata
 
-The supplied manuscript has anonymous author metadata. Keep the provisional citation until authors and archival URL are finalized; do not invent authors, venue acceptance or an oral designation. Code-license ownership is not a substitute for paper authorship. The current PDF and paper figures are copied into `docs/assets/`; their provenance and source-table hashes are in `docs/data/provenance.json`.
+The homepage and README use the 22 authors and 20 affiliations from the supplied `Language2Drive_arxiv.pdf`, recorded in `docs/data/paper.json`. The current PDF and paper figures are copied into `docs/assets/`. The archival arXiv identifier remains pending. Source-table hashes are in `docs/data/provenance.json`; framework asset provenance is in `docs/assets/framework/provenance.json`.
 
 Replace the Dataset coming-soon state when the intended public release and its immutable manifests are actually available. Update access rules, resource bindings, fixture checks and reproduction commands together. Licenses of third-party code and upstream datasets remain separate.
 

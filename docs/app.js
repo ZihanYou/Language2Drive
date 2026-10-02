@@ -43,7 +43,7 @@ language2drive run --config .l2d/evaluation.json \
   --model-python /path/to/model-env/bin/python \
   --tracks carla,realsim,openloop --output outputs/my-model
 
-# Native deployment authority and licensed assets are required.
+# Configure your datasets and simulator resources.
 # outputs/my-model/summary.json records each track separately.`
 };
 $$('[data-code]').forEach(button => button.addEventListener('click', () => { $('#quick-code').textContent = snippets[button.dataset.code]; $$('[data-code]').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); }));
@@ -62,7 +62,7 @@ function render() {
  const rows = [...track.rows].sort((a,b) => b[activeMetric] - a[activeMetric] || a.model.localeCompare(b.model));
  rows.forEach((row, index) => { const tr = document.createElement('tr'); const name = document.createElement('td'); const rank = document.createElement('span'); rank.className = 'rank'; rank.textContent = String(index+1).padStart(2,'0'); name.append(rank, document.createTextNode(row.model)); tr.append(name);
  track.metrics.forEach(metric => { const td = document.createElement('td'); td.textContent = row[metric].toFixed(activeTrack === 'navsim' ? 3 : 2); const best = Math.max(...rows.map(r => r[metric])); if (row[metric] === best && best > 0) td.classList.add('best'); if (metric === activeMetric) td.classList.add('sort-column'); tr.append(td); }); body.append(tr); });
- $('#results-note').textContent = activeTrack === 'navsim' ? 'Historical manuscript profile. New SDK evaluations use the corrected scorer; compare them separately. No cross-track ranking is implied.' : activeTrack === 'carla' ? 'Six principal systems. PSM uses 24 additional routes; the Senna diagnostic bridge is excluded. No cross-track ranking is implied.' : 'Manuscript baselines. Closed-loop relaxed proxies and open-loop exclusive semantic metrics have different definitions. No cross-track ranking is implied.';
+ $('#results-note').textContent = activeTrack === 'navsim' ? 'Paper evaluation profile · five driving models · instruction-conditioned trajectory prediction.' : activeTrack === 'carla' ? 'Six driving systems · four instruction scopes · paired closed-loop evaluation.' : 'Training-free evaluation · native driving metrics and paired instruction-following scores.';
  $('#results-panel').setAttribute('aria-labelledby', 'tab-' + activeTrack);
  $$('.results-tabs button').forEach(b => { const selected = b.dataset.track === activeTrack; b.setAttribute('aria-selected', String(selected)); b.tabIndex = selected ? 0 : -1; });
 }

@@ -5,7 +5,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 /* Preserve the author's complete pipeline figure and readable mobile proportions. */
-.construction-figure {margin:32px 0 0; border:1px solid var(--line, #d8dcd6); border-radius:16px; overflow:hidden; background:#101416;}
+.construction-figure {margin:32px 0 0; border:1px solid var(--line, #d8dcd6); border-radius:16px; overflow:hidden; background:#fff;}
 .construction-figure img {display:block; width:100%; height:auto;}
-.construction-figure figcaption {padding:16px 20px; font-size:12px; color:#dde4df;}
+.construction-figure figcaption {padding:16px 20px; font-size:12px; color:var(--muted, #63717a);}
 .resource-strip small {font-size:10px; margin-left:5px;}

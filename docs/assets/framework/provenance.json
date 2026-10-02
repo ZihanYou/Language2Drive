@@ -1,0 +1,29 @@
+{
+  "source": "Framework.pptx",
+  "source_sha256": "858cb62f05f88e9e14696c6bbe1786bbc1a002c94d239b22d979fbeb742be321",
+  "assets": {
+    "scope-a.webp": "ppt/media/image4.png",
+    "scope-b.webp": "ppt/media/image5.png",
+    "scope-c.webp": "ppt/media/image3.png",
+    "scope-d.webp": "ppt/media/image6.png",
+    "paired-scene.webp": "ppt/media/image7.png",
+    "ego-car.webp": "ppt/media/image11.png",
+    "coverage.webp": "ppt/media/image14.png",
+    "word-cloud.webp": "ppt/media/image1.png",
+    "carla-parking.webp": "ppt/media/image2.png",
+    "carla-port.webp": "ppt/media/image17.png",
+    "carla-campus.webp": "ppt/media/image18.png",
+    "carla-city.webp": "ppt/media/image19.png",
+    "realsim.webp": {
+      "archive": "Language2Drive_PCU_Paired_Videos.zip",
+      "member": "Language2Drive_PCU_Paired_Videos/cases/alpamayo15_P02_A2_S08/R0/front_wide_original_jpeg/2244015322275.jpg",
+      "source_sha256": "608c5e8efceaae44144b08f1eb0b97bbfafa986edc13fcb8974242786f5158c0",
+      "description": "NuRec-rendered front camera from the Alpamayo 1.5 RealSim P02 execution."
+    },
+    "nuscenes.webp": "ppt/media/image16.png",
+    "navsim.webp": "ppt/media/image15.png",
+    "wod.webp": "ppt/media/image13.png",
+    "task-icons.webp": "ppt/media/image22.png"
+  },
+  "conversion": "Embedded artwork exported to WebP; aspect ratio retained. Labels and interactive paths are native HTML/SVG."
+}

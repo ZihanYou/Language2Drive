@@ -4,6 +4,12 @@
 
 ### Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?
 
+Zihan You<sup>1,2*†</sup>, Zehua Fan<sup>3*</sup>, Wenqi Lyu<sup>4*</sup>, Aoqi Wang<sup>5*</sup>, Ni Wang<sup>6</sup>, Yifei Yang<sup>7</sup>, Linge Zhao<sup>8</sup>, Huan Li<sup>9</sup>, Sining Ang<sup>10</sup>, Yuguang Yang<sup>1</sup>, Jueyu Chen<sup>10,11</sup>, Xiangyu Li<sup>12</sup>, Qianshan Wei<sup>13,14</sup>, Jieyuan Pei<sup>1,15,16</sup>, Yuxin Wang<sup>17</sup>, Zhiwen Chen<sup>16</sup>, Jiaqi Li<sup>18</sup>, Wenxuan Song<sup>16</sup>, Yanyuan Qiao<sup>19</sup>, Benjin Zhu<sup>20</sup>, Haoang Li<sup>16</sup>, Yan Wang<sup>1‡</sup>
+
+<sub><sup>1</sup>THU · <sup>2</sup>SEU · <sup>3</sup>SJTU · <sup>4</sup>Adelaide · <sup>5</sup>BISTU · <sup>6</sup>Amazon · <sup>7</sup>BJTU · <sup>8</sup>WHU · <sup>9</sup>HUST · <sup>10</sup>USTC · <sup>11</sup>NIO · <sup>12</sup>UT Austin · <sup>13</sup>ByteDance · <sup>14</sup>CAS · <sup>15</sup>HiThink · <sup>16</sup>HKUST(GZ) · <sup>17</sup>AMD · <sup>18</sup>HKU · <sup>19</sup>EPFL · <sup>20</sup>Li Auto</sub>
+
+<sub>* Co-first contributors &nbsp; † Project leader &nbsp; ‡ Corresponding author</sub>
+
 **Same scene. Same seed. Different instructions.**<br>
 Measure whether language changes what a driving VLA actually does.
 
@@ -30,7 +36,7 @@ Measure whether language changes what a driving VLA actually does.
 - **From actions to programs.** Four scopes cover atomic actions, persistent behavior, scene-grounded navigation and long-horizon instruction programs.
 - **Adapt once, evaluate five backends.** One trajectory interface connects CARLA, RealSim, nuScenes, NAVSIM and WOD-E2E, with separate native scores and evidence.
 
-> **Training-free evaluation.** Every model currently reported is evaluated using an existing checkpoint without training or fine-tuning on Language2Drive. This describes our evaluation protocol; it does not mean the original models were never trained.
+> **Training-free evaluation.** Every model currently reported is evaluated using an existing checkpoint without training or fine-tuning on Language2Drive.
 
 ## Release Roadmap / TODO
 
@@ -44,7 +50,7 @@ Measure whether language changes what a driving VLA actually does.
 | ⏳ | Final arXiv identifier, archival citation and public PyPI publication |
 | ⏳ | Complete GPU validation of the unified installation and every runtime group |
 
-The Hugging Face repository is the dataset destination. Access to current assets and release completeness are separate from the forthcoming official version. Existing models in the tables are training-free baselines, not the planned official model.
+Follow the [Hugging Face repository](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main) for the official dataset release and upcoming model resources.
 
 ## Benchmark Overview
 
@@ -56,7 +62,7 @@ Choose a local maneuver: turn left, proceed straight, stop or select another fea
 
 ### Scope B: Persistent Behavior
 
-Maintain a constraint over time: speed, following distance or another scoped behavior. A momentary response does not establish completion.
+Maintain a constraint over time: speed, following distance or another scoped behavior. The evaluator measures compliance throughout the interval.
 
 ### Scope C: Scene-Grounded Navigation
 
@@ -75,7 +81,7 @@ Execute an ordered program of stages while tracking references, transitions and 
 | Scene, initial state, non-language inputs and simulator seed | Active natural-language instruction | Actual trajectory, requested contract and rejection of the opposite contract |
 | Model checkpoint and observation configuration | Requested feasible behavior | Safety, progress, deadline and stability where supported by the track |
 
-For example, the same junction can ask **“Turn left”** or **“Go straight.”** Evaluate each from the matched initial state with independent model memory. Successful execution of one request does not imply paired success.
+For example, the same junction can ask **“Turn left”** or **“Go straight.”** Evaluate each from the matched initial state with independent model memory. Paired success requires completing both requests.
 
 ### Benchmark construction
 
@@ -85,7 +91,7 @@ Source scenes are grounded geometrically, paired with feasible instructions, com
 
 Strict **SISR / CFPS** distinguish individual from paired completion. **SCS / PCS** report graded compliance and paired completion. Closed-loop **SemISR / Sem-CFPS** are relaxed proxies; open-loop **SemSISR / SemCFPS** enforce exclusive semantic success. Equivalent paraphrases test wording robustness. Definitions and the nonlinear **L2D** aggregation are in [the protocol](docs/PROTOCOL.md).
 
-The model receives public observations and the active instruction. Geometric targets, evaluator contracts and opposite-arm instructions remain outside the SDK request. This is an API boundary, not an adversarial process sandbox.
+The model receives public observations and the active instruction. Geometric targets, evaluator contracts and opposite-arm instructions remain outside the SDK request.
 
 ## Benchmark Tracks
 
@@ -180,9 +186,13 @@ P0 · 241 PCUs · canonical.
 
 </details>
 
-The CARLA table includes the six principal systems; the paper's Senna high-level bridge is a separate diagnostic configuration. **NAVSIM numbers use the historical manuscript scorer.** New SDK runs use `score_corrected.py`; keep corrected evaluations in a separate leaderboard profile. Full protocol, coverage and failure denominators must accompany submissions. There is no pooled cross-track rank.
+The CARLA table includes the six principal systems; the paper's Senna high-level bridge is a separate diagnostic configuration. **NAVSIM numbers use the historical manuscript scorer.** New SDK runs use `score_corrected.py`; keep corrected evaluations in a separate leaderboard profile. Full protocol, coverage and failure denominators must accompany submissions. Rankings follow each track’s native metrics and evaluation profile.
 
 ## Visualization / Example Cases
+
+🎬 **[Watch the 2-minute project film](docs/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](docs/index.html#examples)** · **[Prepare a model submission](docs/submit.html)**
+
+The local project preview includes **73 clips across all five backends**, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
 
 <details open>
 <summary><b>Closed-loop counterfactual execution</b></summary>
@@ -198,7 +208,7 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 </details>
 
-The examples come from the supplied manuscript; the overview and construction figures are the latest author-provided assets. The project's interactive junction is explicitly a conceptual illustration, not an experimental rollout.
+Explore manuscript visualizations, the benchmark construction pipeline and an animated explanation of the paired mechanism.
 
 ## Installation
 
@@ -221,7 +231,7 @@ language2drive setup --tracks all --runtime --download
 
 `setup` probes Hugging Face and PyPI independently: reachable official endpoints are preferred; otherwise it selects the HF mirror and Tsinghua PyPI index. Override with `--network official` or `--network mirror`. Authenticated benchmark downloads require the official HF endpoint; credentials are never forwarded to mirrors by this SDK. Waymo assets require `--source-root /path/to/licensed/waymo`. nuScenes source images and frozen evaluator sidecars must be supplied where required. See [installation and resource access](docs/INSTALLATION.md).
 
-**Wheel installation:** build or download the release wheel; it includes checksum-verified backend source and notices, not model weights, simulator binaries or raw datasets.
+**Wheel installation:** build or download the release wheel, which packages checksum-verified backend source and notices. Use `setup` to configure simulator environments and benchmark resources.
 
 ```sh
 python -m pip install build
@@ -251,7 +261,7 @@ Extras install Python dependencies. `setup --runtime` provisions separate simula
 language2drive adapter-check --adapter examples/constant_velocity.py
 ```
 
-This synthetic constant-speed example verifies all five trajectory contracts. It is **not a benchmark result**.
+This synthetic constant-speed example checks adapter compatibility with all five trajectory contracts.
 
 ### 2. Adapt your model once
 
@@ -340,7 +350,7 @@ This is the **NAVSIM** output grid. nuScenes uses `ego_pose_origin`; RealSim use
 
 ## Reproduce Evaluation
 
-Preserve the original model integrations, frozen release and scorer version when reproducing manuscript baselines. A custom adapter plus the new CARLA controller is a new evaluated system configuration, not an automatic reproduction of a paper baseline.
+Use the original model integration, controller, frozen release and scorer version to reproduce each manuscript baseline. For custom adapters, report the evaluated model and controller configuration.
 
 | Track | Reproduction entry point | Required evidence / profile |
 |---|---|---|
@@ -357,31 +367,53 @@ python scripts/build_release.py
 python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 ```
 
-These checks validate SDK behavior, page assets and a clean wheel installation. They do not execute the GPU simulator experiments. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
+These checks validate SDK behavior, page assets and a clean wheel installation. Use the native reproduction commands above for GPU simulator evaluations. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
 
 ## Project Page Preview
 
-The webpage is served locally for review. Remote GitHub Pages deployment is manual and is not triggered by a push.
+The project page is available through the local SSH preview. GitHub Pages deployment is controlled by the manual release workflow.
 
 ```sh
 # On the server, from this repository
-python -m http.server 18765 --bind 127.0.0.1 --directory docs
+python scripts/serve_preview.py --port 18765
 
 # On your laptop; replace the SSH host with your usual server alias
 ssh -N -L 18765:127.0.0.1:18765 youzh2507@server41
 ```
 
-Open **http://localhost:18765** in your browser. The page includes an interactive PCU illustration, all five manuscript result tables and model integration instructions.
+Open **http://localhost:18765** in your browser. The page includes the project film, interactive framework, searchable case library, all five manuscript result tables, and a browser-based result submission builder. The preview server supports video seeking through the SSH tunnel. The complete static site is ready for the [manual GitHub Pages deployment](docs/RELEASE.md#github-pages).
 
 ## Citation
 
-Provisional citation for the supplied manuscript. Final author names and archival metadata will be added at paper release.
+If Language2Drive supports your research, please cite our paper.
 
 ```bibtex
 @misc{language2drive,
   title = {Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?},
-  note  = {Research manuscript},
-  url   = {https://github.com/ZihanYou/Language2Drive}
+  author = {You, Zihan and
+           Fan, Zehua and
+           Lyu, Wenqi and
+           Wang, Aoqi and
+           Wang, Ni and
+           Yang, Yifei and
+           Zhao, Linge and
+           Li, Huan and
+           Ang, Sining and
+           Yang, Yuguang and
+           Chen, Jueyu and
+           Li, Xiangyu and
+           Wei, Qianshan and
+           Pei, Jieyuan and
+           Wang, Yuxin and
+           Chen, Zhiwen and
+           Li, Jiaqi and
+           Song, Wenxuan and
+           Qiao, Yanyuan and
+           Zhu, Benjin and
+           Li, Haoang and
+           Wang, Yan},
+  howpublished = {Research manuscript},
+  url = {https://github.com/ZihanYou/Language2Drive}
 }
 ```
 

@@ -1,0 +1,184 @@
+{
+  "duration_s": 120,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio": "none; English captions are burned in",
+  "segments": [
+    {
+      "start_s": 0,
+      "duration_s": 12,
+      "kind": "opening",
+      "caption": "Language2Drive asks whether driving models follow language across two feasible alternatives."
+    },
+    {
+      "start_s": 12,
+      "duration_s": 8,
+      "kind": "shared",
+      "caption": "A Paired Counterfactual Unit keeps the scene, seed and initial state fixed."
+    },
+    {
+      "start_s": 20,
+      "duration_s": 8,
+      "kind": "paired",
+      "caption": "Run the same model independently. Change only the mutually exclusive instruction."
+    },
+    {
+      "start_s": 28,
+      "duration_s": 4,
+      "kind": "measure",
+      "caption": "Both alternatives must satisfy their execution requirements for strict paired success."
+    },
+    {
+      "start_s": 32,
+      "duration_s": 4,
+      "kind": "scope",
+      "caption": "Select the requested turn, lane change or parking maneuver.",
+      "scope": "A",
+      "case_id": "carla-formal-a-001",
+      "evidence_role": "benchmark-target",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_A-001/data.json",
+      "source_sha256": "f7de275e6b83183fa189fac22d56c7dcd7a094225c5b7885360ef4762e213314",
+      "animation": "Normalized reference-path progression"
+    },
+    {
+      "start_s": 36,
+      "duration_s": 4,
+      "kind": "scope",
+      "caption": "Maintain a speed, lane or following constraint over time.",
+      "scope": "B",
+      "case_id": "carla-formal-b-009",
+      "evidence_role": "benchmark-target",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_B-009/data.json",
+      "source_sha256": "dde24656524382d9720ba509767d4bdeb6b84d6a43112f9dc840bd740e4e1a02",
+      "animation": "Normalized reference-path progression"
+    },
+    {
+      "start_s": 40,
+      "duration_s": 4,
+      "kind": "scope",
+      "caption": "Connect words to locations and objects in the observed scene.",
+      "scope": "C",
+      "case_id": "carla-formal-c-025",
+      "evidence_role": "benchmark-target",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_C-025/data.json",
+      "source_sha256": "8927c0721fff3a2ee923e83bbd7efdf52e268abdbad2fcc0b87daf9c7768957f",
+      "animation": "Normalized reference-path progression"
+    },
+    {
+      "start_s": 44,
+      "duration_s": 4,
+      "kind": "scope",
+      "caption": "Remember the goal and execute the required stages in order.",
+      "scope": "D",
+      "case_id": "carla-formal-d-001",
+      "evidence_role": "benchmark-target",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-001/data.json",
+      "source_sha256": "2563d2fbf6f7c3e143e3acaf363d444f890711847a32b0f21477d538a546b3b9",
+      "animation": "Normalized reference-path progression"
+    },
+    {
+      "start_s": 48,
+      "duration_s": 7,
+      "kind": "case",
+      "case_id": "carla-formal-a-014",
+      "evidence_role": "model-result",
+      "source_offset_s": 4,
+      "source_sha256": "c510d32d74b09b5e604cce0e70a42d965f0ae460c3656f840d793b652d7e3f5d",
+      "caption": "Model result: CARLA execution replay under paired lane instructions."
+    },
+    {
+      "start_s": 55,
+      "duration_s": 7,
+      "kind": "case",
+      "case_id": "carla-formal-d-009",
+      "evidence_role": "model-result",
+      "source_offset_s": 8,
+      "source_sha256": "d0c10e898801a5e0509cadd58b1c15e4aa08932f3a0848c491b6d6418ea841a6",
+      "caption": "Conditional destinations bring scene understanding and multi-stage instructions into the same evaluation."
+    },
+    {
+      "start_s": 62,
+      "duration_s": 12,
+      "kind": "case",
+      "case_id": "realsim-alpamayo15-p02-a2-s08",
+      "evidence_role": "model-result",
+      "source_offset_s": 0,
+      "source_sha256": "4a2fc9f6d6f16a511fd0cbd5a25186e8b955249f0aa201a83033bd52c9fbfc87",
+      "caption": "Model result: Alpamayo 1.5 in reconstructed RealSim driving scenes."
+    },
+    {
+      "start_s": 74,
+      "duration_s": 5,
+      "kind": "case",
+      "case_id": "nuscenes-p01-scene-0077-speed-opendrivevla-0-5b",
+      "evidence_role": "model-result",
+      "source_offset_s": 0,
+      "source_sha256": "7cd102cc42d39943cb6aac41ef9f8d9e5782f63c13e5ee3b5f355307bb173ef9",
+      "caption": "Compare instruction-conditioned model forecasts in the same recorded camera context."
+    },
+    {
+      "start_s": 79,
+      "duration_s": 5,
+      "kind": "case",
+      "case_id": "nuscenes-p01-scene-0077-speed-omnidrive",
+      "evidence_role": "model-result",
+      "source_offset_s": 0,
+      "source_sha256": "df9d69b35fd1bc06663adcba6b0b9e8df1899ccc7c4a492c4e5a2aee7c3097bd",
+      "caption": "Switch models on the same paired case to inspect their responses to the requested speed."
+    },
+    {
+      "start_s": 84,
+      "duration_s": 8,
+      "kind": "case",
+      "case_id": "navsim-junction-560d4e533d4da43b",
+      "evidence_role": "benchmark-target",
+      "source_offset_s": 0,
+      "source_sha256": "489537a07fe54e6f1504c0994df848fd622db7683c2861bcb96503ddf86928eb",
+      "caption": "Benchmark targets: NAVSIM reference trajectories define the two requested outcomes."
+    },
+    {
+      "start_s": 92,
+      "duration_s": 4,
+      "kind": "predictions",
+      "caption": "Compare instruction-conditioned model predictions on a shared coordinate scale.",
+      "evidence_role": "model-result",
+      "model": "Qwen-Drive-1.0-4B",
+      "case_id": "navsim-junction-560d4e533d4da43b"
+    },
+    {
+      "start_s": 96,
+      "duration_s": 4,
+      "kind": "case",
+      "case_id": "wod-cand-0002",
+      "evidence_role": "model-result",
+      "source_offset_s": 0,
+      "source_sha256": "6a5b4a58be71364a40ac1dac62960da6d49b622db6c7b1867faebbca70bed798",
+      "caption": "WOD-E2E brings four driving models together for an instruction-conditioned trajectory comparison."
+    },
+    {
+      "start_s": 100,
+      "duration_s": 4,
+      "kind": "case",
+      "case_id": "wod-cand-0103",
+      "evidence_role": "model-result",
+      "source_offset_s": 0,
+      "source_sha256": "eec035137986e08a5552ff49dbaa7655a3d7266c3a0952eb300243d78f20f983",
+      "caption": "Explore pedestrians, obstacles and diverse traffic situations across the case library."
+    },
+    {
+      "start_s": 104,
+      "duration_s": 8,
+      "kind": "adapter",
+      "caption": "Adapt once, configure the resources, and run the native evaluations across three runtime groups."
+    },
+    {
+      "start_s": 112,
+      "duration_s": 8,
+      "kind": "closing",
+      "caption": "Evaluate your model. Share native scores, execution coverage and reproducible evidence."
+    }
+  ]
+}
