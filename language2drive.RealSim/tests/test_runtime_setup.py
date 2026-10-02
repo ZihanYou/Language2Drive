@@ -22,6 +22,7 @@ def test_plan_is_non_mutating(tmp_path):
     result = json.loads(output.stdout)
     sync = next(row['command'] for row in result['steps'] if row['name'] == 'sync-frozen-upstream')
     assert '--frozen' in sync and '--extra' in sync and 'all' in sync
+    assert sync[sync.index('--default-index') + 1] == 'https://pypi.tuna.tsinghua.edu.cn/simple'
     mirror = next(row['command'] for row in result['steps'] if row['name'] == 'download-hash-bound-mirror')
     assert '--require-hashes' in mirror and '--no-deps' in mirror
     assert result['proxy_enabled'] is False

@@ -54,7 +54,8 @@ def plan(args, work, uv):
     checkout = work / 'alpasim'
     python = work / 'venv/bin/python'
     # Frozen means neither resolving versions again nor rewriting upstream uv.lock.
-    sync = [str(uv), 'sync', '--frozen', '--extra', 'all', '--python', args.python]
+    sync = [str(uv), 'sync', '--frozen', '--extra', 'all', '--python', args.python,
+            '--default-index', args.index_url]
     if args.offline:
         sync.append('--offline')
     install = [str(uv), 'pip', 'install', '--python', str(python)]
