@@ -9,12 +9,13 @@ def configure(workspace, destination, gpu=0, **paths):
     def chosen(name, default):
         return str(Path(paths.get(name) or default).expanduser().resolve())
     real = root / TRACKS['realsim']
+    real_work = Path(chosen('realsim_work_dir', real / '.runtime-env'))
     bundle = Path(chosen('realsim_bundle', real / 'assets/langauge2drive.RealSim'))
     scenes = chosen('realsim_scenes', real / 'scenes')
     cfg = dict(workspace=str(root), endpoint='http://127.0.0.1:8090',
                model=dict(name='custom', seed=0), tracks={
         'carla': dict(managed_runtime=True, gpu=gpu, tier='base', splits=['dev', 'test'], seeds='1', host='127.0.0.1', port=2000),
-        'realsim': dict(managed_runtime=True, gpu=gpu, python=str(real / '.runtime-env/venv/bin/python'),
+        'realsim': dict(managed_runtime=True, gpu=gpu, python=str(real_work / 'venv/bin/python'),
                         bundle=str(bundle), scene_root=scenes, ego_hood_dir=chosen('ego_hood_dir', real / 'assets/ego-hoods'),
                         public_workload=str(bundle / 'compiled/public_workload.json'), sidecar=str(bundle / 'compiled/sidecar.json'),
                         pcus=str(bundle / 'pcus.json'), eval_config=str(bundle / 'runtime/eval.json'), usdz_glob=scenes+'/*.usdz', concurrency=1),

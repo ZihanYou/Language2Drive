@@ -25,7 +25,7 @@ def main(argv=None):
     config.add_argument('--workspace')
     config.add_argument('--output', default='.l2d/evaluation.json')
     config.add_argument('--gpu', type=int, default=0)
-    for name in ('nuscenes-root', 'navsim-root', 'navsim-sidecars', 'wod-release', 'realsim-bundle', 'realsim-scenes', 'ego-hood-dir'):
+    for name in ('nuscenes-root', 'navsim-root', 'navsim-sidecars', 'wod-release', 'realsim-bundle', 'realsim-scenes', 'realsim-work-dir', 'ego-hood-dir'):
         config.add_argument('--' + name)
     setup = sub.add_parser('setup', help='Install selected isolated environments and optional resources')
     setup.add_argument('--workspace')
@@ -33,6 +33,7 @@ def main(argv=None):
     setup.add_argument('--network', choices=('auto', 'official', 'mirror'), default='auto')
     setup.add_argument('--transport', choices=('auto', 'direct', 'environment'), default='auto', help='Automatically bypass a broken proxy, or explicitly select transport')
     setup.add_argument('--runtime', action='store_true', help='Also provision CARLA/AlpaSim runtime dependencies')
+    setup.add_argument('--realsim-work-dir', help='Place the pinned RealSim runtime on a chosen disk; also pass this path to configure')
     setup.add_argument('--download', action='store_true')
     setup.add_argument('--source-root')
     setup.add_argument('--package', help='Use this local wheel or checkout when installing evaluator environments')
@@ -75,11 +76,11 @@ def main(argv=None):
             from .configure import configure
             if args.gpu < 0:
                 raise ValueError('--gpu must be a non-negative host GPU index')
-            names = ('nuscenes_root', 'navsim_root', 'navsim_sidecars', 'wod_release', 'realsim_bundle', 'realsim_scenes', 'ego_hood_dir')
+            names = ('nuscenes_root', 'navsim_root', 'navsim_sidecars', 'wod_release', 'realsim_bundle', 'realsim_scenes', 'realsim_work_dir', 'ego_hood_dir')
             result = configure(args.workspace, args.output, args.gpu, **{name: getattr(args, name) for name in names})
         elif args.command == 'setup':
             from .setup import bootstrap
-            result = bootstrap(args.workspace, args.tracks, args.network, args.runtime, args.download, args.source_root, args.dry_run, args.package, args.transport)
+            result = bootstrap(args.workspace, args.tracks, args.network, args.runtime, args.download, args.source_root, args.dry_run, args.package, args.transport, args.realsim_work_dir)
         elif args.command == 'serve':
             from .service import serve
             serve(args.adapter, json.loads(Path(args.config).read_text()) if args.config else {}, args.host, args.port)

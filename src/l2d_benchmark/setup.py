@@ -45,7 +45,7 @@ def sources(mode='auto'):
             'PIP_INDEX_URL': 'https://pypi.org/simple' if pip_official else 'https://pypi.tuna.tsinghua.edu.cn/simple'}
 
 
-def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, source_root=None, dry_run=False, package=None, transport='auto'):
+def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, source_root=None, dry_run=False, package=None, transport='auto', realsim_work_dir=None):
     root = discover(workspace)
     network = sources(mode)
     env, transport = transport_environment(network, transport)
@@ -62,6 +62,7 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
     plan, blocked = [], []
     for track in tracks:
         backend = root / TRACKS[track]
+        real_work = Path(realsim_work_dir).expanduser().resolve() if realsim_work_dir else backend / '.runtime-env'
         python_name = 'python3'
         interpreter = shutil.which(python_name) or python_name
         target = root / '.l2d/envs' / track
@@ -96,10 +97,10 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
                 runtime_requirements = ['dictor==0.1.12', 'ephem==4.1.5', 'networkx>=3', 'opencv-python>=4.7', 'psutil>=5', 'py-trees==0.8.3', 'pygame>=2', 'pyquaternion>=0.9', 'scipy>=1.10', 'six', 'tabulate', 'transforms3d', 'simple-watchdog-timer==0.1.1', 'pydot', 'pyparsing', 'requests', 'pexpect', 'ptyprocess', 'wcwidth', 'setuptools']
                 plan.append({'track': track, 'cwd': str(backend), 'argv': [python, '-m', 'pip', 'install', '--index-url', network['PIP_INDEX_URL'], str(wheel), *runtime_requirements]})
             elif track == 'realsim':
-                plan.append({'track': track, 'cwd': str(backend), 'argv': [python, str(backend / 'scripts/setup_runtime.py'), '--index-url', network['PIP_INDEX_URL'], '--install-rust']})
+                plan.append({'track': track, 'cwd': str(backend), 'argv': [python, str(backend / 'scripts/setup_runtime.py'), '--work-dir', str(real_work), '--index-url', network['PIP_INDEX_URL'], '--install-rust']})
         if runtime and track == 'realsim':
-            runtime_python = str(backend / '.runtime-env/venv/bin/python')
-            runtime_uv = str(backend / '.runtime-env/bootstrap/bin/uv')
+            runtime_python = str(real_work / 'venv/bin/python')
+            runtime_uv = str(real_work / 'bootstrap/bin/uv')
             # Native uv environments intentionally omit pip. Reuse their pinned
             # installer without resolving or changing frozen runtime dependencies.
             plan.append({'track': track, 'cwd': str(root), 'argv': [runtime_uv, '--no-config', 'pip', 'install', '--python', runtime_python, '--no-deps', package]})

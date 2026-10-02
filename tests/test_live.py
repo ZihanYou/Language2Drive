@@ -48,6 +48,12 @@ class LiveTests(unittest.TestCase):
             self.assertFalse((Path(temp) / 'out').exists())
             with self.assertRaises(ValueError):
                 configure(ROOT, config)
+            custom = Path(temp) / 'local-disk.json'
+            configure(ROOT, custom, realsim_work_dir=Path(temp) / 'runtime')
+            custom_plan = launch(custom, ['realsim'], Path(temp) / 'out',
+                                 ROOT / 'examples/constant_velocity.py', dry_run=True)
+            self.assertEqual(custom_plan['tracks']['realsim']['commands'][0][0],
+                             str(Path(temp) / 'runtime/venv/bin/python'))
 
     def test_preflight_does_not_claim_experiments(self):
         with tempfile.TemporaryDirectory() as temp:

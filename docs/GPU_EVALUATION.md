@@ -25,6 +25,21 @@ packages with their exact versions, environment markers and SHA256 hashes.
 The original lock is preserved; native frozen synchronization still owns Git,
 direct-URL and workspace dependencies. No dependency versions are re-resolved.
 
+On shared network storage, place the large RealSim runtime on a local SSD. Pass
+the same directory to installation and configuration; workspace files and data
+may remain on the network disk:
+
+```sh
+language2drive setup --workspace ./l2d-workspace --tracks realsim --runtime \
+  --realsim-work-dir /local-ssd/l2d-realsim
+language2drive configure --workspace ./l2d-workspace \
+  --realsim-work-dir /local-ssd/l2d-realsim --output ./evaluation.json
+```
+
+The native setup keeps an ownership marker and refuses to reuse an unrelated
+directory. Choose durable storage for production; `/tmp` environments may be removed
+when the host restarts.
+
 CARLA needs Conda on PATH. RealSim uses its native pinned Python 3.12 / AlpaSim
 bootstrap, NVIDIA Container Toolkit and Docker. Host drivers are installed by the
 host administrator. Supply Waymo source data with `setup --source-root ...`.

@@ -152,6 +152,12 @@ class SDKTests(unittest.TestCase):
         self.assertTrue(native_sdk[0].endswith('/.runtime-env/bootstrap/bin/uv'))
         self.assertIn('--no-config', native_sdk)
         self.assertTrue(native_sdk[native_sdk.index('--python') + 1].endswith('/.runtime-env/venv/bin/python'))
+        custom = bootstrap(ROOT, ['realsim'], mode='official', runtime=True,
+                           dry_run=True, realsim_work_dir='/tmp/l2d-test-runtime')
+        native_setup = next(s['argv'] for s in custom['commands'] if 'setup_runtime.py' in ' '.join(s['argv']))
+        self.assertEqual(native_setup[native_setup.index('--work-dir') + 1], '/tmp/l2d-test-runtime')
+        self.assertTrue(any(s['argv'][0] == '/tmp/l2d-test-runtime/bootstrap/bin/uv'
+                            and '/tmp/l2d-test-runtime/venv/bin/python' in s['argv'] for s in custom['commands']))
         mirrored = bootstrap(ROOT, ['nuscenes'], mode='mirror', download=True, dry_run=True)
         self.assertEqual(len(mirrored['resources_pending']), 1)
 
