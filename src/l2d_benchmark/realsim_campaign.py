@@ -22,7 +22,12 @@ def campaign(cfg, output):
         raise ValueError('RealSim paper protocol requires frozen 30 PCUs and 60 slots at seed 1701')
     plan['run_count'] = len(plan['runs'])
     (output / 'run_plan.json').write_text(json.dumps(plan, indent=2))
-    returned = submit_run_plan(plan, cfg['runtime_address'], cfg['driver_address'], int(cfg.get('concurrency', 1)))
+    if cfg.get('managed_runtime'):
+        from .realsim_runtime import execute
+        returned = execute(cfg, plan, output)
+        cfg = dict(cfg, asl_root=str(output / 'runtime-groups'))
+    else:
+        returned = submit_run_plan(plan, cfg['runtime_address'], cfg['driver_address'], int(cfg.get('concurrency', 1)), use_registered_driver=True)
     (output / 'runtime_return.json').write_text(json.dumps(returned, indent=2, allow_nan=False))
     if not returned['driver_version'].startswith('l2d_unified-driver-') or returned['runtime_git_hash'] != ALPASIM_COMMIT:
         raise ValueError('Runtime must attest the pinned commit and l2d_unified driver identity')

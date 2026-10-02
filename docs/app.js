@@ -12,7 +12,7 @@ cd Language2Drive
 python -m pip install -e '.[openloop]'
 
 # Probe official sources; provision selected environments
-language2drive setup --tracks nuscenes,navsim,wod
+language2drive setup --tracks openloop
 
 # Optional resource download / simulator provisioning
 language2drive setup --tracks all --runtime --download`,
@@ -32,20 +32,19 @@ class MyAdapter:
 
 def create_adapter(config):
     return MyAdapter()`,
-evaluate: `# In the model's environment (terminal 1)
-language2drive serve --adapter examples/my_model.py \\
-  --config model.json
+evaluate: `# Configure the downloaded resource layout once
+language2drive configure --workspace . --gpu 0 \
+  --output .l2d/evaluation.json
+language2drive gpu-check --config .l2d/evaluation.json
 
-# After editing resource paths and runtime endpoints (terminal 2)
-language2drive evaluate --config examples/evaluation.json \\
-  --tracks all --output outputs/my-model
+# One adapter; CARLA + RealSim + all three open-loop backends
+language2drive run --config .l2d/evaluation.json \
+  --adapter examples/my_model.py --model-config model.json \
+  --model-python /path/to/model-env/bin/python \
+  --tracks carla,realsim,openloop --output outputs/my-model
 
-# Or select only the open-loop tracks
-language2drive evaluate --config examples/evaluation.json \\
-  --tracks nuscenes,navsim,wod --output outputs/my-model
-
-# Review each track's score, coverage and logs
-# outputs/my-model/summary.json`
+# Native deployment authority and licensed assets are required.
+# outputs/my-model/summary.json records each track separately.`
 };
 $$('[data-code]').forEach(button => button.addEventListener('click', () => { $('#quick-code').textContent = snippets[button.dataset.code]; $$('[data-code]').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); }));
 $('#copy-code').addEventListener('click', () => copy($('#quick-code').textContent));

@@ -12,7 +12,7 @@ python scripts/check_site.py
 python scripts/check_browser.py
 ```
 
-In repository **Settings → Pages**, choose **GitHub Actions** as the source. Push the page changes to the default branch, or manually run **Project page**. The workflow validates local assets, uploads `docs/` and deploys it to `https://ZihanYou.github.io/Language2Drive/`. Relative asset paths work under the repository subpath. If the repository owner/name changes, update project URLs and social metadata. This change does not itself claim a live deployment.
+Remote deployment is deferred. Pushing the default branch does **not** deploy the page: the Pages workflow is manual-only. When publication is authorized, choose **GitHub Actions** in repository **Settings → Pages**, then manually run **Project page**. The workflow validates local assets, uploads `docs/` and deploys it to `https://ZihanYou.github.io/Language2Drive/`. Relative asset paths work under the repository subpath. If the repository owner/name changes, update project URLs and social metadata.
 
 ## Build the wheel
 

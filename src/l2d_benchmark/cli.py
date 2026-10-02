@@ -8,9 +8,10 @@ from .workspace import TRACKS, discover, initialize
 
 
 def selection(value):
-    names = list(TRACKS) if value == 'all' else value.split(',')
+    groups = {'openloop': ['nuscenes', 'navsim', 'wod']}
+    names = list(TRACKS) if value == 'all' else [track for item in value.split(',') for track in groups.get(item, [item])]
     if not names or len(set(names)) != len(names) or any(n not in TRACKS for n in names):
-        raise argparse.ArgumentTypeError('Use all or comma-separated carla,realsim,nuscenes,navsim,wod')
+        raise argparse.ArgumentTypeError('Use all or comma-separated carla,realsim,openloop (or individual nuscenes,navsim,wod)')
     return names
 
 
@@ -20,10 +21,17 @@ def main(argv=None):
     sub = parser.add_subparsers(dest='command', required=True)
     init = sub.add_parser('init', help='Extract verified backends from the wheel into a workspace')
     init.add_argument('--workspace', required=True)
+    config = sub.add_parser('configure', help='Generate one five-backend configuration using the downloaded resource layout')
+    config.add_argument('--workspace')
+    config.add_argument('--output', default='.l2d/evaluation.json')
+    config.add_argument('--gpu', type=int, default=0)
+    for name in ('nuscenes-root', 'navsim-root', 'navsim-sidecars', 'wod-release', 'realsim-bundle', 'realsim-scenes', 'ego-hood-dir'):
+        config.add_argument('--' + name)
     setup = sub.add_parser('setup', help='Install selected isolated environments and optional resources')
     setup.add_argument('--workspace')
     setup.add_argument('--tracks', type=selection, default=selection('all'))
     setup.add_argument('--network', choices=('auto', 'official', 'mirror'), default='auto')
+    setup.add_argument('--transport', choices=('auto', 'direct', 'environment'), default='auto', help='Automatically bypass a broken proxy, or explicitly select transport')
     setup.add_argument('--runtime', action='store_true', help='Also provision CARLA/AlpaSim runtime dependencies')
     setup.add_argument('--download', action='store_true')
     setup.add_argument('--source-root')
@@ -39,6 +47,17 @@ def main(argv=None):
     run.add_argument('--tracks', type=selection, default=selection('all'))
     run.add_argument('--output', default='outputs/my-model')
     run.add_argument('--dry-run', action='store_true')
+    live = sub.add_parser('run', help='Start one model service and run GPU campaigns across three runtime groups')
+    live.add_argument('--config', required=True)
+    live.add_argument('--tracks', type=selection, default=selection('all'))
+    live.add_argument('--adapter')
+    live.add_argument('--model-config')
+    live.add_argument('--model-python')
+    live.add_argument('--output', default='outputs/my-model')
+    live.add_argument('--dry-run', action='store_true')
+    gpu = sub.add_parser('gpu-check', help='Check host GPU, evaluator interpreters and configured resources')
+    gpu.add_argument('--config', required=True)
+    gpu.add_argument('--tracks', type=selection, default=selection('all'))
     worker = sub.add_parser('_worker', help=argparse.SUPPRESS)
     worker.add_argument('--config', required=True)
     worker.add_argument('--track', required=True, choices=TRACKS)
@@ -52,13 +71,25 @@ def main(argv=None):
     try:
         if args.command == 'init':
             result = {'workspace': str(initialize(args.workspace))}
+        elif args.command == 'configure':
+            from .configure import configure
+            if args.gpu < 0:
+                raise ValueError('--gpu must be a non-negative host GPU index')
+            names = ('nuscenes_root', 'navsim_root', 'navsim_sidecars', 'wod_release', 'realsim_bundle', 'realsim_scenes', 'ego_hood_dir')
+            result = configure(args.workspace, args.output, args.gpu, **{name: getattr(args, name) for name in names})
         elif args.command == 'setup':
             from .setup import bootstrap
-            result = bootstrap(args.workspace, args.tracks, args.network, args.runtime, args.download, args.source_root, args.dry_run, args.package)
+            result = bootstrap(args.workspace, args.tracks, args.network, args.runtime, args.download, args.source_root, args.dry_run, args.package, args.transport)
         elif args.command == 'serve':
             from .service import serve
             serve(args.adapter, json.loads(Path(args.config).read_text()) if args.config else {}, args.host, args.port)
             return 0
+        elif args.command == 'run':
+            from .live import launch
+            result = launch(args.config, args.tracks, args.output, args.adapter, args.model_config, args.model_python, args.dry_run)
+        elif args.command == 'gpu-check':
+            from .live import check
+            result = check(args.config, args.tracks)
         elif args.command in ('evaluate', '_worker'):
             from .pipeline import run, worker
             result = run(args.config, args.tracks, args.output, args.dry_run) if args.command == 'evaluate' else worker(args.config, args.track, args.output)
@@ -76,7 +107,9 @@ def main(argv=None):
             root = discover(args.workspace)
             result = {'workspace': str(root), 'interpreters': {t: (root / '.l2d/envs' / t / 'bin/python').is_file() for t in TRACKS}, 'data_access': 'See docs/INSTALLATION.md; doctor does not assert dataset/runtime readiness'}
         print(json.dumps(result, indent=2, allow_nan=False))
-        if args.command == 'evaluate' and any(v.get('status') == 'failed' for v in result['tracks'].values()):
+        if args.command in ('evaluate', 'run') and any(v.get('status') == 'failed' for v in result['tracks'].values()):
+            return 1
+        if args.command == 'gpu-check' and not result['ready']:
             return 1
         return 0
     except Exception as error:

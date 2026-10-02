@@ -45,6 +45,8 @@ def main():
     tracked += ['language2drive.RealSim/src/language2drive_realsim/configs/driver/l2d_unified.yaml']
     starters = ['README.md', 'LICENSE'] + [str(p.relative_to(ROOT)) for folder in ('examples', 'docs') for p in (ROOT / folder).rglob('*') if p.is_file() and not any(part.startswith('.') or part == '__pycache__' for part in p.relative_to(ROOT).parts)]
     tracked += starters
+    starters += ['scripts/validate_gpu_campaign.py']
+    tracked += ['scripts/validate_gpu_campaign.py', 'language2drive.OpenloopTrack.navsim/data/RELEASE_CHECKSUMS.json']
     with tempfile.TemporaryDirectory(prefix='l2d-wheel-') as temp:
         stage = Path(temp)
         for name in ('pyproject.toml', 'README.md', 'LICENSE'):

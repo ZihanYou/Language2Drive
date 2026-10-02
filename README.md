@@ -1,36 +1,50 @@
 <div align="center">
 
-# Language2Drive
+# 🚘 Language2Drive
 
 ### Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?
 
 **Same scene. Same seed. Different instructions.**<br>
-A paired counterfactual benchmark that separates driving quality from language control.
+Measure whether language changes what a driving VLA actually does.
 
-[![Paper](https://img.shields.io/badge/Paper-Manuscript-173240?style=flat-square)](docs/assets/language2drive-paper.pdf)
-[![Project Page](https://img.shields.io/badge/Project-Page-2469c9?style=flat-square)](https://ZihanYou.github.io/Language2Drive/)
-[![Code](https://img.shields.io/badge/Code-GitHub-173240?style=flat-square&logo=github)](https://github.com/ZihanYou/Language2Drive)
-[![Dataset](https://img.shields.io/badge/Dataset-Coming_Soon-ce6238?style=flat-square)](#dataset--evaluation-format)
-[![Benchmark](https://img.shields.io/badge/Benchmark-5_Tracks-2469c9?style=flat-square)](#benchmark-tracks)
-[![Leaderboard](https://img.shields.io/badge/Leaderboard-Paper_Results-173240?style=flat-square)](#main-results--leaderboard)
+[![Paper](https://img.shields.io/badge/Paper-arXiv_pending-b31b1b?style=flat-square&logo=arxiv)](#citation)
+[![Project Page](https://img.shields.io/badge/Project_Page-Local_Preview-336b91?style=flat-square&logo=googlechrome&logoColor=white)](#project-page-preview)
+[![Code](https://img.shields.io/badge/Code-GitHub-202c39?style=flat-square&logo=github)](https://github.com/ZihanYou/Language2Drive)
+[![Dataset](https://img.shields.io/badge/🤗_Dataset-Official_Release_Coming_Soon-e6a43a?style=flat-square)](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main)
+[![Benchmark](https://img.shields.io/badge/Benchmark-5_Backends-2b7a78?style=flat-square)](#benchmark-tracks)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-Training_Free_Baselines-68549c?style=flat-square)](#main-results--leaderboard)
 
-<img src="docs/assets/scope_framework.png" alt="Language2Drive's four scopes: atomic actions, persistent behaviors, scene-grounded navigation and long-horizon instruction programs" width="100%">
+<img src="docs/assets/framework.png" alt="Language2Drive overview: matched counterfactual instructions, driving execution, four instruction scopes, and independent language-control and driving-quality measurements" width="100%">
 
-**5 evaluation tracks · 4 instruction scopes · 2 matched alternatives per PCU**
+**4 instruction scopes &nbsp; · &nbsp; 3 runtime groups &nbsp; · &nbsp; 5 evaluation backends**
 
-[Get started](#quick-start) · [Adapt your model](docs/ADAPTER.md) · [Evaluation protocol](docs/PROTOCOL.md) · [Reproduce results](#reproduce-evaluation)
+[⚡ Quick Start](#quick-start) &nbsp; / &nbsp; [🔌 Model Adapter](docs/ADAPTER.md) &nbsp; / &nbsp; [📐 Protocol](docs/PROTOCOL.md) &nbsp; / &nbsp; [📊 Results](#main-results--leaderboard)
 
 </div>
 
 ## TL;DR
 
-- **Does language control the behavior?** A Paired Counterfactual Unit (PCU) holds the scene and seed fixed and changes only a mutually exclusive, feasible instruction.
-- **Both alternatives must work.** Individual success can hide a model's preferred behavior; paired success requires successful completion of both requests.
-- **Driving quality is a separate axis.** Across six principal CARLA systems, **110 of 118 successful rollouts (93.2%) are one-sided**. In RealSim, Alpamayo 1.5 achieves **100.00 Safety / 97.17 DrivingScore** but **0.00 strict paired success**.
-- **Four scopes, five tracks.** Test atomic actions, persistent behaviors, grounded destinations and instruction programs across CARLA-L2D, RealSim, nuScenes, NAVSIM and WOD-E2E.
-- **Adapt once.** The new SDK exposes one `predict(request)` interface, validates trajectories, exports native submissions and invokes each track's scorer. All existing track entry points remain available.
+- **Language control is measurable.** A Paired Counterfactual Unit (PCU) holds the scene and seed fixed and tests two mutually exclusive, feasible instructions.
+- **Both arms must succeed.** In CARLA, **110 of 118 successful rollouts (93.2%) are one-sided** across the six principal evaluated systems.
+- **Good driving does not imply compliance.** In RealSim, Alpamayo 1.5 reaches **100.00 Safety / 97.17 DrivingScore**, with **0.00 strict paired success**.
+- **From actions to programs.** Four scopes cover atomic actions, persistent behavior, scene-grounded navigation and long-horizon instruction programs.
+- **Adapt once, evaluate five backends.** One trajectory interface connects CARLA, RealSim, nuScenes, NAVSIM and WOD-E2E, with separate native scores and evidence.
 
-> **Release status:** source code, unified SDK and project-page source are available. The unified dataset release is **coming soon**; some necessary evaluator resources currently require granted access or licensed upstream datasets. Wheel building and PyPI publishing workflows are included; PyPI publication is pending. The linked manuscript supplies the reported results.
+> **Training-free evaluation.** Every model currently reported is evaluated using an existing checkpoint without training or fine-tuning on Language2Drive. This describes our evaluation protocol; it does not mean the original models were never trained.
+
+## Release Roadmap / TODO
+
+| Status | Deliverable |
+|:---:|---|
+| ✅ | Benchmark source, five native evaluators and unified model-adapter SDK |
+| ✅ | Wheel build, selectable environment setup and manuscript result tables |
+| ✅ | Project-page source and local preview; remote publication is deferred |
+| ⏳ | **Official versioned dataset release** on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main), including the documented evaluation resources |
+| ⏳ | **Official SOTA model** and checkpoints, with its training and evaluation recipe |
+| ⏳ | Final arXiv identifier, archival citation and public PyPI publication |
+| ⏳ | Complete GPU validation of the unified installation and every runtime group |
+
+The Hugging Face repository is the dataset destination. Access to current assets and release completeness are separate from the forthcoming official version. Existing models in the tables are training-free baselines, not the planned official model.
 
 ## Benchmark Overview
 
@@ -63,7 +77,11 @@ Execute an ordered program of stages while tracking references, transitions and 
 
 For example, the same junction can ask **“Turn left”** or **“Go straight.”** Evaluate each from the matched initial state with independent model memory. Successful execution of one request does not imply paired success.
 
-<img src="docs/assets/framework.png" alt="PCU execution and verification framework: paired tests, closed-loop execution, executable contracts and separate language-control and driving-quality axes" width="100%">
+### Benchmark construction
+
+<img src="docs/assets/process_png.png" alt="Five-stage benchmark construction: source curation, geometric grounding, paired specification, compilation and validation; 64 CARLA and 30 RealSim PCUs" width="100%">
+
+Source scenes are grounded geometrically, paired with feasible instructions, compiled into executable contracts and validated before evaluation. Three paraphrases per arm test wording sensitivity.
 
 Strict **SISR / CFPS** distinguish individual from paired completion. **SCS / PCS** report graded compliance and paired completion. Closed-loop **SemISR / Sem-CFPS** are relaxed proxies; open-loop **SemSISR / SemCFPS** enforce exclusive semantic success. Equivalent paraphrases test wording robustness. Definitions and the nonlinear **L2D** aggregation are in [the protocol](docs/PROTOCOL.md).
 
@@ -83,9 +101,10 @@ The model receives public observations and the active instruction. Geometric tar
 
 ## Main Results / Leaderboard
 
-Values below are transcribed from the supplied manuscript; all scores are **0–100, higher is better**. Systems are compared **within each track and profile**. [Interactive leaderboard](https://ZihanYou.github.io/Language2Drive/#leaderboard) · [Machine-readable results](docs/data/results.json) · [Submission guide](docs/LEADERBOARD.md).
+**All reported systems use the training-free protocol.** Values below are transcribed from the supplied manuscript; all scores are **0–100, higher is better**. Systems are compared **within each track and profile**. [Project-page leaderboard source](docs/index.html) · [Machine-readable results](docs/data/results.json) · [Submission guide](docs/LEADERBOARD.md).
 
-### CARLA-L2D
+<details open>
+<summary><b>📊 CARLA-L2D</b></summary>
 
 paper: 64 PCUs · 3 expressions · seed 1.
 
@@ -98,7 +117,10 @@ paper: 64 PCUs · 3 expressions · seed 1.
 | Qwen-Drive-1.0-4B | 1.82 | 0.00 | 15.62 | 3.12 | 17.05 | 7.09 | 76.68 | 43.67 | 4.31 |
 | Impromptu-VLA | 0.26 | 0.00 | 19.79 | 6.25 | 14.48 | 4.61 | 77.43 | 42.02 | 3.87 |
 
-### RealSim
+</details>
+
+<details>
+<summary><b>📊 RealSim</b></summary>
 
 realsim-paper-1.0: 30 PCUs · seed 1701.
 
@@ -113,7 +135,10 @@ realsim-paper-1.0: 30 PCUs · seed 1701.
 | OneVL | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 43.33 | 43.82 | 0.44 |
 | ReCogDrive | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 33.33 | 43.57 | 0.38 |
 
-### nuScenes
+</details>
+
+<details>
+<summary><b>📊 nuScenes</b></summary>
 
 v1.0-test · 60 held-out PCUs · canonical.
 
@@ -124,7 +149,10 @@ v1.0-test · 60 held-out PCUs · canonical.
 | OpenDriveVLA-0.5B | 13.33 | 3.33 | 19.06 | 4.30 |
 | OmniDrive | 7.50 | 0.00 | 29.24 | 8.61 |
 
-### NAVSIM
+</details>
+
+<details>
+<summary><b>📊 NAVSIM</b></summary>
 
 paper historical scorer · 38 PCUs · 4 wordings.
 
@@ -136,7 +164,10 @@ paper historical scorer · 38 PCUs · 4 wordings.
 | ReCogDrive | 0.000 | 0.000 | 4.400 | 0.000 |
 | OneVL | 3.618 | 0.000 | 8.428 | 0.000 |
 
-### WOD-E2E
+</details>
+
+<details>
+<summary><b>📊 WOD-E2E</b></summary>
 
 P0 · 241 PCUs · canonical.
 
@@ -146,6 +177,8 @@ P0 · 241 PCUs · canonical.
 | Fast-dDrive | 34.85 | 0.00 | 46.42 | 5.27 |
 | Qwen-Drive-SFT | 34.44 | 0.00 | 50.58 | 9.37 |
 | Qwen-Drive-RL | 35.06 | 0.00 | 49.58 | 7.58 |
+
+</details>
 
 The CARLA table includes the six principal systems; the paper's Senna high-level bridge is a separate diagnostic configuration. **NAVSIM numbers use the historical manuscript scorer.** New SDK runs use `score_corrected.py`; keep corrected evaluations in a separate leaderboard profile. Full protocol, coverage and failure denominators must accompany submissions. There is no pooled cross-track rank.
 
@@ -165,7 +198,7 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 </details>
 
-The figures are taken from the supplied manuscript. The project's interactive junction is explicitly a conceptual illustration, not an experimental rollout.
+The examples come from the supplied manuscript; the overview and construction figures are the latest author-provided assets. The project's interactive junction is explicitly a conceptual illustration, not an experimental rollout.
 
 ## Installation
 
@@ -177,7 +210,7 @@ cd Language2Drive
 python -m pip install -e '.[openloop]'
 
 # Select only the environments you need; no checkpoint download by default
-language2drive setup --tracks nuscenes,navsim,wod
+language2drive setup --tracks openloop
 
 # Inspect a complete installation / resource plan before running it
 language2drive setup --tracks all --runtime --download --dry-run
@@ -241,7 +274,29 @@ def create_adapter(config):
     return Adapter()
 ```
 
-### 3. Start your model service and evaluate
+### 3. Launch the three runtime groups
+
+```sh
+# Generate paths from the downloaded layout; override licensed resource paths.
+language2drive configure --workspace . --gpu 0 --output .l2d/evaluation.json
+language2drive gpu-check --config .l2d/evaluation.json
+
+# Keep CUDA / model dependencies in your existing model environment.
+language2drive run --config .l2d/evaluation.json \
+  --adapter examples/my_model.py --model-config model.json \
+  --model-python /path/to/model-env/bin/python \
+  --tracks carla,realsim,openloop --output outputs/my-model
+```
+
+`openloop` expands to nuScenes, NAVSIM and WOD-E2E. Managed RealSim starts and
+stops its real GPU services for every frozen execution group. CARLA retains the
+native release launcher's deployment authority and frozen runtime manifest.
+[Full GPU installation, resource paths and deployment guide](docs/GPU_EVALUATION.md).
+`run --dry-run` prints commands without launching services. The installed wheel
+is reused automatically when provisioning evaluator environments.
+
+### 4. Use independently started services
+
 
 ```sh
 # Terminal 1: your existing model environment
@@ -253,16 +308,16 @@ language2drive evaluate --config examples/evaluation.json \
 
 # Any subset uses the same adapter
 language2drive evaluate --config examples/evaluation.json \
-  --tracks nuscenes,navsim,wod --output outputs/my-model
+  --tracks openloop --output outputs/my-model
 ```
 
-The example configuration contains explicit `PATH/TO/...` placeholders. Resolve them first. Workspace is relative to the configuration file; track paths are relative to the workspace. Full closed-loop evaluation requires running CARLA / AlpaSim services; [the installation guide](docs/INSTALLATION.md) describes the unified RealSim driver configuration.
+The example configuration contains explicit `PATH/TO/...` placeholders. Resolve them first. Workspace is relative to the configuration file; track paths are relative to the workspace. With independently started services, full closed-loop evaluation requires running CARLA / AlpaSim services; [the installation guide](docs/INSTALLATION.md) describes the unified RealSim driver configuration.
 
 Each track saves native predictions, score files, coverage and logs. `summary.json` links each track's artifacts; a failed track makes the command return nonzero while other selected tracks continue. Open-loop inference resumes from a configuration- and service-bound ledger. Failed requests remain in the scheduled inventory; rerun a new output directory when intentionally changing model or configuration.
 
 ## Dataset / Evaluation Format
 
-**Unified dataset release: coming soon.** Public workload definitions and native evaluator code are in the track directories. Frozen private contracts and some replay bundles are separate resources; upstream datasets retain their own access terms.
+**Official versioned dataset release: coming soon.** [Dataset repository on Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main). Public workload definitions and native evaluator code are in the track directories. Frozen private contracts and some replay bundles are separate resources; upstream datasets retain their own access terms.
 
 | Layer | Contents | Consumer |
 |---|---|---|
@@ -303,6 +358,20 @@ python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 ```
 
 These checks validate SDK behavior, page assets and a clean wheel installation. They do not execute the GPU simulator experiments. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
+
+## Project Page Preview
+
+The webpage is served locally for review. Remote GitHub Pages deployment is manual and is not triggered by a push.
+
+```sh
+# On the server, from this repository
+python -m http.server 18765 --bind 127.0.0.1 --directory docs
+
+# On your laptop; replace the SSH host with your usual server alias
+ssh -N -L 18765:127.0.0.1:18765 youzh2507@server41
+```
+
+Open **http://localhost:18765** in your browser. The page includes an interactive PCU illustration, all five manuscript result tables and model integration instructions.
 
 ## Citation
 

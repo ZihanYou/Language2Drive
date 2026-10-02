@@ -19,7 +19,7 @@ language2drive setup --workspace /path/to/l2d-workspace --tracks navsim \
   --package /path/to/language2drive-0.1.0-py3-none-any.whl
 ```
 
-`init` verifies all bundled source hashes and refuses differing destination files. Original track paths and notices are preserved. Supply `--package` for offline/local-wheel installations until the distribution is available on PyPI. The wheel contains evaluator source; not checkpoint weights, simulator binaries, full datasets or model-specific vendor source.
+`init` verifies all bundled source hashes and refuses differing destination files. Original track paths and notices are preserved. The installed wheel is automatically reconstructed from its verified distribution files and reused for isolated environments; `--package` can explicitly override it. The wheel contains evaluator source; not checkpoint weights, simulator binaries, full datasets or model-specific vendor source.
 
 ## Source selection
 
@@ -43,7 +43,7 @@ Full live RealSim bootstrapping can obtain its own Python 3.12 through uv; the S
 ## Resources and current access
 
 - CARLA: `Mike087/Language2Drive` benchmark/runtime manifests and fixed revision; substantial disk space is needed. Read [the native CARLA guide](../language2drive.carla/README.md).
-- RealSim: authorized HF bundle and scenes. Its historical dataset prefix is `langauge2drive.RealSim` (spelling retained by native downloader). `setup --download` retrieves the bundle; resolve scene assets with the native `scripts/hub_assets.py scenes --bundle ... --directory ...` command after obtaining NVIDIA dataset access.
+- RealSim: authorized HF bundle and scenes. Its historical dataset prefix is `langauge2drive.RealSim` (spelling retained by native downloader). `setup --runtime --download` retrieves the bundle, its scene assets and the pinned renderer image after obtaining NVIDIA dataset access.
 - nuScenes: native pinned replay bundle is downloaded by setup when authorized; source sensor images require official nuScenes test access and `sensor_root`. The replay bundle can reproduce frozen predictions without re-running model inference.
 - NAVSIM: `--sensors --cameras-only` retrieves camera shards. Evaluator sidecars are a separate frozen resource; the toy sidecars are only for interface/scorer tests.
 - WOD-E2E: provide `--source-root /path/to/licensed/Waymo` to native preparation. The SDK cannot obtain licensed raw validation assets for you.
@@ -70,3 +70,5 @@ The template disables waypoint commands, requests 10 Hz outputs and decodes came
 In `examples/evaluation.json`, configure the runtime and driver addresses, ASL output root, evaluator YAML, USDZ glob, frozen public workload, private sidecar and frozen 30-PCU source. These are evaluator-side paths and never sent to `predict(request)`. Start the model service, CARLA server and AlpaSim stack, then `language2drive evaluate --tracks all --config ...` submits and scores the campaigns.
 
 See [RealSim runtime setup](../language2drive.RealSim/docs/RUNTIME_SETUP.md) and [deployment](../language2drive.RealSim/docs/DEPLOYMENT.md) for host prerequisites. The simulator deployment remains explicit because it depends on the machine's GPU, containers and authorized resources.
+
+See [the full GPU evaluation guide](GPU_EVALUATION.md) for `configure`, `gpu-check`, managed runtime groups and `run`.

@@ -15,7 +15,7 @@ def load_config(path):
         workspace = path.parent / workspace
     root = discover(workspace)
     config['workspace'] = str(root)
-    path_keys = {'python', 'sensor_root', 'release_dir', 'public_dir', 'sidecars', 'contracts_dir', 'public_workload', 'sidecar', 'pcus', 'asl_root', 'eval_config', 'usdz_glob'}
+    path_keys = {'python', 'sensor_root', 'release_dir', 'public_dir', 'sidecars', 'contracts_dir', 'public_workload', 'sidecar', 'pcus', 'asl_root', 'eval_config', 'usdz_glob', 'bundle', 'scene_root', 'ego_hood_dir', 'backend'}
     for cfg in config.get('tracks', {}).values():
         for key in path_keys.intersection(cfg):
             value = Path(cfg[key]).expanduser()
@@ -55,7 +55,8 @@ def commands(track, backend, cfg, output, endpoint):
             plan = target / 'run_plan.json'
             result.extend([['-m', 'language2drive.cli', 'run', '--agent-path', str(bridge), '--agent-config', str(output / 'agent.json'),
                            '--track', 'standardized', '--tier', cfg.get('tier', 'base'), '--split', split, '--seeds', str(cfg.get('seeds', '1')),
-                           '--results', str(target / 'results'), '--plan-output', str(plan), '--execute', '--host', cfg.get('host', '127.0.0.1'), '--port', str(cfg.get('port', 2000))],
+                           '--results', str(target / 'results'), '--plan-output', str(plan), '--execute', '--host', cfg.get('host', '127.0.0.1'), '--port', str(cfg.get('port', 2000)),
+                           '--gpu-rank', str(cfg.get('gpu', 0)), '--traffic-manager-port', str(cfg.get('traffic_manager_port', 8000))],
                            ['-m', 'language2drive.cli', 'score', '--plan', str(plan), '--results', str(target / 'results'), '--output', str(target / 'score.json')]])
         return result
     return []
@@ -82,7 +83,8 @@ def run(config_path, selected, output, dry_run=False):
         if cfg is None:
             raise ValueError(f'Missing tracks.{track} in {config_path}')
         backend = root / TRACKS[track]
-        python = str(Path(cfg.get('python', root / '.l2d/envs' / track / 'bin/python')).expanduser())
+        default_python = root / TRACKS[track] / '.runtime-env/venv/bin/python' if track == 'realsim' and cfg.get('managed_runtime') else root / '.l2d/envs' / track / 'bin/python'
+        python = str(Path(cfg.get('python', default_python)).expanduser())
         target = output / track
         scorer = commands(track, backend, cfg, target, endpoint)
         worker = [python, '-m', 'l2d_benchmark.cli', '_worker', '--config', str(config_path), '--track', track, '--output', str(target)]
@@ -111,6 +113,8 @@ def worker(config_path, track, output):
     cfg = config['tracks'][track]
     if track == 'realsim':
         from .realsim_campaign import campaign
+        cfg = dict(cfg, endpoint=config.get('endpoint', 'http://127.0.0.1:8090'), backend=str(root / TRACKS[track]))
+        cfg.setdefault('python', str(root / TRACKS[track] / '.runtime-env/venv/bin/python'))
         return campaign(cfg, output)
     from .runners import run_openloop
     return run_openloop(track, root / TRACKS[track], cfg, output, config.get('endpoint', 'http://127.0.0.1:8090'), config.get('model', {}))

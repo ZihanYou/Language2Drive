@@ -27,6 +27,17 @@ with tempfile.TemporaryDirectory(prefix='l2d-install-') as temp:
         assert (workspace / name / 'README.md').is_file()
     subprocess.run([cli, 'adapter-check', '--adapter', str(workspace / 'examples/constant_velocity.py')], check=True, cwd=root)
     subprocess.run([cli, 'setup', '--workspace', str(workspace), '--tracks', 'navsim', '--network', 'official', '--package', str(wheel), '--dry-run'], check=True, cwd=root)
+    # No PyPI lookup or original wheel path is needed after the initial install.
+    planned = subprocess.check_output([cli, 'setup', '--workspace', str(workspace), '--tracks', 'openloop', '--network', 'official', '--dry-run'], cwd=root)
+    assert all('language2drive==' not in ' '.join(step['argv']) for step in json.loads(planned)['commands'])
+    code = 'from l2d_benchmark.installed_wheel import cached_wheel; print(cached_wheel(' + repr(str(workspace)) + '))'
+    cached = Path(subprocess.check_output([python, '-c', code], cwd=root, text=True).strip())
+    with zipfile.ZipFile(cached) as archive:
+        assert 'l2d_benchmark/resources/backends/manifest.json' in archive.namelist()
+    subprocess.run([python, '-m', 'pip', 'install', '--force-reinstall', '--no-deps', '--no-index', str(cached)], check=True, cwd=root)
+    configuration = workspace / '.l2d/evaluation.json'
+    subprocess.run([cli, 'configure', '--workspace', str(workspace), '--output', str(configuration)], check=True, cwd=root)
+    subprocess.run([cli, 'run', '--config', str(configuration), '--adapter', str(workspace / 'examples/constant_velocity.py'), '--tracks', 'carla,realsim,openloop', '--dry-run'], check=True, cwd=root)
     subprocess.run([cli, 'evaluate', '--config', str(workspace / 'examples/evaluation.json'), '--tracks', 'all', '--output', str(root / 'outputs'), '--dry-run'], check=True, cwd=root)
     assert not (root / 'outputs').exists()
     # Extraction refuses differing files rather than overwriting users' work.

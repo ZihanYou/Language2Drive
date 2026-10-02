@@ -21,6 +21,7 @@ jobs:
       - run: python -m pip install '.[openloop]' build
       - run: python -m unittest discover -s tests -v
       - run: python scripts/check_site.py
+      - run: python language2drive.OpenloopTrack.navsim/scripts/check_public_data.py
       - run: python scripts/build_release.py
       - run: python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
       - uses: actions/upload-artifact@v4

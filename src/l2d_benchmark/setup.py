@@ -5,18 +5,37 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-from urllib.request import urlopen
+from urllib.request import build_opener, ProxyHandler
 from .workspace import TRACKS, discover
 
 EXTRAS = {'nuscenes': 'openloop', 'navsim': 'openloop', 'wod': 'openloop', 'carla': 'carla', 'realsim': 'realsim'}
 
 
-def reachable(url):
+def probe(url, trust_proxy=True):
     try:
-        with urlopen(url, timeout=5) as response:
+        opener = build_opener() if trust_proxy else build_opener(ProxyHandler({}))
+        with opener.open(url, timeout=5) as response:
             return response.status == 200
     except Exception:
         return False
+
+
+def reachable(url):
+    return probe(url) or probe(url, trust_proxy=False)
+
+
+def transport_environment(network, mode='auto'):
+    env = os.environ.copy()
+    proxy_keys = [key for key in env if key.lower() in ('http_proxy', 'https_proxy', 'all_proxy')]
+    direct = mode == 'direct'
+    if mode == 'auto' and proxy_keys and not probe(network['PIP_INDEX_URL']):
+        direct = probe(network['PIP_INDEX_URL'], trust_proxy=False)
+    if direct:
+        for key in proxy_keys:
+            env.pop(key)
+        env['NO_PROXY'] = env['no_proxy'] = '*'
+    env.update(network)
+    return env, 'direct' if direct else 'environment'
 
 
 def sources(mode='auto'):
@@ -26,15 +45,20 @@ def sources(mode='auto'):
             'PIP_INDEX_URL': 'https://pypi.org/simple' if pip_official else 'https://pypi.tuna.tsinghua.edu.cn/simple'}
 
 
-def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, source_root=None, dry_run=False, package=None):
+def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, source_root=None, dry_run=False, package=None, transport='auto'):
     root = discover(workspace)
     network = sources(mode)
-    env = os.environ.copy()
-    env.update(network)
+    env, transport = transport_environment(network, transport)
     sdk_source = Path(__file__).resolve().parents[2]
     editable = (sdk_source / 'pyproject.toml').is_file()
     # Install the same local checkout/wheel when provided, otherwise the released distribution.
-    package = str(Path(package).resolve()) if package else str(sdk_source) if editable else 'language2drive==0.1.0'
+    if package:
+        package = str(Path(package).resolve())
+    elif editable:
+        package = str(sdk_source)
+    else:
+        from .installed_wheel import cached_wheel
+        package = str(cached_wheel(root, dry_run))
     plan, blocked = [], []
     for track in tracks:
         backend = root / TRACKS[track]
@@ -44,7 +68,8 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
         python = str(target / 'bin/python')
         if track == 'carla' and not Path(python).is_file():
             conda = shutil.which('conda') or 'conda'
-            plan.append({'track': track, 'cwd': str(root), 'argv': [conda, 'create', '-y', '-p', str(target), 'python=3.11', 'pip', 'mkl-service']})
+            channel = 'https://repo.anaconda.com/pkgs/main' if network['PIP_INDEX_URL'] == 'https://pypi.org/simple' else 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main'
+            plan.append({'track': track, 'cwd': str(root), 'argv': [conda, 'create', '-y', '--override-channels', '-c', channel, '-p', str(target), 'python=3.11', 'pip', 'mkl-service']})
         elif track != 'carla' and not Path(python).is_file():
             plan.append({'track': track, 'cwd': str(root), 'argv': [interpreter, '-m', 'venv', str(target)]})
         install_target = package + '[' + EXTRAS[track] + ']' if not package.endswith('.whl') else package
@@ -53,9 +78,13 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
             # Wheel path extras cannot use a simple suffix; requirements are installed separately.
             import zipfile
             from email.parser import BytesParser
-            with zipfile.ZipFile(package) as archive:
-                name = next(n for n in archive.namelist() if n.endswith('.dist-info/METADATA'))
-                wheel_metadata = BytesParser().parsebytes(archive.read(name))
+            if Path(package).is_file():
+                with zipfile.ZipFile(package) as archive:
+                    name = next(n for n in archive.namelist() if n.endswith('.dist-info/METADATA'))
+                    wheel_metadata = BytesParser().parsebytes(archive.read(name))
+            else:
+                from importlib.metadata import distribution
+                wheel_metadata = distribution('language2drive').metadata
             requirements = [r.split(';')[0].strip() for r in wheel_metadata.get_all('Requires-Dist', []) if 'extra == "' + EXTRAS[track] + '"' in r]
             if requirements:
                 plan.append({'track': track, 'cwd': str(root), 'argv': [python, '-m', 'pip', 'install', '--index-url', network['PIP_INDEX_URL'], *requirements]})
@@ -98,7 +127,10 @@ def bootstrap(workspace, tracks, mode='auto', runtime=False, download=False, sou
                 plan.insert(at, step)
             else:
                 plan.append(step)
-    result = {'sources': network, 'commands': plan, 'resources_pending': blocked}
+            if track == 'realsim' and runtime:
+                plan.append({'track': track, 'cwd': str(backend), 'argv': [python, str(backend / 'scripts/hub_assets.py'), 'scenes', '--bundle', str(backend / 'assets/langauge2drive.RealSim'), '--directory', str(backend / 'scenes'), '--endpoint', hf]})
+                plan.append({'track': track, 'cwd': str(backend), 'argv': ['docker', 'pull', 'nvcr.io/nvidia/nre/nre-ga:26.04']})
+    result = {'sources': network, 'transport': transport, 'commands': plan, 'resources_pending': blocked}
     if not dry_run:
         for step in plan:
             subprocess.run(step['argv'], cwd=step['cwd'], env=env, check=True)

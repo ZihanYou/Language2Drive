@@ -4,13 +4,18 @@
     "paraphrase_pairs.png": "b5fba2dffdc09ea6d092e2dfa0c108bdc676266ed645231e8a1fcf81b49f77f3",
     "scope_framework.png": "25708258748d336861f7c376174499c2664671f8d3b38da6161c70619987664d",
     "strict_success_support.png": "bb8109e15e3511a918d4d199509c4dcee109eb9c85e2514a28ded45e039216b5",
-    "framework.png": "8775fa9bfd9957106df8cc3fd1782a081d0a4e2d02e6c236e7df7327c00ef4de",
+    "framework.png": "a793462b13c33575e73e8021e09b7bce7af82fa0274b27d475a20195ee523400",
     "openloop-cases.png": "f6b73bab71300dd6bb7d6c2ebee08dbb4db4d492685ca2a2fc587f322054f1a7",
-    "closedloop-cases.png": "6941af0d3b8fc24b6f3c19adf4a47d2faed10f2b8fdcfb979cef403401f0b608"
+    "closedloop-cases.png": "6941af0d3b8fc24b6f3c19adf4a47d2faed10f2b8fdcfb979cef403401f0b608",
+    "process_png.png": "45859d8c1d61a8ec57427c2519f20aa877a1b32d0061f4fcd1640b445f0f02d6"
   },
   "tables": {
     "carla_main.tex": "a847107dedef1c154780c4194bc0c99782f1aef1bc25203f59ae1b0149dafa10",
     "realsim_main.tex": "d5b6042ce8e04009ccf58b80d6f203c290e8fcd88e63ef97be511d157fbb0222",
     "offline_main.tex": "deeb1c113f4b2e8da3abdff0c1e7e6f4ffbe5fb055b8e6d91e583843c68b1312"
+  },
+  "updated_figure_sources": {
+    "framework.png": "Author-provided updated asset, October 2026; embedded without modification.",
+    "process_png.png": "Author-provided updated asset, October 2026; embedded without modification."
   }
 }

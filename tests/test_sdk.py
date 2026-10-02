@@ -140,7 +140,9 @@ class SDKTests(unittest.TestCase):
     def test_source_selection_and_standalone_carla(self):
         with patch('l2d_benchmark.setup.reachable', side_effect=[False, True]):
             self.assertEqual(sources(), {'HF_ENDPOINT': 'https://hf-mirror.com', 'PIP_INDEX_URL': 'https://pypi.org/simple'})
-        plan = bootstrap(ROOT, ['carla', 'realsim'], mode='official', runtime=True, dry_run=True)
+        is_file = Path.is_file
+        with patch.object(Path, 'is_file', lambda path: False if str(path).endswith('/.l2d/envs/carla/bin/python') else is_file(path)):
+            plan = bootstrap(ROOT, ['carla', 'realsim'], mode='official', runtime=True, dry_run=True)
         self.assertIn('create', plan['commands'][0]['argv'])
         self.assertIn('python=3.11', plan['commands'][0]['argv'])
         self.assertTrue(any('setup_runtime.py' in ' '.join(s['argv']) for s in plan['commands']))
