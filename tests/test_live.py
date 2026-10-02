@@ -35,6 +35,25 @@ class LiveTests(unittest.TestCase):
         with self.assertRaises(argparse.ArgumentTypeError):
             selection('navsim,openloop')
 
+    def test_visible_gpu_does_not_hide_renderer_driver_requirement(self):
+        with tempfile.TemporaryDirectory() as temp:
+            config = Path(temp) / 'eval.json'
+            configure(ROOT, config, realsim_work_dir=Path(temp) / 'runtime')
+            for version, ready in [('535.104.12', False), ('570.124.06', True)]:
+                with self.subTest(version=version):
+                    def command(argv, **kwargs):
+                        output = version if '--query-gpu=driver_version' in argv else '0, NVIDIA A800'
+                        return subprocess.CompletedProcess(argv, 0, output, '')
+                    with patch('l2d_benchmark.live.subprocess.run', side_effect=command):
+                        result = check(config, ['realsim'])
+                    checks = {row['name']: row for row in result['checks']}
+                    self.assertTrue(checks['NVIDIA driver']['ready'])
+                    requirement = checks['RealSim pinned renderer driver requirement']
+                    self.assertEqual(requirement['ready'], ready)
+                    if not ready:
+                        self.assertIn(version, requirement['remedy'])
+                    self.assertFalse(result['gpu_experiments_executed'])
+
     def test_configure_and_dry_plan_preserve_all_five(self):
         with tempfile.TemporaryDirectory() as temp:
             config = Path(temp) / 'eval.json'

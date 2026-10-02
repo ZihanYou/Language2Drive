@@ -42,7 +42,10 @@ when the host restarts.
 
 CARLA needs Conda on PATH. RealSim uses its native pinned Python 3.12 / AlpaSim
 bootstrap, NVIDIA Container Toolkit and Docker. Host drivers are installed by the
-host administrator. Supply Waymo source data with `setup --source-root ...`.
+host administrator. The pinned upstream declares NVIDIA driver **570.x or newer**
+for its renderer; a working CUDA tensor alone does not establish this compatibility.
+`gpu-check` reports GPU visibility and this renderer requirement separately.
+Supply Waymo source data with `setup --source-root ...`.
 nuScenes test sensors and NAVSIM evaluator sidecars require their own authorized
 resource paths. Official NRE ego-hood files must also be available; the runtime
 keeps the frozen ego-mask configuration.

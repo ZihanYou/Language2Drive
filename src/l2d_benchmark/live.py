@@ -55,6 +55,19 @@ def check(config_path, selected):
                 record('CARLA frozen runtime manifest', (root / TRACKS[track] / '.runtime/carla_runtime_assets.current.json').is_file(), 'Bootstrap the native server, then run l2d freeze-runtime-assets. See docs/GPU_EVALUATION.md.')
         if track == 'realsim' and cfg.get('managed_runtime'):
             try:
+                driver = subprocess.run(['nvidia-smi', '--query-gpu=driver_version',
+                    '--format=csv,noheader', '--id=' + str(cfg.get('gpu', 0))],
+                    capture_output=True, text=True, timeout=15)
+                versions = driver.stdout.strip().splitlines()
+                supported = driver.returncode == 0 and bool(versions) and all(
+                    int(version.split('.')[0]) >= 570 for version in versions)
+                detail = ', '.join(versions) or driver.stderr.strip()
+            except (OSError, ValueError, subprocess.TimeoutExpired) as error:
+                supported, detail = False, str(error)
+            record('RealSim pinned renderer driver requirement', supported,
+                'Pinned AlpaSim/NuRec declares NVIDIA driver >= 570.x; detected: ' + detail
+                + '. CUDA visibility alone does not verify renderer compatibility.')
+            try:
                 result = subprocess.run(['docker', 'info', '--format', '{{json .Runtimes}}'], capture_output=True, text=True, timeout=15)
                 valid = result.returncode == 0 and 'nvidia' in result.stdout
             except (OSError, subprocess.TimeoutExpired):
