@@ -37,18 +37,6 @@ Measure whether language changes what a driving VLA actually does.
 
 </div>
 
-<a id="tldr"></a>
-
-## ⚡ TL;DR
-
-- **Language control is measurable.** A Paired Counterfactual Unit (PCU) holds the scene and seed fixed and tests two mutually exclusive, feasible instructions.
-- **Both arms must succeed.** In CARLA, **110 of 118 successful rollouts (93.2%) are one-sided** across the six principal evaluated systems.
-- **Good driving does not imply compliance.** In RealSim, Alpamayo 1.5 reaches **100.00 Safety / 97.17 DrivingScore**, with **0.00 strict paired success**.
-- **From actions to programs.** Four scopes cover atomic actions, persistent behavior, scene-grounded navigation and long-horizon instruction programs.
-- **Adapt once, evaluate five backends.** One trajectory interface connects CARLA, RealSim, nuScenes, NAVSIM and WOD-E2E, with separate native scores and evidence.
-
-> **Training-free evaluation.** Every model currently reported is evaluated using an existing checkpoint without training or fine-tuning on Language2Drive.
-
 <a id="release-roadmap--todo"></a>
 
 ## 🗓️ Release Roadmap / TODO
@@ -57,13 +45,11 @@ Measure whether language changes what a driving VLA actually does.
 |:---:|---|
 | ✅ | Benchmark source, five native evaluators and unified model-adapter SDK |
 | ✅ | Wheel build, selectable environment setup and manuscript result tables |
-| ✅ | Project-page source and local preview; remote publication is deferred |
-| ⏳ | **Official versioned dataset release** on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main), including the documented evaluation resources |
-| ⏳ | **Official SOTA model** and checkpoints, with its training and evaluation recipe |
-| ⏳ | Final arXiv identifier, archival citation and public PyPI publication |
-| ⏳ | Complete GPU validation of the unified installation and every runtime group |
+| ✅ | evaluation resources on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive)|
+| ✅ | Official benchmark release, supporting the use of any datasets |
+| ⏳ | Official versioned dataset, model and checkpoints release|
+| ⏳ | Further support |
 
-Follow the [Hugging Face repository](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main) for the official dataset release and upcoming model resources.
 
 <a id="benchmark-overview"></a>
 
@@ -410,21 +396,6 @@ python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 
 These checks validate SDK behavior, page assets and a clean wheel installation. Use the native reproduction commands above for GPU simulator evaluations. [Protocol](docs/PROTOCOL.md) · [Release guide](docs/RELEASE.md) · [Contributing](CONTRIBUTING.md).
 
-<a id="project-page-preview"></a>
-
-## 🌐 Project Page Preview
-
-The project page is available through the local SSH preview. GitHub Pages deployment is controlled by the manual release workflow.
-
-```sh
-# On the server, from this repository
-python scripts/serve_preview.py --port 18765
-
-# On your laptop; replace the SSH host with your usual server alias
-ssh -N -L 18765:127.0.0.1:18765 youzh2507@server41
-```
-
-Open **http://localhost:18765** in your browser. The page includes the project film, interactive framework, searchable case library, all five manuscript result tables, and a browser-based result submission builder. The preview server supports video seeking through the SSH tunnel. The complete static site is ready for the [manual GitHub Pages deployment](docs/RELEASE.md#github-pages).
 
 <a id="citation"></a>
 
