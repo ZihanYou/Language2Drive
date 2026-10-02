@@ -7,6 +7,32 @@ Follow the Instructions in Autonomous Driving?* The setup uses fixed observation
 from OpenScene/NAVSIM test logs and compares trajectories generated for paired
 English instructions.
 
+## Unified SDK / GPU inference
+
+The refreshed release also supports the root project's one-adapter SDK. The
+current manuscript baselines are **training-free**: existing checkpoints are
+evaluated without Language2Drive training or fine-tuning. The official versioned
+dataset and official model are planned releases on
+[Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main).
+
+```sh
+# From the Language2Drive workspace after installing its wheel or checkout.
+language2drive setup --tracks navsim --download
+language2drive configure --workspace . \
+  --navsim-root /data/openscene/sensor_blobs/test \
+  --navsim-sidecars /data/l2d-navsim-sidecars --output .l2d/evaluation.json
+language2drive run --config .l2d/evaluation.json --tracks navsim \
+  --adapter /path/to/my_adapter.py --model-python /path/to/model-env/bin/python \
+  --output outputs/my-model
+```
+
+The adapter runs in your GPU model environment. NAVSIM still exports eight
+rear-axle XY poses and evaluates **38 PCUs / 304 requests** with the corrected
+scorer. `--tracks openloop` includes nuScenes and WOD-E2E; `--tracks all` also
+includes CARLA and RealSim. [GPU setup and full evaluation](../docs/GPU_EVALUATION.md)
+documents resources and native runtime requirements. Original baseline scripts
+and the historical manuscript scorer below remain available.
+
 ## Test set
 
 The test set has 38 paired counterfactual units (PCUs) from 19 recordings.

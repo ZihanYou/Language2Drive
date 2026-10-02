@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the released public inputs and optionally the referenced sensors."""
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -14,6 +15,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--sensors", action="store_true")
     args = parser.parse_args()
+    checksum_path = TRACK / 'data/RELEASE_CHECKSUMS.json'
+    checksums = json.loads(checksum_path.read_text())
+    for name, expected in checksums['files'].items():
+        path = TRACK / name
+        if path.is_symlink() or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            parser.error('Public release checksum mismatch: ' + name)
     manifest = json.loads((PUBLIC / "manifest.json").read_text())
     ids = manifest["pcu_ids"]
     assert len(ids) == 38 and len(set(ids)) == 38
@@ -36,6 +43,7 @@ def main():
     if args.sensors:
         missing = [path for path in sorted(sensor_paths) if not (sensor_root / path).is_file()]
     result = {"pcus": len(ids), "instruction_strings": instructions,
+              "verified_public_files": len(checksums['files']),
               "queries_per_model": 304, "unique_sensor_files": len(sensor_paths),
               "missing_sensors": len(missing) if args.sensors else "not checked"}
     print(json.dumps(result, indent=2))
