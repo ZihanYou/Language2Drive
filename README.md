@@ -17,7 +17,7 @@ Jiaqi Li<sup>18</sup>, Wenxuan Song<sup>16</sup>, Yanyuan Qiao<sup>19</sup>, Ben
 <sup>8</sup> WHU · <sup>9</sup> HUST · <sup>10</sup> USTC · <sup>11</sup> NIO · <sup>12</sup> UT Austin · <sup>13</sup> ByteDance · <sup>14</sup> CAS<br>
 <sup>15</sup> HiThink · <sup>16</sup> HKUST(GZ) · <sup>17</sup> AMD · <sup>18</sup> HKU · <sup>19</sup> EPFL · <sup>20</sup> Li Auto
 
-<sub>* Co-first contributors &nbsp; † Project leader &nbsp; ‡ Corresponding author</sub>
+<sub>* Core contributors &nbsp; † Project leader &nbsp; ‡ Corresponding author</sub>
 
 **Same scene. Same seed. Different instructions.**<br>
 Measure whether language changes what a driving VLA actually does.
@@ -43,33 +43,8 @@ Measure whether language changes what a driving VLA actually does.
 
 ## 🧭 Benchmark Overview
 
-Language2Drive asks whether changing a natural-language request reliably changes **which feasible behavior a driving VLA selects and completes**. Each PCU has a shared initial driving context and two alternative instructions. Contracts verify the actual trajectory, including requested behavior, alternative rejection and the track's execution requirements.
+Recent Vision-Language-Action (VLA) models increasingly use natural-language instructions to condition autonomous driving behavior. Yet existing closed-loop benchmarks primarily measure route completion, safety, and rule compliance, leaving a fundamental question unresolved: does language actually determine which feasible behavior the vehicle executes? A trajectory may be safe and successful while still violating or even ignoring the passenger's instruction. To address this, we introduce Language2Drive, a benchmark designed to directly test this capability. Its key evaluation unit, the paired counterfactual unit (PCU), holds the initial driving scene fixed while changing only the instruction. This design enables us to distinguish isolated instruction success from counterfactual paired success across four instruction-following scopes. To test whether this distinction persists across evaluation regimes, we instantiate Language2Drive in complementary closed-loop CARLA simulation, reconstructed real-world scenes, and open-loop driving benchmarks, including our released CARLA-Language2Drive simulator with purpose-built maps. Evaluating representative driving VLAs across these settings reveals a striking mismatch between strong driving competence and weak language control: 93.2% of successful rollouts do not have a successful counterpart under the alternative feasible instruction. This failure is dominated by one-sided completion, where a model repeatedly executes one preferred behavior but fails when the same scene requires the counterfactual alternative. These results expose two fundamental limitations of current evaluation: **isolated success and driving scores, which are widely used by conventional driving benchmarks, can substantially overstate language-following capability, while current driving VLAs themselves lack reliable instruction following under matched counterfactual tests**. Effective evaluation must therefore measure not only whether a VLA can drive successfully, but whether changing the instruction reliably alters which feasible behavior it selects and successfully executes.
 
-<a id="scope-a-atomic-action"></a>
-
-### 🎯 Scope A: Atomic Action
-
-Choose a local maneuver: turn left, proceed straight, stop or select another feasible action.
-
-<a id="scope-b-persistent-behavior"></a>
-
-### ⏱️ Scope B: Persistent Behavior
-
-Maintain a constraint over time: speed, following distance or another scoped behavior. The evaluator measures compliance throughout the interval.
-
-<a id="scope-c-scene-grounded-navigation"></a>
-
-### 📍 Scope C: Scene-Grounded Navigation
-
-Resolve a destination or reference in the physical scene, rather than following a privileged target point supplied by the evaluator.
-
-<a id="scope-d-long-horizon-instruction-program"></a>
-
-### 🧩 Scope D: Long-Horizon Instruction Program
-
-Execute an ordered program of stages while tracking references, transitions and completion conditions.
-
-<a id="pcu-paired-counterfactual-unit"></a>
 
 ## 🔀 PCU: Paired Counterfactual Unit
 
