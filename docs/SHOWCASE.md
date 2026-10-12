@@ -1,7 +1,7 @@
 # Project film and interactive evidence
 
 The project preview combines the author's framework artwork, a 120-second film,
-and 73 curated viewing copies from five author-provided evidence archives.
+and 72 curated viewing copies from five author-provided evidence archives.
 The local preview has no upload service. The site and all viewing assets are ready
 for the manual GitHub Pages workflow; see [the deployment guide](RELEASE.md).
 
@@ -35,10 +35,10 @@ starting one player pauses the other.
 | CARLA | 20 | All 16 formal task categories, all four scopes and 10 maps represented in the supplied archive; saved execution with camera pose re-renders |
 | RealSim | 14 | Eight Alpamayo 1.5 examples and six privileged oracle examples, covering six task families |
 | nuScenes | 20 | Four PCUs across scenes/locations, four models plus reference witnesses per PCU |
-| NAVSIM | 8 | One representative of each task family; reference videos plus saved predictions from five models in a separate inspector |
+| NAVSIM | 7 | Selected task families; reference videos plus saved predictions from five models in a separate inspector |
 | WOD-E2E | 11 | All supplied prerelease candidates, five task families and ten scene clusters; four-model forecast comparison |
 
-The inventory contains 51 backend/PCU combinations. Selection emphasizes task,
+The inventory contains 50 backend/PCU combinations. Selection emphasizes task,
 scene and model coverage; it is not an estimate of cohort performance. CARLA
 debug runs are excluded. Formal CARLA cameras were re-rendered from saved poses;
 the native model inputs were not retained. No inference was rerun for this page.
@@ -83,6 +83,20 @@ an explicit legend. Source and output hashes stay in the case manifest; the raw
 archives remain unchanged. Change `PRESENTATION_VERSION` to rebuild all outputs.
 Sources are cached in the work directory. Remove a specific generated MP4/poster
 and its cached source before deliberately replacing that source clip.
+
+All 20 CARLA and eight RealSim Alpamayo 1.5 cases include paired CoT panels.
+`reasoning.js` displays the latest recorded output for each arm at the video's
+current time; desktop viewers can watch video and CoT side by side or expand the
+video, and full transcripts support seeking and JSON download. Text is copied
+verbatim from the archived CSVs, with source member hashes and native timestamps
+in `data/reasoning/`. CARLA uses the archived agent-clock origins and replay speed;
+RealSim uses the first shared camera timestamp and preserves the final reading hold.
+The gallery builder exports these files automatically. To update just the CoT:
+
+```sh
+python scripts/build_reasoning.py --source-root /path/to/case_vedio \
+  --carla-archive /tmp/l2d-showcase/carla.zip
+```
 
 Framework artwork in `assets/framework/` is extracted from the author's
 `Framework.pptx`. The RealSim tile uses a NuRec front-camera JPEG from the

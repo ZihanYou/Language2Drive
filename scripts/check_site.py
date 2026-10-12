@@ -31,7 +31,8 @@ for css in DOCS.glob('*.css'):
     for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css.read_text()):
         assert (DOCS / ref).is_file(), f'Missing CSS asset: {ref}'
 cases=json.loads((DOCS/'data/cases.json').read_text())['cases']
-assert len(cases)==len({c['id'] for c in cases})==73
+assert len(cases)==len({c['id'] for c in cases})==72
+assert not any(c['track']=='navsim' and c['family']=='branch_choice' for c in cases)
 assert {c['track'] for c in cases}=={'carla','realsim','nuscenes','navsim','wod'}
 for c in cases:
     for key in ['video','poster']:
@@ -44,6 +45,21 @@ for c in cases:
     assert re.fullmatch('[a-f0-9]{64}',c['source_sha256'])
     assert re.fullmatch('[a-f0-9]{64}',c['video_sha256'])
     assert (DOCS/c['video']).stat().st_size==c['bytes']
+    if c['model']=='Alpamayo 1.5' and c['track'] in ('carla','realsim'):
+        assert (DOCS/c['reasoning']).is_file()
+        cot=json.loads((DOCS/c['reasoning']).read_text())
+        assert cot['schema']=='language2drive.reasoning.v1' and cot['case_id']==c['id']
+        assert cot['model']==c['model'] and cot['track']==c['track']
+        assert [a['label'] for a in cot['arms']]==['A','B'] and cot['playback_scale']>=1
+        for arm in cot['arms']:
+            assert re.fullmatch('[a-f0-9]{64}',arm['source_sha256'])
+            assert arm['source_member'].endswith('.csv') and arm['entries']
+            assert 0<arm['video_end_s']<=c['duration_s']+.1
+            for entry in arm['entries']:
+                assert entry['text'] and entry['instruction']
+                expected=max(0,(entry['source_time_s']-arm['clock_origin_s'])/cot['playback_scale'])
+                assert abs(entry['video_time_s']-expected)<1e-8
+            assert all(a['video_time_s']<=b['video_time_s'] for a,b in zip(arm['entries'],arm['entries'][1:]))
     if c['track']=='carla':assert c['visualization']=='Trajectory re-render' and 'NOT the original model inputs' in c['note']
     if c['track']=='wod':assert c['kind']=='candidate' and 'not_annotated' in c['note']
     if c['track']=='navsim':
@@ -92,4 +108,5 @@ for case in cases:
     if case['evidence_role'] == 'model-result' and case['model'] != 'Four-model comparison':
         names.append(case['model'])
     assert all(name in references for name in names), f'Missing case paper: {case["id"]}'
-print('PASS: all HTML/CSS references; 73 evidence clips; film provenance; 27 manuscript rows; all model papers')
+assert sum(bool(c.get('reasoning')) for c in cases)==28
+print('PASS: all HTML/CSS references; 72 evidence clips; 28 paired CoT transcripts; film provenance; 27 manuscript rows; all model papers')

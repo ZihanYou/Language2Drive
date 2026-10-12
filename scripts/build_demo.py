@@ -231,7 +231,7 @@ def main():
             geometry=next(c for c in json.loads((DOCS/'data/scope-cases.json').read_text())['cases'] if c['scope']==kwargs['scope'])
             record.update(scope=geometry['scope'],case_id=geometry['case_id'],evidence_role='benchmark-target',source_member=geometry['source_member'],source_sha256=geometry['source_sha256'],animation='Normalized reference-path progression')
         elif kind=='predictions':
-            record.update(evidence_role='model-result',model='Qwen-Drive-1.0-4B',case_id='navsim-junction-560d4e533d4da43b')
+            record.update(evidence_role='model-result',model='Qwen-Drive-1.0-4B',case_id=kwargs['case_id'])
         segments.append(path);captions.append((clock,clock+duration,subtitle));story.append(record);clock+=duration;print('READY',path.name,clock,flush=True)
     def clip(key,duration,subtitle,start=0,tag=None):
         nonlocal clock
@@ -249,9 +249,9 @@ def main():
     clip('realsim-alpamayo15-p02-a2-s08',12,'Model result: Alpamayo 1.5 in reconstructed RealSim driving scenes.')
     clip('nuscenes-p01-scene-0077-speed-opendrivevla-0-5b',5,'Compare instruction-conditioned model forecasts in the same recorded camera context.',tag='Open-loop prediction / excerpt')
     clip('nuscenes-p01-scene-0077-speed-omnidrive',5,'Switch models on the same paired case to inspect their responses to the requested speed.',tag='Open-loop prediction / excerpt')
-    nav='navsim-junction-560d4e533d4da43b'
+    nav='navsim-lane-left-c2e92aa83a599e79'
     clip(nav,8,'Benchmark targets: NAVSIM reference trajectories define the two requested outcomes.',tag='Reference trajectories')
-    card('predictions',4,'Compare instruction-conditioned model predictions on a shared coordinate scale.',comparison=cases[nav]['comparison'],chapter='The evidence / NAVSIM')
+    card('predictions',4,'Compare instruction-conditioned model predictions on a shared coordinate scale.',comparison=cases[nav]['comparison'],case_id=nav,chapter='The evidence / NAVSIM')
     clip('wod-cand-0002',4,'WOD-E2E brings four driving models together for an instruction-conditioned trajectory comparison.',tag='Open-loop comparison')
     clip('wod-cand-0103',4,'Explore pedestrians, obstacles and diverse traffic situations across the case library.',tag='Open-loop comparison')
     card('adapter',8,'Adapt once, configure the resources, and run the native evaluations across three runtime groups.',chapter='Evaluate and contribute')

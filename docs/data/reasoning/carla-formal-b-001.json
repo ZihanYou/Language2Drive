@@ -1,0 +1,1150 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-b-001",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 1.3333333333333333,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "low",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_B-001/low/reasoning.csv",
+      "source_sha256": "2d5f28d33cdf491d3231acce131e88102cf347d6492fd7f15d3f47c4ca1498cf",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.03750000111758709,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.787500012293458,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.537500023469329,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 2.2875000346452,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 3.037500045821071,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 3.787500056996942,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 4.537500068172813,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 5.287500079348684,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 6.037500090524554,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 6.787500101700425,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 7.5375001128762955,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 8.287500124052167,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 9.037500135228038,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 9.787500146403909,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 10.53750015757978,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 11.28750016875565,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 12.037500179931522,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 12.787500191107393,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 13.537500202283264,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 14.287500213459134,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 15.037500224635005,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 15.787500235810876,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 16.53750024698675,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 17.28750025816262,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 18.03750026933849,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 18.78750028051436,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 19.537500291690233,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 20.287500302866103,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 21.037500314041974,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 21.787500325217845,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 22.537500336393716,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 23.287500347569587,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 24.037500358745458,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 24.78750036992133,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 25.5375003810972,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 26.28750039227307,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 27.03750040344894,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 27.787500414624812,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 28.537500425800683,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 29.287500436976554,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 30.037500448152425,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 30.787500459328296,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 31.537500470504167,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 32.28750048168004,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 33.03750049285591,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 33.78750050403178,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 34.537500515207654,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 35.287500526383525,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 36.037500537559396,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 36.78750054873527,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 37.53750055991114,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 38.28750057108701,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 39.03750058226288,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 39.78750059343875,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 40.53750060461462,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 41.28750061579049,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 42.03750062696636,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 42.787500638142234,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 43.537500649318105,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 44.287500660493976,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 45.03750067166985,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 45.78750068284572,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 46.53750069402159,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 47.28750070519746,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 48.03750071637333,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 48.7875007275492,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 49.53750073872507,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 50.28750074990094,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 51.037500761076814,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 51.787500772252685,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 52.537500783428555,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 53.287500794604426,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 54.0375008057803,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 54.78750081695617,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 55.53750082813204,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 56.28750083930791,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 57.03750085048378,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 57.78750086165965,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 58.53750087283552,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 59.28750088401139,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a low legal speed throughout this corridor."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "high",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_B-001/high/reasoning.csv",
+      "source_sha256": "4eb8e768136e31efe96c99489cfc3a97677a4d7619c22808a31375a7de3c9af3",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.03750000111758709,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.787500012293458,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.537500023469329,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 2.2875000346452,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 3.037500045821071,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 3.787500056996942,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 4.537500068172813,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 5.287500079348684,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 6.037500090524554,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 6.787500101700425,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 7.5375001128762955,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 8.287500124052167,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 9.037500135228038,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 9.787500146403909,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 10.53750015757978,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 11.28750016875565,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 12.037500179931522,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 12.787500191107393,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 13.537500202283264,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 14.287500213459134,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 15.037500224635005,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 15.787500235810876,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 16.53750024698675,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 17.28750025816262,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 18.03750026933849,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 18.78750028051436,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 19.537500291690233,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 20.287500302866103,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 21.037500314041974,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 21.787500325217845,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 22.537500336393716,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 23.287500347569587,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 24.037500358745458,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 24.78750036992133,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 25.5375003810972,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 26.28750039227307,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 27.03750040344894,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 27.787500414624812,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 28.537500425800683,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 29.287500436976554,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 30.037500448152425,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 30.787500459328296,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 31.537500470504167,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 32.28750048168004,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 33.03750049285591,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 33.78750050403178,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 34.537500515207654,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 35.287500526383525,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 36.037500537559396,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 36.78750054873527,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 37.53750055991114,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 38.28750057108701,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 39.03750058226288,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 39.78750059343875,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 40.53750060461462,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 41.28750061579049,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 42.03750062696636,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 42.787500638142234,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 43.537500649318105,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 44.287500660493976,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 45.03750067166985,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 45.78750068284572,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 46.53750069402159,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 47.28750070519746,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 48.03750071637333,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 48.7875007275492,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 49.53750073872507,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 50.28750074990094,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 51.037500761076814,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 51.787500772252685,
+          "text": "Keep lane since the lane is clear and no lead vehicle is present",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 52.537500783428555,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 53.287500794604426,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 54.0375008057803,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 54.78750081695617,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 55.53750082813204,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 56.28750083930791,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 57.03750085048378,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 57.78750086165965,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 58.53750087283552,
+          "text": "Adapt speed for the left curve since the lane bends left ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 59.28750088401139,
+          "text": "Stop due to the speed limit sign ahead",
+          "instruction": "Keep a higher legal speed throughout this corridor."
+        }
+      ]
+    }
+  ]
+}

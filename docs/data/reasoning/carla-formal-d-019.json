@@ -1,0 +1,772 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-d-019",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 1.465833333333333,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "low_until",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-019/low_until/reasoning.csv",
+      "source_sha256": "dbcd8afb51c36755d8120f18b212b4990474db221122ccfd747d013ffe34fca7",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.03411029095403033,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.7163160998689784,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.3985219087839265,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 2.0807277176988745,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 2.7629335266138226,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 3.4451393355287707,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 4.127345144443718,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 4.8095509533586664,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 5.4917567622736145,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 6.173962571188563,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 6.856168380103511,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 7.538374189018459,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 8.220579997933406,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 8.902785806848355,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 9.584991615763302,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 10.267197424678251,
+          "text": "Lane change to the right due to a clear right lane and planned path crossing the center divider, then accelerate once established in the right lane with no conflicting traffic ahead or behind, maintaining safe clearance to the right guardrail and roadside objects.",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 10.949403233593198,
+          "text": "Lane change to the right to keep right on a clear multi-lane road and align with lane geometry, then accelerate once the merge is complete since there are no slow or blocking vehicles ahead in our lane and opposing traffic is separated by a barrier, making a rightward shift safe and appropriate for cruising.",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 11.631609042508147,
+          "text": "Lane change to the right to keep right on a clear highway.",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 12.313814851423095,
+          "text": "Lane change to the right due to a clear right lane and planned path crossing the dashed divider, then accelerate once the merge is complete since no slow lead vehicles or hazards are present ahead in either lane and opposing traffic is separated by a guardrail, making a rightward transition safe and appropriate for the curve.",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 12.996020660338043,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 13.67822646925299,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 14.36043227816794,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 15.042638087082887,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 15.724843895997836,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 16.407049704912783,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 17.08925551382773,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 17.77146132274268,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 18.453667131657628,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 19.135872940572575,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 19.818078749487523,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 20.50028455840247,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 21.18249036731742,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 21.86469617623237,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 22.54690198514732,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 23.229107794062266,
+          "text": "Slow down due to the speed limit sign ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 23.911313602977213,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 24.593519411892164,
+          "text": "Slow down due to the speed limit sign ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 25.27572522080711,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 25.957931029722058,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 26.640136838637005,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 27.322342647551956,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 28.004548456466903,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 28.68675426538185,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 29.368960074296798,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 30.05116588321175,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 30.733371692126696,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 31.415577501041643,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 32.09778330995659,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 32.77998911887154,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 33.462194927786484,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 34.144400736701435,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 34.826606545616386,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 35.50881235453133,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 36.19101816344628,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 36.873223972361224,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 37.555429781276175,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 38.237635590191125,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 38.91984139910607,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 39.60204720802102,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 40.28425301693597,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 40.966458825850914,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 41.648664634765865,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 42.33087044368081,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 43.01307625259576,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 43.69528206151071,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 44.377487870425654,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 45.059693679340604,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 45.741899488255555,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 46.4241052971705,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 47.10631110608545,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 47.78851691500039,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 48.470722723915344,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 49.152928532830295,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 49.83513434174524,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 50.51734015066019,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 51.19954595957513,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 51.88175176849008,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 52.563957577405034,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 53.24616338631998,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 53.92836919523493,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 54.61057500414988,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 55.29278081306482,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 55.974986621979774,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 56.65719243089472,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 57.33939823980967,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 58.02160404872462,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 58.70380985763956,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 59.38601566655451,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "high_until",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-019/high_until/reasoning.csv",
+      "source_sha256": "4defe2aa582538a0198eaec1ab7c7454627ba881a8929e706ff773648b42a773",
+      "clock_origin_s": 0.05,
+      "video_end_s": 13.268902785673681,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.03411029095403033,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.7163160998689784,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.3985219087839265,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 2.0807277176988745,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 2.7629335266138226,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 3.4451393355287707,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 4.127345144443718,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 4.8095509533586664,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 5.4917567622736145,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 6.173962571188563,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 6.856168380103511,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 7.538374189018459,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 8.220579997933406,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 8.902785806848355,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 9.584991615763302,
+          "text": "Adapt speed for the right curve since the lane bends right ahead",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 10.267197424678251,
+          "text": "Change to the right lane because the right lane is clear and the planned path crosses the dashed divider, then accelerate once established in the right lane for cruising.",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 11.631609042508147,
+          "text": "Lane change to the right due to a clear right lane and lane-keeping preference, then accelerate once the merge is complete since there are no slow lead vehicles or hazards ahead and opposing traffic is separated by a guardrail, making a rightward shift safe and appropriate for cruising.",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 12.313814851423095,
+          "text": "Lane change to the right to keep right on a clear multi-lane road.",
+          "instruction": "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+        }
+      ]
+    }
+  ]
+}

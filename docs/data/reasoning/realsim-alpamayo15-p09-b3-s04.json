@@ -1,0 +1,772 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "realsim-alpamayo15-p09-b3-s04",
+  "model": "Alpamayo 1.5",
+  "track": "realsim",
+  "playback_scale": 1,
+  "alignment": "Video zero is the first shared camera timestamp; the final reading hold retains the last recorded output.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "R0",
+      "source_member": "Language2Drive_PCU_Paired_Videos/cases/alpamayo15_P09_B3_S04/R0/reasoning_transcript.csv",
+      "source_sha256": "e37f309276fda0e8e052f551bd164ea32c5d24bbaa7bd19de749fe218cfd4810",
+      "clock_origin_s": 0.030559,
+      "video_end_s": 7.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 1.730559,
+          "video_time_s": 1.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.830559,
+          "video_time_s": 1.8,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 1.930559,
+          "video_time_s": 1.9,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 2.030559,
+          "video_time_s": 1.9999999999999998,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 2.130559,
+          "video_time_s": 2.1,
+          "text": "Adapt speed to maintain a safe distance from the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 2.230559,
+          "video_time_s": 2.2,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 2.330559,
+          "video_time_s": 2.3000000000000003,
+          "text": "Nudge left due to the pickup encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 2.430559,
+          "video_time_s": 2.4000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 2.530559,
+          "video_time_s": 2.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 2.630559,
+          "video_time_s": 2.6,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 2.730559,
+          "video_time_s": 2.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 2.830559,
+          "video_time_s": 2.8000000000000003,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 2.930559,
+          "video_time_s": 2.9000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 3.030559,
+          "video_time_s": 3.0,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 3.130559,
+          "video_time_s": 3.1,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 3.230559,
+          "video_time_s": 3.2,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 3.330559,
+          "video_time_s": 3.3000000000000003,
+          "text": "Nudge left due to the vehicle encroaching from the right side",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 3.430559,
+          "video_time_s": 3.4000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 3.530559,
+          "video_time_s": 3.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 3.630559,
+          "video_time_s": 3.6,
+          "text": "Nudge left due to the vehicle encroaching from the right side",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 3.730559,
+          "video_time_s": 3.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 3.830559,
+          "video_time_s": 3.8000000000000003,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 3.930559,
+          "video_time_s": 3.9000000000000004,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 4.030559,
+          "video_time_s": 4.0,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 4.130559,
+          "video_time_s": 4.1,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 4.230559,
+          "video_time_s": 4.2,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 4.330559,
+          "video_time_s": 4.3,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 4.430559,
+          "video_time_s": 4.3999999999999995,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 4.530559,
+          "video_time_s": 4.5,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 4.630559,
+          "video_time_s": 4.6,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 4.730559,
+          "video_time_s": 4.7,
+          "text": "Nudge left due to the car merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 4.830559,
+          "video_time_s": 4.8,
+          "text": "Nudge left due to the vehicle entering from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 4.930559,
+          "video_time_s": 4.8999999999999995,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 5.030559,
+          "video_time_s": 5.0,
+          "text": "Nudge left due to the vehicle entering from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 5.130559,
+          "video_time_s": 5.1,
+          "text": "Nudge left to avoid the cones blocking the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 5.230559,
+          "video_time_s": 5.2,
+          "text": "Nudge left due to the vehicle merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 5.330559,
+          "video_time_s": 5.3,
+          "text": "Nudge left due to the vehicle turning right ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 5.430559,
+          "video_time_s": 5.3999999999999995,
+          "text": "Nudge left due to the vehicle merging from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 5.530559,
+          "video_time_s": 5.5,
+          "text": "Nudge left due to the vehicle encroaching from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 5.630559,
+          "video_time_s": 5.6,
+          "text": "Nudge left to avoid the bollards at the right edge of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 5.730559,
+          "video_time_s": 5.7,
+          "text": "Nudge left due to the car merging from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 5.830559,
+          "video_time_s": 5.8,
+          "text": "Nudge left due to the car encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 5.930559,
+          "video_time_s": 5.8999999999999995,
+          "text": "Nudge left due to the vehicle turning right into our lane ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 6.030559,
+          "video_time_s": 6.0,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 6.130559,
+          "video_time_s": 6.1,
+          "text": "Nudge left due to the vehicle merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 6.230559,
+          "video_time_s": 6.2,
+          "text": "Accelerate to proceed through the intersection since the straight traffic light turns green",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 6.330559,
+          "video_time_s": 6.3,
+          "text": "Nudge left due to the vehicle turning right into our lane ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 6.430559,
+          "video_time_s": 6.3999999999999995,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 6.530559,
+          "video_time_s": 6.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane after clearing our green light",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 6.630559,
+          "video_time_s": 6.6,
+          "text": "Nudge right due to the vehicle encroaching from the left",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 6.730559,
+          "video_time_s": 6.7,
+          "text": "Nudge right due to the vehicle encroaching from the left lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 6.830559,
+          "video_time_s": 6.8,
+          "text": "Nudge right due to the vehicle encroaching from the left lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 6.930559,
+          "video_time_s": 6.8999999999999995,
+          "text": "Accelerate to proceed through the intersection since the straight traffic light turns green",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 23–27 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "R1",
+      "source_member": "Language2Drive_PCU_Paired_Videos/cases/alpamayo15_P09_B3_S04/R1/reasoning_transcript.csv",
+      "source_sha256": "c16d316b42f8976bf89ca826ab4fd510f1cfd5d53c7d839c6af673a3dbaf7607",
+      "clock_origin_s": 0.030559,
+      "video_end_s": 7.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 1.730559,
+          "video_time_s": 1.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.830559,
+          "video_time_s": 1.8,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 1.930559,
+          "video_time_s": 1.9,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 2.030559,
+          "video_time_s": 1.9999999999999998,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 2.130559,
+          "video_time_s": 2.1,
+          "text": "Adapt speed to maintain a safe distance from the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 2.230559,
+          "video_time_s": 2.2,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 2.330559,
+          "video_time_s": 2.3000000000000003,
+          "text": "Nudge left due to the pickup encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 2.430559,
+          "video_time_s": 2.4000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 2.530559,
+          "video_time_s": 2.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 2.630559,
+          "video_time_s": 2.6,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 2.730559,
+          "video_time_s": 2.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 2.830559,
+          "video_time_s": 2.8000000000000003,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 2.930559,
+          "video_time_s": 2.9000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 3.030559,
+          "video_time_s": 3.0,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 3.130559,
+          "video_time_s": 3.1,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 3.230559,
+          "video_time_s": 3.2,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 3.330559,
+          "video_time_s": 3.3000000000000003,
+          "text": "Nudge left due to the vehicle encroaching from the right side",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 3.430559,
+          "video_time_s": 3.4000000000000004,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 3.530559,
+          "video_time_s": 3.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 3.630559,
+          "video_time_s": 3.6,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 3.730559,
+          "video_time_s": 3.7,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 3.830559,
+          "video_time_s": 3.8000000000000003,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 3.930559,
+          "video_time_s": 3.9000000000000004,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 4.030559,
+          "video_time_s": 4.0,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 4.130559,
+          "video_time_s": 4.1,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 4.230559,
+          "video_time_s": 4.2,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 4.330559,
+          "video_time_s": 4.3,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 4.430559,
+          "video_time_s": 4.3999999999999995,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 4.530559,
+          "video_time_s": 4.5,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 4.630559,
+          "video_time_s": 4.6,
+          "text": "Nudge left due to the vehicle encroaching from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 4.730559,
+          "video_time_s": 4.7,
+          "text": "Nudge left due to the car merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 4.830559,
+          "video_time_s": 4.8,
+          "text": "Nudge left due to the vehicle entering from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 4.930559,
+          "video_time_s": 4.8999999999999995,
+          "text": "Nudge left due to the vehicle encroaching from the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 5.030559,
+          "video_time_s": 5.0,
+          "text": "Nudge left due to the vehicle entering from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 5.130559,
+          "video_time_s": 5.1,
+          "text": "Nudge left to avoid the cones blocking the right side of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 5.230559,
+          "video_time_s": 5.2,
+          "text": "Nudge left due to the vehicle merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 5.330559,
+          "video_time_s": 5.3,
+          "text": "Nudge left due to the vehicle turning right ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 5.430559,
+          "video_time_s": 5.3999999999999995,
+          "text": "Nudge left due to the vehicle merging from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 5.530559,
+          "video_time_s": 5.5,
+          "text": "Nudge left due to the vehicle encroaching from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 5.630559,
+          "video_time_s": 5.6,
+          "text": "Nudge left to avoid the bollards at the right edge of our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 5.730559,
+          "video_time_s": 5.7,
+          "text": "Nudge left due to the car merging from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 5.830559,
+          "video_time_s": 5.8,
+          "text": "Nudge left due to the car turning into our lane from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 5.930559,
+          "video_time_s": 5.8999999999999995,
+          "text": "Nudge left due to the vehicle turning into our lane from the right",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 6.030559,
+          "video_time_s": 6.0,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 6.130559,
+          "video_time_s": 6.1,
+          "text": "Nudge left due to the vehicle merging from the right into our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 6.230559,
+          "video_time_s": 6.2,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 6.330559,
+          "video_time_s": 6.3,
+          "text": "Nudge left due to the vehicle turning right into our lane ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 6.430559,
+          "video_time_s": 6.3999999999999995,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 6.530559,
+          "video_time_s": 6.5,
+          "text": "Keep distance to the lead vehicle since it is directly ahead in our lane after clearing our green light",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 6.630559,
+          "video_time_s": 6.6,
+          "text": "Nudge left due to the vehicle turning right into our lane ahead",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 6.730559,
+          "video_time_s": 6.7,
+          "text": "Nudge right due to the vehicle encroaching from the left lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 6.830559,
+          "video_time_s": 6.8,
+          "text": "Nudge right due to the vehicle encroaching from the left lane",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 6.930559,
+          "video_time_s": 6.8999999999999995,
+          "text": "Accelerate to proceed through the intersection since the straight traffic light turns green",
+          "instruction": "As you approach the upcoming marked pedestrian crossing, keep 28–32 km/h in the current lane's stretch from approximately 15 to 10 metres before it."
+        }
+      ]
+    }
+  ]
+}

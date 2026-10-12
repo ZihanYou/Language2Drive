@@ -1,0 +1,2830 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-c-025",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 3.3333333333333335,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "slot_a",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_C-025/slot_a/reasoning.csv",
+      "source_sha256": "c4b2b0cc98ecf05bfed867bc8a82b13a06718fa0c01092254aa5c75633463ba2",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.015000000447034834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.31500000491738317,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.6150000093877316,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.9150000138580799,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 1.2150000183284282,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.5150000227987765,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.815000027269125,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 2.1150000317394735,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 2.4150000362098214,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.7150000406801698,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 3.015000045150518,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 3.3150000496208665,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 3.615000054091215,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.915000058561563,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 4.215000063031911,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 4.5150000675022595,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 4.815000071972608,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 5.115000076442956,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 5.4150000809133045,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 5.715000085383653,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 6.015000089854001,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 6.31500009432435,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 6.615000098794698,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 6.915000103265046,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 7.215000107735395,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 7.515000112205743,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 7.815000116676091,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 8.11500012114644,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 8.415000125616789,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 8.715000130087137,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 9.015000134557486,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 9.315000139027834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 9.615000143498182,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 9.91500014796853,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 10.21500015243888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 10.515000156909228,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 10.815000161379576,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 11.115000165849924,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 11.415000170320273,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 11.715000174790621,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 12.01500017926097,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 12.315000183731318,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 12.615000188201666,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 12.915000192672014,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 13.215000197142363,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 13.515000201612711,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 13.81500020608306,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 14.115000210553408,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 14.415000215023756,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 14.715000219494105,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 15.015000223964453,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 15.315000228434801,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 15.61500023290515,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 15.915000237375498,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 16.215000241845846,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 16.515000246316195,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 16.815000250786543,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 17.11500025525689,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 17.41500025972724,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 17.715000264197588,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 18.015000268667936,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 18.315000273138285,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 18.615000277608633,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 18.91500028207898,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 19.21500028654933,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 19.51500029101968,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 19.815000295490027,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 20.115000299960375,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 20.415000304430723,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 20.71500030890107,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 21.01500031337142,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 21.31500031784177,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 21.615000322312117,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 21.915000326782465,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 22.215000331252813,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 22.515000335723162,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 22.81500034019351,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 23.11500034466386,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 23.415000349134207,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 23.715000353604555,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 24.015000358074904,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 24.315000362545252,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 24.6150003670156,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 24.91500037148595,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 25.215000375956297,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 25.515000380426645,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 25.815000384896994,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 26.115000389367342,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 26.41500039383769,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 26.71500039830804,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 27.015000402778387,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 27.315000407248736,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 27.615000411719084,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 27.915000416189432,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 28.21500042065978,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 28.51500042513013,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 28.815000429600477,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 29.115000434070826,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 29.415000438541174,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 29.715000443011522,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 30.01500044748187,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 30.31500045195222,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 30.615000456422568,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 30.915000460892916,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 31.215000465363264,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 31.515000469833613,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 31.81500047430396,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 32.115000478774306,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 32.415000483244654,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 32.715000487715,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 33.01500049218535,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 33.3150004966557,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 33.61500050112605,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 33.915000505596396,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 34.215000510066744,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 34.51500051453709,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 34.81500051900744,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 35.11500052347779,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 35.41500052794814,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 35.715000532418486,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 36.015000536888834,
+          "text": "Keep lane since the aisle is clear",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 36.31500054135918,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 36.61500054582953,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 36.91500055029988,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 37.21500055477023,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 37.515000559240576,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 37.815000563710925,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 38.11500056818127,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 38.41500057265162,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 38.71500057712197,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 39.01500058159232,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 39.315000586062666,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 39.615000590533015,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 39.91500059500336,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 40.21500059947371,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 40.51500060394406,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 40.81500060841441,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 41.11500061288476,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 41.415000617355105,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 41.71500062182545,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 42.0150006262958,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 42.31500063076615,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 42.6150006352365,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 42.91500063970685,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 43.215000644177195,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 43.51500064864754,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 43.81500065311789,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 44.11500065758824,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 44.41500066205859,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 44.71500066652894,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 45.015000670999285,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 45.31500067546963,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 45.61500067993998,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 45.91500068441033,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 46.21500068888068,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 46.51500069335103,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 46.815000697821375,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 47.115000702291724,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 47.41500070676207,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 47.71500071123242,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 48.01500071570277,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 48.31500072017312,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 48.615000724643465,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 48.915000729113814,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 49.21500073358416,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 49.51500073805451,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 49.81500074252486,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 50.11500074699521,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 50.415000751465556,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 50.715000755935904,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 51.01500076040625,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 51.3150007648766,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 51.61500076934695,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 51.9150007738173,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 52.215000778287646,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 52.515000782757994,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 52.81500078722834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 53.11500079169869,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 53.41500079616904,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 53.71500080063939,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 54.015000805109736,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 54.315000809580084,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 54.61500081405043,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 54.91500081852078,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 55.21500082299113,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 55.51500082746148,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 55.815000831931826,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 56.115000836402174,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 56.41500084087252,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 56.71500084534287,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 57.01500084981322,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 57.31500085428357,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 57.615000858753916,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 57.915000863224265,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 58.21500086769461,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 58.51500087216496,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 58.81500087663531,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 59.11500088110566,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 59.415000885576006,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B204."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 59.715000890046355,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B204."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "slot_b",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_C-025/slot_b/reasoning.csv",
+      "source_sha256": "74f94c0a041289984e76e21d9dcea64465d36aa7d8aa186c1fbaf1a1bda3d9ec",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.015000000447034834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.31500000491738317,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.6150000093877316,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.9150000138580799,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 1.2150000183284282,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.5150000227987765,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.815000027269125,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 2.1150000317394735,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 2.4150000362098214,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.7150000406801698,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 3.015000045150518,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 3.3150000496208665,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 3.615000054091215,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.915000058561563,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 4.215000063031911,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 4.5150000675022595,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 4.815000071972608,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 5.115000076442956,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 5.4150000809133045,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 5.715000085383653,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 6.015000089854001,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 6.31500009432435,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 6.615000098794698,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 6.915000103265046,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 7.215000107735395,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 7.515000112205743,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 7.815000116676091,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 8.11500012114644,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 8.415000125616789,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 8.715000130087137,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 9.015000134557486,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 9.315000139027834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 9.615000143498182,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 9.91500014796853,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 10.21500015243888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 10.515000156909228,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 10.815000161379576,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 11.115000165849924,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 11.415000170320273,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 11.715000174790621,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 12.01500017926097,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 12.315000183731318,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 12.615000188201666,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 12.915000192672014,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 13.215000197142363,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 13.515000201612711,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 13.81500020608306,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 14.115000210553408,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 14.415000215023756,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 14.715000219494105,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 15.015000223964453,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 15.315000228434801,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 15.61500023290515,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 15.915000237375498,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 16.215000241845846,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 16.515000246316195,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 16.815000250786543,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 17.11500025525689,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 17.41500025972724,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 17.715000264197588,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 18.015000268667936,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 18.315000273138285,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 18.615000277608633,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 18.91500028207898,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 19.21500028654933,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 19.51500029101968,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 19.815000295490027,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 20.115000299960375,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 20.415000304430723,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 20.71500030890107,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 21.01500031337142,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 21.31500031784177,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 21.615000322312117,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 21.915000326782465,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 22.215000331252813,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 22.515000335723162,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 22.81500034019351,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 23.11500034466386,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 23.415000349134207,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 23.715000353604555,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 24.015000358074904,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 24.315000362545252,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 24.6150003670156,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 24.91500037148595,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 25.215000375956297,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 25.515000380426645,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 25.815000384896994,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 26.115000389367342,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 26.41500039383769,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 26.71500039830804,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 27.015000402778387,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 27.315000407248736,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 27.615000411719084,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 27.915000416189432,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 28.21500042065978,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 28.51500042513013,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 28.815000429600477,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 29.115000434070826,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 29.415000438541174,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 29.715000443011522,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 30.01500044748187,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 30.31500045195222,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 30.615000456422568,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 30.915000460892916,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 31.215000465363264,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 31.515000469833613,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 31.81500047430396,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 32.115000478774306,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 32.415000483244654,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 32.715000487715,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 33.01500049218535,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 33.3150004966557,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 33.61500050112605,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 33.915000505596396,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 34.215000510066744,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 34.51500051453709,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 34.81500051900744,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 35.11500052347779,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 35.41500052794814,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 35.715000532418486,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 36.015000536888834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 36.31500054135918,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 36.61500054582953,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 36.91500055029988,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 37.21500055477023,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 37.515000559240576,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 37.815000563710925,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 38.11500056818127,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 38.41500057265162,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 38.71500057712197,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 39.01500058159232,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 39.315000586062666,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 39.615000590533015,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 39.91500059500336,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 40.21500059947371,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 40.51500060394406,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 40.81500060841441,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 41.11500061288476,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 41.415000617355105,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 41.71500062182545,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 42.0150006262958,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 42.31500063076615,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 42.6150006352365,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 42.91500063970685,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 43.215000644177195,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 43.51500064864754,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 43.81500065311789,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 44.11500065758824,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 44.41500066205859,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 44.71500066652894,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 45.015000670999285,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 45.31500067546963,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 45.61500067993998,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 45.91500068441033,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 46.21500068888068,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 46.51500069335103,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 46.815000697821375,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 47.115000702291724,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 47.41500070676207,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 47.71500071123242,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 48.01500071570277,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 48.31500072017312,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 48.615000724643465,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 48.915000729113814,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 49.21500073358416,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 49.51500073805451,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 49.81500074252486,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 50.11500074699521,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 50.415000751465556,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 50.715000755935904,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 51.01500076040625,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 51.3150007648766,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 51.61500076934695,
+          "text": "Adapt speed for the right curve since the aisle bends right ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 51.9150007738173,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 52.215000778287646,
+          "text": "Turn right to follow the parking aisle since the lane bends right ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 52.515000782757994,
+          "text": "Turn right to follow the lane since the aisle bends right ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 52.81500078722834,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 53.11500079169869,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 53.41500079616904,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 53.71500080063939,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 54.015000805109736,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 54.315000809580084,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 54.61500081405043,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 54.91500081852078,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 55.21500082299113,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 55.51500082746148,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 55.815000831931826,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 56.115000836402174,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 56.41500084087252,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 56.71500084534287,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 57.01500084981322,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 57.31500085428357,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 57.615000858753916,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 57.915000863224265,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 58.21500086769461,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 58.51500087216496,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 58.81500087663531,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 59.11500088110566,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 59.415000885576006,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 59.715000890046355,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in space B205."
+        }
+      ]
+    }
+  ]
+}

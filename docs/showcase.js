@@ -48,6 +48,7 @@
   }
   function selectCase(c){
     current=c;$('#case-viewer').hidden=false;
+    window.L2DReasoning.select(c);
     const video=$('#case-video');
     if(video.dataset.caseId!==c.id){video.pause();video.dataset.caseId=c.id;video.poster=c.poster;video.src=c.video;video.load();$('#case-video-error').hidden=true;}
     video.playbackRate=Number($('#case-speed').value);

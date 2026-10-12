@@ -82,6 +82,8 @@ def collect(root):
         manifest = read_json(z, prefix + '/manifest.json')
         families = sorted({c['family'] for c in manifest['cases']})
         for family in families:
+            if family == 'branch_choice':
+                continue
             options = [c for c in manifest['cases'] if c['family'] == family]
             case = max(options, key=lambda c: c['pair_mean_separation_m'])
             key = case['pcu_id']
@@ -206,6 +208,10 @@ def main():
     data={'schema':'language2drive.showcase.v1','selection':'Task-family, scene and model coverage; descriptive examples, not an estimate of aggregate success. Oracle and reference examples are labeled separately. WOD candidates are unreviewed.',
         'media_policy':'Author-provided viewing copies for the local project preview. Source datasets and model assets retain their own terms. No hidden raw contracts or sensor bundles are exported.',
         'cases':cases}
+    from build_reasoning import export_reasoning
+    for case in cases:
+        archive = args.work_dir/'carla.zip' if case['track']=='carla' else args.source_root/case['archive']
+        export_reasoning(case, archive, docs)
     (docs/'data/cases.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     print('EXPORTED',len(cases),'clips',sum(c['bytes'] for c in cases)//(1024*1024),'MiB')
 

@@ -1,0 +1,3670 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-d-026",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 4.333333333333333,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "remember_a",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-026/remember_a/reasoning.csv",
+      "source_sha256": "5e9d47e75922e62aefc0269439f73e561e7700c34eaaa1743d366db184da0f43",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.00000000000001,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.01153846188233449,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.24230769609029476,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.4730769302982551,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.7038461645062154,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 0.9346153987141756,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.165384632922136,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.3961538671300964,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 1.6269231013380565,
+          "text": "Turn left to take the exit since the exit sign indicates a left split ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 1.8576923355460166,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.088461569753977,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 2.319230803961937,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 2.5500000381698977,
+          "text": "Turn right to take the exit since the lane markings indicate an exit ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 2.780769272377858,
+          "text": "Turn right to take the exit since the lane markings indicate an exit ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.011538506585818,
+          "text": "Turn right to enter the parking space since the parking bay is open",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 3.2423077407937786,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 3.4730769750017387,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 3.703846209209699,
+          "text": "Stop to maintain a safe distance from the wall ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 3.9346154434176595,
+          "text": "Stop to maintain a safe distance from the wall ahead",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 4.165384677625619,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 4.39615391183358,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 4.62692314604154,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 4.8576923802495005,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 5.088461614457461,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 5.319230848665421,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 5.550000082873382,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 5.780769317081342,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 6.011538551289302,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 6.242307785497262,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 6.473077019705222,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 6.7038462539131825,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 6.9346154881211435,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 7.165384722329104,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 7.396153956537065,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 7.626923190745025,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 7.857692424952985,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 8.088461659160945,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 8.319230893368905,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 8.550000127576865,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 8.780769361784825,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 9.011538595992787,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 9.242307830200748,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 9.473077064408708,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 9.703846298616668,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 9.934615532824628,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 10.165384767032588,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 10.396154001240548,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 10.626923235448508,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 10.857692469656469,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 11.088461703864429,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 11.319230938072389,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 11.550000172280349,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 11.78076940648831,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 12.011538640696271,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 12.242307874904231,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 12.473077109112191,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 12.703846343320151,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 12.934615577528112,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 13.165384811736072,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 13.396154045944032,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 13.626923280151992,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 13.857692514359952,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 14.088461748567912,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 14.319230982775872,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 14.550000216983834,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 14.780769451191794,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 15.011538685399755,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 15.242307919607715,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 15.473077153815675,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 15.703846388023635,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 15.934615622231595,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 16.165384856439555,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 16.396154090647517,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 16.626923324855476,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 16.857692559063437,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 17.088461793271396,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 17.319231027479358,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 17.550000261687316,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 17.780769495895278,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 18.011538730103236,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 18.2423079643112,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 18.47307719851916,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 18.70384643272712,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 18.93461566693508,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 19.16538490114304,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 19.396154135351,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 19.62692336955896,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 19.85769260376692,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 20.08846183797488,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 20.31923107218284,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 20.5500003063908,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 20.78076954059876,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 21.01153877480672,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 21.242308009014682,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 21.473077243222644,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 21.703846477430602,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 21.934615711638564,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 22.165384945846522,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 22.396154180054484,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 22.626923414262443,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 22.857692648470405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 23.088461882678363,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 23.319231116886325,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 23.550000351094283,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 23.780769585302245,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 24.011538819510207,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 24.242308053718165,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 24.473077287926127,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 24.703846522134086,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 24.934615756342048,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 25.165384990550006,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 25.396154224757968,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 25.626923458965926,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 25.857692693173888,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 26.088461927381847,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 26.31923116158981,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 26.55000039579777,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 26.78076963000573,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 27.01153886421369,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 27.24230809842165,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 27.47307733262961,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 27.70384656683757,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 27.93461580104553,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 28.16538503525349,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 28.39615426946145,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 28.62692350366941,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 28.85769273787737,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 29.08846197208533,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 29.319231206293292,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 29.55000044050125,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 29.78076967470921,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 30.01153890891717,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 30.24230814312513,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 30.47307737733309,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 30.70384661154105,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 30.93461584574901,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 31.16538507995697,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 31.39615431416493,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 31.626923548372893,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 31.857692782580852,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 32.08846201678881,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 32.31923125099677,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 32.550000485204734,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 32.780769719412696,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 33.01153895362065,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 33.24230818782861,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 33.473077422036575,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 33.70384665624454,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 33.93461589045249,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 34.16538512466045,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 34.396154358868415,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 34.62692359307638,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 34.85769282728434,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 35.088462061492294,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 35.319231295700256,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 35.55000052990822,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 35.78076976411618,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 36.011538998324134,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 36.242308232532096,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 36.47307746674006,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 36.70384670094802,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 36.93461593515598,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 37.16538516936394,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 37.3961544035719,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 37.62692363777986,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 37.85769287198782,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 38.08846210619578,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 38.31923134040374,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 38.5500005746117,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 38.78076980881966,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 39.01153904302762,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 39.24230827723558,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 39.47307751144354,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 39.703846745651504,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 39.934615979859466,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 40.16538521406742,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 40.39615444827538,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 40.626923682483344,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 40.857692916691306,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 41.08846215089926,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 41.31923138510722,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 41.550000619315185,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 41.78076985352315,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 42.0115390877311,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 42.24230832193906,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 42.473077556147025,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 42.70384679035499,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 42.93461602456295,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 43.165385258770904,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 43.396154492978866,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 43.62692372718683,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 43.85769296139479,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 44.088462195602744,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 44.319231429810706,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 44.55000066401867,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 44.78076989822663,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 45.01153913243459,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 45.24230836664255,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 45.47307760085051,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 45.70384683505847,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 45.93461606926643,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 200,
+          "source_time_s": 200.10000298172235,
+          "video_time_s": 46.16538530347439,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 201,
+          "source_time_s": 201.10000299662352,
+          "video_time_s": 46.39615453768235,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 202,
+          "source_time_s": 202.10000301152468,
+          "video_time_s": 46.62692377189031,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 203,
+          "source_time_s": 203.10000302642584,
+          "video_time_s": 46.85769300609827,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 204,
+          "source_time_s": 204.100003041327,
+          "video_time_s": 47.08846224030623,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 205,
+          "source_time_s": 205.10000305622816,
+          "video_time_s": 47.31923147451419,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 206,
+          "source_time_s": 206.10000307112932,
+          "video_time_s": 47.55000070872215,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 207,
+          "source_time_s": 207.10000308603048,
+          "video_time_s": 47.780769942930114,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 208,
+          "source_time_s": 208.10000310093164,
+          "video_time_s": 48.011539177138076,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 209,
+          "source_time_s": 209.1000031158328,
+          "video_time_s": 48.24230841134603,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 210,
+          "source_time_s": 210.10000313073397,
+          "video_time_s": 48.47307764555399,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 211,
+          "source_time_s": 211.10000314563513,
+          "video_time_s": 48.703846879761954,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 212,
+          "source_time_s": 212.1000031605363,
+          "video_time_s": 48.934616113969916,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 213,
+          "source_time_s": 213.10000317543745,
+          "video_time_s": 49.16538534817787,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 214,
+          "source_time_s": 214.1000031903386,
+          "video_time_s": 49.39615458238583,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 215,
+          "source_time_s": 215.10000320523977,
+          "video_time_s": 49.626923816593795,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 216,
+          "source_time_s": 216.10000322014093,
+          "video_time_s": 49.85769305080176,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 217,
+          "source_time_s": 217.1000032350421,
+          "video_time_s": 50.08846228500971,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 218,
+          "source_time_s": 218.10000324994326,
+          "video_time_s": 50.319231519217674,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 219,
+          "source_time_s": 219.10000326484442,
+          "video_time_s": 50.550000753425635,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 220,
+          "source_time_s": 220.10000327974558,
+          "video_time_s": 50.7807699876336,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 221,
+          "source_time_s": 221.10000329464674,
+          "video_time_s": 51.01153922184156,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 222,
+          "source_time_s": 222.1000033095479,
+          "video_time_s": 51.242308456049514,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 223,
+          "source_time_s": 223.10000332444906,
+          "video_time_s": 51.473077690257476,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 224,
+          "source_time_s": 224.10000333935022,
+          "video_time_s": 51.70384692446544,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 225,
+          "source_time_s": 225.10000335425138,
+          "video_time_s": 51.9346161586734,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 226,
+          "source_time_s": 226.10000336915255,
+          "video_time_s": 52.165385392881355,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 227,
+          "source_time_s": 227.1000033840537,
+          "video_time_s": 52.39615462708932,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 228,
+          "source_time_s": 228.10000339895487,
+          "video_time_s": 52.62692386129728,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 229,
+          "source_time_s": 229.10000341385603,
+          "video_time_s": 52.85769309550524,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 230,
+          "source_time_s": 230.1000034287572,
+          "video_time_s": 53.0884623297132,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 231,
+          "source_time_s": 231.10000344365835,
+          "video_time_s": 53.31923156392116,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 232,
+          "source_time_s": 232.1000034585595,
+          "video_time_s": 53.55000079812912,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 233,
+          "source_time_s": 233.10000347346067,
+          "video_time_s": 53.78077003233708,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 234,
+          "source_time_s": 234.10000348836184,
+          "video_time_s": 54.01153926654504,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 235,
+          "source_time_s": 235.100003503263,
+          "video_time_s": 54.242308500753,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 236,
+          "source_time_s": 236.10000351816416,
+          "video_time_s": 54.47307773496096,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 237,
+          "source_time_s": 237.10000353306532,
+          "video_time_s": 54.70384696916892,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 238,
+          "source_time_s": 238.10000354796648,
+          "video_time_s": 54.93461620337688,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 239,
+          "source_time_s": 239.10000356286764,
+          "video_time_s": 55.16538543758484,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 240,
+          "source_time_s": 240.1000035777688,
+          "video_time_s": 55.3961546717928,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 241,
+          "source_time_s": 241.10000359266996,
+          "video_time_s": 55.62692390600076,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 242,
+          "source_time_s": 242.10000360757113,
+          "video_time_s": 55.857693140208724,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 243,
+          "source_time_s": 243.1000036224723,
+          "video_time_s": 56.088462374416686,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 244,
+          "source_time_s": 244.10000363737345,
+          "video_time_s": 56.31923160862464,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 245,
+          "source_time_s": 245.1000036522746,
+          "video_time_s": 56.5500008428326,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 246,
+          "source_time_s": 246.10000366717577,
+          "video_time_s": 56.780770077040565,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 247,
+          "source_time_s": 247.10000368207693,
+          "video_time_s": 57.01153931124853,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 248,
+          "source_time_s": 248.1000036969781,
+          "video_time_s": 57.24230854545648,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 249,
+          "source_time_s": 249.10000371187925,
+          "video_time_s": 57.47307777966444,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 250,
+          "source_time_s": 250.10000372678041,
+          "video_time_s": 57.703847013872405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 251,
+          "source_time_s": 251.10000374168158,
+          "video_time_s": 57.93461624808037,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 252,
+          "source_time_s": 252.10000375658274,
+          "video_time_s": 58.16538548228832,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 253,
+          "source_time_s": 253.1000037714839,
+          "video_time_s": 58.396154716496284,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 254,
+          "source_time_s": 254.10000378638506,
+          "video_time_s": 58.626923950704246,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 255,
+          "source_time_s": 255.10000380128622,
+          "video_time_s": 58.85769318491221,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 256,
+          "source_time_s": 256.1000038161874,
+          "video_time_s": 59.08846241912017,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 257,
+          "source_time_s": 257.10000383108854,
+          "video_time_s": 59.319231653328124,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 258,
+          "source_time_s": 258.1000038459897,
+          "video_time_s": 59.550000887536086,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        },
+        {
+          "record_index": 259,
+          "source_time_s": 259.10000386089087,
+          "video_time_s": 59.78077012174405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember A804; visit E101, then return to that remembered place."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "remember_b",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-026/remember_b/reasoning.csv",
+      "source_sha256": "0365f208bb0c8f8aeef0154ad95bc30375f6d8bd246eac95140e9510d5101cf3",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.00000000000001,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.01153846188233449,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.24230769609029476,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.4730769302982551,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.7038461645062154,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 0.9346153987141756,
+          "text": "Turn left to take the exit since the lane markings indicate a left split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.165384632922136,
+          "text": "Turn right to take the exit since the lane markings indicate a right split ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.3961538671300964,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 1.6269231013380565,
+          "text": "Turn left to take the exit since the exit sign indicates left",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 1.8576923355460166,
+          "text": "Adapt speed for the left curve since the aisle bends left ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.088461569753977,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 2.319230803961937,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 2.5500000381698977,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 2.780769272377858,
+          "text": "Stop to avoid the parking block ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.011538506585818,
+          "text": "Stop to avoid the parking block ahead",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 3.2423077407937786,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 3.4730769750017387,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 3.703846209209699,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 3.9346154434176595,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 4.165384677625619,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 4.39615391183358,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 4.62692314604154,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 4.8576923802495005,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 5.088461614457461,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 5.319230848665421,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 5.550000082873382,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 5.780769317081342,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 6.011538551289302,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 6.242307785497262,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 6.473077019705222,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 6.7038462539131825,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 6.9346154881211435,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 7.165384722329104,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 7.396153956537065,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 7.626923190745025,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 7.857692424952985,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 8.088461659160945,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 8.319230893368905,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 8.550000127576865,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 8.780769361784825,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 9.011538595992787,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 9.242307830200748,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 9.473077064408708,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 9.703846298616668,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 9.934615532824628,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 10.165384767032588,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 10.396154001240548,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 10.626923235448508,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 10.857692469656469,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 11.088461703864429,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 11.319230938072389,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 11.550000172280349,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 11.78076940648831,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 12.011538640696271,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 12.242307874904231,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 12.473077109112191,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 12.703846343320151,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 12.934615577528112,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 13.165384811736072,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 13.396154045944032,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 13.626923280151992,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 13.857692514359952,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 14.088461748567912,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 14.319230982775872,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 14.550000216983834,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 14.780769451191794,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 15.011538685399755,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 15.242307919607715,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 15.473077153815675,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 15.703846388023635,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 15.934615622231595,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 16.165384856439555,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 16.396154090647517,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 16.626923324855476,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 16.857692559063437,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 17.088461793271396,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 17.319231027479358,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 17.550000261687316,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 17.780769495895278,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 18.011538730103236,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 18.2423079643112,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 18.47307719851916,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 18.70384643272712,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 18.93461566693508,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 19.16538490114304,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 19.396154135351,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 19.62692336955896,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 19.85769260376692,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 20.08846183797488,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 20.31923107218284,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 20.5500003063908,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 20.78076954059876,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 21.01153877480672,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 21.242308009014682,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 21.473077243222644,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 21.703846477430602,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 21.934615711638564,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 22.165384945846522,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 22.396154180054484,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 22.626923414262443,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 22.857692648470405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 23.088461882678363,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 23.319231116886325,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 23.550000351094283,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 23.780769585302245,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 24.011538819510207,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 24.242308053718165,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 24.473077287926127,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 24.703846522134086,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 24.934615756342048,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 25.165384990550006,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 25.396154224757968,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 25.626923458965926,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 25.857692693173888,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 26.088461927381847,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 26.31923116158981,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 26.55000039579777,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 26.78076963000573,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 27.01153886421369,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 27.24230809842165,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 27.47307733262961,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 27.70384656683757,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 27.93461580104553,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 28.16538503525349,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 28.39615426946145,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 28.62692350366941,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 28.85769273787737,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 29.08846197208533,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 29.319231206293292,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 29.55000044050125,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 29.78076967470921,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 30.01153890891717,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 30.24230814312513,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 30.47307737733309,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 30.70384661154105,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 30.93461584574901,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 31.16538507995697,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 31.39615431416493,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 31.626923548372893,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 31.857692782580852,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 32.08846201678881,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 32.31923125099677,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 32.550000485204734,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 32.780769719412696,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 33.01153895362065,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 33.24230818782861,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 33.473077422036575,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 33.70384665624454,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 33.93461589045249,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 34.16538512466045,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 34.396154358868415,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 34.62692359307638,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 34.85769282728434,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 35.088462061492294,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 35.319231295700256,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 35.55000052990822,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 35.78076976411618,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 36.011538998324134,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 36.242308232532096,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 36.47307746674006,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 36.70384670094802,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 36.93461593515598,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 37.16538516936394,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 37.3961544035719,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 37.62692363777986,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 37.85769287198782,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 38.08846210619578,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 38.31923134040374,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 38.5500005746117,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 38.78076980881966,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 39.01153904302762,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 39.24230827723558,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 39.47307751144354,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 39.703846745651504,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 39.934615979859466,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 40.16538521406742,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 40.39615444827538,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 40.626923682483344,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 40.857692916691306,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 41.08846215089926,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 41.31923138510722,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 41.550000619315185,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 41.78076985352315,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 42.0115390877311,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 42.24230832193906,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 42.473077556147025,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 42.70384679035499,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 42.93461602456295,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 43.165385258770904,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 43.396154492978866,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 43.62692372718683,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 43.85769296139479,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 44.088462195602744,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 44.319231429810706,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 44.55000066401867,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 44.78076989822663,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 45.01153913243459,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 45.24230836664255,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 45.47307760085051,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 45.70384683505847,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 45.93461606926643,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 200,
+          "source_time_s": 200.10000298172235,
+          "video_time_s": 46.16538530347439,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 201,
+          "source_time_s": 201.10000299662352,
+          "video_time_s": 46.39615453768235,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 202,
+          "source_time_s": 202.10000301152468,
+          "video_time_s": 46.62692377189031,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 203,
+          "source_time_s": 203.10000302642584,
+          "video_time_s": 46.85769300609827,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 204,
+          "source_time_s": 204.100003041327,
+          "video_time_s": 47.08846224030623,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 205,
+          "source_time_s": 205.10000305622816,
+          "video_time_s": 47.31923147451419,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 206,
+          "source_time_s": 206.10000307112932,
+          "video_time_s": 47.55000070872215,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 207,
+          "source_time_s": 207.10000308603048,
+          "video_time_s": 47.780769942930114,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 208,
+          "source_time_s": 208.10000310093164,
+          "video_time_s": 48.011539177138076,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 209,
+          "source_time_s": 209.1000031158328,
+          "video_time_s": 48.24230841134603,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 210,
+          "source_time_s": 210.10000313073397,
+          "video_time_s": 48.47307764555399,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 211,
+          "source_time_s": 211.10000314563513,
+          "video_time_s": 48.703846879761954,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 212,
+          "source_time_s": 212.1000031605363,
+          "video_time_s": 48.934616113969916,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 213,
+          "source_time_s": 213.10000317543745,
+          "video_time_s": 49.16538534817787,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 214,
+          "source_time_s": 214.1000031903386,
+          "video_time_s": 49.39615458238583,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 215,
+          "source_time_s": 215.10000320523977,
+          "video_time_s": 49.626923816593795,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 216,
+          "source_time_s": 216.10000322014093,
+          "video_time_s": 49.85769305080176,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 217,
+          "source_time_s": 217.1000032350421,
+          "video_time_s": 50.08846228500971,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 218,
+          "source_time_s": 218.10000324994326,
+          "video_time_s": 50.319231519217674,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 219,
+          "source_time_s": 219.10000326484442,
+          "video_time_s": 50.550000753425635,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 220,
+          "source_time_s": 220.10000327974558,
+          "video_time_s": 50.7807699876336,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 221,
+          "source_time_s": 221.10000329464674,
+          "video_time_s": 51.01153922184156,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 222,
+          "source_time_s": 222.1000033095479,
+          "video_time_s": 51.242308456049514,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 223,
+          "source_time_s": 223.10000332444906,
+          "video_time_s": 51.473077690257476,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 224,
+          "source_time_s": 224.10000333935022,
+          "video_time_s": 51.70384692446544,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 225,
+          "source_time_s": 225.10000335425138,
+          "video_time_s": 51.9346161586734,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 226,
+          "source_time_s": 226.10000336915255,
+          "video_time_s": 52.165385392881355,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 227,
+          "source_time_s": 227.1000033840537,
+          "video_time_s": 52.39615462708932,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 228,
+          "source_time_s": 228.10000339895487,
+          "video_time_s": 52.62692386129728,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 229,
+          "source_time_s": 229.10000341385603,
+          "video_time_s": 52.85769309550524,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 230,
+          "source_time_s": 230.1000034287572,
+          "video_time_s": 53.0884623297132,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 231,
+          "source_time_s": 231.10000344365835,
+          "video_time_s": 53.31923156392116,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 232,
+          "source_time_s": 232.1000034585595,
+          "video_time_s": 53.55000079812912,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 233,
+          "source_time_s": 233.10000347346067,
+          "video_time_s": 53.78077003233708,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 234,
+          "source_time_s": 234.10000348836184,
+          "video_time_s": 54.01153926654504,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 235,
+          "source_time_s": 235.100003503263,
+          "video_time_s": 54.242308500753,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 236,
+          "source_time_s": 236.10000351816416,
+          "video_time_s": 54.47307773496096,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 237,
+          "source_time_s": 237.10000353306532,
+          "video_time_s": 54.70384696916892,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 238,
+          "source_time_s": 238.10000354796648,
+          "video_time_s": 54.93461620337688,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 239,
+          "source_time_s": 239.10000356286764,
+          "video_time_s": 55.16538543758484,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 240,
+          "source_time_s": 240.1000035777688,
+          "video_time_s": 55.3961546717928,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 241,
+          "source_time_s": 241.10000359266996,
+          "video_time_s": 55.62692390600076,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 242,
+          "source_time_s": 242.10000360757113,
+          "video_time_s": 55.857693140208724,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 243,
+          "source_time_s": 243.1000036224723,
+          "video_time_s": 56.088462374416686,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 244,
+          "source_time_s": 244.10000363737345,
+          "video_time_s": 56.31923160862464,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 245,
+          "source_time_s": 245.1000036522746,
+          "video_time_s": 56.5500008428326,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 246,
+          "source_time_s": 246.10000366717577,
+          "video_time_s": 56.780770077040565,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 247,
+          "source_time_s": 247.10000368207693,
+          "video_time_s": 57.01153931124853,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 248,
+          "source_time_s": 248.1000036969781,
+          "video_time_s": 57.24230854545648,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 249,
+          "source_time_s": 249.10000371187925,
+          "video_time_s": 57.47307777966444,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 250,
+          "source_time_s": 250.10000372678041,
+          "video_time_s": 57.703847013872405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 251,
+          "source_time_s": 251.10000374168158,
+          "video_time_s": 57.93461624808037,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 252,
+          "source_time_s": 252.10000375658274,
+          "video_time_s": 58.16538548228832,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 253,
+          "source_time_s": 253.1000037714839,
+          "video_time_s": 58.396154716496284,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 254,
+          "source_time_s": 254.10000378638506,
+          "video_time_s": 58.626923950704246,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 255,
+          "source_time_s": 255.10000380128622,
+          "video_time_s": 58.85769318491221,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 256,
+          "source_time_s": 256.1000038161874,
+          "video_time_s": 59.08846241912017,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 257,
+          "source_time_s": 257.10000383108854,
+          "video_time_s": 59.319231653328124,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 258,
+          "source_time_s": 258.1000038459897,
+          "video_time_s": 59.550000887536086,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        },
+        {
+          "record_index": 259,
+          "source_time_s": 259.10000386089087,
+          "video_time_s": 59.78077012174405,
+          "text": "Keep distance to the lead vehicle since it is stopped ahead in our lane",
+          "instruction": "Remember E101; visit A804, then return to that remembered place."
+        }
+      ]
+    }
+  ]
+}

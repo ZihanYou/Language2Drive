@@ -1,0 +1,1710 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-a-027",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 2.0,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "left",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_A-027/left/reasoning.csv",
+      "source_sha256": "f7fe4339b7f451ac64a1aa0c5984c32ef2989428a5b00ece96b6f8ad41af830f",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.02500000074505806,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.5250000081956386,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.0250000156462193,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 1.5250000230968,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 2.0250000305473805,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 2.525000037997961,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 3.0250000454485417,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 3.5250000528991223,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 4.0250000603497025,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 4.525000067800283,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 5.025000075250864,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 5.525000082701444,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 6.025000090152025,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 6.5250000976026055,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 7.025000105053186,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 7.525000112503767,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 8.025000119954347,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 8.525000127404928,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 9.025000134855508,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 9.525000142306089,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 10.02500014975667,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 10.52500015720725,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 11.02500016465783,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 11.525000172108411,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 12.025000179558992,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 12.525000187009573,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 13.025000194460153,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 13.525000201910734,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 14.025000209361314,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 14.525000216811895,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 15.025000224262476,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 15.525000231713056,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 16.02500023916364,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 16.52500024661422,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 17.0250002540648,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 17.52500026151538,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 18.02500026896596,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 18.52500027641654,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 19.025000283867122,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 19.525000291317703,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 20.025000298768283,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 20.525000306218864,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 21.025000313669445,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 21.525000321120025,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 22.025000328570606,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 22.525000336021186,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 23.025000343471767,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 23.525000350922348,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 24.025000358372928,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 24.52500036582351,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 25.02500037327409,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 25.52500038072467,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 26.02500038817525,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 26.52500039562583,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 27.02500040307641,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 27.525000410526992,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 28.025000417977573,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 28.525000425428154,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 29.025000432878734,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 29.525000440329315,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 30.025000447779895,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 30.525000455230476,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 31.025000462681056,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 31.525000470131637,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 32.02500047758222,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 32.5250004850328,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 33.02500049248338,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 33.52500049993396,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 34.02500050738454,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 34.52500051483512,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 35.0250005222857,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 35.52500052973628,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 36.02500053718686,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 36.52500054463744,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 37.025000552088024,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 37.525000559538604,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 38.025000566989185,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 38.525000574439765,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 39.025000581890346,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 39.52500058934093,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 40.02500059679151,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 40.52500060424209,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 41.02500061169267,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 41.52500061914325,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 42.02500062659383,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 42.52500063404441,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 43.02500064149499,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 43.52500064894557,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 44.02500065639615,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 44.52500066384673,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 45.02500067129731,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 45.525000678747894,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 46.025000686198474,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 46.525000693649055,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 47.025000701099636,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 47.525000708550216,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 48.0250007160008,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 48.52500072345138,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 49.02500073090196,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 49.52500073835254,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 50.02500074580312,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 50.5250007532537,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 51.02500076070428,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 51.52500076815486,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 52.02500077560544,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 52.52500078305602,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 53.0250007905066,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 53.52500079795718,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 54.025000805407764,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 54.525000812858345,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 55.025000820308925,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 55.525000827759506,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 56.025000835210086,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 56.52500084266067,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 57.02500085011125,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 57.52500085756183,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 58.02500086501241,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 58.52500087246299,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 59.02500087991357,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the left."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 59.52500088736415,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the left."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "right",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_A-027/right/reasoning.csv",
+      "source_sha256": "42567b989f031ba2df4558d28bdd388304f64cdf2dcb9190116d7eebe9280d00",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.02500000074505806,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.5250000081956386,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 1.0250000156462193,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 1.5250000230968,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 2.0250000305473805,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 2.525000037997961,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 3.0250000454485417,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 3.5250000528991223,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 4.0250000603497025,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 4.525000067800283,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 5.025000075250864,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 5.525000082701444,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 6.025000090152025,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 6.5250000976026055,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 7.025000105053186,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 7.525000112503767,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 8.025000119954347,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 8.525000127404928,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 9.025000134855508,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 9.525000142306089,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 10.02500014975667,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 10.52500015720725,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 11.02500016465783,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 11.525000172108411,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 12.025000179558992,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 12.525000187009573,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 13.025000194460153,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 13.525000201910734,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 14.025000209361314,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 14.525000216811895,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 15.025000224262476,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 15.525000231713056,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 16.02500023916364,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 16.52500024661422,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 17.0250002540648,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 17.52500026151538,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 18.02500026896596,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 18.52500027641654,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 19.025000283867122,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 19.525000291317703,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 20.025000298768283,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 20.525000306218864,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 21.025000313669445,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 21.525000321120025,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 22.025000328570606,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 22.525000336021186,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 23.025000343471767,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 23.525000350922348,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 24.025000358372928,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 24.52500036582351,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 25.02500037327409,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 25.52500038072467,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 26.02500038817525,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 26.52500039562583,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 27.02500040307641,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 27.525000410526992,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 28.025000417977573,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 28.525000425428154,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 29.025000432878734,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 29.525000440329315,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 30.025000447779895,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 30.525000455230476,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 31.025000462681056,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 31.525000470131637,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 32.02500047758222,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 32.5250004850328,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 33.02500049248338,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 33.52500049993396,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 34.02500050738454,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 34.52500051483512,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 35.0250005222857,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 35.52500052973628,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 36.02500053718686,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 36.52500054463744,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 37.025000552088024,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 37.525000559538604,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 38.025000566989185,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 38.525000574439765,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 39.025000581890346,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 39.52500058934093,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 40.02500059679151,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 40.52500060424209,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 41.02500061169267,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 41.52500061914325,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 42.02500062659383,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 42.52500063404441,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 43.02500064149499,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 43.52500064894557,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 44.02500065639615,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 44.52500066384673,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 45.02500067129731,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 45.525000678747894,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 46.025000686198474,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 46.525000693649055,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 47.025000701099636,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 47.525000708550216,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 48.0250007160008,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 48.52500072345138,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 49.02500073090196,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 49.52500073835254,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 50.02500074580312,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 50.5250007532537,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 51.02500076070428,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 51.52500076815486,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 52.02500077560544,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 52.52500078305602,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 53.0250007905066,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 53.52500079795718,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 54.025000805407764,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 54.525000812858345,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 55.025000820308925,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 55.525000827759506,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 56.025000835210086,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 56.52500084266067,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 57.02500085011125,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 57.52500085756183,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 58.02500086501241,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 58.52500087246299,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 59.02500087991357,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 59.52500088736415,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "Park in the empty space on the right."
+        }
+      ]
+    }
+  ]
+}

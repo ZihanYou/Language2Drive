@@ -176,7 +176,7 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 🎬 **[Watch the 2-minute project film](docs/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](docs/index.html#examples)** · **[Prepare a model submission](docs/submit.html)**
 
-The local project preview includes **73 clips across all five backends**, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
+The local project preview includes **72 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
 
 <details open>
 <summary><b>Closed-loop counterfactual execution</b></summary>

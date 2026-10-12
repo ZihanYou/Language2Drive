@@ -133,10 +133,10 @@
       "start_s": 84,
       "duration_s": 8,
       "kind": "case",
-      "case_id": "navsim-junction-560d4e533d4da43b",
+      "case_id": "navsim-lane-left-c2e92aa83a599e79",
       "evidence_role": "benchmark-target",
       "source_offset_s": 0,
-      "source_sha256": "489537a07fe54e6f1504c0994df848fd622db7683c2861bcb96503ddf86928eb",
+      "source_sha256": "1cf3e3ab49f0d9924be4af5f1c78fcb64dd93b7eedb9800ad276b8728066f3ef",
       "caption": "Benchmark targets: NAVSIM reference trajectories define the two requested outcomes."
     },
     {
@@ -146,7 +146,7 @@
       "caption": "Compare instruction-conditioned model predictions on a shared coordinate scale.",
       "evidence_role": "model-result",
       "model": "Qwen-Drive-1.0-4B",
-      "case_id": "navsim-junction-560d4e533d4da43b"
+      "case_id": "navsim-lane-left-c2e92aa83a599e79"
     },
     {
       "start_s": 96,

@@ -1,0 +1,3110 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "carla-formal-d-009",
+  "model": "Alpamayo 1.5",
+  "track": "carla",
+  "playback_scale": 3.6666666666666665,
+  "alignment": "Trace elapsed time anchored to first trace; agent time anchored to first recorded camera or 0.05s. Approximate cross-clock alignment; not frame-exact causal timing.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "fallback_near",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-009/fallback_near/reasoning.csv",
+      "source_sha256": "7cf508f7896aa3ee440ad325afd0b81668de7321cfd1e5453ec278538c18dfb7",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.013636364042758942,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.28636364083398475,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.5590909176252106,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.8318181944164363,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 1.104545471207662,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.377272747998888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.6500000247901137,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 1.9227273015813395,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 2.195454578372565,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.468181855163791,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 2.7409091319550165,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 3.0136364087462426,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 3.2863636855374683,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.559090962328694,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 3.83181823911992,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 4.104545515911146,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 4.377272792702372,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 4.650000069493597,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 4.922727346284823,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 5.195454623076049,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 5.468181899867274,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 5.7409091766585005,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 6.013636453449726,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 6.286363730240952,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 6.559091007032178,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 6.831818283823403,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 7.104545560614629,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 7.377272837405855,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 7.650000114197081,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 7.922727390988307,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 8.195454667779533,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 8.468181944570759,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 8.740909221361985,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 9.013636498153211,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 9.286363774944437,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 9.559091051735662,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 9.831818328526888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 10.104545605318114,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 10.37727288210934,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 10.650000158900566,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 10.922727435691792,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 11.195454712483016,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 11.468181989274242,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 11.740909266065469,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 12.013636542856695,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 12.28636381964792,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 12.559091096439147,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 12.831818373230371,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 13.104545650021597,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 13.377272926812823,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 13.65000020360405,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 13.922727480395276,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 14.195454757186502,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 14.468182033977726,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 14.740909310768952,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 15.013636587560178,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 15.286363864351404,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 15.55909114114263,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 15.831818417933855,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 16.104545694725083,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 16.37727297151631,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 16.65000024830753,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 16.922727525098757,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 17.195454801889984,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 17.46818207868121,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 17.740909355472436,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 18.013636632263662,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 18.286363909054888,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 18.559091185846114,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 18.83181846263734,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 19.104545739428566,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 19.377273016219792,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 19.650000293011015,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 19.92272756980224,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 20.195454846593467,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 20.468182123384693,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 20.74090940017592,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 21.013636676967145,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 21.28636395375837,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 21.559091230549598,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 21.831818507340824,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 22.10454578413205,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 22.377273060923276,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 22.650000337714502,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 22.922727614505725,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 23.19545489129695,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 23.468182168088177,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 23.740909444879403,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 24.01363672167063,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 24.286363998461855,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 24.55909127525308,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 24.831818552044307,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 25.104545828835533,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 25.37727310562676,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 25.650000382417986,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 25.922727659209208,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 26.195454936000434,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 26.46818221279166,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 26.740909489582886,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 27.013636766374113,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 27.28636404316534,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 27.559091319956565,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 27.83181859674779,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 28.104545873539017,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 28.377273150330243,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 28.65000042712147,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 28.922727703912695,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 29.195454980703918,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 29.468182257495144,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 29.74090953428637,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 30.013636811077596,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 30.286364087868822,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 30.55909136466005,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 30.831818641451274,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 31.1045459182425,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 31.377273195033727,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 31.650000471824953,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 31.92272774861618,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 32.195455025407405,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 32.46818230219863,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 32.74090957898986,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 33.01363685578108,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 33.28636413257231,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 33.55909140936353,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 33.831818686154755,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 34.104545962945984,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 34.37727323973721,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 34.650000516528436,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 34.92272779331966,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 35.19545507011088,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 35.46818234690211,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 35.740909623693334,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 36.01363690048456,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 36.286364177275786,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 36.55909145406701,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 36.83181873085824,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 37.10454600764946,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 37.37727328444069,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 37.65000056123191,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 37.92272783802314,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 38.195455114814365,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 38.468182391605595,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 38.74090966839682,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 39.01363694518805,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 39.28636422197927,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 39.55909149877049,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 39.83181877556172,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 40.104546052352944,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 40.377273329144174,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 40.650000605935396,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 40.922727882726626,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 41.19545515951785,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 41.46818243630908,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 41.7409097131003,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 42.01363698989153,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 42.28636426668275,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 42.55909154347398,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 42.831818820265205,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 43.10454609705643,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 43.37727337384766,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 43.65000065063888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 43.92272792743011,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 44.19545520422133,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 44.46818248101256,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 44.740909757803784,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 45.013637034595014,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 45.28636431138624,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 45.559091588177466,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 45.83181886496869,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 46.10454614175991,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 46.37727341855114,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 46.650000695342364,
+          "text": "Turn right to take the exit since the lane markings indicate a right split ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 46.92272797213359,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 47.195455248924816,
+          "text": "Turn right to enter the parking aisle since the lane markings indicate a right turn",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 47.468182525716045,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 47.74090980250727,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 48.0136370792985,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 48.28636435608972,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 48.55909163288095,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 48.83181890967217,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 49.104546186463395,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 49.377273463254625,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 49.65000074004585,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 49.92272801683708,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 50.1954552936283,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 50.46818257041953,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 50.74090984721075,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 51.01363712400198,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 51.286364400793204,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 51.55909167758443,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 51.831818954375656,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 52.10454623116688,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 52.37727350795811,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 52.65000078474933,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 52.92272806154056,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 53.19545533833178,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 53.46818261512301,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 53.740909891914235,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 54.013637168705465,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 54.28636444549669,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 200,
+          "source_time_s": 200.10000298172235,
+          "video_time_s": 54.55909172228792,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 201,
+          "source_time_s": 201.10000299662352,
+          "video_time_s": 54.83181899907914,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 202,
+          "source_time_s": 202.10000301152468,
+          "video_time_s": 55.10454627587036,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 203,
+          "source_time_s": 203.10000302642584,
+          "video_time_s": 55.37727355266159,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 204,
+          "source_time_s": 204.100003041327,
+          "video_time_s": 55.650000829452814,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 205,
+          "source_time_s": 205.10000305622816,
+          "video_time_s": 55.922728106244044,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 206,
+          "source_time_s": 206.10000307112932,
+          "video_time_s": 56.19545538303527,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 207,
+          "source_time_s": 207.10000308603048,
+          "video_time_s": 56.468182659826496,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 208,
+          "source_time_s": 208.10000310093164,
+          "video_time_s": 56.74090993661772,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 209,
+          "source_time_s": 209.1000031158328,
+          "video_time_s": 57.01363721340895,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 210,
+          "source_time_s": 210.10000313073397,
+          "video_time_s": 57.28636449020017,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 211,
+          "source_time_s": 211.10000314563513,
+          "video_time_s": 57.5590917669914,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 212,
+          "source_time_s": 212.1000031605363,
+          "video_time_s": 57.83181904378262,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 213,
+          "source_time_s": 213.10000317543745,
+          "video_time_s": 58.10454632057385,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 214,
+          "source_time_s": 214.1000031903386,
+          "video_time_s": 58.377273597365075,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 215,
+          "source_time_s": 215.10000320523977,
+          "video_time_s": 58.6500008741563,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 216,
+          "source_time_s": 216.10000322014093,
+          "video_time_s": 58.92272815094753,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 217,
+          "source_time_s": 217.1000032350421,
+          "video_time_s": 59.19545542773875,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 218,
+          "source_time_s": 218.10000324994326,
+          "video_time_s": 59.46818270452998,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        },
+        {
+          "record_index": 219,
+          "source_time_s": 219.10000326484442,
+          "video_time_s": 59.7409099813212,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in E102; otherwise use E101."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "fallback_far",
+      "source_member": "pcu_video_evidence_20261002/cases/formal_D-009/fallback_far/reasoning.csv",
+      "source_sha256": "26ed5f8899f6a39a130a37bf7d5c9ec0b9480b8100530a50a5b1d28ba1fe44ce",
+      "clock_origin_s": 0.05,
+      "video_end_s": 60.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 0.10000000149011612,
+          "video_time_s": 0.013636364042758942,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.1000000163912773,
+          "video_time_s": 0.28636364083398475,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 2.1000000312924385,
+          "video_time_s": 0.5590909176252106,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 3.1000000461935997,
+          "video_time_s": 0.8318181944164363,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 4.100000061094761,
+          "video_time_s": 1.104545471207662,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 5.100000075995922,
+          "video_time_s": 1.377272747998888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 6.100000090897083,
+          "video_time_s": 1.6500000247901137,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 7.1000001057982445,
+          "video_time_s": 1.9227273015813395,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 8.100000120699406,
+          "video_time_s": 2.195454578372565,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 9.100000135600567,
+          "video_time_s": 2.468181855163791,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 10.100000150501728,
+          "video_time_s": 2.7409091319550165,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 11.10000016540289,
+          "video_time_s": 3.0136364087462426,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 12.10000018030405,
+          "video_time_s": 3.2863636855374683,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 13.100000195205212,
+          "video_time_s": 3.559090962328694,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 14.100000210106373,
+          "video_time_s": 3.83181823911992,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 15.100000225007534,
+          "video_time_s": 4.104545515911146,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 16.100000239908695,
+          "video_time_s": 4.377272792702372,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 17.100000254809856,
+          "video_time_s": 4.650000069493597,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 18.100000269711018,
+          "video_time_s": 4.922727346284823,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 19.10000028461218,
+          "video_time_s": 5.195454623076049,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 20.10000029951334,
+          "video_time_s": 5.468181899867274,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 21.1000003144145,
+          "video_time_s": 5.7409091766585005,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 22.100000329315662,
+          "video_time_s": 6.013636453449726,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 23.100000344216824,
+          "video_time_s": 6.286363730240952,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 24.100000359117985,
+          "video_time_s": 6.559091007032178,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 25.100000374019146,
+          "video_time_s": 6.831818283823403,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 26.100000388920307,
+          "video_time_s": 7.104545560614629,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 27.10000040382147,
+          "video_time_s": 7.377272837405855,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 28.10000041872263,
+          "video_time_s": 7.650000114197081,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 29.10000043362379,
+          "video_time_s": 7.922727390988307,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 30.100000448524952,
+          "video_time_s": 8.195454667779533,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 31.100000463426113,
+          "video_time_s": 8.468181944570759,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 32.100000478327274,
+          "video_time_s": 8.740909221361985,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 33.100000493228436,
+          "video_time_s": 9.013636498153211,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 34.1000005081296,
+          "video_time_s": 9.286363774944437,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 35.10000052303076,
+          "video_time_s": 9.559091051735662,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 36.10000053793192,
+          "video_time_s": 9.831818328526888,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 37.10000055283308,
+          "video_time_s": 10.104545605318114,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 38.10000056773424,
+          "video_time_s": 10.37727288210934,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 39.1000005826354,
+          "video_time_s": 10.650000158900566,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 40.100000597536564,
+          "video_time_s": 10.922727435691792,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 41.100000612437725,
+          "video_time_s": 11.195454712483016,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 42.100000627338886,
+          "video_time_s": 11.468181989274242,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 43.10000064224005,
+          "video_time_s": 11.740909266065469,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 44.10000065714121,
+          "video_time_s": 12.013636542856695,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 45.10000067204237,
+          "video_time_s": 12.28636381964792,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 46.10000068694353,
+          "video_time_s": 12.559091096439147,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 47.10000070184469,
+          "video_time_s": 12.831818373230371,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 48.10000071674585,
+          "video_time_s": 13.104545650021597,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 49.100000731647015,
+          "video_time_s": 13.377272926812823,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 50.100000746548176,
+          "video_time_s": 13.65000020360405,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 51.10000076144934,
+          "video_time_s": 13.922727480395276,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 52.1000007763505,
+          "video_time_s": 14.195454757186502,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 53,
+          "source_time_s": 53.10000079125166,
+          "video_time_s": 14.468182033977726,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 54,
+          "source_time_s": 54.10000080615282,
+          "video_time_s": 14.740909310768952,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 55,
+          "source_time_s": 55.10000082105398,
+          "video_time_s": 15.013636587560178,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 56,
+          "source_time_s": 56.10000083595514,
+          "video_time_s": 15.286363864351404,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 57,
+          "source_time_s": 57.100000850856304,
+          "video_time_s": 15.55909114114263,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 58,
+          "source_time_s": 58.100000865757465,
+          "video_time_s": 15.831818417933855,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 59,
+          "source_time_s": 59.10000088065863,
+          "video_time_s": 16.104545694725083,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 60,
+          "source_time_s": 60.10000089555979,
+          "video_time_s": 16.37727297151631,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 61,
+          "source_time_s": 61.10000091046095,
+          "video_time_s": 16.65000024830753,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 62,
+          "source_time_s": 62.10000092536211,
+          "video_time_s": 16.922727525098757,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 63,
+          "source_time_s": 63.10000094026327,
+          "video_time_s": 17.195454801889984,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 64,
+          "source_time_s": 64.10000095516443,
+          "video_time_s": 17.46818207868121,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 65,
+          "source_time_s": 65.1000009700656,
+          "video_time_s": 17.740909355472436,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 66,
+          "source_time_s": 66.10000098496675,
+          "video_time_s": 18.013636632263662,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 67,
+          "source_time_s": 67.10000099986792,
+          "video_time_s": 18.286363909054888,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 68,
+          "source_time_s": 68.10000101476908,
+          "video_time_s": 18.559091185846114,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 69,
+          "source_time_s": 69.10000102967024,
+          "video_time_s": 18.83181846263734,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 70,
+          "source_time_s": 70.1000010445714,
+          "video_time_s": 19.104545739428566,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 71,
+          "source_time_s": 71.10000105947256,
+          "video_time_s": 19.377273016219792,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 72,
+          "source_time_s": 72.10000107437372,
+          "video_time_s": 19.650000293011015,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 73,
+          "source_time_s": 73.10000108927488,
+          "video_time_s": 19.92272756980224,
+          "text": "Slow down due to upcoming speed bumps",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 74,
+          "source_time_s": 74.10000110417604,
+          "video_time_s": 20.195454846593467,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 75,
+          "source_time_s": 75.1000011190772,
+          "video_time_s": 20.468182123384693,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 76,
+          "source_time_s": 76.10000113397837,
+          "video_time_s": 20.74090940017592,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 77,
+          "source_time_s": 77.10000114887953,
+          "video_time_s": 21.013636676967145,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 78,
+          "source_time_s": 78.10000116378069,
+          "video_time_s": 21.28636395375837,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 79,
+          "source_time_s": 79.10000117868185,
+          "video_time_s": 21.559091230549598,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 80,
+          "source_time_s": 80.10000119358301,
+          "video_time_s": 21.831818507340824,
+          "text": "Slow down due to the upcoming speed bump",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 81,
+          "source_time_s": 81.10000120848417,
+          "video_time_s": 22.10454578413205,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 82,
+          "source_time_s": 82.10000122338533,
+          "video_time_s": 22.377273060923276,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 83,
+          "source_time_s": 83.1000012382865,
+          "video_time_s": 22.650000337714502,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 84,
+          "source_time_s": 84.10000125318766,
+          "video_time_s": 22.922727614505725,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 85,
+          "source_time_s": 85.10000126808882,
+          "video_time_s": 23.19545489129695,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 86,
+          "source_time_s": 86.10000128298998,
+          "video_time_s": 23.468182168088177,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 87,
+          "source_time_s": 87.10000129789114,
+          "video_time_s": 23.740909444879403,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 88,
+          "source_time_s": 88.1000013127923,
+          "video_time_s": 24.01363672167063,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 89,
+          "source_time_s": 89.10000132769346,
+          "video_time_s": 24.286363998461855,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 90,
+          "source_time_s": 90.10000134259462,
+          "video_time_s": 24.55909127525308,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 91,
+          "source_time_s": 91.10000135749578,
+          "video_time_s": 24.831818552044307,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 92,
+          "source_time_s": 92.10000137239695,
+          "video_time_s": 25.104545828835533,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 93,
+          "source_time_s": 93.10000138729811,
+          "video_time_s": 25.37727310562676,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 94,
+          "source_time_s": 94.10000140219927,
+          "video_time_s": 25.650000382417986,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 95,
+          "source_time_s": 95.10000141710043,
+          "video_time_s": 25.922727659209208,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 96,
+          "source_time_s": 96.10000143200159,
+          "video_time_s": 26.195454936000434,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 97,
+          "source_time_s": 97.10000144690275,
+          "video_time_s": 26.46818221279166,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 98,
+          "source_time_s": 98.10000146180391,
+          "video_time_s": 26.740909489582886,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 99,
+          "source_time_s": 99.10000147670507,
+          "video_time_s": 27.013636766374113,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 100,
+          "source_time_s": 100.10000149160624,
+          "video_time_s": 27.28636404316534,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 101,
+          "source_time_s": 101.1000015065074,
+          "video_time_s": 27.559091319956565,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 102,
+          "source_time_s": 102.10000152140856,
+          "video_time_s": 27.83181859674779,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 103,
+          "source_time_s": 103.10000153630972,
+          "video_time_s": 28.104545873539017,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 104,
+          "source_time_s": 104.10000155121088,
+          "video_time_s": 28.377273150330243,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 105,
+          "source_time_s": 105.10000156611204,
+          "video_time_s": 28.65000042712147,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 106,
+          "source_time_s": 106.1000015810132,
+          "video_time_s": 28.922727703912695,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 107,
+          "source_time_s": 107.10000159591436,
+          "video_time_s": 29.195454980703918,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 108,
+          "source_time_s": 108.10000161081553,
+          "video_time_s": 29.468182257495144,
+          "text": "Slow down due to the speed bump ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 109,
+          "source_time_s": 109.10000162571669,
+          "video_time_s": 29.74090953428637,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 110,
+          "source_time_s": 110.10000164061785,
+          "video_time_s": 30.013636811077596,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 111,
+          "source_time_s": 111.10000165551901,
+          "video_time_s": 30.286364087868822,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 112,
+          "source_time_s": 112.10000167042017,
+          "video_time_s": 30.55909136466005,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 113,
+          "source_time_s": 113.10000168532133,
+          "video_time_s": 30.831818641451274,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 114,
+          "source_time_s": 114.10000170022249,
+          "video_time_s": 31.1045459182425,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 115,
+          "source_time_s": 115.10000171512365,
+          "video_time_s": 31.377273195033727,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 116,
+          "source_time_s": 116.10000173002481,
+          "video_time_s": 31.650000471824953,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 117,
+          "source_time_s": 117.10000174492598,
+          "video_time_s": 31.92272774861618,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 118,
+          "source_time_s": 118.10000175982714,
+          "video_time_s": 32.195455025407405,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 119,
+          "source_time_s": 119.1000017747283,
+          "video_time_s": 32.46818230219863,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 120,
+          "source_time_s": 120.10000178962946,
+          "video_time_s": 32.74090957898986,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 121,
+          "source_time_s": 121.10000180453062,
+          "video_time_s": 33.01363685578108,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 122,
+          "source_time_s": 122.10000181943178,
+          "video_time_s": 33.28636413257231,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 123,
+          "source_time_s": 123.10000183433294,
+          "video_time_s": 33.55909140936353,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 124,
+          "source_time_s": 124.1000018492341,
+          "video_time_s": 33.831818686154755,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 125,
+          "source_time_s": 125.10000186413527,
+          "video_time_s": 34.104545962945984,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 126,
+          "source_time_s": 126.10000187903643,
+          "video_time_s": 34.37727323973721,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 127,
+          "source_time_s": 127.10000189393759,
+          "video_time_s": 34.650000516528436,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 128,
+          "source_time_s": 128.10000190883875,
+          "video_time_s": 34.92272779331966,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 129,
+          "source_time_s": 129.1000019237399,
+          "video_time_s": 35.19545507011088,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 130,
+          "source_time_s": 130.10000193864107,
+          "video_time_s": 35.46818234690211,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 131,
+          "source_time_s": 131.10000195354223,
+          "video_time_s": 35.740909623693334,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 132,
+          "source_time_s": 132.1000019684434,
+          "video_time_s": 36.01363690048456,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 133,
+          "source_time_s": 133.10000198334455,
+          "video_time_s": 36.286364177275786,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 134,
+          "source_time_s": 134.10000199824572,
+          "video_time_s": 36.55909145406701,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 135,
+          "source_time_s": 135.10000201314688,
+          "video_time_s": 36.83181873085824,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 136,
+          "source_time_s": 136.10000202804804,
+          "video_time_s": 37.10454600764946,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 137,
+          "source_time_s": 137.1000020429492,
+          "video_time_s": 37.37727328444069,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 138,
+          "source_time_s": 138.10000205785036,
+          "video_time_s": 37.65000056123191,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 139,
+          "source_time_s": 139.10000207275152,
+          "video_time_s": 37.92272783802314,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 140,
+          "source_time_s": 140.10000208765268,
+          "video_time_s": 38.195455114814365,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 141,
+          "source_time_s": 141.10000210255384,
+          "video_time_s": 38.468182391605595,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 142,
+          "source_time_s": 142.100002117455,
+          "video_time_s": 38.74090966839682,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 143,
+          "source_time_s": 143.10000213235617,
+          "video_time_s": 39.01363694518805,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 144,
+          "source_time_s": 144.10000214725733,
+          "video_time_s": 39.28636422197927,
+          "text": "Keep lane since the lane is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 145,
+          "source_time_s": 145.1000021621585,
+          "video_time_s": 39.55909149877049,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 146,
+          "source_time_s": 146.10000217705965,
+          "video_time_s": 39.83181877556172,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 147,
+          "source_time_s": 147.1000021919608,
+          "video_time_s": 40.104546052352944,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 148,
+          "source_time_s": 148.10000220686197,
+          "video_time_s": 40.377273329144174,
+          "text": "Turn right to take the exit since the lane markings indicate a right split ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 149,
+          "source_time_s": 149.10000222176313,
+          "video_time_s": 40.650000605935396,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 150,
+          "source_time_s": 150.1000022366643,
+          "video_time_s": 40.922727882726626,
+          "text": "Turn right to enter the parking aisle since the lane markings indicate a right turn",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 151,
+          "source_time_s": 151.10000225156546,
+          "video_time_s": 41.19545515951785,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 152,
+          "source_time_s": 152.10000226646662,
+          "video_time_s": 41.46818243630908,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 153,
+          "source_time_s": 153.10000228136778,
+          "video_time_s": 41.7409097131003,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 154,
+          "source_time_s": 154.10000229626894,
+          "video_time_s": 42.01363698989153,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 155,
+          "source_time_s": 155.1000023111701,
+          "video_time_s": 42.28636426668275,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 156,
+          "source_time_s": 156.10000232607126,
+          "video_time_s": 42.55909154347398,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 157,
+          "source_time_s": 157.10000234097242,
+          "video_time_s": 42.831818820265205,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 158,
+          "source_time_s": 158.10000235587358,
+          "video_time_s": 43.10454609705643,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 159,
+          "source_time_s": 159.10000237077475,
+          "video_time_s": 43.37727337384766,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 160,
+          "source_time_s": 160.1000023856759,
+          "video_time_s": 43.65000065063888,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 161,
+          "source_time_s": 161.10000240057707,
+          "video_time_s": 43.92272792743011,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 162,
+          "source_time_s": 162.10000241547823,
+          "video_time_s": 44.19545520422133,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 163,
+          "source_time_s": 163.1000024303794,
+          "video_time_s": 44.46818248101256,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 164,
+          "source_time_s": 164.10000244528055,
+          "video_time_s": 44.740909757803784,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 165,
+          "source_time_s": 165.1000024601817,
+          "video_time_s": 45.013637034595014,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 166,
+          "source_time_s": 166.10000247508287,
+          "video_time_s": 45.28636431138624,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 167,
+          "source_time_s": 167.10000248998404,
+          "video_time_s": 45.559091588177466,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 168,
+          "source_time_s": 168.1000025048852,
+          "video_time_s": 45.83181886496869,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 169,
+          "source_time_s": 169.10000251978636,
+          "video_time_s": 46.10454614175991,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 170,
+          "source_time_s": 170.10000253468752,
+          "video_time_s": 46.37727341855114,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 171,
+          "source_time_s": 171.10000254958868,
+          "video_time_s": 46.650000695342364,
+          "text": "Lane change to the left due to slower vehicles ahead in the current lane and a clear gap in the left aisle, then match speed with left-lane traffic after merging.",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 172,
+          "source_time_s": 172.10000256448984,
+          "video_time_s": 46.92272797213359,
+          "text": "Turn left to enter a parking space since the left parking bay is open",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 173,
+          "source_time_s": 173.100002579391,
+          "video_time_s": 47.195455248924816,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 174,
+          "source_time_s": 174.10000259429216,
+          "video_time_s": 47.468182525716045,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 175,
+          "source_time_s": 175.10000260919333,
+          "video_time_s": 47.74090980250727,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 176,
+          "source_time_s": 176.1000026240945,
+          "video_time_s": 48.0136370792985,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 177,
+          "source_time_s": 177.10000263899565,
+          "video_time_s": 48.28636435608972,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 178,
+          "source_time_s": 178.1000026538968,
+          "video_time_s": 48.55909163288095,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 179,
+          "source_time_s": 179.10000266879797,
+          "video_time_s": 48.83181890967217,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 180,
+          "source_time_s": 180.10000268369913,
+          "video_time_s": 49.104546186463395,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 181,
+          "source_time_s": 181.1000026986003,
+          "video_time_s": 49.377273463254625,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 182,
+          "source_time_s": 182.10000271350145,
+          "video_time_s": 49.65000074004585,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 183,
+          "source_time_s": 183.10000272840261,
+          "video_time_s": 49.92272801683708,
+          "text": "Keep lane since the aisle is clear with no lead vehicle ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 184,
+          "source_time_s": 184.10000274330378,
+          "video_time_s": 50.1954552936283,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 185,
+          "source_time_s": 185.10000275820494,
+          "video_time_s": 50.46818257041953,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 186,
+          "source_time_s": 186.1000027731061,
+          "video_time_s": 50.74090984721075,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 187,
+          "source_time_s": 187.10000278800726,
+          "video_time_s": 51.01363712400198,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 188,
+          "source_time_s": 188.10000280290842,
+          "video_time_s": 51.286364400793204,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 189,
+          "source_time_s": 189.10000281780958,
+          "video_time_s": 51.55909167758443,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 190,
+          "source_time_s": 190.10000283271074,
+          "video_time_s": 51.831818954375656,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 191,
+          "source_time_s": 191.1000028476119,
+          "video_time_s": 52.10454623116688,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 192,
+          "source_time_s": 192.10000286251307,
+          "video_time_s": 52.37727350795811,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 193,
+          "source_time_s": 193.10000287741423,
+          "video_time_s": 52.65000078474933,
+          "text": "Keep lane since the aisle is clear and no agent requires attention",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 194,
+          "source_time_s": 194.1000028923154,
+          "video_time_s": 52.92272806154056,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 195,
+          "source_time_s": 195.10000290721655,
+          "video_time_s": 53.19545533833178,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 196,
+          "source_time_s": 196.1000029221177,
+          "video_time_s": 53.46818261512301,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 197,
+          "source_time_s": 197.10000293701887,
+          "video_time_s": 53.740909891914235,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 198,
+          "source_time_s": 198.10000295192003,
+          "video_time_s": 54.013637168705465,
+          "text": "Change to the right lane and proceed because the right side of the aisle is clear, lane markings permit a merge, and there are only stationary parked cars, making it safe to shift right and continue forward with acceleration.",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 199,
+          "source_time_s": 199.1000029668212,
+          "video_time_s": 54.28636444549669,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 200,
+          "source_time_s": 200.10000298172235,
+          "video_time_s": 54.55909172228792,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 201,
+          "source_time_s": 201.10000299662352,
+          "video_time_s": 54.83181899907914,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 202,
+          "source_time_s": 202.10000301152468,
+          "video_time_s": 55.10454627587036,
+          "text": "Keep lane since the aisle is clear ahead",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 203,
+          "source_time_s": 203.10000302642584,
+          "video_time_s": 55.37727355266159,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 204,
+          "source_time_s": 204.100003041327,
+          "video_time_s": 55.650000829452814,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 205,
+          "source_time_s": 205.10000305622816,
+          "video_time_s": 55.922728106244044,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 206,
+          "source_time_s": 206.10000307112932,
+          "video_time_s": 56.19545538303527,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 207,
+          "source_time_s": 207.10000308603048,
+          "video_time_s": 56.468182659826496,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 208,
+          "source_time_s": 208.10000310093164,
+          "video_time_s": 56.74090993661772,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 209,
+          "source_time_s": 209.1000031158328,
+          "video_time_s": 57.01363721340895,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 210,
+          "source_time_s": 210.10000313073397,
+          "video_time_s": 57.28636449020017,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 211,
+          "source_time_s": 211.10000314563513,
+          "video_time_s": 57.5590917669914,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 212,
+          "source_time_s": 212.1000031605363,
+          "video_time_s": 57.83181904378262,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 213,
+          "source_time_s": 213.10000317543745,
+          "video_time_s": 58.10454632057385,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 214,
+          "source_time_s": 214.1000031903386,
+          "video_time_s": 58.377273597365075,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 215,
+          "source_time_s": 215.10000320523977,
+          "video_time_s": 58.6500008741563,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 216,
+          "source_time_s": 216.10000322014093,
+          "video_time_s": 58.92272815094753,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 217,
+          "source_time_s": 217.1000032350421,
+          "video_time_s": 59.19545542773875,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 218,
+          "source_time_s": 218.10000324994326,
+          "video_time_s": 59.46818270452998,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        },
+        {
+          "record_index": 219,
+          "source_time_s": 219.10000326484442,
+          "video_time_s": 59.7409099813212,
+          "text": "Keep lane since the aisle is clear and no lead vehicle is present",
+          "instruction": "If E101 is occupied, park in C104; otherwise use E102."
+        }
+      ]
+    }
+  ]
+}

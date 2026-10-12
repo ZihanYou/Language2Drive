@@ -1,0 +1,772 @@
+{
+  "schema": "language2drive.reasoning.v1",
+  "case_id": "realsim-alpamayo15-p12-a4-s19",
+  "model": "Alpamayo 1.5",
+  "track": "realsim",
+  "playback_scale": 1,
+  "alignment": "Video zero is the first shared camera timestamp; the final reading hold retains the last recorded output.",
+  "arms": [
+    {
+      "label": "A",
+      "source_arm": "R0",
+      "source_member": "Language2Drive_PCU_Paired_Videos/cases/alpamayo15_P12_A4_S19/R0/reasoning_transcript.csv",
+      "source_sha256": "219510ae2eaf0d3f6f517b74f55982e16d7adc770b5e709e8aa94c709ca735f6",
+      "clock_origin_s": 0.030559,
+      "video_end_s": 7.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 1.730559,
+          "video_time_s": 1.7,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.830559,
+          "video_time_s": 1.8,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap forming behind the gray sedan, then match speed with left-lane traffic after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 1.930559,
+          "video_time_s": 1.9,
+          "text": "Lane change to the left due to slower vehicles ahead in our lane approaching the signalized intersection, then continue decelerating to merge into a safe gap and queue behind traffic in the new lane.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 2.030559,
+          "video_time_s": 1.9999999999999998,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and an available gap in the left lane, then match speed with left-lane traffic after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 2.130559,
+          "video_time_s": 2.1,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, then continue decelerating to queue behind the lead vehicle in the new lane.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 2.230559,
+          "video_time_s": 2.2,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the left-lane sedan, then match speed with that lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 2.330559,
+          "video_time_s": 2.3000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and an available gap behind the gray sedan, then match speed and come to a stop for the signal-controlled intersection queue ahead (red light causing further slowing).",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 2.430559,
+          "video_time_s": 2.4000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and an available gap in the left lane, then match speed with the lead sedan after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 2.530559,
+          "video_time_s": 2.5,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, then match speed with vehicles in our new lane after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 2.630559,
+          "video_time_s": 2.6,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and a safe gap forming behind the silver sedan, then match its deceleration for the signal-controlled queue ahead; after merging, reduce speed to maintain following distance as it brakes for the intersection.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 2.730559,
+          "video_time_s": 2.7,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and an available gap behind the silver sedan, then match that lead vehicle’s lower speed after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 2.830559,
+          "video_time_s": 2.8000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signal and an available gap in the left through lane, then continue decelerating for the intersection queue and signal control.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 2.930559,
+          "video_time_s": 2.9000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signalized intersection and a safe gap forming behind the lead sedan, then match its speed after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 3.030559,
+          "video_time_s": 3.0,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the lead sedan in the left lane, then match speed with that lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 3.130559,
+          "video_time_s": 3.1,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the silver sedan in the left lane, then match the lead vehicle’s slow approach to the light, using braking to maintain following distance after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 3.230559,
+          "video_time_s": 3.2,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, taking an available gap behind the left-lane lead vehicle and then decelerating to stop for the red light and queue.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 3.330559,
+          "video_time_s": 3.3000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in the current lane and a safe gap behind the left-lane sedan, then reduce speed to merge smoothly and queue for the signal-controlled intersection.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 3.430559,
+          "video_time_s": 3.4000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in the current lane near the signal.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 3.530559,
+          "video_time_s": 3.5,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signalized intersection and a safe gap behind the left-lane lead vehicle, then match its deceleration toward the queue, leading to a controlled stop after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 3.630559,
+          "video_time_s": 3.6,
+          "text": "Lane change to the left due to slow traffic ahead in the current lane approaching the signalized intersection and a clear gap behind the left‑lane sedan, then match that lead car’s deceleration after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 3.730559,
+          "video_time_s": 3.7,
+          "text": "Lane change to the left due to slow traffic ahead in the current lane approaching the signalized intersection, then match speed with the lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 3.830559,
+          "video_time_s": 3.8000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, taking a safe gap behind vehicles already in the left lane and then slowing to match their queue.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 3.930559,
+          "video_time_s": 3.9000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signal and an available gap behind the left-lane lead vehicle, then match speed with left-lane traffic after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 4.030559,
+          "video_time_s": 4.0,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, taking an available gap next to vehicles in the left lane and then decelerating to queue behind the lead sedan for a red light.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 4.130559,
+          "video_time_s": 4.1,
+          "text": "Lane change to the left due to slow traffic ahead in the current right lane and an available gap in the left lane, then match speed with left-lane vehicles approaching the signal-controlled intersection.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 4.230559,
+          "video_time_s": 4.2,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and a safe gap behind the left-lane lead vehicle, then match its deceleration to maintain following distance approaching the signalized intersection and lane split markings that constrain further leftward movement.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 4.330559,
+          "video_time_s": 4.3,
+          "text": "Lane change to the left to bypass slow traffic ahead in our lane approaching the signalized intersection, then match speed with vehicles in our new lane after merging.",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 4.430559,
+          "video_time_s": 4.3999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 4.530559,
+          "video_time_s": 4.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 4.630559,
+          "video_time_s": 4.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 4.730559,
+          "video_time_s": 4.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 4.830559,
+          "video_time_s": 4.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 4.930559,
+          "video_time_s": 4.8999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 5.030559,
+          "video_time_s": 5.0,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 5.130559,
+          "video_time_s": 5.1,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 5.230559,
+          "video_time_s": 5.2,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 5.330559,
+          "video_time_s": 5.3,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 5.430559,
+          "video_time_s": 5.3999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 5.530559,
+          "video_time_s": 5.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 5.630559,
+          "video_time_s": 5.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 5.730559,
+          "video_time_s": 5.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 5.830559,
+          "video_time_s": 5.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 5.930559,
+          "video_time_s": 5.8999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 6.030559,
+          "video_time_s": 6.0,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 6.130559,
+          "video_time_s": 6.1,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 6.230559,
+          "video_time_s": 6.2,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 6.330559,
+          "video_time_s": 6.3,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 6.430559,
+          "video_time_s": 6.3999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 6.530559,
+          "video_time_s": 6.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 6.630559,
+          "video_time_s": 6.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 6.730559,
+          "video_time_s": 6.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 6.830559,
+          "video_time_s": 6.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 6.930559,
+          "video_time_s": 6.8999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your left."
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "source_arm": "R1",
+      "source_member": "Language2Drive_PCU_Paired_Videos/cases/alpamayo15_P12_A4_S19/R1/reasoning_transcript.csv",
+      "source_sha256": "431adc514d4755f6bc68c08f2ef97321ac751d8f3acff8d229cf056f0f53b7dd",
+      "clock_origin_s": 0.030559,
+      "video_end_s": 7.0,
+      "entries": [
+        {
+          "record_index": 0,
+          "source_time_s": 1.730559,
+          "video_time_s": 1.7,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 1,
+          "source_time_s": 1.830559,
+          "video_time_s": 1.8,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap forming behind the gray sedan, then match speed with left-lane traffic after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 2,
+          "source_time_s": 1.930559,
+          "video_time_s": 1.9,
+          "text": "Lane change to the left due to slower vehicles ahead in our lane approaching the signalized intersection, then prepare to stop for the red light behind the lead car in the left lane.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 3,
+          "source_time_s": 2.030559,
+          "video_time_s": 1.9999999999999998,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and an available gap in the left lane, then match speed with left-lane traffic after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 4,
+          "source_time_s": 2.130559,
+          "video_time_s": 2.1,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection, taking an available gap to merge into the left-through lane and then follow the lead car, preparing to stop for the red signal and queued vehicles ahead.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 5,
+          "source_time_s": 2.230559,
+          "video_time_s": 2.2,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the left-lane sedan, then match speed with that lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 6,
+          "source_time_s": 2.330559,
+          "video_time_s": 2.3000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and an available gap in the left lane, then match speed and come to a stop for the signal-controlled intersection queue ahead ( glass red light).",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 7,
+          "source_time_s": 2.430559,
+          "video_time_s": 2.4000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and an available gap in the left lane, then match speed with the lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 8,
+          "source_time_s": 2.530559,
+          "video_time_s": 2.5,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap forming behind the gray sedan, then match speed with that lead vehicle after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 9,
+          "source_time_s": 2.630559,
+          "video_time_s": 2.6,
+          "text": "Lane change to the left and brake because of slowing vehicles ahead in our current right lane and a red signal with queued traffic, with a safe gap available behind the gray sedan in the left-adjacent lane to merge into.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 10,
+          "source_time_s": 2.730559,
+          "video_time_s": 2.7,
+          "text": "Lane change to the left due to slow traffic ahead in our lane and an available gap behind the silver sedan, then match that lead vehicle’s lower speed after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 11,
+          "source_time_s": 2.830559,
+          "video_time_s": 2.8000000000000003,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signal and an available gap in the left through lane, then continue decelerating for the intersection queue and signal control.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 12,
+          "source_time_s": 2.930559,
+          "video_time_s": 2.9000000000000004,
+          "text": "Lane change to the left due to slow traffic ahead in our lane near the signalized intersection and a safe gap forming behind the lead vehicle in the left through lane, then match speed after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 13,
+          "source_time_s": 3.030559,
+          "video_time_s": 3.0,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the lead sedan in the left lane, then match speed after merging.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 14,
+          "source_time_s": 3.130559,
+          "video_time_s": 3.1,
+          "text": "Lane change to the left due to slow traffic ahead in our lane approaching the signalized intersection and a safe gap behind the silver sedan in the left lane, then match the lead vehicle’s slow approach to the light, preparing for a potential stop as queueing occurs.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 15,
+          "source_time_s": 3.230559,
+          "video_time_s": 3.2,
+          "text": "Lane change to the left due to slow traffic ahead in the current lane approaching the signalized intersection, taking the available gap to merge into the left through lane and then slowing for the queue, then accelerating after the merge is completed.",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 16,
+          "source_time_s": 3.330559,
+          "video_time_s": 3.3000000000000003,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 17,
+          "source_time_s": 3.430559,
+          "video_time_s": 3.4000000000000004,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 18,
+          "source_time_s": 3.530559,
+          "video_time_s": 3.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 19,
+          "source_time_s": 3.630559,
+          "video_time_s": 3.6,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 20,
+          "source_time_s": 3.730559,
+          "video_time_s": 3.7,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 21,
+          "source_time_s": 3.830559,
+          "video_time_s": 3.8000000000000003,
+          "text": "Keep distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 22,
+          "source_time_s": 3.930559,
+          "video_time_s": 3.9000000000000004,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 23,
+          "source_time_s": 4.030559,
+          "video_time_s": 4.0,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 24,
+          "source_time_s": 4.130559,
+          "video_time_s": 4.1,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 25,
+          "source_time_s": 4.230559,
+          "video_time_s": 4.2,
+          "text": "Slow down to maintain a safe distance to the lead vehicle since it is decelerating ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 26,
+          "source_time_s": 4.330559,
+          "video_time_s": 4.3,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 27,
+          "source_time_s": 4.430559,
+          "video_time_s": 4.3999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 28,
+          "source_time_s": 4.530559,
+          "video_time_s": 4.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 29,
+          "source_time_s": 4.630559,
+          "video_time_s": 4.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 30,
+          "source_time_s": 4.730559,
+          "video_time_s": 4.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 31,
+          "source_time_s": 4.830559,
+          "video_time_s": 4.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 32,
+          "source_time_s": 4.930559,
+          "video_time_s": 4.8999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 33,
+          "source_time_s": 5.030559,
+          "video_time_s": 5.0,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 34,
+          "source_time_s": 5.130559,
+          "video_time_s": 5.1,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 35,
+          "source_time_s": 5.230559,
+          "video_time_s": 5.2,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 36,
+          "source_time_s": 5.330559,
+          "video_time_s": 5.3,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 37,
+          "source_time_s": 5.430559,
+          "video_time_s": 5.3999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 38,
+          "source_time_s": 5.530559,
+          "video_time_s": 5.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 39,
+          "source_time_s": 5.630559,
+          "video_time_s": 5.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 40,
+          "source_time_s": 5.730559,
+          "video_time_s": 5.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 41,
+          "source_time_s": 5.830559,
+          "video_time_s": 5.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 42,
+          "source_time_s": 5.930559,
+          "video_time_s": 5.8999999999999995,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 43,
+          "source_time_s": 6.030559,
+          "video_time_s": 6.0,
+          "text": "Slow down to maintain a safe distance to the lead vehicle since it is decelerating ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 44,
+          "source_time_s": 6.130559,
+          "video_time_s": 6.1,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 45,
+          "source_time_s": 6.230559,
+          "video_time_s": 6.2,
+          "text": "Stop to keep distance to the lead vehicle since it stops ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 46,
+          "source_time_s": 6.330559,
+          "video_time_s": 6.3,
+          "text": "Decelerate to maintain a safe distance to the lead vehicle since it is slowing ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 47,
+          "source_time_s": 6.430559,
+          "video_time_s": 6.3999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 48,
+          "source_time_s": 6.530559,
+          "video_time_s": 6.5,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 49,
+          "source_time_s": 6.630559,
+          "video_time_s": 6.6,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 50,
+          "source_time_s": 6.730559,
+          "video_time_s": 6.7,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 51,
+          "source_time_s": 6.830559,
+          "video_time_s": 6.8,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        },
+        {
+          "record_index": 52,
+          "source_time_s": 6.930559,
+          "video_time_s": 6.8999999999999995,
+          "text": "Stop to keep distance to the lead vehicle since it is stopped ahead",
+          "instruction": "Safely change to the adjacent lane on your right."
+        }
+      ]
+    }
+  ]
+}

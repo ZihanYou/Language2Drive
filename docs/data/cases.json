@@ -36,7 +36,8 @@
       "video_sha256": "f702f744787b486df422d750ce43fa6b14677bf340a32d3418e2b27d4c38baa0",
       "bytes": 2721301,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-001.json"
     },
     {
       "id": "carla-formal-a-014",
@@ -71,7 +72,8 @@
       "video_sha256": "c510d32d74b09b5e604cce0e70a42d965f0ae460c3656f840d793b652d7e3f5d",
       "bytes": 2099777,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-014.json"
     },
     {
       "id": "carla-formal-a-017",
@@ -106,7 +108,8 @@
       "video_sha256": "1063340d3b93918948d5062f7579e209129d17aea5d3af571174a5a6a27dc3d0",
       "bytes": 767003,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-017.json"
     },
     {
       "id": "carla-formal-a-022",
@@ -141,7 +144,8 @@
       "video_sha256": "ed0f99b9ee2a0430db880d9172c41dbb05fc0bb8db3071c9593c03f1c2d13f74",
       "bytes": 2659940,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-022.json"
     },
     {
       "id": "carla-formal-a-024",
@@ -176,7 +180,8 @@
       "video_sha256": "4c698cd8d8e48a5ece91537a9a95d113f6fe9548a34126a059d853f2da98a577",
       "bytes": 717585,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-024.json"
     },
     {
       "id": "carla-formal-a-027",
@@ -211,7 +216,8 @@
       "video_sha256": "dcbaf686325b2718b4c8b89daea83f5f542b74eb7e4942e54f8d0fbf2827518b",
       "bytes": 5011633,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-a-027.json"
     },
     {
       "id": "carla-formal-b-001",
@@ -246,7 +252,8 @@
       "video_sha256": "d169f3b31e62f729bbfa7323e9af8e25646cd7d339e35a4f904625003d52f1e2",
       "bytes": 4774581,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-001.json"
     },
     {
       "id": "carla-formal-b-002",
@@ -281,7 +288,8 @@
       "video_sha256": "7bc6e076412398e548125d56c3d9e842153e626b1d89fadef3a4c52a390a04c1",
       "bytes": 5771045,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-002.json"
     },
     {
       "id": "carla-formal-b-007",
@@ -316,7 +324,8 @@
       "video_sha256": "8d1f5b16722c19e3b74fcc85d19a294ff76fec325c06b180d7927373230fda3e",
       "bytes": 8199147,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-007.json"
     },
     {
       "id": "carla-formal-b-009",
@@ -351,7 +360,8 @@
       "video_sha256": "f6cd77c5a609acb30a3927beadeb1a8fdbc464b5ca5216c9d744faf6aadc1db2",
       "bytes": 1767059,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-009.json"
     },
     {
       "id": "carla-formal-b-017",
@@ -386,7 +396,8 @@
       "video_sha256": "bf232f8c325fff5fc02a3a41e44b055f203b59f2f48d470300bd51d07eb66d89",
       "bytes": 2339983,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-017.json"
     },
     {
       "id": "carla-formal-b-025",
@@ -421,7 +432,8 @@
       "video_sha256": "39c9dd313c0ded5fac3af98235cee63570c56700a181adaaecbe10587155c85b",
       "bytes": 2410555,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-b-025.json"
     },
     {
       "id": "carla-formal-c-001",
@@ -456,7 +468,8 @@
       "video_sha256": "e77ea2f6625488e27f021afcc19800742be83c3aed48e106d376dc20058956d5",
       "bytes": 2605053,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-c-001.json"
     },
     {
       "id": "carla-formal-c-009",
@@ -491,7 +504,8 @@
       "video_sha256": "734620b30044faa673c21dafc78689c5cc5e46868b0b2dcc7dfe004dc0e11f68",
       "bytes": 998186,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-c-009.json"
     },
     {
       "id": "carla-formal-c-017",
@@ -526,7 +540,8 @@
       "video_sha256": "5e6332c64dd07871dfbc484478311881a77df5151be32c7e030465f6aed2f2c2",
       "bytes": 3438732,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-c-017.json"
     },
     {
       "id": "carla-formal-c-025",
@@ -561,7 +576,8 @@
       "video_sha256": "480f5db8f520de1563fcbbffc811cf96859d43dc56f0a0783ec42ceb1a891ed8",
       "bytes": 6810825,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-c-025.json"
     },
     {
       "id": "carla-formal-d-001",
@@ -596,7 +612,8 @@
       "video_sha256": "1872594e8e4c86b714355280f7e3039542b6b8c7064e7ffe743bb7d3b7dfcb98",
       "bytes": 4033813,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-d-001.json"
     },
     {
       "id": "carla-formal-d-009",
@@ -631,7 +648,8 @@
       "video_sha256": "d0c10e898801a5e0509cadd58b1c15e4aa08932f3a0848c491b6d6418ea841a6",
       "bytes": 6352807,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-d-009.json"
     },
     {
       "id": "carla-formal-d-019",
@@ -666,7 +684,8 @@
       "video_sha256": "2c319bfec0ba86c1f1226cf50f8d0efffa79a14b45c4314ffe6e9d6a26c985ba",
       "bytes": 3153245,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-d-019.json"
     },
     {
       "id": "carla-formal-d-026",
@@ -701,7 +720,8 @@
       "video_sha256": "053ada710a5aaee2a5404334a2d71af30bd277051729a5944df345681e45bbf9",
       "bytes": 1161493,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/carla-formal-d-026.json"
     },
     {
       "id": "realsim-oracle-p01-b1-s09",
@@ -767,7 +787,8 @@
       "video_sha256": "6b401a71720dd142e3d05a304b2cd9f2ee0ee9c31248dde03e9f87a373dbf259",
       "bytes": 1969197,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p01-b1-s09.json"
     },
     {
       "id": "realsim-oracle-p02-a2-s08",
@@ -833,7 +854,8 @@
       "video_sha256": "4a2fc9f6d6f16a511fd0cbd5a25186e8b955249f0aa201a83033bd52c9fbfc87",
       "bytes": 1149230,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p02-a2-s08.json"
     },
     {
       "id": "realsim-alpamayo15-p04-b1-s20",
@@ -866,7 +888,8 @@
       "video_sha256": "462933b4694ba5d4cd926e7036e7418e90aa5d2fefe5c59d2832bdb4e64f3136",
       "bytes": 1068214,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p04-b1-s20.json"
     },
     {
       "id": "realsim-alpamayo15-p08-b1-s14",
@@ -899,7 +922,8 @@
       "video_sha256": "da8cb8d2214d1fd789bac3de7e6ebe89c5b82222d5c61b28e7ea551248489d32",
       "bytes": 646547,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p08-b1-s14.json"
     },
     {
       "id": "realsim-oracle-p09-b3-s04",
@@ -965,7 +989,8 @@
       "video_sha256": "931c208d9602701aaf4f8a95c3147ca4119055175f4820145be09bd7ad6fa6d2",
       "bytes": 2070329,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p09-b3-s04.json"
     },
     {
       "id": "realsim-oracle-p11-a5-s12",
@@ -1031,7 +1056,8 @@
       "video_sha256": "112ffca34afe978c5e8200dc42dcf126a037580603a9475d9705df9f959e5f24",
       "bytes": 1083556,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p11-a5-s12.json"
     },
     {
       "id": "realsim-oracle-p12-a4-s19",
@@ -1097,7 +1123,8 @@
       "video_sha256": "c15e18480fa28d657f896c293a30b0d9a347b1bccbdf7916fbf1930a41af704d",
       "bytes": 936832,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p12-a4-s19.json"
     },
     {
       "id": "realsim-oracle-p16-b2-s18",
@@ -1163,7 +1190,8 @@
       "video_sha256": "da2414531e37f58a54f828a7d7c4a9807da5f93603c57789d66dfa832135cdcf",
       "bytes": 1707981,
       "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.",
+      "reasoning": "data/reasoning/realsim-alpamayo15-p16-b2-s18.json"
     },
     {
       "id": "nuscenes-p01-scene-0077-speed-opendrivevla-0-5b",
@@ -1842,570 +1870,6 @@
       "source_sha256": "6f5d8260aecc8b941614f653f1e30042e5ced3c3cb6a3f867ca9ba75bb22a6ef",
       "video_sha256": "01363b79bdf7a7b2aaf15bdbdcc3f6f5952f2853549526d1b435d74488c26161",
       "bytes": 1350701,
-      "presentation_version": 2,
-      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
-    },
-    {
-      "id": "navsim-junction-560d4e533d4da43b",
-      "pcu": "junction_560d4e533d4da43b",
-      "track": "navsim",
-      "title": "Left turn or straight",
-      "family": "branch_choice",
-      "scope": "A",
-      "scene": "us-pa-pittsburgh-hazelwood",
-      "model": "Reference witness",
-      "kind": "reference",
-      "instructions": [
-        "At the upcoming junction, turn left.",
-        "At the upcoming junction, go straight."
-      ],
-      "comparison": {
-        "frame": "rear axle; +X forward, +Y left; meters",
-        "timestamps_s": [
-          0.5,
-          1.0,
-          1.5,
-          2.0,
-          2.5,
-          3.0,
-          3.5,
-          4.0
-        ],
-        "models": {
-          "Qwen-Drive-1.0-4B": {
-            "0": [
-              [
-                2.054443359375,
-                -0.0240325927734375,
-                0.2238922119140625
-              ],
-              [
-                3.94775390625,
-                0.433349609375,
-                0.4508514404296875
-              ],
-              [
-                5.760498046875,
-                1.18408203125,
-                0.6164703369140625
-              ],
-              [
-                7.97607421875,
-                2.1728515625,
-                0.766754150390625
-              ],
-              [
-                9.90966796875,
-                3.808594226837158,
-                0.8894350528717041
-              ],
-              [
-                11.03759765625,
-                5.4443359375,
-                0.9446413516998291
-              ],
-              [
-                12.568360328674316,
-                7.373046875,
-                0.9691774845123291
-              ],
-              [
-                13.857421875,
-                9.423828125,
-                1.012115716934204
-              ]
-            ],
-            "1": [
-              [
-                2.0343017578125,
-                -0.028228759765625,
-                0.226959228515625
-              ],
-              [
-                3.9276123046875,
-                0.4302978515625,
-                0.4569854736328125
-              ],
-              [
-                5.72021484375,
-                1.1474609375,
-                0.6164703369140625
-              ],
-              [
-                7.81494140625,
-                2.05078125,
-                0.7698211669921875
-              ],
-              [
-                9.66796875,
-                3.588866710662842,
-                0.8833010196685791
-              ],
-              [
-                10.71533203125,
-                4.9072265625,
-                0.9139711856842041
-              ],
-              [
-                12.32666015625,
-                6.298828125,
-                0.9078371524810791
-              ],
-              [
-                13.53515625,
-                8.154296875,
-                0.9262392520904541
-              ]
-            ]
-          },
-          "AutoVLA": {
-            "0": [
-              [
-                1.790252685546875,
-                0.24477064609527588,
-                0.11907459050416946
-              ],
-              [
-                3.68062162399292,
-                0.7138251066207886,
-                0.3455840051174164
-              ],
-              [
-                5.5784454345703125,
-                1.6702919006347656,
-                0.4829741418361664
-              ],
-              [
-                7.4710187911987305,
-                3.125178337097168,
-                0.6719640493392944
-              ],
-              [
-                9.140559196472168,
-                4.965598106384277,
-                0.8397320508956909
-              ],
-              [
-                10.585179328918457,
-                7.13177490234375,
-                0.9863936305046082
-              ],
-              [
-                11.849031448364258,
-                9.639057159423828,
-                1.1214672327041626
-              ],
-              [
-                12.877181053161621,
-                12.304633140563965,
-                1.2129123210906982
-              ]
-            ],
-            "1": [
-              [
-                1.790252685546875,
-                0.24477064609527588,
-                0.11907459050416946
-              ],
-              [
-                3.637176513671875,
-                0.6832363605499268,
-                0.22361166775226593
-              ],
-              [
-                5.637274742126465,
-                1.401688814163208,
-                0.36100178956985474
-              ],
-              [
-                7.520127296447754,
-                2.387300968170166,
-                0.49839189648628235
-              ],
-              [
-                9.352355003356934,
-                3.6338376998901367,
-                0.5937033891677856
-              ],
-              [
-                11.183820724487305,
-                5.062485694885254,
-                0.6650508642196655
-              ],
-              [
-                12.993003845214844,
-                6.691205024719238,
-                0.7333671450614929
-              ],
-              [
-                14.862959861755371,
-                8.336308479309082,
-                0.7441562414169312
-              ]
-            ]
-          },
-          "DriveMA-2B": {
-            "0": [
-              [
-                1.855,
-                0.05,
-                0.02694765308926424
-              ],
-              [
-                3.71,
-                0.1,
-                0.02694765308926424
-              ],
-              [
-                5.615,
-                0.45999999999999996,
-                0.18677380454271875
-              ],
-              [
-                7.52,
-                0.82,
-                0.18677380454271883
-              ],
-              [
-                9.36,
-                1.7200000000000002,
-                0.45491420659237963
-              ],
-              [
-                11.2,
-                2.62,
-                0.4549142065923795
-              ],
-              [
-                12.92,
-                4.109999999999999,
-                0.7138693127401933
-              ],
-              [
-                14.64,
-                5.6,
-                0.7138693127401936
-              ]
-            ],
-            "1": [
-              [
-                1.84,
-                -0.1,
-                -0.054294411908306
-              ],
-              [
-                3.68,
-                -0.2,
-                -0.054294411908306
-              ],
-              [
-                5.485,
-                -0.41000000000000003,
-                -0.11582277838938336
-              ],
-              [
-                7.29,
-                -0.62,
-                -0.11582277838938336
-              ],
-              [
-                8.945,
-                -0.9550000000000001,
-                -0.19971843604364325
-              ],
-              [
-                10.6,
-                -1.29,
-                -0.19971843604364328
-              ],
-              [
-                12.195,
-                -1.695,
-                -0.24866324483141503
-              ],
-              [
-                13.79,
-                -2.1,
-                -0.24866324483141528
-              ]
-            ]
-          },
-          "ReCogDrive": {
-            "0": [
-              [
-                1.6127372980117798,
-                0.1335601806640625,
-                0.11548566818237305
-              ],
-              [
-                3.627227306365967,
-                0.5493316650390625,
-                0.2367647886276245
-              ],
-              [
-                5.73427152633667,
-                0.8980350494384766,
-                0.3125971555709839
-              ],
-              [
-                7.918139934539795,
-                1.4554862976074219,
-                0.3014014959335327
-              ],
-              [
-                10.543388366699219,
-                1.8221206665039062,
-                0.2172849178314209
-              ],
-              [
-                13.157126426696777,
-                2.1203155517578125,
-                0.08030521869659424
-              ],
-              [
-                16.352224349975586,
-                1.742330551147461,
-                -0.09591877460479736
-              ],
-              [
-                19.404829025268555,
-                0.8579597473144531,
-                -0.26385629177093506
-              ]
-            ],
-            "1": [
-              [
-                1.6103047132492065,
-                0.09858894348144531,
-                0.10772550106048584
-              ],
-              [
-                3.605043888092041,
-                0.43457984924316406,
-                0.20925545692443848
-              ],
-              [
-                5.73896598815918,
-                0.6841812133789062,
-                0.249975323677063
-              ],
-              [
-                8.050004959106445,
-                1.0582027435302734,
-                0.19225966930389404
-              ],
-              [
-                10.66425895690918,
-                1.270975112915039,
-                0.07996392250061035
-              ],
-              [
-                13.446483612060547,
-                1.1563873291015625,
-                -0.0907515287399292
-              ],
-              [
-                16.84885597229004,
-                0.18292808532714844,
-                -0.2766486406326294
-              ],
-              [
-                19.947391510009766,
-                -1.1616687774658203,
-                -0.4151756763458252
-              ]
-            ]
-          },
-          "OneVL": {
-            "0": [
-              [
-                1.85,
-                0.08,
-                0.16
-              ],
-              [
-                3.83,
-                0.56,
-                0.34
-              ],
-              [
-                5.81,
-                1.49,
-                0.53
-              ],
-              [
-                7.69,
-                2.87,
-                0.71
-              ],
-              [
-                9.38,
-                4.63,
-                0.87
-              ],
-              [
-                10.86,
-                6.69,
-                0.99
-              ],
-              [
-                12.13,
-                8.94,
-                1.08
-              ],
-              [
-                13.24,
-                11.3,
-                1.13
-              ]
-            ],
-            "1": [
-              [
-                1.85,
-                0.08,
-                0.16
-              ],
-              [
-                3.83,
-                0.56,
-                0.34
-              ],
-              [
-                5.81,
-                1.49,
-                0.53
-              ],
-              [
-                7.69,
-                2.87,
-                0.71
-              ],
-              [
-                9.38,
-                4.63,
-                0.87
-              ],
-              [
-                10.86,
-                6.69,
-                0.99
-              ],
-              [
-                12.13,
-                8.95,
-                1.08
-              ],
-              [
-                13.24,
-                11.31,
-                1.13
-              ]
-            ]
-          }
-        },
-        "reference": [
-          [
-            [
-              1.812043,
-              0.114509,
-              0.128877
-            ],
-            [
-              3.49168,
-              0.447816,
-              0.265358
-            ],
-            [
-              5.029171,
-              0.984592,
-              0.40854
-            ],
-            [
-              6.414776,
-              1.709509,
-              0.557149
-            ],
-            [
-              7.638755,
-              2.607237,
-              0.709612
-            ],
-            [
-              8.691368,
-              3.662448,
-              0.864163
-            ],
-            [
-              9.562876,
-              4.859812,
-              1.018984
-            ],
-            [
-              10.243539,
-              6.184001,
-              1.17234
-            ]
-          ],
-          [
-            [
-              1.892286,
-              0.304558,
-              0.300649
-            ],
-            [
-              3.783429,
-              1.138923,
-              0.514905
-            ],
-            [
-              5.619859,
-              2.384128,
-              0.667206
-            ],
-            [
-              7.348004,
-              3.921207,
-              0.781523
-            ],
-            [
-              8.914295,
-              5.631193,
-              0.874877
-            ],
-            [
-              10.265159,
-              7.395122,
-              0.960291
-            ],
-            [
-              11.347026,
-              9.094026,
-              1.051674
-            ],
-            [
-              12.106326,
-              10.608939,
-              1.173667
-            ]
-          ]
-        ]
-      },
-      "note": "The video displays approved reference witnesses over shared recorded footage. Use the separate trajectory inspector to compare five models’ saved predictions. The 12-second presentation includes reading holds; source cameras are sampled at 2 Hz. No closed-loop execution or new semantic scoring is shown.",
-      "archive": "l2d_pcu_videos_20261002.zip",
-      "member": "l2d_pcu_videos_20261002/videos/paired/junction_560d4e533d4da43b.mp4",
-      "evidence_role": "benchmark-target",
-      "evidence_label": "Benchmark Target",
-      "display_mode": "Reference trajectory",
-      "trajectory_source": "l2d_pcu_videos_20261002/cases/junction_560d4e533d4da43b.json",
-      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
-      "video": "assets/cases/navsim-junction-560d4e533d4da43b.mp4",
-      "poster": "assets/cases/navsim-junction-560d4e533d4da43b.webp",
-      "duration_s": 12.0,
-      "width": 1920,
-      "height": 1080,
-      "source_sha256": "884cc842c4de87105f607a2497388929b97192aaf4b5abfde9ea2774609c5553",
-      "video_sha256": "489537a07fe54e6f1504c0994df848fd622db7683c2861bcb96503ddf86928eb",
-      "bytes": 586708,
       "presentation_version": 2,
       "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
     },
