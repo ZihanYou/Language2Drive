@@ -2,7 +2,7 @@
 
 ## GitHub Pages
 
-The site is a dependency-free static page in `docs/`. It includes 72 case videos across five backends, a 120-second English-captioned film, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
+The site is a dependency-free static page in `docs/`. It includes 63 case videos across five backends, a 120-second English-captioned film, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
 
 ```sh
 python scripts/serve_preview.py --port 18765

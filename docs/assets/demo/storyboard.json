@@ -152,20 +152,20 @@
       "start_s": 96,
       "duration_s": 4,
       "kind": "case",
-      "case_id": "wod-cand-0002",
+      "case_id": "wod-cand-0040",
       "evidence_role": "benchmark-target",
       "source_offset_s": 0,
-      "source_sha256": "f79afb4f4d2caf814675b6f604155c09826241a5d3ec182312f8944d47b37240",
-      "caption": "WOD-E2E benchmark targets illustrate two requested behaviors in the same observed scene."
+      "source_sha256": "4c8bf32f59846ec90ef2a8a3ea4cbc6f18d8b18f4cae834c4812fb3c4661f89f",
+      "caption": "WOD-E2E benchmark targets pair stopping with continued forward progress in the same observed scene."
     },
     {
       "start_s": 100,
       "duration_s": 4,
       "kind": "case",
-      "case_id": "wod-cand-0103",
+      "case_id": "wod-cand-0038",
       "evidence_role": "benchmark-target",
       "source_offset_s": 0,
-      "source_sha256": "ff548eb729a29d40312abfdc38aa91248a62bc6238d00ec9f64b594d02d9e19f",
+      "source_sha256": "6100d48619f1fb5efdd2c48b41febd531c51a165584acea76aad240403b66e2e",
       "caption": "Paired speed requirements define the requested outcomes over shared real-world camera context."
     },
     {

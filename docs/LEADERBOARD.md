@@ -2,6 +2,10 @@
 
 The project page currently displays manuscript baselines. Submit community evaluations through a repository issue using the benchmark-result template; maintainers review the artifacts before adding a row. There is no automatic upload from the SDK.
 
+## Training data policy
+
+**Models may use any training data except Language2Drive test examples.** Training-free checkpoints and models trained or fine-tuned on non-test data are welcome. The published manuscript baselines use the training-free protocol; community submissions specify their own training regime in the submission form.
+
 The [submission builder](submit.html) prepares a JSON/Markdown packet locally in your browser. It checks required fields, numeric native metrics, HTTPS evidence links, and `completed + failed + missing = scheduled`. Download the packet and open the prefilled GitHub issue to review and submit it. Long packets are attached to the issue rather than truncated into a URL. Saved JSON packets can be imported to continue editing. Editing a field invalidates the prepared draft until you validate again.
 
 Include model name, immutable checkpoint/adapter revisions, track and release, scorer profile, split, wording set, model/evaluator seeds, camera rig, rectification, frame conversion, controller and scheduled inventory. Attach or link native score JSON, consolidated summary, coverage and failure reports, prediction/trace hashes and reproduction commands. Do not attach credentials or licensed raw data.

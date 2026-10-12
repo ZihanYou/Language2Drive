@@ -256,8 +256,8 @@ def main():
     nav='navsim-lane-left-c2e92aa83a599e79'
     clip(nav,8,'Benchmark targets: NAVSIM reference trajectories define the two requested outcomes.',tag='Reference trajectories')
     card('predictions',4,'Compare instruction-conditioned model predictions on a shared coordinate scale.',comparison=cases[nav]['comparison'],case_id=nav,chapter='The evidence / NAVSIM')
-    clip('wod-cand-0002',4,'WOD-E2E benchmark targets illustrate two requested behaviors in the same observed scene.',tag='Benchmark targets')
-    clip('wod-cand-0103',4,'Paired speed requirements define the requested outcomes over shared real-world camera context.',tag='Benchmark targets')
+    clip('wod-cand-0040',4,'WOD-E2E benchmark targets pair stopping with continued forward progress in the same observed scene.',tag='Benchmark targets')
+    clip('wod-cand-0038',4,'Paired speed requirements define the requested outcomes over shared real-world camera context.',tag='Benchmark targets')
     card('adapter',8,'Adapt once, configure the resources, and run the native evaluations across three runtime groups.',chapter='Evaluate and contribute')
     card('closing',8,'Evaluate your model. Share native scores, execution coverage and reproducible evidence.',chapter='Join the benchmark')
     assert clock==120

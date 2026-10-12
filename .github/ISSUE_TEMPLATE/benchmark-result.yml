@@ -2,6 +2,10 @@ name: Benchmark result
 description: Submit a model result with native protocol and evidence
 title: '[Result] model / track / profile'
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Training data policy:** Models may use any training data except Language2Drive test examples. Training-free checkpoints and models trained or fine-tuned on non-test data are welcome. Include your training regime in the model description.
   - type: textarea
     id: identity
     attributes:

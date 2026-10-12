@@ -31,7 +31,8 @@ for css in DOCS.glob('*.css'):
     for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css.read_text()):
         assert (DOCS / ref).is_file(), f'Missing CSS asset: {ref}'
 cases=json.loads((DOCS/'data/cases.json').read_text())['cases']
-assert len(cases)==len({c['id'] for c in cases})==72
+assert len(cases)==len({c['id'] for c in cases})==63
+assert {c['id'] for c in cases if c['track']=='wod'}=={'wod-cand-0040','wod-cand-0038'}
 assert not any(c['track']=='navsim' and c['family']=='branch_choice' for c in cases)
 assert {c['track'] for c in cases}=={'carla','realsim','nuscenes','navsim','wod'}
 for c in cases:
@@ -119,4 +120,4 @@ assert [a['id'] for a in paper['affiliations']]==list(range(1,20))
 assert all(i in range(1,20) for a in paper['authors'] for i in a['affiliations'])
 for path in [DOCS/'index.html', ROOT/'README.md', ROOT/'huggingface/README.md']:
     assert 'Project Lead' in path.read_text() and 'ByteDance' not in path.read_text()
-print('PASS: all HTML/CSS references; 72 evidence clips; 28 paired CoT transcripts; film provenance; 27 manuscript rows; all model papers')
+print('PASS: all HTML/CSS references; 63 evidence clips; 28 paired CoT transcripts; film provenance; 27 manuscript rows; all model papers')

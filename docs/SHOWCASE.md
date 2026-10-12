@@ -1,7 +1,7 @@
 # Project film and interactive evidence
 
 The project preview combines the author's framework artwork, a 120-second film,
-and 72 curated viewing copies from five author-provided evidence archives.
+and 63 curated viewing copies from five author-provided evidence archives.
 The local preview has no upload service. The site and all viewing assets are ready
 for the manual GitHub Pages workflow; see [the deployment guide](RELEASE.md).
 
@@ -36,16 +36,16 @@ starting one player pauses the other.
 | RealSim | 14 | Eight Alpamayo 1.5 examples and six privileged oracle examples, covering six task families |
 | nuScenes | 20 | Four PCUs across scenes/locations, four models plus reference witnesses per PCU |
 | NAVSIM | 7 | Selected task families; reference videos plus saved predictions from five models in a separate inspector |
-| WOD-E2E | 11 | Paired benchmark targets from the October 12 target archive; five task families and ten scene clusters |
+| WOD-E2E | 2 | One Stop / Go and one Speed Choice benchmark target, from the October 12 target archive |
 
-The inventory contains 50 backend/PCU combinations. Selection emphasizes task,
+The inventory contains 41 backend/PCU combinations. Selection emphasizes task,
 scene and model coverage; it is not an estimate of cohort performance. CARLA
 debug runs are excluded. Formal CARLA cameras were re-rendered from saved poses;
 the native model inputs were not retained. No inference was rerun for this page.
 RealSim oracle runs illustrate feasibility and are labeled separately from models.
 Open-loop recorded camera footage remains distinct from predicted trajectories.
-WOD videos display paired benchmark targets: six instruction-defined schematics
-and five frozen P0 contract-defined targets. The target type and source hashes
+WOD videos display two paired frozen P0 contract-defined targets: Stop / Go
+and Speed Choice. The target type and source hashes
 are retained in the downloadable case metadata.
 
 The website shows allowlisted display metadata, selected viewing copies and
@@ -78,8 +78,7 @@ XY scale across both arms. Long instructions are measured before rendering.
 
 Every clip carries one of two explicit roles: **Model result** (executed model
 trajectories or saved forecasts) and **Benchmark target** (reference trajectories
-or reference-controller examples, including WOD instruction schematics and
-contract-defined targets). Blue/orange identify instruction arms;
+or reference-controller examples, including WOD contract-defined targets). Blue/orange identify instruction arms;
 dashed gray denotes targets alongside model paths. WOD target videos are copied
 byte-for-byte from `WOD-E2E_Benchmark_Targets_2026-10-12.zip`.
 Source and output hashes stay in the case manifest; the raw

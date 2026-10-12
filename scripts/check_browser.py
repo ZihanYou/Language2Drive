@@ -69,7 +69,7 @@ with sync_playwright() as p:
   # Role labels must identify the displayed video, independent of the model inspector.
   assert page.locator('#case-role').inner_text()=='Benchmark target'
   page.locator('.case-backends [data-case-track="wod"]').click()
-  assert page.locator('#case-count').inner_text().startswith('11 clips')
+  assert page.locator('#case-count').inner_text().startswith('2 clips')
   assert page.locator('#case-role').inner_text()=='Benchmark target'
   assert page.locator('#case-model-label').inner_text()=='Benchmark target'
   assert page.locator('#trajectory-inspector').is_hidden()
@@ -81,7 +81,7 @@ with sync_playwright() as p:
   page.locator('#case-kind').select_option('model-result')
   assert page.locator('#case-empty').is_visible()
   page.locator('#case-kind').select_option('benchmark-target')
-  assert page.locator('#case-count').inner_text().startswith('11 clips')
+  assert page.locator('#case-count').inner_text().startswith('2 clips')
   assert 'Project Lead' in page.locator('.author-notes').inner_text()
   assert 'ByteDance' not in page.locator('.paper-affiliations').inner_text()
   page.locator('.case-backends [data-case-track="navsim"]').click()
@@ -143,6 +143,8 @@ with sync_playwright() as p:
   print('PASS',width,'layout, assets, results, gallery, video playback, trajectories, framework, navigation')
   page.goto(f'http://127.0.0.1:{server.server_port}/submit.html')
   assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
+  assert 'Models may use any training data except Language2Drive test examples.' in page.locator('.training-policy').inner_text()
+  assert 'non-test data' in page.locator('[name="training_regime"] option[value="finetuned"]').inner_text()
   fields={'model':'Browser QA model','checkpoint':'test/model','checkpoint_revision':'abc123','adapter_revision':'def456','profile':'corrected-v1','release_split':'qa/dev','seeds':'1','wordings':'canonical','runtime':'QA only; no benchmark result','metrics':'{"CFPS": 1.25}','scheduled':'10','completed':'8','failed':'1','missing':'0','evidence_url':'https://example.org/evidence','commands':'language2drive evaluate --help'}
   for key,value in fields.items():page.locator(f'[name="{key}"]').fill(value)
   page.locator('button[type="submit"]').click()

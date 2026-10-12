@@ -106,12 +106,15 @@ def collect(root):
         prefix = z.namelist()[0].split('/')[0]
         for case in read_json(z, prefix + '/manifest.json'):
             key = case['candidate_id']
+            # One daytime example for each scored P0 task family.
+            if key not in {'CAND-0040', 'CAND-0038'}:
+                continue
             base = f'{prefix}/cases/{key}'
             data = read_json(z, base + '/metadata.json')
             schematic = case['target_kind'] == 'instruction_defined_schematic'
             add(archive, f"{prefix}/cases/{case['video']}",
                 id='wod-' + slug(key), pcu=key, track='wod',
-                title=case['family'].replace('_', ' ').title(), family=case['family'],
+                title={'STOP_GO': 'Stop / Go', 'SPEED_CHOICE': 'Speed Choice'}[case['family']], family=case['family'],
                 scope=None, scene=data['scene_cluster'], model='Benchmark target', kind='target',
                 target_kind=case['target_kind'], source_video_sha256=case['sha256'],
                 trajectory_source=base + '/target_specification.json',
