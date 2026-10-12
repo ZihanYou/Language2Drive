@@ -36,7 +36,7 @@ starting one player pauses the other.
 | RealSim | 14 | Eight Alpamayo 1.5 examples and six privileged oracle examples, covering six task families |
 | nuScenes | 20 | Four PCUs across scenes/locations, four models plus reference witnesses per PCU |
 | NAVSIM | 7 | Selected task families; reference videos plus saved predictions from five models in a separate inspector |
-| WOD-E2E | 11 | All supplied prerelease candidates, five task families and ten scene clusters; four-model forecast comparison |
+| WOD-E2E | 11 | Paired benchmark targets from the October 12 target archive; five task families and ten scene clusters |
 
 The inventory contains 50 backend/PCU combinations. Selection emphasizes task,
 scene and model coverage; it is not an estimate of cohort performance. CARLA
@@ -44,8 +44,9 @@ debug runs are excluded. Formal CARLA cameras were re-rendered from saved poses;
 the native model inputs were not retained. No inference was rerun for this page.
 RealSim oracle runs illustrate feasibility and are labeled separately from models.
 Open-loop recorded camera footage remains distinct from predicted trajectories.
-WOD candidates have unannotated contracts and remain separate from scored P0
-leaderboard claims. These distinctions are retained in the downloadable case metadata.
+WOD videos display paired benchmark targets: six instruction-defined schematics
+and five frozen P0 contract-defined targets. The target type and source hashes
+are retained in the downloadable case metadata.
 
 The website shows allowlisted display metadata, selected viewing copies and
 source/viewing-copy SHA-256 hashes. Hidden raw contracts, sensor bundles, credentials
@@ -77,12 +78,14 @@ XY scale across both arms. Long instructions are measured before rendering.
 
 Every clip carries one of two explicit roles: **Model result** (executed model
 trajectories or saved forecasts) and **Benchmark target** (reference trajectories
-or reference-controller examples). Blue/orange identify instruction arms;
-dashed gray denotes targets alongside model paths. WOD’s four model colors have
-an explicit legend. Source and output hashes stay in the case manifest; the raw
+or reference-controller examples, including WOD instruction schematics and
+contract-defined targets). Blue/orange identify instruction arms;
+dashed gray denotes targets alongside model paths. WOD target videos are copied
+byte-for-byte from `WOD-E2E_Benchmark_Targets_2026-10-12.zip`.
+Source and output hashes stay in the case manifest; the raw
 archives remain unchanged. Change `PRESENTATION_VERSION` to rebuild all outputs.
-Sources are cached in the work directory. Remove a specific generated MP4/poster
-and its cached source before deliberately replacing that source clip.
+Sources are cached in the work directory with archive/member identities. Changing
+the source archive or member refreshes the clip and poster automatically.
 
 All 20 CARLA and eight RealSim Alpamayo 1.5 cases include paired CoT panels.
 `reasoning.js` displays the latest recorded output for each arm at the video's

@@ -2,7 +2,7 @@
 
 ## GitHub Pages
 
-The site is a dependency-free static page in `docs/`. It includes 73 case videos across five backends, a 120-second English-captioned film, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
+The site is a dependency-free static page in `docs/`. It includes 72 case videos across five backends, a 120-second English-captioned film, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
 
 ```sh
 python scripts/serve_preview.py --port 18765
@@ -45,7 +45,11 @@ Once successfully published, `pip install language2drive` and optional extras wo
 
 ## Paper and data metadata
 
-The homepage and README use the 22 authors and 20 affiliations from the supplied `Language2Drive_arxiv.pdf`, recorded in `docs/data/paper.json`. The current PDF and paper figures are copied into `docs/assets/`. The archival arXiv identifier remains pending. Source-table hashes are in `docs/data/provenance.json`; framework asset provenance is in `docs/assets/framework/provenance.json`.
+The homepage, README and dataset card use the 22 paper authors and 19 displayed affiliations, recorded in `docs/data/paper.json`, with the requested Project Lead credit and affiliation selection. The current PDF and paper figures are copied into `docs/assets/`. The archival arXiv identifier remains pending. Source-table hashes are in `docs/data/provenance.json`; framework asset provenance is in `docs/assets/framework/provenance.json`.
+
+## Hugging Face dataset card
+
+The published [dataset homepage](https://huggingface.co/datasets/Mike087/Language2Drive) is maintained from [huggingface/README.md](../huggingface/README.md). Its authors, cohort descriptions and training-free baseline tables follow the GitHub README. Keep download links aligned with the resource directories actually present on Hugging Face, including the historical `langauge2drive.RealSim` prefix. Publish this file as the dataset repository's root `README.md`; retain its component-specific license metadata.
 
 Replace the Dataset coming-soon state when the intended public release and its immutable manifests are actually available. Update access rules, resource bindings, fixture checks and reproduction commands together. Licenses of third-party code and upstream datasets remain separate.
 

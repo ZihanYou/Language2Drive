@@ -221,6 +221,8 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--work-dir',type=Path,default=Path('/tmp/l2d-film'));p.add_argument('--force',action='store_true');p.add_argument('--refresh-cases',action='store_true');args=p.parse_args();work=args.work_dir;work.mkdir(parents=True,exist_ok=True)
     dest=DOCS/'assets/demo';dest.mkdir(parents=True,exist_ok=True)
     cases={c['id']:c for c in json.loads((DOCS/'data/cases.json').read_text())['cases']}
+    previous = json.loads((dest/'storyboard.json').read_text()) if (dest/'storyboard.json').exists() else {'segments': []}
+    previous_cases = {s['case_id']: s for s in previous['segments'] if s['kind']=='case'}
     segments=[];captions=[];story=[];clock=0
     def card(kind,duration,subtitle,**kwargs):
         nonlocal clock
@@ -236,7 +238,9 @@ def main():
     def clip(key,duration,subtitle,start=0,tag=None):
         nonlocal clock
         path=work/f'{len(segments):02}-{key}.mp4';case=cases[key]
-        if args.force or args.refresh_cases or not path.exists():encode_case(path,case,duration,subtitle,work,start,tag)
+        old = previous_cases.get(key, {})
+        changed = old.get('source_sha256') != case['video_sha256'] or old.get('caption') != subtitle or old.get('source_offset_s') != start or old.get('duration_s') != duration
+        if args.force or args.refresh_cases or changed or not path.exists():encode_case(path,case,duration,subtitle,work,start,tag)
         segments.append(path);captions.append((clock,clock+duration,subtitle));story.append(dict(start_s=clock,duration_s=duration,kind='case',case_id=key,evidence_role=case['evidence_role'],source_offset_s=start,source_sha256=case['video_sha256'],caption=subtitle));clock+=duration;print('READY',path.name,clock,flush=True)
     card('opening',12,'Language2Drive asks whether driving models follow language across two feasible alternatives.',chapter='The question')
     card('shared',8,'A Paired Counterfactual Unit keeps the scene, seed and initial state fixed.',chapter='The paired mechanism')
@@ -252,8 +256,8 @@ def main():
     nav='navsim-lane-left-c2e92aa83a599e79'
     clip(nav,8,'Benchmark targets: NAVSIM reference trajectories define the two requested outcomes.',tag='Reference trajectories')
     card('predictions',4,'Compare instruction-conditioned model predictions on a shared coordinate scale.',comparison=cases[nav]['comparison'],case_id=nav,chapter='The evidence / NAVSIM')
-    clip('wod-cand-0002',4,'WOD-E2E brings four driving models together for an instruction-conditioned trajectory comparison.',tag='Open-loop comparison')
-    clip('wod-cand-0103',4,'Explore pedestrians, obstacles and diverse traffic situations across the case library.',tag='Open-loop comparison')
+    clip('wod-cand-0002',4,'WOD-E2E benchmark targets illustrate two requested behaviors in the same observed scene.',tag='Benchmark targets')
+    clip('wod-cand-0103',4,'Paired speed requirements define the requested outcomes over shared real-world camera context.',tag='Benchmark targets')
     card('adapter',8,'Adapt once, configure the resources, and run the native evaluations across three runtime groups.',chapter='Evaluate and contribute')
     card('closing',8,'Evaluate your model. Share native scores, execution coverage and reproducible evidence.',chapter='Join the benchmark')
     assert clock==120

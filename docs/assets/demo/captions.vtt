@@ -46,10 +46,10 @@ Benchmark targets: NAVSIM reference trajectories define the two requested outcom
 Compare instruction-conditioned model predictions on a shared coordinate scale.
 
 00:01:36.000 --> 00:01:40.000
-WOD-E2E brings four driving models together for an instruction-conditioned trajectory comparison.
+WOD-E2E benchmark targets illustrate two requested behaviors in the same observed scene.
 
 00:01:40.000 --> 00:01:44.000
-Explore pedestrians, obstacles and diverse traffic situations across the case library.
+Paired speed requirements define the requested outcomes over shared real-world camera context.
 
 00:01:44.000 --> 00:01:52.000
 Adapt once, configure the resources, and run the native evaluations across three runtime groups.

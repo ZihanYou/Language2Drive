@@ -68,6 +68,23 @@ with sync_playwright() as p:
    page.add_style_tag(content='.header{visibility:visible}')
   # Role labels must identify the displayed video, independent of the model inspector.
   assert page.locator('#case-role').inner_text()=='Benchmark target'
+  page.locator('.case-backends [data-case-track="wod"]').click()
+  assert page.locator('#case-count').inner_text().startswith('11 clips')
+  assert page.locator('#case-role').inner_text()=='Benchmark target'
+  assert page.locator('#case-model-label').inner_text()=='Benchmark target'
+  assert page.locator('#trajectory-inspector').is_hidden()
+  assert page.locator('#case-paper-links .model-paper').count()==0
+  page.locator('#case-video').evaluate('(v)=>{v.muted=true;return v.play()}')
+  page.wait_for_function('document.querySelector("#case-video").currentTime > 0.1')
+  assert page.locator('#case-video').evaluate('(v)=>Math.abs(v.duration-4)<.1')
+  page.locator('#case-video').evaluate('(v)=>v.pause()')
+  page.locator('#case-kind').select_option('model-result')
+  assert page.locator('#case-empty').is_visible()
+  page.locator('#case-kind').select_option('benchmark-target')
+  assert page.locator('#case-count').inner_text().startswith('11 clips')
+  assert 'Project Lead' in page.locator('.author-notes').inner_text()
+  assert 'ByteDance' not in page.locator('.paper-affiliations').inner_text()
+  page.locator('.case-backends [data-case-track="navsim"]').click()
   page.locator('#case-kind').select_option('benchmark-target')
   page.locator('#case-search').fill('no-such-case-123')
   # A backend entry resets stale constraints, including those from reference-only NAVSIM.

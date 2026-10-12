@@ -8,16 +8,16 @@
 
 Zihan You<sup>1,2,*,†</sup>, Zehua Fan<sup>3,*</sup>, Wenqi Lyu<sup>4,*</sup>, Aoqi Wang<sup>5,*</sup>,<br>
 Ni Wang<sup>6</sup>, Yifei Yang<sup>7</sup>, Linge Zhao<sup>8</sup>, Huan Li<sup>9</sup>, Sining Ang<sup>10</sup>, Yuguang Yang<sup>1</sup>,<br>
-Jueyu Chen<sup>10,11</sup>, Xiangyu Li<sup>12</sup>, Qianshan Wei<sup>13,14</sup>, Jieyuan Pei<sup>1,15,16</sup>, Yuxin Wang<sup>17</sup>, Zhiwen Chen<sup>16</sup>,<br>
-Jiaqi Li<sup>18</sup>, Wenxuan Song<sup>16</sup>, Yanyuan Qiao<sup>19</sup>, Benjin Zhu<sup>20</sup>, Haoang Li<sup>16</sup>, Yan Wang<sup>1,‡</sup>
+Jueyu Chen<sup>10,11</sup>, Xiangyu Li<sup>12</sup>, Qianshan Wei<sup>13</sup>, Jieyuan Pei<sup>1,14,15</sup>, Yuxin Wang<sup>16</sup>, Zhiwen Chen<sup>15</sup>,<br>
+Jiaqi Li<sup>17</sup>, Wenxuan Song<sup>15</sup>, Yanyuan Qiao<sup>18</sup>, Benjin Zhu<sup>19</sup>, Haoang Li<sup>15</sup>, Yan Wang<sup>1,‡</sup>
 
 **🏛️ Affiliations**
 
 <sup>1</sup> THU · <sup>2</sup> SEU · <sup>3</sup> SJTU · <sup>4</sup> Adelaide · <sup>5</sup> BISTU · <sup>6</sup> Amazon · <sup>7</sup> BJTU<br>
-<sup>8</sup> WHU · <sup>9</sup> HUST · <sup>10</sup> USTC · <sup>11</sup> NIO · <sup>12</sup> UT Austin · <sup>13</sup> ByteDance · <sup>14</sup> CAS<br>
-<sup>15</sup> HiThink · <sup>16</sup> HKUST(GZ) · <sup>17</sup> AMD · <sup>18</sup> HKU · <sup>19</sup> EPFL · <sup>20</sup> Li Auto
+<sup>8</sup> WHU · <sup>9</sup> HUST · <sup>10</sup> USTC · <sup>11</sup> NIO · <sup>12</sup> UT Austin · <sup>13</sup> CAS<br>
+<sup>14</sup> HiThink · <sup>15</sup> HKUST(GZ) · <sup>16</sup> AMD · <sup>17</sup> HKU · <sup>18</sup> EPFL · <sup>19</sup> Li Auto
 
-<sub>* Core contributors &nbsp; † Project leader &nbsp; ‡ Corresponding author</sub>
+<sub>* Core contributors &nbsp; † Project Lead &nbsp; ‡ Corresponding author</sub>
 
 **Same scene. Same seed. Different instructions.**<br>
 Measure whether language changes what a driving VLA actually does.
@@ -176,7 +176,7 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 🎬 **[Watch the 2-minute project film](docs/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](docs/index.html#examples)** · **[Prepare a model submission](docs/submit.html)**
 
-The local project preview includes **72 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
+The local project preview includes **72 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. WOD-E2E includes 11 paired **benchmark-target** videos. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
 
 <details open>
 <summary><b>Closed-loop counterfactual execution</b></summary>

@@ -39,7 +39,7 @@ for c in cases:
         assert (DOCS/c[key]).is_file(), f'Missing media: {c[key]}'
         assert (DOCS/c[key]).resolve().is_relative_to(DOCS.resolve())
     assert (c['width'],c['height'])==(1920,1080) and c['presentation_version']==2
-    assert c['evidence_role']==('benchmark-target' if c['kind'] in ('reference','oracle') else 'model-result')
+    assert c['evidence_role']==('benchmark-target' if c['kind'] in ('reference','oracle','target') else 'model-result')
     assert c['trajectory_source'] and c['trajectory_panel']
     assert len(c['instructions'])==2 and all(c['instructions'])
     assert re.fullmatch('[a-f0-9]{64}',c['source_sha256'])
@@ -61,7 +61,11 @@ for c in cases:
                 assert abs(entry['video_time_s']-expected)<1e-8
             assert all(a['video_time_s']<=b['video_time_s'] for a,b in zip(arm['entries'],arm['entries'][1:]))
     if c['track']=='carla':assert c['visualization']=='Trajectory re-render' and 'NOT the original model inputs' in c['note']
-    if c['track']=='wod':assert c['kind']=='candidate' and 'not_annotated' in c['note']
+    if c['track']=='wod':
+        assert c['kind']=='target' and c['evidence_role']=='benchmark-target'
+        assert c['archive']=='WOD-E2E_Benchmark_Targets_2026-10-12.zip'
+        assert not c.get('models') and not c.get('comparison')
+        assert c['source_sha256']==c['source_video_sha256']==c['video_sha256']
     if c['track']=='navsim':
         assert c['kind']=='reference' and len(c['comparison']['models'])==5
         assert c['comparison']['timestamps_s']==[.5,1,1.5,2,2.5,3,3.5,4]
@@ -81,6 +85,7 @@ by_id={c['id']:c for c in cases}
 for segment in story['segments']:
     if segment['kind']=='case':
         assert by_id[segment['case_id']]['video_sha256']==segment['source_sha256']
+        assert by_id[segment['case_id']]['evidence_role']==segment['evidence_role']
 results = json.loads((DOCS / 'data/results.json').read_text())
 for track, count in {'carla': 6, 'realsim': 8, 'nuscenes': 4, 'navsim': 5, 'wod': 4}.items():
     table = results['tracks'][track]
@@ -109,4 +114,9 @@ for case in cases:
         names.append(case['model'])
     assert all(name in references for name in names), f'Missing case paper: {case["id"]}'
 assert sum(bool(c.get('reasoning')) for c in cases)==28
+paper=json.loads((DOCS/'data/paper.json').read_text())
+assert [a['id'] for a in paper['affiliations']]==list(range(1,20))
+assert all(i in range(1,20) for a in paper['authors'] for i in a['affiliations'])
+for path in [DOCS/'index.html', ROOT/'README.md', ROOT/'huggingface/README.md']:
+    assert 'Project Lead' in path.read_text() and 'ByteDance' not in path.read_text()
 print('PASS: all HTML/CSS references; 72 evidence clips; 28 paired CoT transcripts; film provenance; 27 manuscript rows; all model papers')

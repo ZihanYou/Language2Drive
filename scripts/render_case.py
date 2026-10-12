@@ -34,12 +34,13 @@ def wrap(s,size,width):
     return '\n'.join(lines+[line])
 
 def role(case):
-    return 'benchmark-target' if case['kind'] in ('reference','oracle') else 'model-result'
+    return 'benchmark-target' if case['kind'] in ('reference','oracle','target') else 'model-result'
 
 def role_name(case):
     return 'BENCHMARK TARGET' if role(case)=='benchmark-target' else 'MODEL RESULT'
 
 def mode(case):
+    if case['kind']=='target':return case['trajectory_panel']
     if case['kind']=='oracle':return 'Reference-controller execution'
     if case['kind']=='reference':return 'Reference trajectory'
     if case['track']=='carla':return 'Closed-loop execution · rendered replay'

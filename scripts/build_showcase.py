@@ -101,19 +101,23 @@ def collect(root):
                 model='Reference witness', kind='reference', instructions=data['instructions'], comparison=comparison,
                 note='The video displays approved reference witnesses over shared recorded footage. Use the separate trajectory inspector to compare five models’ saved predictions. The 12-second presentation includes reading holds; source cameras are sampled at 2 Hz. No closed-loop execution or new semantic scoring is shown.')
 
-    archive = root / 'WOD-E2E_PCU_Video_Cases_2026-10-02.zip'
+    archive = root / 'WOD-E2E_Benchmark_Targets_2026-10-12.zip'
     with zipfile.ZipFile(archive) as z:
         prefix = z.namelist()[0].split('/')[0]
-        for case in read_json(z, prefix + '/cases/manifest.json'):
+        for case in read_json(z, prefix + '/manifest.json'):
             key = case['candidate_id']
-            data = read_json(z, f'{prefix}/cases/{key}/candidate_record.json')
+            base = f'{prefix}/cases/{key}'
+            data = read_json(z, base + '/metadata.json')
+            schematic = case['target_kind'] == 'instruction_defined_schematic'
             add(archive, f"{prefix}/cases/{case['video']}",
                 id='wod-' + slug(key), pcu=key, track='wod',
-                title=case['task_family'].replace('_', ' ').title(), family=case['task_family'],
-                scope=None, scene=case['scene_cluster'], model='Four-model comparison',
-                models=case['available_models_by_arm']['a'], kind='candidate',
-                instructions=[data['instruction_a_draft'], data['instruction_b_draft']],
-                note='Unreviewed prerelease candidate (contract_status=not_annotated), outside the scored P0 leaderboard cohort. Four recorded input-history frames are held for 1 second each. Colored paths are model predictions; gray candidates are not approved instruction targets. No semantic pass/fail claim is made.')
+                title=case['family'].replace('_', ' ').title(), family=case['family'],
+                scope=None, scene=data['scene_cluster'], model='Benchmark target', kind='target',
+                target_kind=case['target_kind'], source_video_sha256=case['sha256'],
+                trajectory_source=base + '/target_specification.json',
+                trajectory_panel='Instruction-defined behavior schematic' if schematic else 'Frozen P0 target regions and speed requirements',
+                instructions=[data['instructions'][arm] for arm in ['a', 'b']],
+                note='Benchmark target: ' + ('instruction-defined behavior schematic.' if schematic else 'contract-defined target regions and speed requirements.') + ' Blue/orange identify the requested A/B behaviors over shared FRONT camera context. Four observed history frames are held for one second each.')
     return cases
 
 
@@ -156,12 +160,22 @@ def build_media(case, root, work, dest, refresh_posters=False, refresh_video=Fal
         archive = work / 'carla.zip'
     src = work / 'source' / (case['id'] + '.mp4')
     src.parent.mkdir(parents=True, exist_ok=True)
-    if not src.exists():
+    identity = src.with_suffix('.source.json')
+    source_id = {'archive': case['archive'], 'member': case['member'], 'sha256': case.get('source_video_sha256')}
+    if not src.exists() or (identity.exists() and json.loads(identity.read_text()) != source_id) or (case.get('source_video_sha256') and sha(src) != case['source_video_sha256']):
         with zipfile.ZipFile(archive) as z, z.open(case['member']) as stream, src.open('wb') as target:
             shutil.copyfileobj(stream, target)
+        refresh_video = True
+    identity.write_text(json.dumps(source_id) + '\n')
+    if case.get('source_video_sha256'):
+        assert sha(src) == case['source_video_sha256'], f"Source hash mismatch: {case['id']}"
     video = dest / (case['id'] + '.mp4')
     poster = dest / (case['id'] + '.webp')
-    if refresh_video or not video.exists():
+    native_target = case['kind'] == 'target' and case['track'] == 'wod'
+    if native_target:
+        if refresh_video or not video.exists():
+            shutil.copyfile(src, video)
+    elif refresh_video or not video.exists():
         tmp = work / (case['id'] + '-encode.mp4')
         render_case(case, archive, src, tmp, work)
         shutil.copyfile(tmp, video)
@@ -179,7 +193,7 @@ def build_media(case, root, work, dest, refresh_posters=False, refresh_video=Fal
         source_sha256=sha(src), video_sha256=sha(video), bytes=video.stat().st_size,
         presentation_version=PRESENTATION_VERSION,
         evidence_role=role(case), evidence_label=role_name(case).title(), display_mode=mode(case),
-        presentation='Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.')
+        presentation=('Author-provided unified 1080p benchmark-target presentation, preserved byte-for-byte. Blue/orange identify instruction arms.' if native_target else 'Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets.'))
     print('READY',case['id'],f'{duration:.1f}s',flush=True)
     return case
 
@@ -204,8 +218,8 @@ def main():
     prior={c['id']:c for c in json.loads(prior_path.read_text())['cases']} if prior_path.exists() else {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         cases=list(pool.map(lambda c:build_media(c,args.source_root,args.work_dir,dest,args.refresh_posters,
-            prior.get(c['id'],{}).get('presentation_version')!=PRESENTATION_VERSION),cases))
-    data={'schema':'language2drive.showcase.v1','selection':'Task-family, scene and model coverage; descriptive examples, not an estimate of aggregate success. Oracle and reference examples are labeled separately. WOD candidates are unreviewed.',
+            prior.get(c['id'],{}).get('presentation_version')!=PRESENTATION_VERSION or any(prior.get(c['id'],{}).get(k)!=c.get(k) for k in ('archive','member','source_video_sha256'))),cases))
+    data={'schema':'language2drive.showcase.v1','selection':'Task-family, scene and model coverage. Model results and benchmark targets are labeled separately. WOD examples show paired benchmark targets.',
         'media_policy':'Author-provided viewing copies for the local project preview. Source datasets and model assets retain their own terms. No hidden raw contracts or sensor bundles are exported.',
         'cases':cases}
     from build_reasoning import export_reasoning

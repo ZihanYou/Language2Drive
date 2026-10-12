@@ -4,8 +4,8 @@
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const tracks = {carla:'CARLA-L2D', realsim:'RealSim', nuscenes:'nuScenes', navsim:'NAVSIM', wod:'WOD-E2E'};
-  const kinds = {'closed-loop':'Closed-loop execution','open-loop':'Open-loop prediction',reference:'Reference trajectory',oracle:'Reference-controller execution',candidate:'Open-loop model comparison'};
-  const role = c => c.evidence_role || (['reference','oracle'].includes(c.kind)?'benchmark-target':'model-result');
+  const kinds = {'closed-loop':'Closed-loop execution','open-loop':'Open-loop prediction',reference:'Reference trajectory',oracle:'Reference-controller execution',target:'Paired benchmark target'};
+  const role = c => c.evidence_role || (['reference','oracle','target'].includes(c.kind)?'benchmark-target':'model-result');
   const roleLabel = c => role(c)==='model-result'?'Model result':'Benchmark target';
   const el = (tag, text, cls) => { const n = document.createElement(tag); if(text !== undefined) n.textContent=text; if(cls) n.className=cls; return n; };
   const say = text => { const t=$('.toast'); t.textContent=text;t.classList.add('visible');setTimeout(()=>t.classList.remove('visible'),2400); };
@@ -59,7 +59,7 @@
     window.L2DModels.references($('#case-paper-links'), modelNames(c));
     $('#case-location').textContent=[c.pcu,c.scene,c.scope?'Scope '+c.scope:null].filter(Boolean).join(' / ');
     $('#case-instruction-a').textContent=c.instructions[0];$('#case-instruction-b').textContent=c.instructions[1];
-    $('#case-note').textContent=c.visualization?'Model result: saved closed-loop trajectories with camera views rendered from the recorded poses. Dashed gray paths show benchmark targets.':({'closed-loop':'Model result: Alpamayo 1.5 driving in a NuRec reconstruction.', 'open-loop':'Model result: saved instruction-conditioned predictions. Dashed gray paths show benchmark targets.',reference:c.comparison?'Benchmark target: the video shows reference trajectories. The interactive panel below shows actual model predictions.':'Benchmark target: reference trajectories for the two requested behaviors.',oracle:'Benchmark target: execution by the reference controller.',candidate:'Model result: saved forecasts from four driving models under the paired instructions.'}[c.kind]);
+    $('#case-note').textContent=c.visualization?'Model result: saved closed-loop trajectories with camera views rendered from the recorded poses. Dashed gray paths show benchmark targets.':({'closed-loop':'Model result: Alpamayo 1.5 driving in a NuRec reconstruction.', 'open-loop':'Model result: saved instruction-conditioned predictions. Dashed gray paths show benchmark targets.',reference:c.comparison?'Benchmark target: the video shows reference trajectories. The interactive panel below shows actual model predictions.':'Benchmark target: reference trajectories for the two requested behaviors.',oracle:'Benchmark target: execution by the reference controller.',target:c.note}[c.kind]);
     $('#case-download').href=c.video;$('#case-download').download=c.id+'.mp4';
     $('#case-source').textContent=`${tracks[c.track]} · ${c.pcu} · ${c.width} × ${c.height} · ${c.duration_s}s. Download the metadata for the source files, protocol and artifact identifiers.`;
     const variants=cases.filter(x=>x.track===c.track&&x.pcu===c.pcu);$('#case-variant-wrap').hidden=variants.length<2;

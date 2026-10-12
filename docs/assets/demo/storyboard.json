@@ -153,20 +153,20 @@
       "duration_s": 4,
       "kind": "case",
       "case_id": "wod-cand-0002",
-      "evidence_role": "model-result",
+      "evidence_role": "benchmark-target",
       "source_offset_s": 0,
-      "source_sha256": "6a5b4a58be71364a40ac1dac62960da6d49b622db6c7b1867faebbca70bed798",
-      "caption": "WOD-E2E brings four driving models together for an instruction-conditioned trajectory comparison."
+      "source_sha256": "f79afb4f4d2caf814675b6f604155c09826241a5d3ec182312f8944d47b37240",
+      "caption": "WOD-E2E benchmark targets illustrate two requested behaviors in the same observed scene."
     },
     {
       "start_s": 100,
       "duration_s": 4,
       "kind": "case",
       "case_id": "wod-cand-0103",
-      "evidence_role": "model-result",
+      "evidence_role": "benchmark-target",
       "source_offset_s": 0,
-      "source_sha256": "eec035137986e08a5552ff49dbaa7655a3d7266c3a0952eb300243d78f20f983",
-      "caption": "Explore pedestrians, obstacles and diverse traffic situations across the case library."
+      "source_sha256": "ff548eb729a29d40312abfdc38aa91248a62bc6238d00ec9f64b594d02d9e19f",
+      "caption": "Paired speed requirements define the requested outcomes over shared real-world camera context."
     },
     {
       "start_s": 104,
