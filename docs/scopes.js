@@ -83,7 +83,7 @@
   }
   $('#scope-play').addEventListener('click',play);
   $('#scope-progress').addEventListener('input',e=>{stop();seek(Number(e.target.value)/100);});
-  $('#scope-watch').addEventListener('click',e=>{e.preventDefault();if(!current)return;$('.case-backends [data-case-track="carla"]').click();$('#case-search').value=current.pcu;$('#case-search').dispatchEvent(new Event('input'));$('#examples').scrollIntoView({behavior:reduced.matches?'instant':'smooth'});});
+  $('#scope-watch').addEventListener('click',e=>{e.preventDefault();if(current)window.L2DShowcase?.select(current.case_id);});
   $$('[data-scope]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.scope)));
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
   new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)stop();}).observe($('#scope-explorer'));

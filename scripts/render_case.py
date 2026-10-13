@@ -40,6 +40,7 @@ def role_name(case):
     return 'BENCHMARK TARGET' if role(case)=='benchmark-target' else 'MODEL RESULT'
 
 def mode(case):
+    if case['kind']=='target' and case['track']=='carla':return ('Vehicle front view' if case['camera_view']=='front' else 'Exterior follow camera')+' · reference-path animation'
     if case['kind']=='target':return case['trajectory_panel']
     if case['kind']=='oracle':return 'Reference-controller execution'
     if case['kind']=='reference':return 'Reference trajectory'
@@ -55,7 +56,12 @@ def plot_data(case,archive):
     result=[[],[]];refs=[[],[]];details={};track=case['track']
     with zipfile.ZipFile(archive) as z:
         base=case['member'].rsplit('/',1)[0]
-        if track=='carla':
+        if track=='carla' and case['kind']=='target':
+            series=[rows(z,member.rsplit('/',1)[0]+'/target_trajectory_30hz.csv') for member in (case['member'],case['partner_member'])]
+            ox,oy=float(series[0][0]['x']),float(series[0][0]['y'])
+            for a,rs in enumerate(series):result[a]=[('Benchmark target',[[float(r['x'])-ox,float(r['y'])-oy] for r in rs])]
+            details={'frame':'World displacement (m)', 'speedup':case['playback_speed'], 'source_data':case['trajectory_source']}
+        elif track=='carla':
             path='pcu_video_evidence_20261002/cases/'+case['member'].split('/')[-1].replace('.mp4','')+'/data.json'
             data=json.loads(z.read(path));origin=data['arms'][0]['series'][0]
             xy=lambda p:[float(p['x'])-origin['x'],float(p['y'])-origin['y']]
@@ -137,7 +143,7 @@ def layout(case,archive,path):
         label(im,(x+24,297),instruction,size,INK)
         # Camera region is inserted by ffmpeg. Mode remains explicit next to it.
         label(im,(x+24,721),mode(case),17,MUTED)
-        label(im,(x+24,763),('TARGET' if target else 'MODEL RESULT')+'  /  '+('FULL EXECUTED PATH' if case['track'] in ('carla','realsim') else 'PREDICTED PATH' if not target else 'REFERENCE PATH'),17,col,True)
+        label(im,(x+24,763),('TARGET' if target else 'MODEL RESULT')+'  /  '+('REFERENCE PATH' if target else 'FULL EXECUTED PATH' if case['track'] in ('carla','realsim') else 'PREDICTED PATH'),17,col,True)
         cx,cy=x+451,884
         sx=lambda v:cx+(v-(xmin+xmax)/2)*scale
         sy=lambda v:cy-(v-(ymin+ymax)/2)*scale

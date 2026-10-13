@@ -7,6 +7,7 @@ from playwright.sync_api import sync_playwright
 from pathlib import Path
 from check_metrics_browser import check_metrics
 from check_reasoning_browser import check_reasoning
+from check_simulator_browser import check_simulator
 root=Path(__file__).resolve().parents[1]
 Path('/tmp/l2d-showcase').mkdir(exist_ok=True)
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(PreviewHandler,directory=str(root/'docs')))
@@ -29,6 +30,7 @@ with sync_playwright() as p:
    assert page.locator('#results-table tbody tr').count()==count
   check_metrics(page, width)
   check_reasoning(page, width)
+  check_simulator(page, width)
   page.locator('[data-code="adapter"]').click()
   assert 'def create_adapter' in page.locator('#quick-code').inner_text()
   if width==1440:
@@ -89,7 +91,7 @@ with sync_playwright() as p:
   page.locator('#case-search').fill('no-such-case-123')
   # A backend entry resets stale constraints, including those from reference-only NAVSIM.
   page.locator('.case-backends [data-case-track="carla"]').click()
-  assert page.locator('#case-count').inner_text().startswith('20 clips')
+  assert page.locator('#case-count').inner_text().startswith('86 clips')
   assert page.locator('#case-role').inner_text()=='Model result'
   assert page.locator('#case-video').get_attribute('src').startswith('assets/cases/carla-')
   assert page.locator('#case-kind').input_value()=='all'
@@ -116,7 +118,8 @@ with sync_playwright() as p:
   page.wait_for_function('document.querySelector("#scope-progress").value > 75')
   page.locator('#scope-play').click()
   page.locator('#scope-watch').click()
-  assert page.locator('#case-count').inner_text().startswith('1 clip')
+  assert page.locator('#case-count').inner_text().startswith('3 clips')
+  assert page.locator('#case-role').inner_text()=='Model result'
   assert 'carla-formal-d-001' in page.url
   page.locator('#case-search').fill('no-such-case-123')
   assert page.locator('#case-empty').is_visible()

@@ -178,6 +178,9 @@ def build_media(case, root, work, dest, refresh_posters=False, refresh_video=Fal
     if native_target:
         if refresh_video or not video.exists():
             shutil.copyfile(src, video)
+    elif case['kind']=='target' and case['track']=='carla':
+        from build_simulator import render_target_pair
+        render_target_pair(case,archive,src,video,work,refresh_video)
     elif refresh_video or not video.exists():
         tmp = work / (case['id'] + '-encode.mp4')
         render_case(case, archive, src, tmp, work)
@@ -207,6 +210,7 @@ def main():
     parser.add_argument('--work-dir',type=Path,required=True)
     parser.add_argument('--carla-catalog',type=Path)
     parser.add_argument('--include-carla',action='store_true',help='Read work-dir/carla.zip')
+    parser.add_argument('--carla-targets',type=Path,help='October 13 target/exploration archive')
     parser.add_argument('--refresh-posters',action='store_true')
     parser.add_argument('--workers',type=int,default=3)
     args=parser.parse_args()
@@ -217,6 +221,9 @@ def main():
         cases=collect_carla(args.work_dir/'carla.zip')+cases
     if args.carla_catalog:
         cases=json.loads(args.carla_catalog.read_text())+cases
+    if args.carla_targets:
+        from build_simulator import collect_targets
+        cases+=collect_targets(args.carla_targets)
     prior_path=docs/'data/cases.json'
     prior={c['id']:c for c in json.loads(prior_path.read_text())['cases']} if prior_path.exists() else {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:

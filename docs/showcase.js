@@ -63,9 +63,11 @@
     $('#case-download').href=c.video;$('#case-download').download=c.id+'.mp4';
     $('#case-source').textContent=`${tracks[c.track]} · ${c.pcu} · ${c.width} × ${c.height} · ${c.duration_s}s. Download the metadata for the source files, protocol and artifact identifiers.`;
     const variants=cases.filter(x=>x.track===c.track&&x.pcu===c.pcu);$('#case-variant-wrap').hidden=variants.length<2;
-    $('#case-variant').replaceChildren(...variants.map(x=>new Option(`${roleLabel(x)} · ${x.model}`,x.id,false,x.id===c.id)));
+    $('#case-variant').replaceChildren(...variants.map(x=>new Option(`${roleLabel(x)} · ${x.model}${x.camera_view?" · "+(x.camera_view==="front"?"Vehicle front":"Exterior"):""}`,x.id,false,x.id===c.id)));
     $('#case-perspectives').hidden=new Set(variants.map(role)).size<2;
     $$('[data-perspective]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.perspective===role(c)));b.onclick=()=>{const next=variants.find(x=>role(x)===b.dataset.perspective);if(next)selectVariant(next);};});
+    const cameras=variants.filter(x=>x.camera_view && role(x)===role(c));$('#case-camera').hidden=!c.camera_view || cameras.length<2;
+    $$('[data-target-camera]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.targetCamera===c.camera_view));b.onclick=()=>{const next=cameras.find(x=>x.camera_view===b.dataset.targetCamera);if(next)selectVariant(next);};});
     $$('.case-card').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.caseId===c.id)));
     $('#case-prev').disabled=filtered.length<2;$('#case-next').disabled=filtered.length<2;
     $('#trajectory-inspector').hidden=!c.comparison;
@@ -109,6 +111,7 @@
   $('#case-reset').addEventListener('click',()=>{$('#case-track').value='all';$('#case-kind').value='all';$('#case-search').value='';modelOptions();$('#case-model').value='all';applyFilters();});
   $('#case-more').addEventListener('click',()=>{shown+=9;renderGrid();});
   function selectVariant(c){if($('#case-kind').value!=='all')$('#case-kind').value=role(c);$('#case-model').value='all';applyFilters();selectCase(c);}
+  window.L2DShowcase={select(id){const c=cases.find(x=>x.id===id);if(!c)return;chooseBackend(c.track);$('#case-search').value=c.pcu;applyFilters();selectVariant(c);scrollTo($('#case-viewer'));}};
   $('#case-variant').addEventListener('change',()=>selectVariant(cases.find(c=>c.id===$('#case-variant').value)));
   ['prev','next'].forEach(direction=>$('#case-'+direction).addEventListener('click',()=>{if(filtered.length)selectCase(filtered[(Math.max(0,filtered.indexOf(current))+(direction==='next'?1:-1)+filtered.length)%filtered.length]);}));
   $('#case-speed').addEventListener('change',()=>{$('#case-video').playbackRate=Number($('#case-speed').value);});
@@ -119,7 +122,7 @@
   $$('[data-case-track]').forEach(b=>b.addEventListener('click',()=>{chooseBackend(b.dataset.caseTrack);if(!b.closest('.case-backends'))scrollTo($('#examples'));}));
   fetch('data/cases.json').then(r=>{if(!r.ok)throw Error('manifest');return r.json();}).then(data=>{
     // Interleave backends so the first screen communicates coverage immediately.
-    const queues=Object.keys(tracks).map(track=>data.cases.filter(c=>c.track===track).sort((a,b)=>Number(['oracle','reference'].includes(a.kind))-Number(['oracle','reference'].includes(b.kind))));
+    const queues=Object.keys(tracks).map(track=>data.cases.filter(c=>c.track===track).sort((a,b)=>Number(['oracle','reference','target'].includes(a.kind))-Number(['oracle','reference','target'].includes(b.kind))));
     cases=[];while(queues.some(q=>q.length))queues.forEach(q=>{if(q.length)cases.push(q.shift());});
     $$('[data-track-count]').forEach(n=>n.textContent=cases.filter(c=>n.dataset.trackCount==='all'||c.track===n.dataset.trackCount).length);
     modelOptions();filtered=cases;renderGrid();

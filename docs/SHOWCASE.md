@@ -1,7 +1,7 @@
 # Project film and interactive evidence
 
 The project preview combines the author's framework artwork, a 120-second film,
-and 63 curated viewing copies from five author-provided evidence archives.
+and 129 curated viewing copies and a six-map simulator atlas from author-provided evidence archives.
 The local preview has no upload service. The site and all viewing assets are ready
 for the manual GitHub Pages workflow; see [the deployment guide](RELEASE.md).
 
@@ -21,6 +21,7 @@ Open `http://localhost:18765/`. Direct entry points:
 - `/#framework`: guided framework tour, instruction selection and scope exploration.
 - `/#examples`: backend/model/evidence filters, text search, same-PCU model switch,
   playback speed, case permalinks, downloads and source details.
+- `/#simulator`: six custom CARLA maps, clickable locations with overview / road-forward / road-reverse photos, four tours per map, zoom / drag / keyboard navigation and synchronized camera routes.
 - `/submit.html`: local result packet builder and prefilled GitHub issue.
 
 The preview binds to loopback and supports byte-range requests for video seeking.
@@ -32,13 +33,13 @@ starting one player pauses the other.
 
 | Backend | Clips | Selection and source |
 |---|---:|---|
-| CARLA | 20 | All 16 formal task categories, all four scopes and 10 maps represented in the supplied archive; saved execution with camera pose re-renders |
+| CARLA | 86 | All 16 formal task categories, all four scopes and 10 maps represented in the supplied archive; 20 saved model executions with camera pose re-renders, plus 33 target pairs in two camera views (66 clips) |
 | RealSim | 14 | Eight Alpamayo 1.5 examples and six privileged oracle examples, covering six task families |
 | nuScenes | 20 | Four PCUs across scenes/locations, four models plus reference witnesses per PCU |
 | NAVSIM | 7 | Selected task families; reference videos plus saved predictions from five models in a separate inspector |
 | WOD-E2E | 2 | One Stop / Go and one Speed Choice benchmark target, from the October 12 target archive |
 
-The inventory contains 41 backend/PCU combinations. Selection emphasizes task,
+The inventory contains 54 backend/PCU combinations. Selection emphasizes task,
 scene and model coverage; it is not an estimate of cohort performance. CARLA
 debug runs are excluded. Formal CARLA cameras were re-rendered from saved poses;
 the native model inputs were not retained. No inference was rerun for this page.
@@ -75,6 +76,31 @@ copies use a unified 1920 × 1080, 12 fps, H.264 presentation with fast start.
 metric plots. Camera crops retain the source movie’s timing. Full trajectories
 are redrawn from the archived numeric records, with identical bounds and equal
 XY scale across both arms. Long instructions are measured before rendering.
+
+Rebuild the 33 CARLA target pairs and six-map atlas from the October 13 archive:
+
+```sh
+python scripts/build_simulator.py \
+  --archive /path/to/benchmark_target_exploration_20261013.zip \
+  --workers 4
+```
+
+Use `--targets-only` or `--maps-only` for a partial rebuild. The complete gallery
+builder also accepts `--carla-targets /path/to/benchmark_target_exploration_20261013.zip`.
+Targets combine the two independent arm videos in the existing 1080p A/B design;
+exterior and front views are independently selectable. Reference paths come from
+the archived 30 Hz target trajectories. Source member hashes cover both arms.
+
+The atlas reads the six exported CARLA lane graphs in their native world frame;
+it does not convert OpenDRIVE coordinates. It contains 54 locations and 162
+web-optimized photos, plus 24 full-length 45-second H.264 tours (two map tours
+and two road-level drives per map). The map cursor follows the recorded camera
+trajectory, with road-level viewpoint switches treated as cuts. `data/maps.json`
+records source members, hashes and the measured geometry. Map thumbnails are
+SVG exports of the same lane samples. Original frame ZIPs and task contracts
+remain in the archive. This package includes map viewing media and geometry;
+the simulator's cooked map binaries are installed separately through the
+[CARLA runtime setup](INSTALLATION.md).
 
 Every clip carries one of two explicit roles: **Model result** (executed model
 trajectories or saved forecasts) and **Benchmark target** (reference trajectories

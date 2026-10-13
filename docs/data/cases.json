@@ -5890,6 +5890,3306 @@
       "evidence_label": "Benchmark Target",
       "display_mode": "Frozen P0 target regions and speed requirements",
       "presentation": "Author-provided unified 1080p benchmark-target presentation, preserved byte-for-byte. Blue/orange identify instruction arms."
+    },
+    {
+      "id": "carla-target-a-001-exterior",
+      "pcu": "A-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Intersection choice",
+      "family": "junction",
+      "scope": "A",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Turn left at this intersection.",
+        "Go straight through this intersection."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/left/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-001/left/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/left/video.mp4",
+          "sha256": "c191795ed186e1c67e9872a88d5d7cb94d867a67ab96f361f167360e388e1e06"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/video.mp4",
+          "sha256": "b09ff19ed42d5fb6b64909134c28f5577ad9608c341d1dd74e52c80be87229ef"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-001-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-001-exterior.webp",
+      "duration_s": 13.917,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "c191795ed186e1c67e9872a88d5d7cb94d867a67ab96f361f167360e388e1e06",
+      "video_sha256": "45edb2529349d2d6d578a483ec9d23bef82cea1f6f819c669edda9ac4db862fe",
+      "bytes": 1420305,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-001-front",
+      "pcu": "A-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Intersection choice",
+      "family": "junction",
+      "scope": "A",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Turn left at this intersection.",
+        "Go straight through this intersection."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/left/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-001/left/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/left/front/video.mp4",
+          "sha256": "add199da7d74b197f653cf4eeefa05f41733b6d25ae48059623f36a88a43a094"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-001/straight/front/video.mp4",
+          "sha256": "4be0ec8a15e95e10d8a9bbdd967e0808262880d33a172b097d667d970e0883b2"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-001-front.mp4",
+      "poster": "assets/cases/carla-target-a-001-front.webp",
+      "duration_s": 13.917,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "add199da7d74b197f653cf4eeefa05f41733b6d25ae48059623f36a88a43a094",
+      "video_sha256": "6bdff35f98bd48331a49f6ed65e272511998e0944d9db2d60848cb725498b896",
+      "bytes": 2072991,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-012-exterior",
+      "pcu": "A-012",
+      "track": "carla",
+      "kind": "target",
+      "title": "Intersection choice",
+      "family": "junction",
+      "scope": "A",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Turn right at this intersection.",
+        "Go straight through this intersection."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/right/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-012/right/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/right/video.mp4",
+          "sha256": "cda343dd93e66937a6e653ce66b84460f80faabe65851b3e468117f46130301d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/video.mp4",
+          "sha256": "9f088e6f66823f95554e81d40277c45fa1d62ae0e5df50e5eac7b8e92adcea41"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-012-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-012-exterior.webp",
+      "duration_s": 13.667,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "cda343dd93e66937a6e653ce66b84460f80faabe65851b3e468117f46130301d",
+      "video_sha256": "15829b71d5ab5b2e6cf4d627e0cf5edddfeef85e4fc0ed14d1d65fe2daf8a719",
+      "bytes": 1213316,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-012-front",
+      "pcu": "A-012",
+      "track": "carla",
+      "kind": "target",
+      "title": "Intersection choice",
+      "family": "junction",
+      "scope": "A",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Turn right at this intersection.",
+        "Go straight through this intersection."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/right/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-012/right/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/right/front/video.mp4",
+          "sha256": "f6d791e2b52c0303c63c70cc6226a58d9e5a535302b62c5d4967d86646500df9"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-012/straight/front/video.mp4",
+          "sha256": "cb6ce7977842d2f41ded1b4da65abdc97e3585c5304313eaa8bd64a0c48a2b7d"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-012-front.mp4",
+      "poster": "assets/cases/carla-target-a-012-front.webp",
+      "duration_s": 13.667,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f6d791e2b52c0303c63c70cc6226a58d9e5a535302b62c5d4967d86646500df9",
+      "video_sha256": "bda03f5d24426d5a76327c1e1baa8aff7a73603d09416a4f174c8e3b82111d92",
+      "bytes": 1705802,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-001-exterior",
+      "pcu": "C-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named street",
+      "family": "road_name",
+      "scope": "C",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Take Middleton Street.",
+        "Take E Gage Ave."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/video.mp4",
+          "sha256": "1a306f5ec4daa074ba18260085e800470324d20c663d276c775768d619479015"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/video.mp4",
+          "sha256": "7b22116d8803787acf2417560747adc929a67cbf5269f5c36395bb33b022ca4a"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-001-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-001-exterior.webp",
+      "duration_s": 13.917,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "1a306f5ec4daa074ba18260085e800470324d20c663d276c775768d619479015",
+      "video_sha256": "4adc03f51ac053eb3442e3778fce84a7214f496fcefdd2d19511418acdb89ed4",
+      "bytes": 1441031,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-001-front",
+      "pcu": "C-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named street",
+      "family": "road_name",
+      "scope": "C",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Take Middleton Street.",
+        "Take E Gage Ave."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_a/front/video.mp4",
+          "sha256": "58de804ca806b98be309735a686f4747bd9ef2596dd33488ad90a238d897cee3"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-001/road_b/front/video.mp4",
+          "sha256": "f6b85e1e0238316719c5ea098e86184f8d11f2d3a221f94b72b7cd861d5f9060"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-001-front.mp4",
+      "poster": "assets/cases/carla-target-c-001-front.webp",
+      "duration_s": 13.917,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "58de804ca806b98be309735a686f4747bd9ef2596dd33488ad90a238d897cee3",
+      "video_sha256": "3284ce10b2ae2d9be7da3ab9cff54395b36f26cc87a8662303d4da4a060ae6f0",
+      "bytes": 2088745,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-007-exterior",
+      "pcu": "C-007",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named street",
+      "family": "road_name",
+      "scope": "C",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Take Clarendon Avenue.",
+        "Take Pacific Boulevard."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/video.mp4",
+          "sha256": "8d78c2cb91d92ba835175b27879b440bef2f80a72ab44e5af63f37c86192c6ff"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/video.mp4",
+          "sha256": "6c37955921e54279fa4b8a6b1a44964ce6787fcfe3a4f8dd7270d9b6d5f924b9"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-007-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-007-exterior.webp",
+      "duration_s": 13.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "8d78c2cb91d92ba835175b27879b440bef2f80a72ab44e5af63f37c86192c6ff",
+      "video_sha256": "e746da2626ea325f3efa00baff39b8c50e47c65c580431619a49340229701c9c",
+      "bytes": 1198997,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-007-front",
+      "pcu": "C-007",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named street",
+      "family": "road_name",
+      "scope": "C",
+      "scene": "American-city0428",
+      "model": "Benchmark target",
+      "instructions": [
+        "Take Clarendon Avenue.",
+        "Take Pacific Boulevard."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_a/front/video.mp4",
+          "sha256": "2d609acef55c2fc04aba18020d0700e79b3bb12ff8a9e9699b4de62ec0b79f09"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-007/road_b/front/video.mp4",
+          "sha256": "90378cf647bf2826db1bfde6d2899c0c09e027c50727275160b2688f12fef0c6"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-007-front.mp4",
+      "poster": "assets/cases/carla-target-c-007-front.webp",
+      "duration_s": 13.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "2d609acef55c2fc04aba18020d0700e79b3bb12ff8a9e9699b4de62ec0b79f09",
+      "video_sha256": "1e2c17219f326d3228091c5583256ebf64b66128b2044b8ae8a56188aa27679e",
+      "bytes": 1646140,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-001-exterior",
+      "pcu": "B-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "Town01",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/low/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-001/high/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-001/low/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-001/high/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/low/video.mp4",
+          "sha256": "c2d3d329881d1a9430cd69c468daece511d7e877ff0d37b512b542cc3e0c4c1e"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/high/video.mp4",
+          "sha256": "d3cd11449ced73f2031d73dd0666095e5e7c237362f83fe21af536cdd315a744"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-001-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-001-exterior.webp",
+      "duration_s": 22.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "c2d3d329881d1a9430cd69c468daece511d7e877ff0d37b512b542cc3e0c4c1e",
+      "video_sha256": "6ad772b1dd350275d3de9aef35f5f642787d4ab4cf0d7c32421260aab84e2500",
+      "bytes": 1664250,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-001-front",
+      "pcu": "B-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "Town01",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/low/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-001/high/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-001/low/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-001/high/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/low/front/video.mp4",
+          "sha256": "475cba02c9c62e56be25171508e0d994be76780a4389b42f5f4ac314b8dc449c"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-001/high/front/video.mp4",
+          "sha256": "0de501a3341028fb4b872efcc52809bf4473b9bd9f7c95b461adc56aaeeeefc5"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-001-front.mp4",
+      "poster": "assets/cases/carla-target-b-001-front.webp",
+      "duration_s": 22.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "475cba02c9c62e56be25171508e0d994be76780a4389b42f5f4ac314b8dc449c",
+      "video_sha256": "3c0bc272646d58d73a1abcbdc5dcc44884002cff85c21afbefb5e1b81b6e6c3d",
+      "bytes": 1956547,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-019-exterior",
+      "pcu": "B-019",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose the following distance",
+      "family": "object_relation",
+      "scope": "B",
+      "scene": "Town01",
+      "model": "Benchmark target",
+      "instructions": [
+        "Follow the blue car at a normal safe distance.",
+        "Leave a larger gap behind the blue car."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-019/large/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-019/large/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/video.mp4",
+          "sha256": "511e7ef36affb308a8f5b8570962b967b50cc4a5904cba3cce772fec5eeb7e40"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/large/video.mp4",
+          "sha256": "24201471855765ce5533ed4ee8c234395c22a6bd1ba8fccbde16af3d3dee7ab8"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-019-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-019-exterior.webp",
+      "duration_s": 14.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "511e7ef36affb308a8f5b8570962b967b50cc4a5904cba3cce772fec5eeb7e40",
+      "video_sha256": "c1fc728814b355a69439f695dc03376e18bcc7236945b4c14580f2d5a43f59dd",
+      "bytes": 1516181,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-019-front",
+      "pcu": "B-019",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose the following distance",
+      "family": "object_relation",
+      "scope": "B",
+      "scene": "Town01",
+      "model": "Benchmark target",
+      "instructions": [
+        "Follow the blue car at a normal safe distance.",
+        "Leave a larger gap behind the blue car."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-019/large/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-019/large/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/normal/front/video.mp4",
+          "sha256": "172745414633006c631e0637062f33f4d8596814a48a88ab29279549cbc8e9ff"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-019/large/front/video.mp4",
+          "sha256": "2fac31a8cbed0c459566c9a69bc0ef6ef3556f06517e3ae50324932bccf2056e"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-019-front.mp4",
+      "poster": "assets/cases/carla-target-b-019-front.webp",
+      "duration_s": 14.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "172745414633006c631e0637062f33f4d8596814a48a88ab29279549cbc8e9ff",
+      "video_sha256": "0e24acbb582d2470ddcb2176b98e014969e6665cc4f34d93fc0ee0509d937837",
+      "bytes": 1563738,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-002-exterior",
+      "pcu": "B-002",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "Town02",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/low/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-002/high/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-002/low/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-002/high/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/low/video.mp4",
+          "sha256": "8b936b0481445f3d541e3bc25a96ffaab9f4e528646ea3734407d0c459fe1311"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/high/video.mp4",
+          "sha256": "9a128510c90ba828060c29735dce55aa28b0607d506f1b531fbf035135cad9f1"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-002-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-002-exterior.webp",
+      "duration_s": 23.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "8b936b0481445f3d541e3bc25a96ffaab9f4e528646ea3734407d0c459fe1311",
+      "video_sha256": "e7af2e12eb58a4c61f55f812130e4d9c747bbed27a31c45c44d3e62edf54b89c",
+      "bytes": 2420878,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-002-front",
+      "pcu": "B-002",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "Town02",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/low/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-002/high/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-002/low/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-002/high/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/low/front/video.mp4",
+          "sha256": "a9f5ae3fb1f5516e1d7dc9f2447a7a8782f504f7abde6954f9cec4bc933a5968"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-002/high/front/video.mp4",
+          "sha256": "1990c71ebb4abac8834ad3edb281c945bae7cb134224444c1060d86782e89eaf"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-002-front.mp4",
+      "poster": "assets/cases/carla-target-b-002-front.webp",
+      "duration_s": 23.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "a9f5ae3fb1f5516e1d7dc9f2447a7a8782f504f7abde6954f9cec4bc933a5968",
+      "video_sha256": "533164b78ed6098f79661b718a9f6776dc0b9ebd8ba15822ddc258830e9e6841",
+      "bytes": 2844821,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-022-exterior",
+      "pcu": "A-022",
+      "track": "carla",
+      "kind": "target",
+      "title": "Adjust the requested speed",
+      "family": "speed_start",
+      "scope": "A",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Slow down to between 2 and 4 meters per second.",
+        "Speed up to between 6 and 8 meters per second."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/low/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-022/high/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-022/low/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-022/high/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/low/video.mp4",
+          "sha256": "d48e37f9a76fd2212f5135461bf4b8a231eb2d1eed403524adcb9a8c28b7d0f5"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/high/video.mp4",
+          "sha256": "d31270e488da4e91b8d67aee2b9274b27bc125b0819553bc3211a3873c99ee0f"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-022-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-022-exterior.webp",
+      "duration_s": 22.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "d48e37f9a76fd2212f5135461bf4b8a231eb2d1eed403524adcb9a8c28b7d0f5",
+      "video_sha256": "1f21cb9fca3e5d5cc71d1b249550dbd3d246934d32b3f4cd41b1b0406bb72fec",
+      "bytes": 1620441,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-022-front",
+      "pcu": "A-022",
+      "track": "carla",
+      "kind": "target",
+      "title": "Adjust the requested speed",
+      "family": "speed_start",
+      "scope": "A",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Slow down to between 2 and 4 meters per second.",
+        "Speed up to between 6 and 8 meters per second."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/low/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-022/high/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-022/low/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-022/high/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/low/front/video.mp4",
+          "sha256": "3ed0392025ca4ede69314fb38b0af8dcad87e4412a189a01772907f17f8f5f87"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-022/high/front/video.mp4",
+          "sha256": "8451d4f7bf4a634097647fc76de37dad5464621f19ccdbf4f23635500e5d8600"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-022-front.mp4",
+      "poster": "assets/cases/carla-target-a-022-front.webp",
+      "duration_s": 22.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "3ed0392025ca4ede69314fb38b0af8dcad87e4412a189a01772907f17f8f5f87",
+      "video_sha256": "ac22dade3672088f6b79cb270f469e57a01b6a6589fd897560805a19ae74ad79",
+      "bytes": 2691071,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-009-exterior",
+      "pcu": "B-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Keep the requested lane",
+      "family": "lane_constraint",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Stay in the left-side lane for this whole section.",
+        "Stay in the right-side lane for this whole section."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/video.mp4",
+          "sha256": "80b5157fe1afb669c6d9b59f67b196f6c65fc762a945eac3b97cac15e7cbe2ee"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/video.mp4",
+          "sha256": "9accc56c56aad2f66994df3182257864067fbc74edbe9ce11b304b717f8bd44c"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-009-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-009-exterior.webp",
+      "duration_s": 13.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "80b5157fe1afb669c6d9b59f67b196f6c65fc762a945eac3b97cac15e7cbe2ee",
+      "video_sha256": "e5ab293eacfade10d5831e3f728d460643894905074c2fdd5685a9035a6cba1a",
+      "bytes": 1029422,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-009-front",
+      "pcu": "B-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Keep the requested lane",
+      "family": "lane_constraint",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Stay in the left-side lane for this whole section.",
+        "Stay in the right-side lane for this whole section."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_a/front/video.mp4",
+          "sha256": "34df264ac8f521e17e7594d7fdaea3aa1722c5273ff32a35ad34c70e521ceb75"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-009/lane_b/front/video.mp4",
+          "sha256": "d9a836406ce950d60ae23fb85617c708bd9c353a5fa18fc5e16df5cbf8d5f8df"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-009-front.mp4",
+      "poster": "assets/cases/carla-target-b-009-front.webp",
+      "duration_s": 13.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "34df264ac8f521e17e7594d7fdaea3aa1722c5273ff32a35ad34c70e521ceb75",
+      "video_sha256": "6d76bab683b48f612ed96b2f134b669de98dd309e8ff718ea2d1dfb38c0fd4c9",
+      "bytes": 1130463,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-017-exterior",
+      "pcu": "B-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose the following distance",
+      "family": "object_relation",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Follow the blue car at a normal safe distance.",
+        "Leave a larger gap behind the blue car."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-017/large/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-017/large/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/video.mp4",
+          "sha256": "7aea44e34ddede3f542f0e68d38f9e51c39f9992fd2b36fd39180b254a272a8e"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/large/video.mp4",
+          "sha256": "5b4014027ebd5a5c5e7af3501677de27a27811e4b2ffd488659e706d462f2e39"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-017-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-017-exterior.webp",
+      "duration_s": 14.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "7aea44e34ddede3f542f0e68d38f9e51c39f9992fd2b36fd39180b254a272a8e",
+      "video_sha256": "ee40969260ef81decf6ab18d390d7b2ac17a77da5cd5906cc1c8fd36c424ab30",
+      "bytes": 1036609,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-017-front",
+      "pcu": "B-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose the following distance",
+      "family": "object_relation",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Follow the blue car at a normal safe distance.",
+        "Leave a larger gap behind the blue car."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-017/large/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-017/large/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/normal/front/video.mp4",
+          "sha256": "2143b4236987660d6d27b23a978a9785bd059d1f9bea727f86ee1f17f5cca42c"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-017/large/front/video.mp4",
+          "sha256": "7d9065d0782a01b7972bc9fdd4cbf69c83b69e4dc7bbdb50551fc5d42beef9b2"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-017-front.mp4",
+      "poster": "assets/cases/carla-target-b-017-front.webp",
+      "duration_s": 14.417,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "2143b4236987660d6d27b23a978a9785bd059d1f9bea727f86ee1f17f5cca42c",
+      "video_sha256": "044a4c963c74e51b5434453a5d5fe78f90669a111e6e49839698278974dd06dd",
+      "bytes": 1151998,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-025-exterior",
+      "pcu": "B-025",
+      "track": "carla",
+      "kind": "target",
+      "title": "Pass or follow",
+      "family": "passing_order",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Safely pass the slow truck.",
+        "Do not overtake; remain behind the slow truck."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/video.mp4",
+          "sha256": "912896bf082e634f1db375a8171a931659009c26bf3f346b813b4d5427ecbb21"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/video.mp4",
+          "sha256": "16edd01e9826d6ae7f5849275c1da8dc0554738d73a39439c165bd19b077c3cb"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-025-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-025-exterior.webp",
+      "duration_s": 34.584,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "912896bf082e634f1db375a8171a931659009c26bf3f346b813b4d5427ecbb21",
+      "video_sha256": "abbab2cd9039026e23bec5482da5ff2015026f47e956c69c98bf533f477edab5",
+      "bytes": 1856753,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-025-front",
+      "pcu": "B-025",
+      "track": "carla",
+      "kind": "target",
+      "title": "Pass or follow",
+      "family": "passing_order",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Safely pass the slow truck.",
+        "Do not overtake; remain behind the slow truck."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/pass/front/video.mp4",
+          "sha256": "6ce67e5f1d5d02bb841b5ff8cf22a268d8ecbd7d9f45aeab6666f8f9183e8c69"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-025/follow/front/video.mp4",
+          "sha256": "9c93bd6148b3340f1dd43501cd1e9d8f8a30f66c0af5d724144e671599e84523"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-025-front.mp4",
+      "poster": "assets/cases/carla-target-b-025-front.webp",
+      "duration_s": 34.584,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "6ce67e5f1d5d02bb841b5ff8cf22a268d8ecbd7d9f45aeab6666f8f9183e8c69",
+      "video_sha256": "478fcdcbe70e8ac99ec653b58fe943c05550b9b7399f7ca10d8bcda6802b7407",
+      "bytes": 2034347,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-031-exterior",
+      "pcu": "B-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Pass or follow",
+      "family": "passing_order",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Safely pass the slow truck.",
+        "Do not overtake; remain behind the slow truck."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/video.mp4",
+          "sha256": "4cdae0d1b83118d802163145974f1d9f14d94012c206f1210912861b62706c57"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/video.mp4",
+          "sha256": "d378df1b66e3157515ff3f8f0745c7320a223ae90050da333f88f3bd2f3253b0"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-031-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-031-exterior.webp",
+      "duration_s": 34.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "4cdae0d1b83118d802163145974f1d9f14d94012c206f1210912861b62706c57",
+      "video_sha256": "ac90816055bf5321f79610153a85c7b51a4daae45923e6982b3323242ac867f2",
+      "bytes": 1759977,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-031-front",
+      "pcu": "B-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Pass or follow",
+      "family": "passing_order",
+      "scope": "B",
+      "scene": "Town03",
+      "model": "Benchmark target",
+      "instructions": [
+        "Safely pass the slow truck.",
+        "Do not overtake; remain behind the slow truck."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/pass/front/video.mp4",
+          "sha256": "42500f89a6d67540f0f32b6228e24303b6855a6d0157991760b07835cb52c05d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-031/follow/front/video.mp4",
+          "sha256": "19545494f394509e55641f43e1a1459c8eed658700123e4d85879784f2584b72"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-031-front.mp4",
+      "poster": "assets/cases/carla-target-b-031-front.webp",
+      "duration_s": 34.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "42500f89a6d67540f0f32b6228e24303b6855a6d0157991760b07835cb52c05d",
+      "video_sha256": "4ac513c76384e5ef2c9d6f7da3689dcb67d4c1d09651d913db7acb4a867482d9",
+      "bytes": 2250841,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-014-exterior",
+      "pcu": "A-014",
+      "track": "carla",
+      "kind": "target",
+      "title": "Change lane or stay",
+      "family": "lane",
+      "scope": "A",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Move one lane to the left.",
+        "Keep the current lane."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/left/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-014/current/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-014/left/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-014/current/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/left/video.mp4",
+          "sha256": "8bfe7db96d36eeb025d3a5e1684f20ad5e0566f219926f317bb174affee7578e"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/current/video.mp4",
+          "sha256": "5b9afec9b07bf88a8ed9dd5004182aa67a7c702ef5c4f6cebf6c433529ace2d7"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-014-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-014-exterior.webp",
+      "duration_s": 9.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "8bfe7db96d36eeb025d3a5e1684f20ad5e0566f219926f317bb174affee7578e",
+      "video_sha256": "91d3da81ee76fe54458c21d55cc948c35868ff300cedc5ccdcdadac1cf167e60",
+      "bytes": 615798,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-014-front",
+      "pcu": "A-014",
+      "track": "carla",
+      "kind": "target",
+      "title": "Change lane or stay",
+      "family": "lane",
+      "scope": "A",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Move one lane to the left.",
+        "Keep the current lane."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/left/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-014/current/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-014/left/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-014/current/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/left/front/video.mp4",
+          "sha256": "d679388d162005c73715b25cda903bd91dae26d7085b0e090a3440075af850d2"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-014/current/front/video.mp4",
+          "sha256": "f3c99f0471652c88671846f05bb54780f30471fb179a9078dcebb714cc9d6f56"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-014-front.mp4",
+      "poster": "assets/cases/carla-target-a-014-front.webp",
+      "duration_s": 9.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "d679388d162005c73715b25cda903bd91dae26d7085b0e090a3440075af850d2",
+      "video_sha256": "e88113449208338c8f1f4435a11ef3292bd85d12a5f29c5e0fc4e1067b3ec104",
+      "bytes": 795895,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-019-exterior",
+      "pcu": "D-019",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain a constraint until the marker",
+      "family": "until_invariant",
+      "scope": "D",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally.",
+        "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/video.mp4",
+          "sha256": "f96d69cbb72c3a9588ee559f29aa8bf4a8ccbef393a467ef234eac5ed38dd4df"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/video.mp4",
+          "sha256": "ae4bfdeaeb76d9dd8d1cf2e9e34f3412092d5e299fcb6a79dd446c94ca69d13c"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-019-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-019-exterior.webp",
+      "duration_s": 25.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f96d69cbb72c3a9588ee559f29aa8bf4a8ccbef393a467ef234eac5ed38dd4df",
+      "video_sha256": "dfb9ef3e6a81c939aeab51ccd310be28e90d80f4280a0a47118284ea08abddd4",
+      "bytes": 1776018,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-019-front",
+      "pcu": "D-019",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain a constraint until the marker",
+      "family": "until_invariant",
+      "scope": "D",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally.",
+        "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/low_until/front/video.mp4",
+          "sha256": "dd736ac03e45a6a3b3d075b081d12867b2430c0d6db712dbc6ec608b94fef7e6"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-019/high_until/front/video.mp4",
+          "sha256": "5496c1b9cb43d671ed5ae7ea6ee399dc1ab9fd4ee3670638a37b05dd1b9c8c2f"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-019-front.mp4",
+      "poster": "assets/cases/carla-target-d-019-front.webp",
+      "duration_s": 25.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "dd736ac03e45a6a3b3d075b081d12867b2430c0d6db712dbc6ec608b94fef7e6",
+      "video_sha256": "faa08db7aa3f183d08450e0a1294744fa1fe90890a04fa91d1637f1e08a5e9e3",
+      "bytes": 2184152,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-023-exterior",
+      "pcu": "D-023",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain a constraint until the marker",
+      "family": "until_invariant",
+      "scope": "D",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally.",
+        "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/video.mp4",
+          "sha256": "e345bc698c3b299f8aeeca8b67aee9b0fd9ce56c18a02d4361c140134c479a65"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/video.mp4",
+          "sha256": "e42d3059943c7d5cf2dd0c93d196a9f7d9e1c342cf0df4e0778113219a272e8f"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-023-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-023-exterior.webp",
+      "duration_s": 25.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "e345bc698c3b299f8aeeca8b67aee9b0fd9ce56c18a02d4361c140134c479a65",
+      "video_sha256": "e4763c771b6f8beaaa2d62a2e7896f7ac279324e90c8eaa64120eb8dd8108516",
+      "bytes": 1316355,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-023-front",
+      "pcu": "D-023",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain a constraint until the marker",
+      "family": "until_invariant",
+      "scope": "D",
+      "scene": "Town04",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep between 1.9 and 3.9 meters per second until the end marker, then continue normally.",
+        "Keep between 5.9 and 7.9 meters per second until the end marker, then continue normally."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/low_until/front/video.mp4",
+          "sha256": "00640fc412a8d1ef9b2db6fa6450f90f1063d8c60c9813bfe560a2bb76f9774d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-023/high_until/front/video.mp4",
+          "sha256": "77a0cb058704ae87b31ae7af911378e4fc1f1963cea2c75a619bf580c8462546"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-023-front.mp4",
+      "poster": "assets/cases/carla-target-d-023-front.webp",
+      "duration_s": 25.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "00640fc412a8d1ef9b2db6fa6450f90f1063d8c60c9813bfe560a2bb76f9774d",
+      "video_sha256": "a84413f30f80334098fe11b5209166b88f5894d1256d8e078d5344e9951e0e5a",
+      "bytes": 1576204,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-024-exterior",
+      "pcu": "A-024",
+      "track": "carla",
+      "kind": "target",
+      "title": "Adjust the requested speed",
+      "family": "speed_start",
+      "scope": "A",
+      "scene": "Town05",
+      "model": "Benchmark target",
+      "instructions": [
+        "Slow down to between 2 and 4 meters per second.",
+        "Speed up to between 6 and 8 meters per second."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/low/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-024/high/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-024/low/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-024/high/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/low/video.mp4",
+          "sha256": "861719ac4ba06088dedb9fbb18b6ba0211123de84203d2929a3d4c3faa3abfa4"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/high/video.mp4",
+          "sha256": "acfe7c636cee8dd9e9cecdcaa97e8c23e5366f68e62348b9197531ab93242fd1"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-024-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-024-exterior.webp",
+      "duration_s": 22.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "861719ac4ba06088dedb9fbb18b6ba0211123de84203d2929a3d4c3faa3abfa4",
+      "video_sha256": "89b95c30f9e8c3e161877bd922cca507e185d789c524237cd2ce1de944c381b0",
+      "bytes": 1290757,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-024-front",
+      "pcu": "A-024",
+      "track": "carla",
+      "kind": "target",
+      "title": "Adjust the requested speed",
+      "family": "speed_start",
+      "scope": "A",
+      "scene": "Town05",
+      "model": "Benchmark target",
+      "instructions": [
+        "Slow down to between 2 and 4 meters per second.",
+        "Speed up to between 6 and 8 meters per second."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/low/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-024/high/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-024/low/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-024/high/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/low/front/video.mp4",
+          "sha256": "527d657263c268cf325cb4ab5f3099a649af210425ce069a9f871e5f5c31b6e0"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-024/high/front/video.mp4",
+          "sha256": "5a559f17635aa300b804771f329837db0c00db03e8eb48980fae45d5ac4feabf"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-024-front.mp4",
+      "poster": "assets/cases/carla-target-a-024-front.webp",
+      "duration_s": 22.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "527d657263c268cf325cb4ab5f3099a649af210425ce069a9f871e5f5c31b6e0",
+      "video_sha256": "fcb57f71a2642f17cdcfd97e6a03fb6e1b5adecbf5309dbbc7ebab747765e459",
+      "bytes": 1824811,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-011-exterior",
+      "pcu": "B-011",
+      "track": "carla",
+      "kind": "target",
+      "title": "Keep the requested lane",
+      "family": "lane_constraint",
+      "scope": "B",
+      "scene": "Town05",
+      "model": "Benchmark target",
+      "instructions": [
+        "Stay in the left-side lane for this whole section.",
+        "Stay in the right-side lane for this whole section."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/video.mp4",
+          "sha256": "ee69b6b6b7ece365ce574521448817141c02b8fd2490f737cb9f623f048ca287"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/video.mp4",
+          "sha256": "9a6e0f72580b6f02d9312abc7e4061c2b5f55626cf85ebd376682c33facc1f3e"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-011-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-011-exterior.webp",
+      "duration_s": 13.834,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "ee69b6b6b7ece365ce574521448817141c02b8fd2490f737cb9f623f048ca287",
+      "video_sha256": "360bef920f6a67f5397c24dadbb90e8f57ea9042a620a33e7d76288398f3625c",
+      "bytes": 1107444,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-011-front",
+      "pcu": "B-011",
+      "track": "carla",
+      "kind": "target",
+      "title": "Keep the requested lane",
+      "family": "lane_constraint",
+      "scope": "B",
+      "scene": "Town05",
+      "model": "Benchmark target",
+      "instructions": [
+        "Stay in the left-side lane for this whole section.",
+        "Stay in the right-side lane for this whole section."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_a/front/video.mp4",
+          "sha256": "f58d5ea81dd2f18e54cda159430189558c33ef452c2fcc2fdb85e49ea41f5287"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-011/lane_b/front/video.mp4",
+          "sha256": "f547be443fe5afeee7d3775b0e395c8dc887a6f1d0f583fbad66656573135567"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-011-front.mp4",
+      "poster": "assets/cases/carla-target-b-011-front.webp",
+      "duration_s": 13.834,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f58d5ea81dd2f18e54cda159430189558c33ef452c2fcc2fdb85e49ea41f5287",
+      "video_sha256": "aa8f4db10c5dada5c0aa11504ba7897b7e844f095f171268ed6e94a0adf09da6",
+      "bytes": 1383182,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-007-exterior",
+      "pcu": "B-007",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "hanghailou3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/low/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-007/high/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-007/low/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-007/high/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/low/video.mp4",
+          "sha256": "6eee43b151b993599db046c8a5f5e9326b8e2c604bb081f32dc062cb5e4e3900"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/high/video.mp4",
+          "sha256": "17f1fed9c285cc824eac9c41192cd2ccc103601291ff65203a073f9fd5d40be3"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-b-007-exterior.mp4",
+      "poster": "assets/cases/carla-target-b-007-exterior.webp",
+      "duration_s": 22.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "6eee43b151b993599db046c8a5f5e9326b8e2c604bb081f32dc062cb5e4e3900",
+      "video_sha256": "90041fb2cb1eabd055f7e3969dbabb5289f47af9e029b69d728a43d262d498c5",
+      "bytes": 5919358,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-b-007-front",
+      "pcu": "B-007",
+      "track": "carla",
+      "kind": "target",
+      "title": "Maintain the requested speed",
+      "family": "speed_constraint",
+      "scope": "B",
+      "scene": "hanghailou3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Keep a low legal speed throughout this corridor.",
+        "Keep a higher legal speed throughout this corridor."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/low/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/B-007/high/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/B-007/low/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/B-007/high/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/low/front/video.mp4",
+          "sha256": "8ce216bcf809115a7ae51e9fdd8fc4e4748f9fbcf0772daafbfe44a428b665a4"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/B-007/high/front/video.mp4",
+          "sha256": "a84c4d7387709e870bccf30fcec5f2affa255fa5d65c3d874c5a717b62dcac88"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-b-007-front.mp4",
+      "poster": "assets/cases/carla-target-b-007-front.webp",
+      "duration_s": 22.75,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "8ce216bcf809115a7ae51e9fdd8fc4e4748f9fbcf0772daafbfe44a428b665a4",
+      "video_sha256": "0c5b28482ab81253484dc03f033fc098b4921d47ace2e6092a18f85c6c878bd2",
+      "bytes": 4584525,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-017-exterior",
+      "pcu": "A-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Change lane or stay",
+      "family": "lane",
+      "scope": "A",
+      "scene": "hubeiwenli4",
+      "model": "Benchmark target",
+      "instructions": [
+        "Move one lane to the right.",
+        "Keep the current lane."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/right/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-017/current/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-017/right/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-017/current/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/right/video.mp4",
+          "sha256": "f01acafbe3f37f86cde24f98a26ff5d6ba68858172fb47b57587f8df2eb5dc9f"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/current/video.mp4",
+          "sha256": "cd420a42607b8281bc2c473d20c02e28f3c8c8dc7722567a3afbaaf3389798a9"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-017-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-017-exterior.webp",
+      "duration_s": 14.0,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f01acafbe3f37f86cde24f98a26ff5d6ba68858172fb47b57587f8df2eb5dc9f",
+      "video_sha256": "935d6a1e77a80f1ef66bfc1b5e80e9e43aa90f1d0de9c7446593fd821b114446",
+      "bytes": 1569690,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-017-front",
+      "pcu": "A-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Change lane or stay",
+      "family": "lane",
+      "scope": "A",
+      "scene": "hubeiwenli4",
+      "model": "Benchmark target",
+      "instructions": [
+        "Move one lane to the right.",
+        "Keep the current lane."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/right/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-017/current/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-017/right/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-017/current/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/right/front/video.mp4",
+          "sha256": "e1d5d0efa3f01a421dde1fdab38c1d4dda2b8c3ab11946b2465a802e37657ed4"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-017/current/front/video.mp4",
+          "sha256": "ecd0e55710c7e6f2e3e66a707784118f4578bce10d87c4cb6c185726497b4c45"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-017-front.mp4",
+      "poster": "assets/cases/carla-target-a-017-front.webp",
+      "duration_s": 14.0,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "e1d5d0efa3f01a421dde1fdab38c1d4dda2b8c3ab11946b2465a802e37657ed4",
+      "video_sha256": "8dd772d519db8a3297ded09fe570aee47fdb2a6c1857e9402636440252d876b2",
+      "bytes": 2456265,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-027-exterior",
+      "pcu": "A-027",
+      "track": "carla",
+      "kind": "target",
+      "title": "Left or right parking space",
+      "family": "waiting_parking",
+      "scope": "A",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in the empty space on the left.",
+        "Park in the empty space on the right."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/left/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-027/right/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.526666657142857,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-027/left/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-027/right/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/left/video.mp4",
+          "sha256": "5632e5e726e9c3e5139ef087c819d0664a6120b0719bc2b98a149e87693cd694"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/right/video.mp4",
+          "sha256": "f656e0b7747a57c6a5ff5062094401d4507901b705caa7b11b61edd9594b416d"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-027-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-027-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "5632e5e726e9c3e5139ef087c819d0664a6120b0719bc2b98a149e87693cd694",
+      "video_sha256": "0a14807607046d8370777c4cb0ea7132e7b08a683ba8d322158021d5cee6220a",
+      "bytes": 5734319,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-027-front",
+      "pcu": "A-027",
+      "track": "carla",
+      "kind": "target",
+      "title": "Left or right parking space",
+      "family": "waiting_parking",
+      "scope": "A",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in the empty space on the left.",
+        "Park in the empty space on the right."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/left/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-027/right/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.526666657142857,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-027/left/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-027/right/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/left/front/video.mp4",
+          "sha256": "41cd20fc265deab08c2a6899dc573e24c11a52ab765c9a6cf78db17a4dd770f8"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-027/right/front/video.mp4",
+          "sha256": "32be5b2380198eaae57d69b39e7f57b2838b91e1dd4e07053d5ed78212e3d3e0"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-027-front.mp4",
+      "poster": "assets/cases/carla-target-a-027-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "41cd20fc265deab08c2a6899dc573e24c11a52ab765c9a6cf78db17a4dd770f8",
+      "video_sha256": "e2581e11f82801ab38649288ef96d31e55e835797e8f60c467163e828c9a7241",
+      "bytes": 6046966,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-031-exterior",
+      "pcu": "A-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Left or right parking space",
+      "family": "waiting_parking",
+      "scope": "A",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in the empty space on the left.",
+        "Park in the empty space on the right."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/left/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-031/right/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.092380942857143,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-031/left/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-031/right/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/left/video.mp4",
+          "sha256": "73eef049377e58427803c038d346598d9371c277383aa7b830b677470de306f9"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/right/video.mp4",
+          "sha256": "9d76c4a8be946e6a03033cc41de45b7fa2763ac905dfc373dc1d0ce9830344a7"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-a-031-exterior.mp4",
+      "poster": "assets/cases/carla-target-a-031-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "73eef049377e58427803c038d346598d9371c277383aa7b830b677470de306f9",
+      "video_sha256": "d96cbbfb1dd6a8eb55290d39a3d9f7287598cc8010bce62ea35d3a18f137c72d",
+      "bytes": 4314376,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-a-031-front",
+      "pcu": "A-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Left or right parking space",
+      "family": "waiting_parking",
+      "scope": "A",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in the empty space on the left.",
+        "Park in the empty space on the right."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/left/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/A-031/right/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.092380942857143,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/A-031/left/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/A-031/right/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/left/front/video.mp4",
+          "sha256": "f1f9c584d60ed1a1f3ab8c0eea4131df8eab7f9d23c45538a254f9ad0da75d1d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/A-031/right/front/video.mp4",
+          "sha256": "c55716c7472a0ec2d1357d5e031246b98c83e1eb67d729f860dcfe1be41b4d2f"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-a-031-front.mp4",
+      "poster": "assets/cases/carla-target-a-031-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f1f9c584d60ed1a1f3ab8c0eea4131df8eab7f9d23c45538a254f9ad0da75d1d",
+      "video_sha256": "9ba779bacc0c1d77fb65a48473e3d862cb138e9686f3869320ae0131856303fe",
+      "bytes": 4458817,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-017-exterior",
+      "pcu": "C-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a parking zone",
+      "family": "parking_region",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to parking zone A.",
+        "Drive to parking zone B."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.3304762,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/video.mp4",
+          "sha256": "389e53af59cc0aad32f27a81aaeb9150881fbd06460ebc5e8bc3837a0fad6dda"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/video.mp4",
+          "sha256": "9bd942fd14a1f6dfbcca7686bdd78b307f71ea2f4c2d578a28ffadf76454a893"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-017-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-017-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "389e53af59cc0aad32f27a81aaeb9150881fbd06460ebc5e8bc3837a0fad6dda",
+      "video_sha256": "7f1b38fac2f7efeffc4d66f6dbeccba69aad4f2093117d86c1529fcec06f7972",
+      "bytes": 4038789,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-017-front",
+      "pcu": "C-017",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a parking zone",
+      "family": "parking_region",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to parking zone A.",
+        "Drive to parking zone B."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.3304762,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_a/front/video.mp4",
+          "sha256": "4e899d6c93acdd65f754e8067f1ac2fa0539459cc06fdab0495e0b2027a64ad4"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-017/region_b/front/video.mp4",
+          "sha256": "c7312105aeee19bcadc68ff05aaed53144c83508a657cfa5a4ed64983cf2f431"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-017-front.mp4",
+      "poster": "assets/cases/carla-target-c-017-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "4e899d6c93acdd65f754e8067f1ac2fa0539459cc06fdab0495e0b2027a64ad4",
+      "video_sha256": "1eaef7e38ec84eb1f57d354c7ebf416dfd1acbfe9647d4c92282ef9d5196a4fc",
+      "bytes": 4251866,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-023-exterior",
+      "pcu": "C-023",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a parking zone",
+      "family": "parking_region",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to parking zone D.",
+        "Drive to parking zone F."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/video.mp4",
+          "sha256": "2f46643bc5d3216ddbf0e04cd80e3e97c1616df522f0a141b944d79e92d7c0de"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/video.mp4",
+          "sha256": "cd46e50cfe9084a59c30746fbee1fb36346449a3f841b39dd9627cec574a8528"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-023-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-023-exterior.webp",
+      "duration_s": 22.834,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "2f46643bc5d3216ddbf0e04cd80e3e97c1616df522f0a141b944d79e92d7c0de",
+      "video_sha256": "d26cdd91cf2ab3a4e127ed4ffb142501df475fec4fd1767368f8a36aec1f87e3",
+      "bytes": 2357293,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-023-front",
+      "pcu": "C-023",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a parking zone",
+      "family": "parking_region",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to parking zone D.",
+        "Drive to parking zone F."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_a/front/video.mp4",
+          "sha256": "85693aae6c7d832b18c0fa7b5ac29d689b21dc913f6ff1b31bc67c59e6057972"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-023/region_b/front/video.mp4",
+          "sha256": "309b05856b552b927902c352650fff16042c2fc772189270bedb0a2446f2a676"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-023-front.mp4",
+      "poster": "assets/cases/carla-target-c-023-front.webp",
+      "duration_s": 22.834,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "85693aae6c7d832b18c0fa7b5ac29d689b21dc913f6ff1b31bc67c59e6057972",
+      "video_sha256": "6f42eb49300ff961b18657c71a6ae880b9e87985daa2ca750bb050bffa385c7b",
+      "bytes": 2576810,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-025-exterior",
+      "pcu": "C-025",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named parking bay",
+      "family": "exact_parking",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in space B204.",
+        "Park in space B205."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.526666657142857,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/video.mp4",
+          "sha256": "8a54894b58c147eb5fbffb1d70c9b3cd9e56b06a4990535b0faae8e44c80c59b"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/video.mp4",
+          "sha256": "e3ca233230760619670696ead7a2feedeacebace78287f19f3d7eb6ea1298ce7"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-025-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-025-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "8a54894b58c147eb5fbffb1d70c9b3cd9e56b06a4990535b0faae8e44c80c59b",
+      "video_sha256": "0fedd4c24e443bc73fe23e4af58b8579108ac30dd6b095ef826762608ae78137",
+      "bytes": 5744448,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-025-front",
+      "pcu": "C-025",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named parking bay",
+      "family": "exact_parking",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in space B204.",
+        "Park in space B205."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.526666657142857,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_a/front/video.mp4",
+          "sha256": "37df0cd907309eab112bd5cf4d68c3b4753c9406d7e7185d68accccc1c6742d6"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-025/slot_b/front/video.mp4",
+          "sha256": "362d2bf90fe9a4ce2a2ffdc2622ad4aa373c4d13d81c52e4f7920744f5d76a75"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-025-front.mp4",
+      "poster": "assets/cases/carla-target-c-025-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "37df0cd907309eab112bd5cf4d68c3b4753c9406d7e7185d68accccc1c6742d6",
+      "video_sha256": "49fb50321ee096fdf92d0fa031ab70350ca878fac2741aae405244e608d67383",
+      "bytes": 6052117,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-031-exterior",
+      "pcu": "C-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named parking bay",
+      "family": "exact_parking",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in space B403.",
+        "Park in space B404."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.876190485714286,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/video.mp4",
+          "sha256": "0b7bbfa06d60d19944d46ddfe9d67a766632620b287a3f8d119949bb13570768"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/video.mp4",
+          "sha256": "b4b56ed73bba0c86c304d830a19329d18a2b03caabec324859c49aa2ae77f4d1"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-031-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-031-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "0b7bbfa06d60d19944d46ddfe9d67a766632620b287a3f8d119949bb13570768",
+      "video_sha256": "c2fe742cbbcc703c1c7259ff784a25aab62e9626b54b5babd5e0d978ecf3ef79",
+      "bytes": 6334154,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-031-front",
+      "pcu": "C-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a named parking bay",
+      "family": "exact_parking",
+      "scope": "C",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Park in space B403.",
+        "Park in space B404."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.876190485714286,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_a/front/video.mp4",
+          "sha256": "a2d8dd3462545c9bdbdcd3e2fcd458908e9cefa086e3588fa43648aa4d02d278"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-031/slot_b/front/video.mp4",
+          "sha256": "0781decbfb04479f7bfc52413b29d9cdd302b9e31b9bfe0e1bcdfe78dc2584e5"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-031-front.mp4",
+      "poster": "assets/cases/carla-target-c-031-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "a2d8dd3462545c9bdbdcd3e2fcd458908e9cefa086e3588fa43648aa4d02d278",
+      "video_sha256": "70c7e8ff7ebbb40b08c4e735d10e1721a453315b3b91b3ec8165e52b59ad0678",
+      "bytes": 6757855,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-001-exterior",
+      "pcu": "D-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Same destinations, different order",
+      "family": "strict_order",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "First visit B208, then go to F206.",
+        "First visit F206, then go to B208."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 3.142857142857143,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/video.mp4",
+          "sha256": "39b4dafd9a554a7c8687316ca4ef01a84c2f6e2954ec4ad8199dfd321fe820de"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/video.mp4",
+          "sha256": "5b26127f0fa10a19e8d8a3ffa6c565073f20e548d607208d80f38c4070b8cbf3"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-001-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-001-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "39b4dafd9a554a7c8687316ca4ef01a84c2f6e2954ec4ad8199dfd321fe820de",
+      "video_sha256": "4f6653a7382ff08c0cfd789b462434c265c3c8b0790883d9b88feb400ca68693",
+      "bytes": 7184974,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-001-front",
+      "pcu": "D-001",
+      "track": "carla",
+      "kind": "target",
+      "title": "Same destinations, different order",
+      "family": "strict_order",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "First visit B208, then go to F206.",
+        "First visit F206, then go to B208."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 3.142857142857143,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ab/front/video.mp4",
+          "sha256": "6fe7a01b92fc39dfda442c705d6d1c5695775ea1df4806d4baf5d971c423f388"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-001/order_ba/front/video.mp4",
+          "sha256": "4b489f7bd5a01774d7a707bf47a720b4193667a90273650f542a67e9ffa0fd74"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-001-front.mp4",
+      "poster": "assets/cases/carla-target-d-001-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "6fe7a01b92fc39dfda442c705d6d1c5695775ea1df4806d4baf5d971c423f388",
+      "video_sha256": "52dd38258c9c35bdac9dfcdaac3eedeaf38b60d1820ea85ec6710d445ddc423b",
+      "bytes": 7621962,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-009-exterior",
+      "pcu": "D-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Act on a scene condition",
+      "family": "conditional",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "If E101 is occupied, park in E102; otherwise use E101.",
+        "If E101 is occupied, park in C104; otherwise use E102."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 2.3409523714285716,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/video.mp4",
+          "sha256": "c89115e16b780f381afcf2ce1e08b08da1933f6461110ed4c283d7f34ee665d2"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/video.mp4",
+          "sha256": "782189fc22dec7b9558587e164e8875f1b55ce5300d707d432d42ce57e47847e"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-009-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-009-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "c89115e16b780f381afcf2ce1e08b08da1933f6461110ed4c283d7f34ee665d2",
+      "video_sha256": "11b24c129f67d4661731e027486dcf133d75c29d0a25944f15992dba51ab3b50",
+      "bytes": 4641009,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-009-front",
+      "pcu": "D-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Act on a scene condition",
+      "family": "conditional",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "If E101 is occupied, park in E102; otherwise use E101.",
+        "If E101 is occupied, park in C104; otherwise use E102."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 2.3409523714285716,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_near/front/video.mp4",
+          "sha256": "f13fcddaa07c56cf90bfdba061f07b72c9dad847d7e9c4990812ee8338dc67dc"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-009/fallback_far/front/video.mp4",
+          "sha256": "09e65fa494d8d82d13be8e0a072cadce3b5de7c6a8b33cccaa8d9054748d36ae"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-009-front.mp4",
+      "poster": "assets/cases/carla-target-d-009-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "f13fcddaa07c56cf90bfdba061f07b72c9dad847d7e9c4990812ee8338dc67dc",
+      "video_sha256": "e77c75ca6f81d6ac2931f56cff21a3797c880aa3fe77ab41b699ef9c8cf341e7",
+      "bytes": 5261455,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-016-exterior",
+      "pcu": "D-016",
+      "track": "carla",
+      "kind": "target",
+      "title": "Act on a scene condition",
+      "family": "conditional",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "If C505 is occupied, park in C506; otherwise use C505.",
+        "If C505 is occupied, park in E702; otherwise use C506."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 2.494285714285714,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/video.mp4",
+          "sha256": "dae084d95fc62c07811b9b481d180189c1c01c432ab035fd4e6650815d7fa237"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/video.mp4",
+          "sha256": "5ad57f1a731c098f048b333f6b469147b87cb6dfd53a8d72b598f20cb35a04b0"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-016-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-016-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "dae084d95fc62c07811b9b481d180189c1c01c432ab035fd4e6650815d7fa237",
+      "video_sha256": "748f92b55646faf18d7a0a53aa4f4f0aec91bc2d47914c806d3def35602f1e02",
+      "bytes": 4598454,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-016-front",
+      "pcu": "D-016",
+      "track": "carla",
+      "kind": "target",
+      "title": "Act on a scene condition",
+      "family": "conditional",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "If C505 is occupied, park in C506; otherwise use C505.",
+        "If C505 is occupied, park in E702; otherwise use C506."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 2.494285714285714,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_near/front/video.mp4",
+          "sha256": "3e4ac41b2d2970ed049b6fc9fc4f2758f0eb4aaa9c0d64e59755d322f3357624"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-016/fallback_far/front/video.mp4",
+          "sha256": "fb368e9a1f1c366428589bc698012d2f774ce910f865beff08de31bf2b7cd324"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-016-front.mp4",
+      "poster": "assets/cases/carla-target-d-016-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "3e4ac41b2d2970ed049b6fc9fc4f2758f0eb4aaa9c0d64e59755d322f3357624",
+      "video_sha256": "c6945fd814058f8b2a725614611e08c0d5235f76dec28576e4f5463b6b4d14bb",
+      "bytes": 5017621,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-026-exterior",
+      "pcu": "D-026",
+      "track": "carla",
+      "kind": "target",
+      "title": "Remember the earlier reference",
+      "family": "memory_reference",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Remember A804; visit E101, then return to that remembered place.",
+        "Remember E101; visit A804, then return to that remembered place."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 2.74,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/video.mp4",
+          "sha256": "c4a28b730f533793381cbb6121bf0bc9c39179dc9a72eedcb68f9cdd848d61eb"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/video.mp4",
+          "sha256": "0eb89f79bac05df7598a7ad7eb7089ef89fa540da65ee8ec277b7c7d4c618f7c"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-026-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-026-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "c4a28b730f533793381cbb6121bf0bc9c39179dc9a72eedcb68f9cdd848d61eb",
+      "video_sha256": "abbddb1f751f23c5420c0d0b7bbc40bce523c5793c82098d20553334110a224a",
+      "bytes": 7736474,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-026-front",
+      "pcu": "D-026",
+      "track": "carla",
+      "kind": "target",
+      "title": "Remember the earlier reference",
+      "family": "memory_reference",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Remember A804; visit E101, then return to that remembered place.",
+        "Remember E101; visit A804, then return to that remembered place."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 2.74,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_a/front/video.mp4",
+          "sha256": "e52593ef4467867ad1c23dcb930b0475a24d763c7376fc1dca1254eb57ab2c2d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-026/remember_b/front/video.mp4",
+          "sha256": "8c0e31d7ed4eaa20b24acc4977c15301ae02c8c6943b8c6f01178f4371f43b94"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-026-front.mp4",
+      "poster": "assets/cases/carla-target-d-026-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "e52593ef4467867ad1c23dcb930b0475a24d763c7376fc1dca1254eb57ab2c2d",
+      "video_sha256": "b6946f728c20baf8c1f59b7f0f8d9e618a71fa989120dbd3cbbca97f84f06a80",
+      "bytes": 8201060,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-031-exterior",
+      "pcu": "D-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Remember the earlier reference",
+      "family": "memory_reference",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Remember B502; visit E602, then return to that remembered place.",
+        "Remember E602; visit B502, then return to that remembered place."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 3.1904762,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/video.mp4",
+          "sha256": "424a53c732a89d2b819f44f8767ae496f978c81df56bef0b84ad7dbc005fc074"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/video.mp4",
+          "sha256": "94ecf6bccf76da783df75ac80423bd5f6b4ccc5fc2a35fd53ca0d8fbdc2f676a"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-031-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-031-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "424a53c732a89d2b819f44f8767ae496f978c81df56bef0b84ad7dbc005fc074",
+      "video_sha256": "dea0855e34ea6dbd14a2c17f075a9843f1fabf5889ab899a00e2facb69861a11",
+      "bytes": 7267118,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-031-front",
+      "pcu": "D-031",
+      "track": "carla",
+      "kind": "target",
+      "title": "Remember the earlier reference",
+      "family": "memory_reference",
+      "scope": "D",
+      "scene": "parkinglotfish-new3",
+      "model": "Benchmark target",
+      "instructions": [
+        "Remember B502; visit E602, then return to that remembered place.",
+        "Remember E602; visit B502, then return to that remembered place."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 3.1904762,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_a/front/video.mp4",
+          "sha256": "911ce1ad5f8e98b119757d069dc93eb2d7be6cc7255c800ab95e7bf6f49ecd3d"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-031/remember_b/front/video.mp4",
+          "sha256": "db40958fb495a23d8329d759f30562594f376e7ae5c356c82999913abafcde80"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-031-front.mp4",
+      "poster": "assets/cases/carla-target-d-031-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "911ce1ad5f8e98b119757d069dc93eb2d7be6cc7255c800ab95e7bf6f49ecd3d",
+      "video_sha256": "d47c7efb50ca9467b4f87d971b07127c48e3d947395e557293524e2d4f041358",
+      "bytes": 7609473,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-009-exterior",
+      "pcu": "C-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a port destination",
+      "family": "port_target",
+      "scope": "C",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to Empty Storage near Do Not Enter Symbol.",
+        "Drive to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.7476190571428571,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/video.mp4",
+          "sha256": "5d306eb32e0d90bb9d90eb8c62c3accbb12bdf5524746df375f8633095ac9eaa"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/video.mp4",
+          "sha256": "4f2902e3e841e74b1ebd8b1fdd02d6a94fda332d0696acc6c5976b7ce84ea2bc"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-009-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-009-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "5d306eb32e0d90bb9d90eb8c62c3accbb12bdf5524746df375f8633095ac9eaa",
+      "video_sha256": "7191a10f9e71a10ff1dcd7c84c082e9be1bd2c64f247b2a40a91705e3a3c3aeb",
+      "bytes": 1767462,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-009-front",
+      "pcu": "C-009",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a port destination",
+      "family": "port_target",
+      "scope": "C",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to Empty Storage near Do Not Enter Symbol.",
+        "Drive to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.7476190571428571,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_a/front/video.mp4",
+          "sha256": "a3336d8730bdde38c57417f9abef53d3681d29d3cc198c892c9469b4dac61651"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-009/target_b/front/video.mp4",
+          "sha256": "3e981dda54a5828cc81b190ee626f7fcf9fa6442e06ea7b2f69de2dea9e4c80c"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-009-front.mp4",
+      "poster": "assets/cases/carla-target-c-009-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "a3336d8730bdde38c57417f9abef53d3681d29d3cc198c892c9469b4dac61651",
+      "video_sha256": "2d960922f6385d1938cd74771036db3a4e74cc6f1eab20bf557f24bd14eecce5",
+      "bytes": 2479029,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-015-exterior",
+      "pcu": "C-015",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a port destination",
+      "family": "port_target",
+      "scope": "C",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to Reefer Area near Green Reefer Area Symbol.",
+        "Drive to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/video.mp4",
+          "sha256": "91e76c5a98b520a80143036f488d82672aea82a18629317e5a460493379ad0d9"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/video.mp4",
+          "sha256": "83850b016a6113093126c6070201647a9e25abe6a7e530394d9152f7051d2674"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-c-015-exterior.mp4",
+      "poster": "assets/cases/carla-target-c-015-exterior.webp",
+      "duration_s": 24.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "91e76c5a98b520a80143036f488d82672aea82a18629317e5a460493379ad0d9",
+      "video_sha256": "7bf4bb0d5cbf477adaccc24225a694209ff6330ee2d2be507ace633fd8a42ba9",
+      "bytes": 1216536,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-c-015-front",
+      "pcu": "C-015",
+      "track": "carla",
+      "kind": "target",
+      "title": "Choose a port destination",
+      "family": "port_target",
+      "scope": "C",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "Drive to Reefer Area near Green Reefer Area Symbol.",
+        "Drive to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 1.0,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_a/front/video.mp4",
+          "sha256": "ef63bbcbdacb714b8ae1f22cd30d07f61bea54a6bf750083dc5c44ec197bda2f"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/C-015/target_b/front/video.mp4",
+          "sha256": "3d3dc34bef123edb2f2297af744affca4a645297aadb4d5b03e69cb4165daff4"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-c-015-front.mp4",
+      "poster": "assets/cases/carla-target-c-015-front.webp",
+      "duration_s": 24.167,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "ef63bbcbdacb714b8ae1f22cd30d07f61bea54a6bf750083dc5c44ec197bda2f",
+      "video_sha256": "12a6e094172fe1a5d6fcf3d39c84068f5a46f221e1b9cbfb7e93157f9c067298",
+      "bytes": 1617607,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-008-exterior",
+      "pcu": "D-008",
+      "track": "carla",
+      "kind": "target",
+      "title": "Same destinations, different order",
+      "family": "strict_order",
+      "scope": "D",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "First visit Ordinary Area near P5Loading Zone, then go to Europe Zone and EURoute.",
+        "First visit Europe Zone and EURoute, then go to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/video.mp4",
+      "camera_view": "exterior",
+      "playback_speed": 4.698095228571429,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Exterior follow camera. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/video.mp4",
+          "sha256": "75dec7d4523d8c3c803c8398de1abb34fd7944bca1b6f9a78c74ddbe7116552e"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/video.mp4",
+          "sha256": "efad0ef855c156c146eb22093752a9f1df511c4bc96869122263e9ed42502d2e"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Exterior follow camera · reference-path animation",
+      "video": "assets/cases/carla-target-d-008-exterior.mp4",
+      "poster": "assets/cases/carla-target-d-008-exterior.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "75dec7d4523d8c3c803c8398de1abb34fd7944bca1b6f9a78c74ddbe7116552e",
+      "video_sha256": "215bc4cae55688f37c26ce5f85e1b42dc44a7f784d88cfe4aef8329e8c520db2",
+      "bytes": 2523826,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
+    },
+    {
+      "id": "carla-target-d-008-front",
+      "pcu": "D-008",
+      "track": "carla",
+      "kind": "target",
+      "title": "Same destinations, different order",
+      "family": "strict_order",
+      "scope": "D",
+      "scene": "yangluogang1",
+      "model": "Benchmark target",
+      "instructions": [
+        "First visit Ordinary Area near P5Loading Zone, then go to Europe Zone and EURoute.",
+        "First visit Europe Zone and EURoute, then go to Ordinary Area near P5Loading Zone."
+      ],
+      "archive": "benchmark_target_exploration_20261013.zip",
+      "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/front/video.mp4",
+      "partner_member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/front/video.mp4",
+      "camera_view": "front",
+      "playback_speed": 4.698095228571429,
+      "target_kind": "CARLA reference-path animation",
+      "trajectory_source": [
+        "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/front/target_trajectory_30hz.csv",
+        "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/front/target_trajectory_30hz.csv"
+      ],
+      "trajectory_panel": "Full paths; identical bounds and equal XY scale for both arms",
+      "note": "Benchmark target: CARLA renders the requested reference motion for each instruction. Vehicle front view. Both arms share the initial scene and playback scale; blue/orange identify A/B. Full reference paths use identical bounds and equal XY scale.",
+      "sources": [
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ab/front/video.mp4",
+          "sha256": "b67856e38bfbd8b6e0e0ca2191686a3181209c8f93349cf6143c71ceaee698a5"
+        },
+        {
+          "member": "benchmark_target_exploration_20261013/pcu_targets/D-008/order_ba/front/video.mp4",
+          "sha256": "3981b8ebd1fb44c1a6f772797c499f4cf3bf28cc2e525a91e6adef9764d3427d"
+        }
+      ],
+      "evidence_role": "benchmark-target",
+      "evidence_label": "Benchmark Target",
+      "display_mode": "Vehicle front view · reference-path animation",
+      "video": "assets/cases/carla-target-d-008-front.mp4",
+      "poster": "assets/cases/carla-target-d-008-front.webp",
+      "duration_s": 35.084,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "b67856e38bfbd8b6e0e0ca2191686a3181209c8f93349cf6143c71ceaee698a5",
+      "video_sha256": "70a6bd58d94b5fd58363d0db723dbee654ce5318a8b9691dd611fd1fdd30a2c1",
+      "bytes": 3603993,
+      "presentation_version": 2,
+      "presentation": "Unified 1080p layout; camera-only crops retain source timing; full trajectories redrawn from native numeric evidence at equal XY scale. Blue/orange identify instruction arms. Dashed gray denotes benchmark targets."
     }
   ]
 }
