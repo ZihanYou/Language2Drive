@@ -7,7 +7,7 @@ $('.menu-toggle').addEventListener('click', () => { const open = !$('#nav').clas
 $$('#nav a').forEach(a => a.addEventListener('click', () => { $('#nav').classList.remove('open'); $('.menu-toggle').setAttribute('aria-expanded', 'false'); }));
 $$('.arm').forEach(button => button.addEventListener('click', () => { $('.experiment').dataset.active = button.dataset.arm; $$('.arm').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); }));
 const snippets = {
-install: `python -m pip install https://github.com/ZihanYou/Language2Drive/releases/download/v0.1.0/language2drive-0.1.0-py3-none-any.whl
+install: `python -m pip install language2drive
 language2drive init --workspace ./l2d-workspace
 cd l2d-workspace
 

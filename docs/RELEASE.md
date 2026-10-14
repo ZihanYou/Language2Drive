@@ -43,11 +43,11 @@ The initial wheel is published in [GitHub Release v0.1.0](https://github.com/Zih
 
 ## PyPI
 
-Package metadata and the `language2drive` CLI are ready. Public PyPI installation is **pending publication**. Check namespace availability and configure a PyPI Trusted Publisher with this repository, `pypi.yml` and the `pypi` environment. Set any desired maintainer review controls on that environment. Version tags (`v*`) trigger **Publish PyPI**; manual publishing is also available after validation. It builds and checks the wheel before the authenticated publishing job; no token is stored in the repository.
+[Language2Drive 0.1.0 is published on PyPI](https://pypi.org/project/language2drive/0.1.0/). Install the SDK with `pip install language2drive`; optional extras are `[openloop]`, `[carla]` and `[realsim]`. The GitHub Release wheel remains an alternative installation source.
 
-Once successfully published, `pip install language2drive` and optional extras work from the package index. Before publication, install the local/release wheel or checkout. Do not replace the pending status with an availability claim until installation from the public index has been verified.
+The repository uses a PyPI Trusted Publisher with `pypi.yml` and the `pypi` environment. Version tags (`v*`) trigger **Publish PyPI**; manual publishing is also available after validation. It builds and checks the wheel before the authenticated publishing job; no token is stored in the repository.
 
-For the first PyPI release, add a [Pending Trusted Publisher](https://pypi.org/manage/account/publishing/) with these exact values:
+When setting up a replacement repository, add a [Pending Trusted Publisher](https://pypi.org/manage/account/publishing/) with these exact values:
 
 | Field | Value |
 |---|---|
@@ -57,7 +57,7 @@ For the first PyPI release, add a [Pending Trusted Publisher](https://pypi.org/m
 | Workflow filename | `pypi.yml` |
 | Environment name | `pypi` |
 
-The initial [publishing run](https://github.com/ZihanYou/Language2Drive/actions/runs/38504738065) built and verified the wheel successfully; PyPI rejected its identity exchange with `invalid-publisher` because no matching publisher was configured. After configuring the publisher, use **Re-run failed jobs** on that run to retry the publishing job and reuse its verified wheel.
+The [0.1.0 publishing run](https://github.com/ZihanYou/Language2Drive/actions/runs/38504738065) completed successfully after the publisher was configured. For transient publishing failures, use **Re-run failed jobs** to reuse the verified build artifact.
 
 ## Paper and data metadata
 

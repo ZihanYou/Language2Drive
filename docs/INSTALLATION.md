@@ -1,6 +1,16 @@
 # Installation and resource preparation
 
-Install the coordinator in your model environment with `pip install -e .` or a release wheel. Select Python evaluator dependencies with `[openloop]`, `[carla]` or `[realsim]`; these extras intentionally do not impose model frameworks or GPU runtime versions.
+Install the coordinator in your model environment with `pip install language2drive`, an editable checkout or a release wheel. Select Python evaluator dependencies with `[openloop]`, `[carla]` or `[realsim]`; these extras intentionally do not impose model frameworks or GPU runtime versions.
+
+From PyPI:
+
+```sh
+python -m pip install language2drive
+language2drive init --workspace ./l2d-workspace
+language2drive setup --workspace ./l2d-workspace --tracks all --runtime --download
+```
+
+The published package is [language2drive 0.1.0](https://pypi.org/project/language2drive/0.1.0/). Optional Python dependencies are selectable with `language2drive[openloop]`, `language2drive[carla]` or `language2drive[realsim]`.
 
 From a checkout:
 

@@ -24,6 +24,7 @@ Measure whether language changes what a driving VLA actually does.
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2610.16634)
 [![Project Page](https://img.shields.io/badge/Project_Page-GitHub_Pages-336b91?style=flat-square&logo=googlechrome&logoColor=white)](https://ZihanYou.github.io/Language2Drive/)
+[![PyPI](https://img.shields.io/pypi/v/language2drive?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/language2drive/)
 [![Code](https://img.shields.io/badge/Code-GitHub-202c39?style=flat-square&logo=github)](https://github.com/ZihanYou/Language2Drive)
 [![Benchmark Assets](https://img.shields.io/badge/%F0%9F%A4%97_Benchmark_Assets-Hugging_Face-e6a43a?style=flat-square)](https://huggingface.co/datasets/Mike087/Language2Drive)
 [![Benchmark](https://img.shields.io/badge/Benchmark-5_Backends-2b7a78?style=flat-square)](#benchmark-tracks)
@@ -201,7 +202,7 @@ Explore manuscript visualizations, the benchmark construction pipeline and an an
 The SDK coordinator supports **Python 3.10+**. Model dependencies stay in your model's own environment. CARLA's evaluator uses **Python 3.11**; the pinned AlpaSim runtime uses **Python 3.12**. Linux / compatible NVIDIA runtime is required for live simulator evaluation.
 
 ```sh
-python -m pip install https://github.com/ZihanYou/Language2Drive/releases/download/v0.1.0/language2drive-0.1.0-py3-none-any.whl
+python -m pip install language2drive
 language2drive init --workspace ./l2d-workspace
 
 # Select only the environments you need; no checkpoint download by default
@@ -226,7 +227,7 @@ language2drive init --workspace ./l2d-workspace
 language2drive setup --workspace ./l2d-workspace --tracks navsim
 ```
 
-After maintainers publish the included PyPI workflow, the equivalent index installation will be:
+Optional Python dependencies can be installed from PyPI with extras:
 
 ```sh
 pip install language2drive                 # coordinator + packaged backend sources
