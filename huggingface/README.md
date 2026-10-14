@@ -30,7 +30,8 @@ tags:
 [![Code](https://img.shields.io/badge/Code-GitHub-202c39?style=flat-square&logo=github)](https://github.com/ZihanYou/Language2Drive)
 [![Benchmark](https://img.shields.io/badge/Benchmark-5_Backends-2b7a78?style=flat-square)](#benchmark-tracks)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Training_Free_Baselines-68549c?style=flat-square)](#main-results--leaderboard)
-[![Dataset](https://img.shields.io/badge/Dataset-Versioned_Release_Coming_Soon-e6a43a?style=flat-square)](#release-roadmap)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2610.16634)
+[![Benchmark Assets](https://img.shields.io/badge/Benchmark_Assets-Hugging_Face-e6a43a?style=flat-square)](https://huggingface.co/datasets/Mike087/Language2Drive)
 
 **👥 Authors**
 
@@ -123,7 +124,7 @@ snapshot_download(
 
 Select `language2drive.carla/**` or `language2drive.OpenloopTrack.nScenes/**` for the other available resource groups. Repository authorization uses your Hugging Face account. Model checkpoints are obtained from their original publishers. Source scenes follow the access terms of their upstream datasets.
 
-## 🗂️ Dataset / Evaluation Format
+## 🗂️ Benchmark Assets / Evaluation Format
 
 | Layer | Contents | Consumer |
 |---|---|---|
@@ -295,8 +296,11 @@ If Language2Drive supports your research, please cite our paper.
            Zhu, Benjin and
            Li, Haoang and
            Wang, Yan},
-  howpublished = {Research manuscript},
-  url = {https://github.com/ZihanYou/Language2Drive}
+  year = {2026},
+  eprint = {2610.16634},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2610.16634}
 }
 ```
 

@@ -7,9 +7,9 @@ $('.menu-toggle').addEventListener('click', () => { const open = !$('#nav').clas
 $$('#nav a').forEach(a => a.addEventListener('click', () => { $('#nav').classList.remove('open'); $('.menu-toggle').setAttribute('aria-expanded', 'false'); }));
 $$('.arm').forEach(button => button.addEventListener('click', () => { $('.experiment').dataset.active = button.dataset.arm; $$('.arm').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); }));
 const snippets = {
-install: `git clone https://github.com/ZihanYou/Language2Drive.git
-cd Language2Drive
-python -m pip install -e '.[openloop]'
+install: `python -m pip install https://github.com/ZihanYou/Language2Drive/releases/download/v0.1.0/language2drive-0.1.0-py3-none-any.whl
+language2drive init --workspace ./l2d-workspace
+cd l2d-workspace
 
 # Probe official sources; provision selected environments
 language2drive setup --tracks openloop

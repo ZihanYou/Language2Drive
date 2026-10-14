@@ -12,7 +12,7 @@ python scripts/check_site.py
 python scripts/check_browser.py
 ```
 
-The latest site and its media are checked into the repository, ready for deployment. Pushing `main` runs validation; the Pages workflow remains manual-only.
+The latest site and its media are checked into the repository, ready for deployment. Pushing changes to `docs/` on `main` validates and deploys the site through the Pages workflow. Manual deployment remains available. GitHub Pages must first be enabled with GitHub Actions as its source in the repository settings.
 
 The leaderboard includes an interactive metric explorer (`metrics.js` / `metrics.css`) for all five tracks. Its examples explain strict and relaxed success, exclusive open-loop semantics, graded compliance, driving metrics and the L2D formula. Editing an example never changes the published result data. `scripts/check_browser.py` verifies the paired rules, aggregation formula, all reported closed-loop L2D rows, keyboard controls and mobile layout.
 
@@ -33,19 +33,19 @@ python scripts/build_release.py
 python scripts/check_wheel.py dist/language2drive-0.1.0-py3-none-any.whl
 ```
 
-Use the release builder rather than bare `python -m build`: it stages legacy backends, generates a per-file SHA256 inventory, retains licenses and avoids bundling model weights or external model implementation trees. A normal editable install remains lightweight. The release builder uses tracked backend files plus the new unified driver template; commit future backend changes before creating a release. The SDK and backends are physically separate to avoid the existing CARLA `language2drive` module-name collision.
+Use the release builder rather than bare `python -m build`: it stages legacy backends, generates a per-file SHA256 inventory, retains licenses and includes adapter examples and Markdown guides while excluding website media, model weights and external model implementation trees. A normal editable install remains lightweight. The release builder uses tracked backend files plus the new unified driver template; commit future backend changes before creating a release. The SDK and backends are physically separate to avoid the existing CARLA `language2drive` module-name collision.
 
 Artifacts are a `py3-none-any` wheel and its SHA256 file. GitHub tags `v*` run tests, build and attach artifacts to a release; keep the tag consistent with `pyproject.toml` and `l2d_benchmark.__version__`.
 
 ## PyPI
 
-Package metadata and the `language2drive` CLI are ready. Public PyPI installation is **pending publication**. Check namespace availability and configure a PyPI Trusted Publisher with this repository, `pypi.yml` and the `pypi` environment. Set any desired maintainer review controls on that environment. Run **Publish PyPI** manually after validation. It builds and checks the wheel before the authenticated publishing job; no token is stored in the repository.
+Package metadata and the `language2drive` CLI are ready. Public PyPI installation is **pending publication**. Check namespace availability and configure a PyPI Trusted Publisher with this repository, `pypi.yml` and the `pypi` environment. Set any desired maintainer review controls on that environment. Version tags (`v*`) trigger **Publish PyPI**; manual publishing is also available after validation. It builds and checks the wheel before the authenticated publishing job; no token is stored in the repository.
 
 Once successfully published, `pip install language2drive` and optional extras work from the package index. Before publication, install the local/release wheel or checkout. Do not replace the pending status with an availability claim until installation from the public index has been verified.
 
 ## Paper and data metadata
 
-The homepage, README and dataset card use the 22 paper authors and 19 displayed affiliations, recorded in `docs/data/paper.json`, with the requested Project Lead credit and affiliation selection. The current PDF and paper figures are copied into `docs/assets/`. The archival arXiv identifier remains pending. Source-table hashes are in `docs/data/provenance.json`; framework asset provenance is in `docs/assets/framework/provenance.json`.
+The homepage, README and dataset card use the 22 paper authors and 19 displayed affiliations, recorded in `docs/data/paper.json`, with the requested Project Lead credit and affiliation selection. The current PDF and paper figures are copied into `docs/assets/`. The paper is published at [arXiv:2610.16634](https://arxiv.org/abs/2610.16634). Source-table hashes are in `docs/data/provenance.json`; framework asset provenance is in `docs/assets/framework/provenance.json`.
 
 ## Hugging Face dataset card
 

@@ -22,10 +22,10 @@ Jiaqi Li<sup>17</sup>, Wenxuan Song<sup>15</sup>, Yanyuan Qiao<sup>18</sup>, Ben
 **Same scene. Same seed. Different instructions.**<br>
 Measure whether language changes what a driving VLA actually does.
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv_pending-b31b1b?style=flat-square&logo=arxiv)](#citation)
-[![Project Page](https://img.shields.io/badge/Project_Page-Local_Preview-336b91?style=flat-square&logo=googlechrome&logoColor=white)](#project-page-preview)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2610.16634)
+[![Project Page](https://img.shields.io/badge/Project_Page-GitHub_Pages-336b91?style=flat-square&logo=googlechrome&logoColor=white)](https://ZihanYou.github.io/Language2Drive/)
 [![Code](https://img.shields.io/badge/Code-GitHub-202c39?style=flat-square&logo=github)](https://github.com/ZihanYou/Language2Drive)
-[![Dataset](https://img.shields.io/badge/🤗_Dataset-Official_Release_Coming_Soon-e6a43a?style=flat-square)](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main)
+[![Benchmark Assets](https://img.shields.io/badge/%F0%9F%A4%97_Benchmark_Assets-Hugging_Face-e6a43a?style=flat-square)](https://huggingface.co/datasets/Mike087/Language2Drive)
 [![Benchmark](https://img.shields.io/badge/Benchmark-5_Backends-2b7a78?style=flat-square)](#benchmark-tracks)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-Training_Free_Baselines-68549c?style=flat-square)](#main-results--leaderboard)
 
@@ -174,9 +174,9 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 ## 🎬 Visualization / Example Cases
 
-🎬 **[Watch the 2-minute project film](docs/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](docs/index.html#examples)** · **[Prepare a model submission](docs/submit.html)**
+🎬 **[Watch the 2-minute project film](https://ZihanYou.github.io/Language2Drive/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](https://ZihanYou.github.io/Language2Drive/#examples)** · **[Prepare a model submission](https://ZihanYou.github.io/Language2Drive/submit.html)**
 
-The local project preview includes **129 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. WOD-E2E includes two paired **benchmark-target** videos: **Stop / Go** and **Speed Choice**. CARLA adds **33 paired benchmark targets**, each with exterior and vehicle-front views. The **CARLA-Language2Drive map atlas** offers six interactive lane maps, 54 clickable locations with three photo views each, and 24 exploration videos with synchronized camera routes. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
+The project page includes **129 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. WOD-E2E includes two paired **benchmark-target** videos: **Stop / Go** and **Speed Choice**. CARLA adds **33 paired benchmark targets**, each with exterior and vehicle-front views. The **CARLA-Language2Drive map atlas** offers six interactive lane maps, 54 clickable locations with three photo views each, and 24 exploration videos with synchronized camera routes. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
 
 <details open>
 <summary><b>Closed-loop counterfactual execution</b></summary>
@@ -201,31 +201,29 @@ Explore manuscript visualizations, the benchmark construction pipeline and an an
 The SDK coordinator supports **Python 3.10+**. Model dependencies stay in your model's own environment. CARLA's evaluator uses **Python 3.11**; the pinned AlpaSim runtime uses **Python 3.12**. Linux / compatible NVIDIA runtime is required for live simulator evaluation.
 
 ```sh
-git clone https://github.com/ZihanYou/Language2Drive.git
-cd Language2Drive
-python -m pip install -e '.[openloop]'
+python -m pip install https://github.com/ZihanYou/Language2Drive/releases/download/v0.1.0/language2drive-0.1.0-py3-none-any.whl
+language2drive init --workspace ./l2d-workspace
 
 # Select only the environments you need; no checkpoint download by default
-language2drive setup --tracks openloop
+language2drive setup --workspace ./l2d-workspace --tracks openloop
 
 # Inspect a complete installation / resource plan before running it
-language2drive setup --tracks all --runtime --download --dry-run
+language2drive setup --workspace ./l2d-workspace --tracks all --runtime --download --dry-run
 
 # Provision simulator dependencies and download accessible resources
-language2drive setup --tracks all --runtime --download
+language2drive setup --workspace ./l2d-workspace --tracks all --runtime --download
 ```
 
 `setup` probes Hugging Face and PyPI independently: reachable official endpoints are preferred; otherwise it selects the HF mirror and Tsinghua PyPI index. Override with `--network official` or `--network mirror`. Authenticated benchmark downloads require the official HF endpoint; credentials are never forwarded to mirrors by this SDK. Waymo assets require `--source-root /path/to/licensed/waymo`. nuScenes source images and frozen evaluator sidecars must be supplied where required. See [installation and resource access](docs/INSTALLATION.md).
 
-**Wheel installation:** build or download the release wheel, which packages checksum-verified backend source and notices. Use `setup` to configure simulator environments and benchmark resources.
+For an editable development checkout, clone the repository and run `python -m pip install -e '.[openloop]'`.
+
+**Wheel installation:** download the wheel from [GitHub Releases](https://github.com/ZihanYou/Language2Drive/releases), which packages checksum-verified backend source and notices. Use `setup` to configure simulator environments and benchmark resources.
 
 ```sh
-python -m pip install build
-python scripts/build_release.py
-python -m pip install dist/language2drive-0.1.0-py3-none-any.whl
+python -m pip install /path/to/language2drive-0.1.0-py3-none-any.whl
 language2drive init --workspace ./l2d-workspace
-language2drive setup --workspace ./l2d-workspace --tracks navsim \
-  --package dist/language2drive-0.1.0-py3-none-any.whl
+language2drive setup --workspace ./l2d-workspace --tracks navsim
 ```
 
 After maintainers publish the included PyPI workflow, the equivalent index installation will be:
@@ -242,6 +240,8 @@ Extras install Python dependencies. `setup --runtime` provisions separate simula
 <a id="quick-start"></a>
 
 ## 🚀 Quick Start
+
+After wheel installation, run these examples from the extracted workspace: `cd l2d-workspace`.
 
 ### 1. Check the interface without datasets
 
@@ -315,9 +315,9 @@ Each track saves native predictions, score files, coverage and logs. `summary.js
 
 <a id="dataset--evaluation-format"></a>
 
-## 🗂️ Dataset / Evaluation Format
+## 🗂️ Benchmark Assets / Evaluation Format
 
-**Official versioned dataset release: coming soon.** [Dataset repository on Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main). Public workload definitions and native evaluator code are in the track directories. Frozen private contracts and some replay bundles are separate resources; upstream datasets retain their own access terms.
+**Official versioned dataset release: coming soon.** [Benchmark assets on Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive/tree/main). Public workload definitions and native evaluator code are in the track directories. Frozen private contracts and some replay bundles are separate resources; upstream datasets retain their own access terms.
 
 | Layer | Contents | Consumer |
 |---|---|---|
@@ -405,8 +405,11 @@ If Language2Drive supports your research, please cite our paper.
            Zhu, Benjin and
            Li, Haoang and
            Wang, Yan},
-  howpublished = {Research manuscript},
-  url = {https://github.com/ZihanYou/Language2Drive}
+  year = {2026},
+  eprint = {2610.16634},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2610.16634}
 }
 ```
 

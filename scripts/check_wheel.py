@@ -14,6 +14,13 @@ with zipfile.ZipFile(wheel) as archive:
     assert 'l2d_benchmark/resources/backends/manifest.json' in names, 'Build with scripts/build_release.py'
     assert not any(n.endswith(('.pt', '.pth', '.ckpt', '.safetensors')) for n in names)
     assert any(n.endswith('THIRD_PARTY_NOTICES') for n in names)
+    prefix = 'l2d_benchmark/resources/backends/'
+    manifest = json.loads(archive.read(prefix + 'manifest.json'))
+    assert not any(path.startswith('docs/assets/') or path.endswith('.mp4') for path in manifest), 'Website media must stay outside the SDK wheel'
+    for path in ('docs/INSTALLATION.md', 'docs/ADAPTER.md', 'examples/constant_velocity.py', 'examples/evaluation.json', 'scripts/validate_gpu_campaign.py'):
+        assert path in manifest, f'Missing evaluation starter: {path}'
+    for path, digest in manifest.items():
+        assert hashlib.sha256(archive.read(prefix + path)).hexdigest() == digest, f'Invalid bundled checksum: {path}'
 with tempfile.TemporaryDirectory(prefix='l2d-install-') as temp:
     root = Path(temp)
     subprocess.run([sys.executable, '-m', 'venv', str(root / 'env')], check=True)

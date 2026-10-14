@@ -1,6 +1,8 @@
 name: Project page
 on:
-  # Local preview first. Deploy only when explicitly dispatched by a maintainer.
+  push:
+    branches: [main]
+    paths: ['docs/**', 'scripts/check_site.py', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read

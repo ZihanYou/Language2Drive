@@ -43,7 +43,18 @@ def main():
     tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().split('\0')
     # Include the one newly added runtime template before its first commit too.
     tracked += ['language2drive.RealSim/src/language2drive_realsim/configs/driver/l2d_unified.yaml']
-    starters = ['README.md', 'LICENSE'] + [str(p.relative_to(ROOT)) for folder in ('examples', 'docs') for p in (ROOT / folder).rglob('*') if p.is_file() and not any(part.startswith('.') or part == '__pycache__' for part in p.relative_to(ROOT).parts)]
+    # Evaluation workspaces need guides and adapter examples, not website media.
+    # Keep the release independent of the size of the public case-video library.
+    starters = ['README.md', 'LICENSE'] + [
+        str(path.relative_to(ROOT))
+        for folder, suffixes in (
+            ('examples', {'.py', '.json', '.yaml', '.yml', '.md'}),
+            ('docs', {'.md'}),
+        )
+        for path in (ROOT / folder).rglob('*')
+        if path.is_file() and path.suffix in suffixes
+        and not any(part.startswith('.') or part == '__pycache__' for part in path.relative_to(ROOT).parts)
+    ]
     tracked += starters
     starters += ['scripts/validate_gpu_campaign.py']
     tracked += ['scripts/validate_gpu_campaign.py', 'language2drive.OpenloopTrack.navsim/data/RELEASE_CHECKSUMS.json']

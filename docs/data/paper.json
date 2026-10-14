@@ -1,6 +1,9 @@
 {
   "title": "Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?",
   "source": "Language2Drive_arxiv.pdf, page 1",
+  "arxiv_id": "2610.16634",
+  "url": "https://arxiv.org/abs/2610.16634",
+  "year": 2026,
   "authors": [
     {"name": "Zihan You", "affiliations": [1, 2], "equal_contribution": true, "project_lead": true},
     {"name": "Zehua Fan", "affiliations": [3], "equal_contribution": true},

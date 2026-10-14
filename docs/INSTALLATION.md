@@ -10,13 +10,12 @@ sh scripts/bootstrap.sh --tracks nuscenes,navsim,wod --network auto
 language2drive setup --tracks all --runtime --download --dry-run
 ```
 
-From a wheel:
+From the published wheel:
 
 ```sh
-pip install /path/to/language2drive-0.1.0-py3-none-any.whl
+python -m pip install https://github.com/ZihanYou/Language2Drive/releases/download/v0.1.0/language2drive-0.1.0-py3-none-any.whl
 language2drive init --workspace /path/to/l2d-workspace
-language2drive setup --workspace /path/to/l2d-workspace --tracks navsim \
-  --package /path/to/language2drive-0.1.0-py3-none-any.whl
+language2drive setup --workspace /path/to/l2d-workspace --tracks navsim
 ```
 
 `init` verifies all bundled source hashes and refuses differing destination files. Original track paths and notices are preserved. The installed wheel is automatically reconstructed from its verified distribution files and reused for isolated environments; `--package` can explicitly override it. The wheel contains evaluator source; not checkpoint weights, simulator binaries, full datasets or model-specific vendor source.
