@@ -2,6 +2,8 @@
 
 ## GitHub Pages
 
+Public project page: [ZihanYou.github.io/Language2Drive](https://ZihanYou.github.io/Language2Drive/).
+
 The site is a dependency-free static page in `docs/`. It includes 129 case videos across five backends, a 120-second English-captioned film, a six-map CARLA simulator atlas with 54 locations and 24 exploration videos, four interactive CARLA Scope diagrams, manuscript tables and a result submission builder. Local preview:
 
 ```sh
@@ -37,11 +39,25 @@ Use the release builder rather than bare `python -m build`: it stages legacy bac
 
 Artifacts are a `py3-none-any` wheel and its SHA256 file. GitHub tags `v*` run tests, build and attach artifacts to a release; keep the tag consistent with `pyproject.toml` and `l2d_benchmark.__version__`.
 
+The initial wheel is published in [GitHub Release v0.1.0](https://github.com/ZihanYou/Language2Drive/releases/tag/v0.1.0). Install it directly from the release URL shown in [INSTALLATION.md](INSTALLATION.md).
+
 ## PyPI
 
 Package metadata and the `language2drive` CLI are ready. Public PyPI installation is **pending publication**. Check namespace availability and configure a PyPI Trusted Publisher with this repository, `pypi.yml` and the `pypi` environment. Set any desired maintainer review controls on that environment. Version tags (`v*`) trigger **Publish PyPI**; manual publishing is also available after validation. It builds and checks the wheel before the authenticated publishing job; no token is stored in the repository.
 
 Once successfully published, `pip install language2drive` and optional extras work from the package index. Before publication, install the local/release wheel or checkout. Do not replace the pending status with an availability claim until installation from the public index has been verified.
+
+For the first PyPI release, add a [Pending Trusted Publisher](https://pypi.org/manage/account/publishing/) with these exact values:
+
+| Field | Value |
+|---|---|
+| PyPI project name | `language2drive` |
+| GitHub owner | `ZihanYou` |
+| Repository name | `Language2Drive` |
+| Workflow filename | `pypi.yml` |
+| Environment name | `pypi` |
+
+The initial [publishing run](https://github.com/ZihanYou/Language2Drive/actions/runs/38504738065) built and verified the wheel successfully; PyPI rejected its identity exchange with `invalid-publisher` because no matching publisher was configured. After configuring the publisher, use **Re-run failed jobs** on that run to retry the publishing job and reuse its verified wheel.
 
 ## Paper and data metadata
 

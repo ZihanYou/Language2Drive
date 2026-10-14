@@ -367,7 +367,7 @@ These checks validate SDK behavior, page assets and a clean wheel installation. 
 | Status | Deliverable |
 |:---:|---|
 | ✅ | Benchmark source, five native evaluators and unified model-adapter SDK |
-| ✅ | Wheel build, selectable environment setup and manuscript result tables |
+| ✅ | [Published wheel v0.1.0](https://github.com/ZihanYou/Language2Drive/releases/tag/v0.1.0), selectable environment setup and manuscript result tables |
 | ✅ | evaluation resources on [Hugging Face](https://huggingface.co/datasets/Mike087/Language2Drive)|
 | ✅ | Official benchmark release, supporting the use of any datasets |
 | ⏳ | Official versioned dataset, model and checkpoints release|
