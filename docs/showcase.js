@@ -152,6 +152,6 @@
   new IntersectionObserver(entries=>{if(!entries[0].isIntersecting){stopTour();cancelAnimationFrame(motion);}},{threshold:0}).observe($('#framework'));
   const film=$('#intro-film');
   $$('[data-film-time]').forEach(b=>b.addEventListener('click',()=>{film.currentTime=Number(b.dataset.filmTime);film.play().catch(()=>say('Press play to start the film'));scrollTo(film);}));
-  film.addEventListener('timeupdate',()=>{$$('[data-film-time]').forEach((b,i,all)=>b.classList.toggle('active',film.currentTime>=Number(b.dataset.filmTime)&&(!all[i+1]||film.currentTime<Number(all[i+1].dataset.filmTime))));});
+  film.addEventListener('timeupdate',()=>{$$('[data-film-time]').forEach((b,i,all)=>{const active=film.currentTime>=Number(b.dataset.filmTime)&&(!all[i+1]||film.currentTime<Number(all[i+1].dataset.filmTime));b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});});
   [film,$('#case-video')].forEach(v=>v.addEventListener('play',()=>{[film,$('#case-video')].filter(x=>x!==v).forEach(x=>x.pause());}));
 })();

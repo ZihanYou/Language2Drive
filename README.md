@@ -175,9 +175,9 @@ The CARLA table includes the six principal systems; the paper's Senna high-level
 
 ## 🎬 Visualization / Example Cases
 
-🎬 **[Watch the 2-minute project film](https://ZihanYou.github.io/Language2Drive/assets/demo/language2drive-film.mp4)** · **[Explore the interactive case library](https://ZihanYou.github.io/Language2Drive/#examples)** · **[Prepare a model submission](https://ZihanYou.github.io/Language2Drive/submit.html)**
+🎬 **[Watch the 2:13 project film](https://ZihanYou.github.io/Language2Drive/assets/demo/language2drive-film.mp4?v=8.7)** · **[Explore the interactive case library](https://ZihanYou.github.io/Language2Drive/#examples)** · **[Prepare a model submission](https://ZihanYou.github.io/Language2Drive/submit.html)**
 
-The project page includes **129 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. WOD-E2E includes two paired **benchmark-target** videos: **Stop / Go** and **Speed Choice**. CARLA adds **33 paired benchmark targets**, each with exterior and vehicle-front views. The **CARLA-Language2Drive map atlas** offers six interactive lane maps, 54 clickable locations with three photo views each, and 24 exploration videos with synchronized camera routes. The film is 1080p with English captions. [Preview and media build guide](docs/SHOWCASE.md).
+The project page includes **129 clips across all five backends**, synchronized A/B CoT transcripts for Alpamayo 1.5 in CARLA and RealSim, model switching within a PCU, a NAVSIM trajectory inspector, and an animated framework built from the original author artwork. WOD-E2E includes two paired **benchmark-target** videos: **Stop / Go** and **Speed Choice**. CARLA adds **33 paired benchmark targets**, each with exterior and vehicle-front views. The **CARLA-Language2Drive map atlas** offers six interactive lane maps, 54 clickable locations with three photo views each, and 24 exploration videos with synchronized camera routes. The English project film is 2:13 at 1080p / 30 fps, with audio and chapter navigation. [Preview and media build guide](docs/SHOWCASE.md).
 
 <details open>
 <summary><b>Closed-loop counterfactual execution</b></summary>

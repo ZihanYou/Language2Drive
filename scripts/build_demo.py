@@ -218,8 +218,8 @@ def stamp(seconds):
     return f'{int(seconds)//3600:02}:{int(seconds)//60%60:02}:{int(seconds)%60:02}.000'
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--work-dir',type=Path,default=Path('/tmp/l2d-film'));p.add_argument('--force',action='store_true');p.add_argument('--refresh-cases',action='store_true');args=p.parse_args();work=args.work_dir;work.mkdir(parents=True,exist_ok=True)
-    dest=DOCS/'assets/demo';dest.mkdir(parents=True,exist_ok=True)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--work-dir',type=Path,default=Path('/tmp/l2d-film'));p.add_argument('--output-dir',type=Path,default=DOCS/'assets/demo/generated');p.add_argument('--force',action='store_true');p.add_argument('--refresh-cases',action='store_true');args=p.parse_args();work=args.work_dir;work.mkdir(parents=True,exist_ok=True)
+    dest=args.output_dir;dest.mkdir(parents=True,exist_ok=True)
     cases={c['id']:c for c in json.loads((DOCS/'data/cases.json').read_text())['cases']}
     previous = json.loads((dest/'storyboard.json').read_text()) if (dest/'storyboard.json').exists() else {'segments': []}
     previous_cases = {s['case_id']: s for s in previous['segments'] if s['kind']=='case'}

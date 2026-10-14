@@ -34,9 +34,9 @@ with sync_playwright() as p:
   page.locator('[data-code="adapter"]').click()
   assert 'def create_adapter' in page.locator('#quick-code').inner_text()
   if width==1440:
-   page.locator('[data-film-time="104"]').click()
-   page.wait_for_function('document.querySelector("#intro-film").currentTime >= 104 && document.querySelector("#intro-film").readyState >= 2')
-   assert page.locator('#intro-film').evaluate('(v)=>Math.abs(v.duration-120)<.1')
+   page.locator('[data-film-time="114"]').click()
+   page.wait_for_function('document.querySelector("#intro-film").currentTime >= 114 && document.querySelector("#intro-film").readyState >= 2')
+   assert page.locator('#intro-film').evaluate('(v)=>Math.abs(v.duration-133)<.1')
    assert page.locator('#case-video').evaluate('(v)=>v.paused')
    page.locator('#intro-film').evaluate('(v)=>v.pause()')
   # The first gallery screen must expose all five backends.

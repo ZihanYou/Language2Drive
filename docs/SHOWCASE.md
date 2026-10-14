@@ -1,9 +1,9 @@
 # Project film and interactive evidence
 
-The project preview combines the author's framework artwork, a 120-second film,
+The project preview combines the author's framework artwork, a 133-second English project film,
 and 129 curated viewing copies and a six-map simulator atlas from author-provided evidence archives.
 The local preview has no upload service. The site and all viewing assets are ready
-for the manual GitHub Pages workflow; see [the deployment guide](RELEASE.md).
+for the automatic GitHub Pages workflow; see [the deployment guide](RELEASE.md).
 
 ## Preview
 
@@ -149,34 +149,41 @@ Author names, order, affiliation indices and contribution markers in
 short affiliation names with full names in tooltips. The paper download is an
 exact copy of that supplied PDF; the README and homepage citations use its author list.
 
-## Rebuild the film
+## Published project film
+
+The homepage plays the author-provided **Language2Drive-en-v8.7.mp4**:
+1920 × 1080, 30 fps, 133 seconds, H.264 video and AAC audio. The video and audio
+streams are preserved; MP4 `faststart` places playback metadata at the beginning
+of the file for quicker browser loading. The cover is a frame from this version.
+
+Published files under `assets/demo/`:
+
+- `language2drive-film.mp4`: the web-ready English film.
+- `chapters.vtt`: chapter navigation aligned with the new edit.
+- `poster.webp`: the updated film cover.
+- `storyboard.json`: source filename and SHA-256, published video checksum,
+  format metadata and chapter timing.
+
+Chapters: 00:00 (question), 00:23 (PCU), 00:31 (four scopes), 00:41 (paired turns),
+00:55 (scene-grounded parking), 01:05 (long-horizon programs), 01:15 (benchmark
+coverage), 01:30 (main findings), and 01:54 (explore Language2Drive).
+The player and download link use a version query to refresh cached copies.
+
+## Render the earlier editable film
+
+The existing renderer remains available for the earlier 120-second composition.
+Its output goes to `assets/demo/generated/` so it can be developed independently
+of the current homepage film.
 
 ```sh
 python -m pip install Pillow
 python scripts/build_demo.py --work-dir /tmp/l2d-film --force
 ```
 
-The renderer uses Pillow for editable title cards and vector motion, and ffmpeg
-for the real video excerpts. All four Scope chapters animate the same native
-CARLA geometry and reference paths used by the website, with explicit benchmark
-target labels. Case excerpts retain the gallery's unified A/B layout and role.
-Its font paths are declared at the top of the script
-(DejaVu Sans/Mono and URW P052 Roman on this host). `--force` rebuilds every segment
-after source or layout edits; `--refresh-cases` rebuilds just the video segments.
-
-Outputs under `assets/demo/`:
-
-- `language2drive-film.mp4`: 1920 × 1080, 24 fps, 120 s, H.264. English captions
-  are burned into the frames. The film is silent and has no synthetic narration.
-- `captions.vtt`: optional English text track.
-- `poster.webp`: project film cover.
-- `storyboard.json`: timecodes, captions, source case identifiers, evidence roles,
-  excerpt offsets, source viewing-copy hashes and Scope geometry provenance.
-
-Chapter times are 00:00 (question), 00:12 (PCU), 00:32 (scopes), 00:48
-(evidence), and 01:44 (evaluate and contribute). Source timing is retained within
-excerpts; CARLA replay speed is shown in its case frames. The film uses actual
-evidence excerpts, native CARLA reference geometry and original framework artwork.
+The renderer uses Pillow for title cards and vector motion, and ffmpeg for case
+excerpts. Its output includes the earlier film, text captions, cover and source
+storyboard. `--output-dir` selects another destination; `--refresh-cases`
+rebuilds only its case excerpts.
 
 ## Check the result
 

@@ -2,6 +2,7 @@
 """Validate local page references, anchors and manuscript-result inventory."""
 from html.parser import HTMLParser
 import json
+import hashlib
 from pathlib import Path
 import re
 from urllib.parse import urlsplit
@@ -113,13 +114,23 @@ for c in scopes:
 provenance=json.loads((DOCS/'assets/framework/provenance.json').read_text())
 assert 'front_wide_original_jpeg' in provenance['assets']['realsim.webp']['member']
 story=json.loads((DOCS/'assets/demo/storyboard.json').read_text())
-assert story['duration_s']==120 and story['resolution']==[1920,1080]
-assert sum(s['duration_s'] for s in story['segments'])==120
-by_id={c['id']:c for c in cases}
+assert story['schema']=='language2drive.film.v1' and story['version']=='8.7'
+assert story['duration_s']==133 and story['resolution']==[1920,1080] and story['fps']==30
+assert sum(s['duration_s'] for s in story['segments'])==story['duration_s']
+film=DOCS/story['video']
+assert film.stat().st_size==story['bytes']
+assert hashlib.sha256(film.read_bytes()).hexdigest()==story['video_sha256']
+assert re.fullmatch('[a-f0-9]{64}',story['source_sha256'])
+assert story['source_file']=='Language2Drive-en-v8.7.mp4'
+chapter_times=[s['start_s'] for s in story['segments']]
+assert chapter_times[0]==0 and all(a<b for a,b in zip(chapter_times,chapter_times[1:]))
+assert all(s['duration_s']>0 and s['start_s']+s['duration_s']<=story['duration_s'] for s in story['segments'])
+page=(DOCS/'index.html').read_text()
+assert [int(t) for t in re.findall(r'data-film-time="(\d+)"',page)]==chapter_times
+assert 'kind="chapters"' in page and 'assets/demo/captions.vtt' not in page
+vtt=(DOCS/'assets/demo/chapters.vtt').read_text()
 for segment in story['segments']:
-    if segment['kind']=='case':
-        assert by_id[segment['case_id']]['video_sha256']==segment['source_sha256']
-        assert by_id[segment['case_id']]['evidence_role']==segment['evidence_role']
+    assert segment['title'] in vtt
 results = json.loads((DOCS / 'data/results.json').read_text())
 for track, count in {'carla': 6, 'realsim': 8, 'nuscenes': 4, 'navsim': 5, 'wod': 4}.items():
     table = results['tracks'][track]
