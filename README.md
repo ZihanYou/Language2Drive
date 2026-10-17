@@ -382,35 +382,11 @@ These checks validate SDK behavior, page assets and a clean wheel installation. 
 If Language2Drive supports your research, please cite our paper.
 
 ```bibtex
-@misc{language2drive,
-  title = {Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?},
-  author = {You, Zihan and
-           Fan, Zehua and
-           Lyu, Wenqi and
-           Wang, Aoqi and
-           Wang, Ni and
-           Yang, Yifei and
-           Zhao, Linge and
-           Li, Huan and
-           Ang, Sining and
-           Yang, Yuguang and
-           Chen, Jueyu and
-           Li, Xiangyu and
-           Wei, Qianshan and
-           Pei, Jieyuan and
-           Wang, Yuxin and
-           Chen, Zhiwen and
-           Li, Jiaqi and
-           Song, Wenxuan and
-           Qiao, Yanyuan and
-           Zhu, Benjin and
-           Li, Haoang and
-           Wang, Yan},
-  year = {2026},
-  eprint = {2610.16634},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.RO},
-  url = {https://arxiv.org/abs/2610.16634}
+@article{you2026language2drive,
+  title={Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?},
+  author={You, Zihan and Fan, Zehua and Lyu, Wenqi and Wang, Aoqi and Wang, Ni and Yang, Yifei and Zhao, Linge and Li, Huan and Ang, Sining and Yang, Yuguang and others},
+  journal={arXiv preprint arXiv:2610.16634},
+  year={2026}
 }
 ```
 
